@@ -1,56 +1,61 @@
 {
- "built_at": "2026-09-14T22:43:56.550268+02:00",
- "config": "b9c9250100d41a7a",
+ "built_at": "2026-09-14T22:55:08.555908+02:00",
+ "config": "03cbb790142c8029",
  "block": {
   "enabled": true,
   "top": [
+   {
+    "title": "Korruption in der Ukraine: Ukrainischer Präsident Selenskyj entlässt Generalstaatsanwalt",
+    "teaser": "Dem ukrainischen Generalstaatsanwalt Ruslan Krawtschenko wird Korruption im Zusammenhang mit betrügerischen Callcentern vorgeworfen. Nun hat Selenskyj ihn entlassen.",
+    "link": "https://www.zeit.de/politik/ausland/2026-09/generalstaatsanwalt-ukraine-ruslan-krawtschenko-korruption",
+    "source": "Zeit Online",
+    "scope": "national",
+    "lang": "de",
+    "published": "2026-09-14T20:51:46+00:00",
+    "summary": "",
+    "also": []
+   },
+   {
+    "title": "„Russland nimmt hier auf der Eskalationsleiter die nächste Sprosse“, warnt der Militärexperte",
+    "teaser": "Russland griff einen Personenzug nahe der polnischen Grenze an. Militärexperte Markus Reisner wertet die Attacke als Drohung an westliche Politiker – und macht auf eine Aussage aus dem Kreml aufmerksam.",
+    "link": "https://www.welt.de/politik/ausland/article6aa8596977bd109fcdd014a6/ukraine-krieg-russland-nimmt-hier-auf-der-eskalationsleiter-die-naechste-sprosse-warnt-militaerexperte-reisner.html",
+    "source": "Welt",
+    "scope": "national",
+    "lang": "de",
+    "published": "2026-09-14T20:46:58+00:00",
+    "summary": "",
+    "also": []
+   },
+   {
+    "title": "Macklemore dropped from Ed Sheeran tour following Palestine advocacy",
+    "teaser": "Gillette Stadium owner cites concerns over Macklemore's rhetoric as reason for barring him from performances.",
+    "link": "https://www.aljazeera.com/news/2026/9/14/macklemore-dropped-from-ed-sheeran-tour-following-palestine-advocacy?traffic_source=rss",
+    "source": "Al Jazeera",
+    "scope": "world",
+    "lang": "de",
+    "published": "2026-09-14T20:40:54+00:00",
+    "summary": "",
+    "also": []
+   },
+   {
+    "title": "Newsblog zum Nahost-Krieg: Tanker laut Iran in Straße von Hormus durch Mine in Brand geraten – USA widersprechen",
+    "teaser": "Iran hat Teile der wirtschaftlich bedeutenden Meerenge vermint. Jetzt soll ein Tanker auf der südlichen Route auf eine Mine gefahren und in Flammen aufgegangen sein. Das US-Militär macht andere Angaben zu dem Vorfall.",
+    "link": "https://www.sueddeutsche.de/politik/liveblog-nahost-usa-iran-oman-strasse-von-hormus-tanker-usa-li.3530668",
+    "source": "Süddeutsche Zeitung",
+    "scope": "national",
+    "lang": "de",
+    "published": "2026-09-14T20:40:16+00:00",
+    "summary": "",
+    "also": []
+   },
    {
     "title": "Sizilien: Flughafen von Catania wegen Ätna-Aktivität vorübergehend geschlossen",
     "teaser": "Wegen erneuter vulkanischer Aktivität des Ätna sind alle Ankünfte und Abflüge am Flughafen Catania vorübergehend ausgesetzt. Die Sperrung gilt bis Dienstagvormittag.",
     "link": "https://www.zeit.de/gesellschaft/zeitgeschehen/2026-09/flughafen-catania-schliessung-vulkan-aetna-sizilien",
     "source": "Zeit Online",
     "scope": "national",
+    "lang": "de",
     "published": "2026-09-14T20:36:15+00:00",
-    "summary": "",
-    "also": []
-   },
-   {
-    "title": "Technologie - Bundesregierung: Nehmen KI-Warnungen sehr ernst - Trump sieht Verschwörung und lehnt Regulierung ab",
-    "teaser": "Seit den Forderungen von US-Tech-Firmen wie Anthropic und Open-AI nach einer Verlangsamung der KI-Forschung hat die Debatte über die Risiken der Technologie an Fahrt gewonnen. Die Bundesregierung erklärte in Berlin, man nehme die Warnungen sehr ernst.",
-    "link": "https://www.deutschlandfunk.de/bundesregierung-nehmen-ki-warnungen-sehr-ernst-trump-sieht-verschwoerung-und-lehnt-regulierung-ab-100.html",
-    "source": "Deutschlandfunk",
-    "scope": "national",
-    "published": "2026-09-14T20:30:02+00:00",
-    "summary": "",
-    "also": []
-   },
-   {
-    "title": "Steigende Ölpreise - Benzin in Deutschland so teuer wie nie - SPD will Preisdeckel und Übergewinnsteuer",
-    "teaser": "Die SPD fordert wegen des jüngsten Anstiegs der Spritpreise einen Preisdeckel und eine Übergewinnsteuer. Das geht aus einem Positionspapier der Partei hervor, in dem es weiter heißt, Mineralölkonzerne würden die aktuelle Krise schamlos ausnutzen, um Rekordgewinne auf Kosten der Bürger zu machen.",
-    "link": "https://www.deutschlandfunk.de/benzin-in-deutschland-so-teuer-wie-nie-spd-will-preisdeckel-und-uebergewinnsteuer-100.html",
-    "source": "Deutschlandfunk",
-    "scope": "national",
-    "published": "2026-09-14T20:30:02+00:00",
-    "summary": "",
-    "also": []
-   },
-   {
-    "title": "Newsblog zum Nahost-Krieg: Revolutionsgarden: Öltanker in Straße von Hormus nach Minen-Kollision explodiert",
-    "teaser": "Iran hat Teile der wirtschaftlich bedeutenden Meerenge vermint. Jetzt sei ein Tanker auf der südlichen Route auf eine Mine gefahren und in Flammen aufgegangen sein, berichten iranische Medien unter Berufung auf die Revolutionsgarden.",
-    "link": "https://www.sueddeutsche.de/politik/liveblog-nahost-usa-iran-oman-strasse-von-hormus-tanker-li.3530668",
-    "source": "Süddeutsche Zeitung",
-    "scope": "national",
-    "published": "2026-09-14T20:30:01+00:00",
-    "summary": "",
-    "also": []
-   },
-   {
-    "title": "Geopolitik in der Arktis: Arktis-Gipfel fordert größeres Engagement der EU in der Region",
-    "teaser": "Beim EU-Arktis-Gipfel in Finnland haben europäische Länder über die Strategie in der Region beraten. In der Abschlusserklärung fordern sie eine stärkere Präsenz der EU.",
-    "link": "https://www.zeit.de/politik/ausland/2026-09/arktis-eu-russland-geopolitik",
-    "source": "Zeit Online",
-    "scope": "national",
-    "published": "2026-09-14T20:20:45+00:00",
     "summary": "",
     "also": []
    }
@@ -62,6 +67,7 @@
     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOVmprREdWV18tcWlnUEt6WWluOTBvUWxTQjJqc05lbHhPX3MxQUZBTGlTRGZKeWtJMUFVN0JQSHo3NGdrT19fLTRYZzljSHFOTUVnUWFkMXRUaVM2cXpMSDFpeVlNanZZQlZtZ0JOMHdja01WR3BRVFVNWHpoZm5oalRBWjNBTEVIYkNQLTdB?oc=5",
     "source": "Presse Augsburg",
     "scope": "regional",
+    "lang": "de",
     "published": "2026-09-14T19:26:24+00:00",
     "summary": "",
     "also": []
@@ -72,6 +78,7 @@
     "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPWEp3V0NzRV9JXzdhTktJV1huOXVaYUx2MUJmUURRaDZLUGk5cUUyZ3poNjlTTE1rQnY4eDlFMTNISDBOYjJKUEZHSHNNd2xtd1RNaVFDQ29PV0Y1ZTFtSU9pLUVvVTVBZGh1NXNvcmxFMnhFbmo5OHk2ajFnVEViWDUwM2l5N00zOEwxYmx5MjY2d05OeVNyZUhNWGtiM0lVTWdXamFRUkRHaFM4S29SU2NjOThwWnNwNEZnSHhqWE1vMml1ZnU3VjZNT1BuTVh4Q0pGXzlCMA?oc=5",
     "source": "Augsburger Allgemeine",
     "scope": "regional",
+    "lang": "de",
     "published": "2026-09-14T16:35:00+00:00",
     "summary": "",
     "also": []
@@ -82,66 +89,129 @@
     "link": "https://www.merkur.de/lokales/bad-toelz/bad-toelz-ort28297/herausragend-bierfest-in-oberbayern-auch-mit-neuem-veranstalter-ein-voller-erfolg-94492268.html",
     "source": "Merkur Lokales",
     "scope": "regional",
+    "lang": "de",
     "published": "2026-09-14T16:02:00+00:00",
     "summary": "",
     "also": []
    },
    {
-    "title": "Verleihung der Courage-Medaille: „So etwas verlässt einen nicht“",
-    "teaser": "Sie haben Einbrüche vereitelt, Betrugsmaschen aufgedeckt oder Vergewaltigungen verhindert: 22 Menschen aus Bayern werden von Innenminister Joachim Herrmann mit der Courage-Medaille ausgezeichnet.",
-    "link": "https://www.sueddeutsche.de/bayern/courage-medaille-bayern-herrmann-li.3547065",
-    "source": "SZ Bayern",
+    "title": "Naturschauspiel führt zu Notruf: Wanderer fürchtet Bärenangriff in Allgäuer Alpen – Polizei erklärt den Grund",
+    "teaser": "Naturschauspiel führt zu Notruf: Wanderer fürchtet Bärenangriff in Allgäuer Alpen – Polizei erklärt den Grund merkur.de",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPUDgzRDlZLWg3U2Z2aTk2VmNpeV9hOGR3cDNpbEFfQlQ0bWUxR3VpUElVSXphdFhUNHp4V0prV2NCdENOY0tCY1JUTWdGTFhSeXp2TjJlTDBfclhsMVBheHJtNlNGSVpCREJjemFfVDlSbDVjSTJHejlsUVNaM0lDaVo3QkpvNmwtSlZkejVJUC1nMjFEVDYtRzdTWjBfY0x2WTIyTkcwWl9NbXktRVVnZVBCOHVRME5Z?oc=5",
+    "source": "merkur.de",
     "scope": "regional",
-    "published": "2026-09-14T14:02:32+00:00",
+    "lang": "de",
+    "published": "2026-09-14T15:57:00+00:00",
+    "summary": "",
+    "also": []
+   }
+  ],
+  "agrar": [
+   {
+    "title": "Landwirt will Millionen-Angebot nicht annehmen: Stadt startet nächsten Anlauf für Enteignung",
+    "teaser": "Landwirt will Millionen-Angebot nicht annehmen: Stadt startet nächsten Anlauf für Enteignung NDR.de",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNUF9uN2JDLTdtR1RGNXdkMGZRZ1hMWXBibWl5NjM3ZDljTVFCaVhpRkFDVUxDcE5hWUtuUjlCWmhEenhhRFNUcmdBeVVrbGRlZkVpS2NIVTFPTzVQVzhndlVkUDRXb0JtQTZqbFA1VElkVUtLWC1qQU1YSFgxRUNocXkzbUQ5QmJQU05nMjFkSWJyem9BUGxFOVNDakdveDMzVXYybkNwLWF5Ti02SnI5VDE1ekNlYmxrcHM5ZA?oc=5",
+    "source": "NDR.de",
+    "scope": "agrar",
+    "lang": "de",
+    "published": "2026-09-14T20:20:46+00:00",
+    "summary": "",
+    "also": []
+   },
+   {
+    "title": "Keferloher Montag 2026: Bauern zwischen Wut und Zuversicht",
+    "teaser": "Keferloher Montag 2026: Bauern zwischen Wut und Zuversicht grasbrunn-aktuell.de",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQazJ0NDZNeWprdlo4X2pQZVlBRDZXdHQzU0ozaW5Ob1YwRjR0UVpCNTl3T0sxQ1BiUlFCUXNmNTZVWEtQdzdCcE5KOTNob093U2RsLVJHVlhiODFfT3NzOUhmTFZ1YTF4Y2QxRnZmUmdaTmgtWEZjNDJoemVrR3JVbDAzUUpOWXc0VGoxaXpkd1pyd2Q3TlJJUUJWazJyb1pPelVN?oc=5",
+    "source": "grasbrunn-aktuell.de",
+    "scope": "agrar",
+    "lang": "de",
+    "published": "2026-09-14T19:24:13+00:00",
+    "summary": "",
+    "also": []
+   },
+   {
+    "title": "AfD-Spitzenkandidat Schult als Praktikant beim Landwirt",
+    "teaser": "AfD-Spitzenkandidat Schult als Praktikant beim Landwirt NDR.de",
+    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPcHlvMHV3ZklKcXJ3aVY3am9zTWpVdGZabDBESFlGM1B3dEh1NnBVaW5OVDFjQlpXN1lIc1RiQkRMN1hiQk1MaDVYLWdZckZaMXV2S1R2ZzZnVi01dGpWUEJaTDF3TDg2dmtXdGNPXzhlNUtVOHNadlNGaXJOcnBmQThHZzlTOU9iY3c2cloxSG5HaHFjUDhJVzZBcGJYV1hnU0tubURfclVsOVNvSVVSMWc5V1F6ZDdjUzRoWXQxLUNhN3p1elotNQ?oc=5",
+    "source": "NDR.de",
+    "scope": "agrar",
+    "lang": "de",
+    "published": "2026-09-14T18:47:30+00:00",
+    "summary": "",
+    "also": []
+   },
+   {
+    "title": "Countdown to 10th anniversary of Agriland’s Ploughing live stream",
+    "teaser": "The countdown to the 2026 Ploughing Championships is almost over, with three action-packed days promising nail-biting excitement, entertainment – and, fingers crossed, some sunshine. Agriland Media Group is once again the proud livestream media partner of the National Ploughing Association (NPA) and",
+    "link": "https://www.agriland.ie/farming-news/countdown-to-10th-anniversary-of-agrilands-ploughing-live-stream/",
+    "source": "Agriland",
+    "scope": "agrar",
+    "lang": "en",
+    "published": "2026-09-14T19:23:08+00:00",
+    "summary": "",
+    "also": []
+   },
+   {
+    "title": "NASDA Honors 14 State Ag Leaders in New Service Award",
+    "teaser": "NASDA Honors 14 State Ag Leaders in New Service Award Food & Beverage Magazine",
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPVzd2T01EQTJySngwODFla1l1UTRBQ1hLazNrSi1uOWNHYXBmd2dwMllZLW1zNU9kU3cwUS1BdmE1WklsQjFQYzVNZEpKTGVuQjJTcW9QWUdtaDN3TjN6a1gxSVNLVjRsdm9EODBpTVdPZ08xOG9hbUQ1aWZNTVFmU3QzN1Z6d1FkZjhZWlYwTzBUTkZnZzVRbEdhc0E?oc=5",
+    "source": "Food & Beverage Magazine",
+    "scope": "agrar",
+    "lang": "en",
+    "published": "2026-09-14T18:22:19+00:00",
     "summary": "",
     "also": []
    }
   ],
   "world": [
    {
-    "title": "Nigerian oil refinery Dangote aims to raise 1.6 billion dollars",
-    "teaser": "In tonight's edition, Nigeria's Dangote refinery opens itself to public ownership with plans to raise 1.6 billion dollars from retail investors across the continent. Also, President Felix Tshisekedi calls on the National Service to clean up the streets of Kinshasa. And with a month and a half to go ",
-    "link": "https://www.france24.com/en/nigerian-oil-refinery-dangote-aims-to-raise-1-6-billion-dollars",
+    "title": "Australia politics live: Hastie accuses Hanson of avoiding media; Anthony Albanese and King Charles speak",
+    "teaser": "Follow the day’s news live Get our breaking news email , free app or daily news podcast Liberal frontbencher Andrew Hastie has questioned why Pauline Hanson announced One Nation’s significant new policy via a pre-recorded video on social media instead of fronting the media. Appearing alongside Barna",
+    "link": "https://www.theguardian.com/australia-news/live/2026/sep/15/one-nation-pauline-hanson-immigration-coalition-andrew-hastie-angus-taylor-labor-anthony-albanese-ntwnfb",
+    "source": "The Guardian",
+    "scope": "world",
+    "lang": "de",
+    "published": "2026-09-14T20:47:29+00:00",
+    "summary": "",
+    "also": []
+   },
+   {
+    "title": "Nigeria's Dangote refinery kicks off blockbuster IPO",
+    "teaser": "Nigerian billionaire Aliko Dangote launched the biggest-ever share sale on the African continent, listing 4.1 billion shares in his Lagos refinery on the stock exchange. He framed it as a \"people's IPO\" to give all Nigerians a chance to share the plant's wealth potentials. Trading is expected to sta",
+    "link": "https://www.france24.com/en/tv-shows/business/20260914-nigeria-s-dangote-refinery-kicks-off-blockbuster-ipo",
     "source": "France 24",
     "scope": "world",
-    "published": "2026-09-14T20:31:28+00:00",
+    "lang": "de",
+    "published": "2026-09-14T20:46:19+00:00",
     "summary": "",
     "also": []
    },
    {
-    "title": "Multiple vehicle road crash in South Africa kills 21",
-    "teaser": "Fatal traffic accidents are a recurring problem for South Africa.",
-    "link": "https://www.aljazeera.com/news/2026/9/14/multiple-vehicle-road-crash-in-south-africa-kills-21?traffic_source=rss",
+    "title": "Inside the Houthis’ expanding war economy in Yemen",
+    "teaser": "The Houthis have restructured Yemen's commercial sector, securing billions in revenue amid a humanitarian crisis.",
+    "link": "https://www.aljazeera.com/economy/2026/9/14/inside-the-houthis-expanding-war-economy-in-yemen?traffic_source=rss",
     "source": "Al Jazeera",
     "scope": "world",
-    "published": "2026-09-14T20:21:01+00:00",
+    "lang": "de",
+    "published": "2026-09-14T20:41:47+00:00",
     "summary": "",
     "also": []
    },
    {
-    "title": "Finland shelters under French nuclear umbrella amid Russian, US uncertainty",
-    "teaser": "Finland becomes 10th European state to sign up to military cooperation and nuclear deterrence initiative.",
-    "link": "https://www.aljazeera.com/news/2026/9/14/finland-shelters-under-french-nuclear-umbrella-amid-russian-us-uncertainty?traffic_source=rss",
+    "title": "Austria denies entry to Iranian official after UN ruling",
+    "teaser": "Iran accused Austria of reversing its approval of an Iranian delegation to the IAEA under external pressure.",
+    "link": "https://www.aljazeera.com/video/newsfeed/2026/9/14/austria-denies-entry-to-iranian-official-after-un-ruling?traffic_source=rss",
     "source": "Al Jazeera",
     "scope": "world",
-    "published": "2026-09-14T20:20:20+00:00",
-    "summary": "",
-    "also": []
-   },
-   {
-    "title": "Turkey police disperse pro-LGBTQ protesters with tear gas",
-    "teaser": "Turkish police fired tear gas at pro-LGBTQ demonstrators in the western city of Izmir on Monday, as activists protested a nationwide crackdown that saw dozens arrested over the weekend in a campaign authorities described as defending traditional family values.",
-    "link": "https://www.france24.com/en/asia-pacific/20260914-turkey-police-disperse-pro-lgbtq-protesters-with-tear-gas",
-    "source": "France 24",
-    "scope": "world",
-    "published": "2026-09-14T19:54:47+00:00",
+    "lang": "de",
+    "published": "2026-09-14T20:41:21+00:00",
     "summary": "",
     "also": []
    }
   ],
   "note": "Kein ANTHROPIC_API_KEY gesetzt – Meldungen nach Aktualität sortiert.",
-  "feed_count": 22,
-  "item_count": 247,
+  "feed_count": 27,
+  "item_count": 297,
   "ranked_by": "Aktualität"
  }
 }
