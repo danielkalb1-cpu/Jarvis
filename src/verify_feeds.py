@@ -5,8 +5,9 @@ RSS-Adressen ändern sich häufig. Dieses Script ruft jeden Feed ab, schaut nach
 ob wirklich ein lesbarer Feed zurückkommt, und zeigt, wie alt die neueste
 Meldung darin ist.
 
-    python3 src/verify_feeds.py                  # alle Feeds aus der config
-    python3 src/verify_feeds.py <url> [<url> …]  # einzelne Kandidaten testen
+    python3 src/verify_feeds.py                     # alle Feeds aus der config
+    python3 src/verify_feeds.py <url> [<url> …]     # einzelne Kandidaten testen
+    python3 src/verify_feeds.py --discover <url> …  # Feeds einer Seite suchen
 
 Der zweite Aufruf ist praktisch, wenn ein Feed umgezogen ist: erst die
 Kandidaten durchprobieren, dann die passende URL in die config eintragen.
@@ -17,10 +18,12 @@ CI-Lauf den Ausfall sichtbar macht.
 
 from __future__ import annotations
 
+import re
 import sys
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import urljoin
 
 import feedparser
 import yaml
@@ -77,11 +80,53 @@ def check(feed: dict, http: HttpConfig) -> tuple[str, bool, str]:
     return name, True, f"{len(entries):>3} Einträge · {age} · „{title}“"
 
 
+FEED_LINK_RE = re.compile(
+    r'<link[^>]+type=["\']application/(?:rss|atom)\+xml["\'][^>]*>', re.I)
+HREF_RE = re.compile(r'href=["\']([^"\']+)["\']', re.I)
+TITLE_RE = re.compile(r'title=["\']([^"\']*)["\']', re.I)
+
+
+def discover(page_url: str, http: HttpConfig) -> None:
+    """Die Feed-Angaben im <head> einer Seite auslesen.
+
+    Verlässlicher als URLs zu raten: Redaktionen deklarieren ihre Feeds per
+    <link rel="alternate" type="application/rss+xml">.
+    """
+    print(f"  {page_url}")
+    try:
+        response = fetch(page_url, http, headers={"User-Agent": BROWSER_UA,
+                                                  "Accept": "text/html,*/*"})
+    except FetchError as exc:
+        print(f"    Seite nicht abrufbar: {exc}\n")
+        return
+
+    found = FEED_LINK_RE.findall(response.text)
+    if not found:
+        print("    keine Feed-Angabe im HTML gefunden\n")
+        return
+
+    for tag in found[:15]:
+        href = HREF_RE.search(tag)
+        title = TITLE_RE.search(tag)
+        if not href:
+            continue
+        print(f"    -> {urljoin(response.url, href.group(1))}"
+              f"{'   (' + title.group(1) + ')' if title else ''}")
+    print()
+
+
 def main() -> int:
     config = yaml.safe_load((ROOT / "config.yaml").read_text(encoding="utf-8")) or {}
     http = HttpConfig.from_dict(config.get("http"))
 
     given = [a for a in sys.argv[1:] if a.startswith("http")]
+
+    if "--discover" in sys.argv:
+        print(f"Suche Feed-Angaben auf {len(given)} Seiten …\n")
+        for url in given:
+            discover(url, http)
+        return 0
+
     if given:
         feeds = [{"name": url.split("/")[2], "url": url} for url in given]
         print(f"Prüfe {len(feeds)} übergebene URLs …\n")

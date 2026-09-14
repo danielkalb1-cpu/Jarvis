@@ -213,6 +213,12 @@ sechs API-Aufrufe pro Werktag übrig statt über dreißig. Wer die Nachrichten
 lieber jedes Mal frisch will, setzt den Wert auf `0` – wer gar keine
 KI-Gewichtung will, setzt `news.llm.enabled: false`.
 
+**Zur Repo-Größe:** jeder Lauf mit Änderung erzeugt einen Commit mit der neu
+gerenderten `docs/index.html`. Das sind etwa 30 Commits pro Werktag. Git packt
+die Versionen gut, aber nach ein paar Jahren lohnt sich ein Blick auf
+`git count-objects -vH`. Wer die Historie kurz halten will, kann den Zeitplan
+ausdünnen (etwa `0 3-19 * * 1-5` für stündlich statt halbstündlich).
+
 ---
 
 ## Wenn etwas nicht geht
