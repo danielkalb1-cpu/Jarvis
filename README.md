@@ -23,7 +23,7 @@ in GitHub-Secrets und werden nur auf dem Actions-Runner gelesen.
 5. [Zum Home-Bildschirm hinzufügen](#4-zum-home-bildschirm-hinzufügen)
 6. [Orte und Routen ändern](#orte-und-routen-ändern)
 7. [Lokal testen](#lokal-testen)
-8. [Feeds prüfen](#feeds-prüfen) und [Quellenlage](#zur-quellenlage)
+8. [Feeds prüfen](#feeds-prüfen) und [Verkehr prüfen](#verkehr-prüfen)
 9. [Zeitplan und Kosten](#zeitplan-und-kosten)
 10. [Wenn etwas nicht geht](#wenn-etwas-nicht-geht)
 11. [Urheberrecht](#urheberrecht-bei-den-nachrichten)
@@ -222,6 +222,37 @@ Quelle wird auf der Seite dann das meldende Haus angezeigt, nicht Google.
 
 ---
 
+## Verkehr prüfen
+
+Wenn im Briefing keine Fahrzeiten stehen, sondern ein Hinweis, liegt es fast
+immer am Key. Das hier sagt in einem Befehl, woran es hängt:
+
+```bash
+export TOMTOM_API_KEY="…"
+python3 src/verify_traffic.py
+```
+
+```
+TOMTOM_API_KEY gefunden (32 Zeichen).
+
+  Augsburg → Marktoberdorf
+    OK    83 min mit Verkehr, 69 min ohne, Verzögerung 14 min, 96.4 km
+```
+
+Der Key selbst wird dabei nie ausgegeben, nur seine Länge.
+
+Um den Key zu testen, der als **Secret** hinterlegt ist: **Actions → Verkehr
+prüfen → Run workflow**. Die häufigsten Befunde:
+
+| Meldung | Bedeutung |
+| ------- | --------- |
+| `Kein TOMTOM_API_KEY hinterlegt` | Secret fehlt oder heißt anders (Groß-/Kleinschreibung!) |
+| `HTTP 403` | Key ungültig, nicht für die Routing API freigeschaltet, oder Kontingent aufgebraucht |
+| `HTTP 400` | Koordinaten in der `config.yaml` prüfen |
+| `HTTP 429` | zu viele Anfragen |
+
+---
+
 ## Zeitplan und Kosten
 
 Der Build läuft werktags halbstündlich zwischen 03:00 und 19:30 UTC:
@@ -261,8 +292,9 @@ Build-Zeitpunkt. Stimmt der nicht, unter **Actions** nachsehen, ob der letzte
 Lauf durchgelaufen ist. GitHub schaltet geplante Läufe in Repos ab, die
 60 Tage lang keine Aktivität hatten – ein manueller Lauf weckt sie wieder.
 
-**Im Verkehrsblock steht „Kein TOMTOM_API_KEY gesetzt“.** Das Secret fehlt oder
-heißt anders. Groß-/Kleinschreibung beachten.
+**Im Verkehrsblock steht ein Hinweis statt Fahrzeiten.** Das Secret fehlt oder
+heißt anders – Groß-/Kleinschreibung beachten. Siehe
+[Verkehr prüfen](#verkehr-prüfen).
 
 **Eine Quelle fehlt.** Unten auf der Seite steht, welche beim letzten Lauf nicht
 erreichbar waren. Einzelne Ausfälle sind normal; bleibt eine Quelle dauerhaft
@@ -292,10 +324,12 @@ eigenen Worten; jede Meldung verlinkt auf das Original beim jeweiligen Haus.
 ```
 .github/workflows/build.yml         Cron-Lauf: rendern und zurückcommitten
 .github/workflows/verify-feeds.yml  monatliche Prüfung der Feed-URLs
+.github/workflows/verify-traffic.yml prüft Key und Routen auf Zuruf
 src/build.py                        holt alles, füllt das Template, schreibt docs/
 src/template.html                   Gerüst und das komplette CSS (alles inline)
 src/cache.py                        Zwischenspeicher für den Nachrichtenblock
 src/verify_feeds.py                 prüft die Feed-Liste
+src/verify_traffic.py               prüft Key und Routen
 src/sources/net.py                  Timeout, Retry, Sammelstelle für Ausfälle
 src/sources/weather.py              Bright Sky (DWD)
 src/sources/traffic.py              TomTom Routing

@@ -18,6 +18,25 @@ from .net import FetchError, HttpConfig, Problems, fetch_json
 BASE = "https://api.tomtom.com/routing/1/calculateRoute"
 ENV_KEY = "TOMTOM_API_KEY"
 
+# Was die üblichen Statuscodes von TomTom praktisch bedeuten. Ohne das steht
+# auf der Seite nur „HTTP 403“, und man weiß nicht, ob der Key falsch ist
+# oder das Tageskontingent aufgebraucht.
+HINTS = {
+    "HTTP 400": "Anfrage abgelehnt – Koordinaten in der config.yaml prüfen",
+    "HTTP 403": "Key ungültig, nicht für die Routing API freigeschaltet "
+                "oder Kontingent aufgebraucht",
+    "HTTP 404": "Endpunkt nicht gefunden",
+    "HTTP 429": "zu viele Anfragen – Kontingent vorerst erschöpft",
+}
+
+
+def explain(error: str) -> str:
+    """Fehlertext um einen Hinweis ergänzen, was dahinterstecken dürfte."""
+    for code, hint in HINTS.items():
+        if code in error:
+            return f"{error} – {hint}"
+    return error
+
 
 def collect(config: dict[str, Any], http: HttpConfig, problems: Problems) -> dict[str, Any]:
     section = config.get("traffic") or {}
@@ -30,7 +49,12 @@ def collect(config: dict[str, Any], http: HttpConfig, problems: Problems) -> dic
         return {
             "enabled": True,
             "routes": [],
-            "skipped": f"Kein {ENV_KEY} gesetzt – Verkehrsdaten übersprungen.",
+            "skipped": (
+                f"Kein {ENV_KEY} hinterlegt – daher keine Fahrzeiten. "
+                "Kostenlosen Key auf developer.tomtom.com holen (Produkt "
+                "„Routing API“) und im Repo unter Settings → Secrets and "
+                f"variables → Actions als {ENV_KEY} eintragen."
+            ),
             "warn_minutes": int(section.get("delay_warn_minutes", 10)),
         }
 
@@ -75,8 +99,9 @@ def _one_route(route: dict[str, Any], api_key: str, http: HttpConfig,
             },
         )
     except FetchError as exc:
-        problems.add(f"Verkehr {name}", str(exc))
-        block["error"] = f"Route nicht abrufbar ({exc})."
+        detail = explain(str(exc))
+        problems.add(f"Verkehr {name}", detail)
+        block["error"] = f"Route nicht abrufbar ({detail})."
         return block
 
     routes = data.get("routes") or []

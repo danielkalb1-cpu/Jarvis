@@ -1,0 +1,27 @@
+name: Verkehr prüfen
+
+# Prüft, ob der hinterlegte TOMTOM_API_KEY funktioniert und die Routen aus
+# der config.yaml abrufbar sind. Von Hand zu starten, wenn im Briefing keine
+# Fahrzeiten stehen.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -r requirements.txt
+      - name: Routen abrufen
+        env:
+          TOMTOM_API_KEY: ${{ secrets.TOMTOM_API_KEY }}
+        run: python src/verify_traffic.py
