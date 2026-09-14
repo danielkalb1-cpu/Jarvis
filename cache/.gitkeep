@@ -1,0 +1,3 @@
+Der Nachrichten-Cache (news.json) landet in diesem Ordner und wird vom
+Workflow mitcommittet. Ohne die Datei ist nichts kaputt – dann wird beim
+nächsten Lauf einfach frisch geholt.

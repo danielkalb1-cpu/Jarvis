@@ -4,6 +4,11 @@ name: Feeds prüfen
 # RSS-Adressen ändern sich – dieser Lauf zeigt, welche tot sind.
 on:
   workflow_dispatch:
+    inputs:
+      urls:
+        description: 'Kandidaten-URLs testen (durch Leerzeichen getrennt). Leer = Feeds aus der config.yaml prüfen.'
+        required: false
+        default: ''
   schedule:
     # einmal im Monat, Montag früh
     - cron: '17 4 1-7 * 1'
@@ -23,4 +28,4 @@ jobs:
           cache: pip
           cache-dependency-path: requirements.txt
       - run: pip install -r requirements.txt
-      - run: python src/verify_feeds.py
+      - run: python src/verify_feeds.py ${{ github.event.inputs.urls }}
