@@ -23,7 +23,7 @@ in GitHub-Secrets und werden nur auf dem Actions-Runner gelesen.
 5. [Zum Home-Bildschirm hinzufügen](#4-zum-home-bildschirm-hinzufügen)
 6. [Orte und Routen ändern](#orte-und-routen-ändern)
 7. [Lokal testen](#lokal-testen)
-8. [Feeds prüfen](#feeds-prüfen)
+8. [Feeds prüfen](#feeds-prüfen) und [Quellenlage](#zur-quellenlage)
 9. [Zeitplan und Kosten](#zeitplan-und-kosten)
 10. [Wenn etwas nicht geht](#wenn-etwas-nicht-geht)
 11. [Urheberrecht](#urheberrecht-bei-den-nachrichten)
