@@ -33,7 +33,14 @@ jobs:
           cache: pip
           cache-dependency-path: requirements.txt
       - run: pip install -r requirements.txt
-      - run: |
-          python src/verify_feeds.py \
-            ${{ github.event.inputs.discover == 'true' && '--discover' || '' }} \
-            ${{ github.event.inputs.urls }}
+      # Die Eingaben gehen über die Umgebung ins Script, nicht direkt in die
+      # Kommandozeile: sonst würden Sonderzeichen in URLs (& ? ;) von der
+      # Shell interpretiert.
+      - name: Feeds prüfen
+        env:
+          URLS: ${{ github.event.inputs.urls }}
+          DISCOVER: ${{ github.event.inputs.discover }}
+        run: |
+          ARGS=""
+          if [ "$DISCOVER" = "true" ]; then ARGS="--discover"; fi
+          python src/verify_feeds.py $ARGS $URLS
