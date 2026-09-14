@@ -86,36 +86,40 @@ news:
       - Ostallgäu
       - Bayern
   feeds:
+    # Jede URL wurde per Request geprüft (src/verify_feeds.py).
+    # Stand: siehe letzter Lauf von „Feeds prüfen“ unter Actions.
     # --- Überregional (DE) ---
-    - { name: "tagesschau",            url: "https://www.tagesschau.de/index~rss2.xml",                    scope: national }
-    - { name: "Deutschlandfunk",       url: "https://www.deutschlandfunk.de/nachrichten-100.rss",          scope: national }
-    - { name: "Süddeutsche Zeitung",   url: "https://rss.sueddeutsche.de/rss/Topthemen",                   scope: national }
-    - { name: "FAZ",                   url: "https://www.faz.net/rss/aktuell/",                            scope: national }
-    - { name: "Zeit Online",           url: "https://newsfeed.zeit.de/index",                              scope: national }
-    - { name: "Spiegel",               url: "https://www.spiegel.de/schlagzeilen/tops/index.rss",          scope: national }
-    - { name: "Welt",                  url: "https://www.welt.de/feeds/topnews.rss",                       scope: national }
-    - { name: "Handelsblatt",          url: "https://www.handelsblatt.com/contentexport/feed/top-themen",  scope: national }
-    - { name: "taz",                   url: "https://taz.de/!p4608;rss/",                                  scope: national }
-    - { name: "n-tv",                  url: "https://www.n-tv.de/rss",                                     scope: national }
+    - { name: "tagesschau",          url: "https://www.tagesschau.de/index~rss2.xml",                   scope: national }
+    - { name: "Deutschlandfunk",     url: "https://www.deutschlandfunk.de/nachrichten-100.rss",         scope: national }
+    - { name: "Süddeutsche Zeitung", url: "https://rss.sueddeutsche.de/rss/Topthemen",                  scope: national }
+    - { name: "FAZ",                 url: "https://www.faz.net/rss/aktuell/",                           scope: national }
+    - { name: "Zeit Online",         url: "https://newsfeed.zeit.de/index",                             scope: national }
+    - { name: "Spiegel",             url: "https://www.spiegel.de/schlagzeilen/tops/index.rss",         scope: national }
+    - { name: "Welt",                url: "https://www.welt.de/feeds/topnews.rss",                      scope: national }
+    - { name: "Handelsblatt",        url: "https://www.handelsblatt.com/contentexport/feed/top-themen", scope: national }
+    - { name: "taz",                 url: "https://taz.de/!p4608;rss/",                                 scope: national }
+    - { name: "n-tv",                url: "https://www.n-tv.de/rss",                                    scope: national }
     # --- Schweiz / Österreich ---
-    - { name: "NZZ",                   url: "https://www.nzz.ch/recent.rss",                               scope: national }
-    - { name: "Der Standard",          url: "https://www.derstandard.at/rss",                              scope: national }
+    - { name: "NZZ",                 url: "https://www.nzz.ch/recent.rss",                              scope: national }
+    - { name: "Der Standard",        url: "https://www.derstandard.at/rss",                             scope: national }
     # --- Region Bayern / Allgäu ---
-    - { name: "BR24",                  url: "https://www.br.de/nachrichten/rss/alle",                      scope: regional }
-    - { name: "Augsburger Allgemeine", url: "https://www.augsburger-allgemeine.de/rss/Home/",              scope: regional }
-    - { name: "Allgäuer Zeitung",      url: "https://www.allgaeuer-zeitung.de/rss/Home/",                  scope: regional }
-    - { name: "Merkur",                url: "https://www.merkur.de/rssfeed.rdf",                           scope: regional }
+    # BR24 und die Feeds von Augsburger Allgemeine und Allgäuer Zeitung
+    # gibt es nicht mehr (geprüft: 404, und die Seiten deklarieren auch
+    # keinen Feed mehr im HTML). Ersatz: die ARD-Regionalschiene, die
+    # Bayern-Ausgabe der SZ und zwei Google-News-Suchen, über die die
+    # Meldungen der beiden Lokalzeitungen weiterhin hereinkommen.
+    # Bei Aggregator-Feeds wird als Quelle das meldende Haus angezeigt,
+    # nicht der Aggregator.
+    - { name: "tagesschau Bayern",   url: "https://www.tagesschau.de/inland/regional/bayern/index~rss2.xml", scope: regional }
+    - { name: "SZ Bayern",           url: "https://rss.sueddeutsche.de/rss/Bayern",                     scope: regional }
+    - { name: "Merkur Lokales",      url: "https://www.merkur.de/lokales/rssfeed.rdf",                  scope: regional }
+    - { name: "Google News Augsburg", url: "https://news.google.com/rss/search?q=Augsburg&hl=de&gl=DE&ceid=DE:de", scope: regional }
+    - { name: "Google News Allgäu",   url: "https://news.google.com/rss/search?q=Allg%C3%A4u&hl=de&gl=DE&ceid=DE:de", scope: regional }
     # --- International ---
-    - { name: "Reuters",               url: "https://www.reutersagency.com/feed/?best-topics=all&post_type=best", scope: world }
-    - { name: "BBC News",              url: "https://feeds.bbci.co.uk/news/world/rss.xml",                 scope: world }
-    - { name: "The Guardian",          url: "https://www.theguardian.com/world/rss",                       scope: world }
-    - { name: "AP News",               url: "https://apnews.com/hub/ap-top-news.rss",                      scope: world }
-
-# ------------------------------------------------------------
-# Netzwerk – gilt für alle Abrufe
-# ------------------------------------------------------------
-http:
-  timeout_seconds: 10
-  retries: 2          # Anzahl Versuche insgesamt (nicht zusätzliche)
-  backoff_seconds: 1.5
-  user_agent: "jarvis-morning-briefing/1.0 (+https://github.com/)"
+    # Reuters hat seine öffentlichen Feeds eingestellt, AP weist Abrufe
+    # ohne Browser ab (403). Stattdessen diese vier.
+    - { name: "BBC News",            url: "https://feeds.bbci.co.uk/news/world/rss.xml",                scope: world }
+    - { name: "The Guardian",        url: "https://www.theguardian.com/world/rss",                      scope: world }
+    - { name: "Al Jazeera",          url: "https://www.aljazeera.com/xml/rss/all.xml",                  scope: world }
+    - { name: "France 24",           url: "https://www.france24.com/en/rss",                            scope: world }
+    - { name: "Deutsche Welle",      url: "https://rss.dw.com/rdf/rss-en-world",                        scope: world }

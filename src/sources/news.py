@@ -105,25 +105,51 @@ def _read_feed(feed: dict[str, Any], http: HttpConfig, problems: Problems,
     for entry in parsed.entries[: limit * 2]:
         title = _clean(getattr(entry, "title", ""))
         link = (getattr(entry, "link", "") or "").strip()
-        if not title or not link:
+        # Nur http(s) übernehmen – die Links landen als href auf der Seite.
+        if not title or not link.lower().startswith(("http://", "https://")):
             continue
 
         published = _entry_time(entry)
         if published and now - published > max_age:
             continue
 
+        # Aggregator-Feeds (z. B. Google News) nennen im <source>-Tag das Haus,
+        # von dem die Meldung stammt. Das ist die ehrlichere Quellenangabe als
+        # der Name des Aggregators – und der Titel trägt den Namen dann doppelt.
+        publisher = _publisher(entry)
+        if publisher:
+            title = _strip_suffix(title, publisher)
+
         out.append({
             "title": title,
             # Nur die Kurzbeschreibung aus dem Feed, zusätzlich gekappt.
             "teaser": _clean(getattr(entry, "summary", ""))[:SUMMARY_INPUT_CHARS],
             "link": link,
-            "source": name,
+            "source": publisher or name,
+            "via": name if publisher else None,
             "scope": scope,
             "published": published,
         })
         if len(out) >= limit:
             break
     return out
+
+
+def _publisher(entry: Any) -> str | None:
+    source = getattr(entry, "source", None)
+    if isinstance(source, dict):
+        title = _clean(source.get("title") or "")
+        return title[:40] or None
+    return None
+
+
+def _strip_suffix(title: str, publisher: str) -> str:
+    """„Meldung - Augsburger Allgemeine“ -> „Meldung“."""
+    for separator in (" - ", " – ", " | "):
+        tail = f"{separator}{publisher}"
+        if title.endswith(tail):
+            return title[: -len(tail)].strip()
+    return title
 
 
 def _entry_time(entry: Any) -> datetime | None:
