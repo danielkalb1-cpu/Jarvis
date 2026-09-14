@@ -216,7 +216,11 @@ def render_news(block: dict[str, Any], tz: ZoneInfo) -> str:
     if not block.get("enabled", True):
         return note("Nachrichten sind in der config.yaml abgeschaltet.")
 
-    blocks = [("top", "Wichtigstes heute"), ("region", "Region"), ("world", "Weltweit")]
+    # Überschriften zu den Blöcken aus sources/news.py – die Reihenfolge
+    # gibt dort BLOCKS vor.
+    titles = {"top": "Wichtigstes heute", "region": "Region",
+              "agrar": "Landwirtschaft", "world": "Weltweit"}
+    blocks = [(key, titles.get(key, key.title())) for key in news_source.BLOCKS]
     parts: list[str] = ['    <div class="panel">']
     any_story = False
 
@@ -382,6 +386,23 @@ def demo_data(now: datetime) -> tuple[dict, dict, dict]:
             story("Marktoberdorf beschließt neuen Haushalt", "Merkur",
                   "Der Stadtrat hat den Etat mit Schwerpunkt auf Schulsanierungen beschlossen.", 9),
         ],
+        "agrar": [
+            story("Milchpreis zieht im September weiter an", "agrarheute",
+                  "Die Molkereien zahlen im Schnitt zwei Cent mehr je Kilogramm als im Vormonat. "
+                  "Als Grund gilt die knappere Anlieferung im Süden.", 4),
+            story("Bundesrat billigt Änderung bei der Düngeverordnung", "top agrar",
+                  "Die Länder haben der Neufassung zugestimmt; für rote Gebiete gelten ab "
+                  "kommendem Jahr veränderte Aufzeichnungspflichten.", 6, ["Proplanta"]),
+            story("Maisernte im Allgäu läuft früher als üblich", "Allgäuer Zeitung",
+                  "Wegen der trockenen Wochen im August beginnt der Häckselbetrieb in "
+                  "vielen Betrieben gut zwei Wochen vor dem Durchschnitt.", 7),
+            story("EU farm ministers revisit protein crop targets", "Agriland",
+                  "Ministers discussed raising domestic protein production to cut reliance "
+                  "on imported feed, with no decision expected before December.", 5),
+            story("US corn harvest ahead of five-year average", "Successful Farming",
+                  "Field reports put harvest progress several points above the usual pace "
+                  "for mid-September, helped by dry weather across the Corn Belt.", 9),
+        ],
         "world": [
             story("UN-Vollversammlung startet in New York", "Reuters",
                   "Die Generaldebatte beginnt mit Reden zahlreicher Staats- und Regierungschefs.",
@@ -419,7 +440,7 @@ def _news_with_cache(config: dict[str, Any], http: HttpConfig, problems: Problem
     block = news_source.collect(config, http, problems, now.astimezone(timezone.utc))
     # Nur brauchbare Ergebnisse ablegen – ein Totalausfall soll den letzten
     # guten Stand nicht überschreiben.
-    if any(block.get(key) for key in ("top", "region", "world")):
+    if any(block.get(key) for key in news_source.BLOCKS):
         news_cache.save(NEWS_CACHE, block, now, stamp)
     else:
         stale = news_cache.load(NEWS_CACHE, timedelta(days=2), now, stamp)

@@ -65,6 +65,9 @@ news:
     top: 5
     region: 4
     world: 4
+    agrar:
+      deutsch: 3
+      international: 2
   llm:
     enabled: true
     model: "claude-sonnet-5"
@@ -123,6 +126,18 @@ news:
     - { name: "Al Jazeera",          url: "https://www.aljazeera.com/xml/rss/all.xml",                  scope: world }
     - { name: "France 24",           url: "https://www.france24.com/en/rss",                            scope: world }
     - { name: "Deutsche Welle",      url: "https://rss.dw.com/rdf/rss-en-world",                        scope: world }
+    # --- Landwirtschaft ---
+    # Die deutsche Fachpresse (agrarheute, top agrar, Proplanta, Bauernzeitung,
+    # Wochenblatt, Land & Forst) bietet durchweg keinen Feed mehr an – geprüft,
+    # alles 404 oder unlesbar. Deshalb zwei Google-News-Suchen; als Quelle wird
+    # dort das meldende Fachblatt angezeigt, nicht Google.
+    # `max_age_hours` weicht ab, weil Fachpresse seltener erscheint als
+    # Tageszeitungen und der Block sonst leer bliebe.
+    - { name: "Agrar Deutschland",   url: "https://news.google.com/rss/search?q=Landwirtschaft+OR+Bauern+OR+Agrarpolitik&hl=de&gl=DE&ceid=DE:de", scope: agrar, lang: de, aggregator: true, max_age_hours: 48 }
+    - { name: "Agrar Berufsstand",   url: "https://news.google.com/rss/search?q=when:2d+Landwirt+OR+Bauernverband+OR+Agrardiesel&hl=de&gl=DE&ceid=DE:de", scope: agrar, lang: de, aggregator: true, max_age_hours: 48 }
+    - { name: "Agriland",            url: "https://www.agriland.ie/feed/",                              scope: agrar, lang: en, max_age_hours: 48 }
+    - { name: "Successful Farming",  url: "https://feeds-api.dotdashmeredith.com/v1/rss/google/77cb61c1-0387-45bf-80e6-3f2976e90672", scope: agrar, lang: en, max_age_hours: 48 }
+    - { name: "Agrar International", url: "https://news.google.com/rss/search?q=when:2d+agriculture+OR+farming+policy&hl=en-US&gl=US&ceid=US:en", scope: agrar, lang: en, aggregator: true, max_age_hours: 48 }
 
 # ------------------------------------------------------------
 # Netzwerk – gilt für alle Abrufe

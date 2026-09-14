@@ -22,6 +22,8 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
+from sources.news import BLOCKS
+
 log = logging.getLogger(__name__)
 
 
@@ -82,7 +84,7 @@ def save(path: Path, block: dict[str, Any], now: datetime,
 def _flatten(block: dict[str, Any]) -> dict[str, Any]:
     """datetime -> ISO-String, damit der Block als JSON ablegbar ist."""
     out = dict(block)
-    for key in ("top", "region", "world"):
+    for key in BLOCKS:
         out[key] = [
             {**story,
              "published": story["published"].isoformat() if story.get("published") else None}
@@ -94,7 +96,7 @@ def _flatten(block: dict[str, Any]) -> dict[str, Any]:
 
 def _revive(block: dict[str, Any]) -> dict[str, Any]:
     out = dict(block)
-    for key in ("top", "region", "world"):
+    for key in BLOCKS:
         stories = []
         for story in block.get(key) or []:
             item = dict(story)

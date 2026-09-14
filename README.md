@@ -117,7 +117,7 @@ Weitere nützliche Stellschrauben in derselben Datei:
 | --------------------------------- | --------------------------------------------------- |
 | `weather.forecast_step_hours`     | Schrittweite im Tagesverlauf (Vorgabe: 3 Stunden)   |
 | `weather.alerts.*`                | ab wann Regen- und Frosthinweis oben erscheinen     |
-| `news.counts`                     | Größe der drei Nachrichtenblöcke (5 / 4 / 4)        |
+| `news.counts`                     | Größe der Nachrichtenblöcke (5 / 4 / 3+2 / 4)       |
 | `news.feeds`                      | die Feed-Liste, siehe [Feeds prüfen](#feeds-prüfen) |
 | `news.llm.model`                  | welches Claude-Modell gewichtet (Vorgabe: Sonnet 5) |
 | `news.llm.region_terms`           | was als „regional“ zählt                            |
@@ -203,6 +203,23 @@ dort jederzeit von Hand starten; die beiden Sonderfälle oben gibt es dort als
 Eingabefelder. Ein toter Feed lässt den Build **nicht** scheitern – er wird
 übersprungen und unten auf der Seite als nicht erreichbar vermerkt.
 
+### Landwirtschaft
+
+Der Block „Landwirtschaft“ bringt drei deutsche und zwei internationale
+Meldungen; einstellbar unter `news.counts.agrar`:
+
+```yaml
+counts:
+  agrar:
+    deutsch: 3
+    international: 2
+```
+
+Auf `0` gesetzt, entfällt der Block. Die Aufteilung nach Sprache steuert das
+Feld `lang` am Feed. Weil Fachpresse seltener erscheint als Tageszeitungen,
+haben diese Feeds über `max_age_hours: 48` ein größeres Zeitfenster als die
+übrigen.
+
 ### Zur Quellenlage
 
 Die Liste in der `config.yaml` ist geprüft: alle 22 Feeds haben beim Einrichten
@@ -215,6 +232,7 @@ geantwortet. Fünf der ursprünglich vorgesehenen Quellen gibt es so nicht mehr:
 | Allgäuer Zeitung                    | 404, kein Feed mehr im HTML deklariert    | Google-News-Suche „Allgäu“ |
 | Reuters                             | öffentliche Feeds eingestellt             | Al Jazeera, France 24 |
 | AP News                             | 403, auch mit Browser-Kennung             | Deutsche Welle |
+| agrarheute, top agrar, Proplanta, Bauernzeitung, Wochenblatt, Land & Forst | alle 404 oder unlesbar, kein Feed im HTML | zwei Google-News-Suchen zur Landwirtschaft |
 
 Die beiden Google-News-Suchen liefern weiterhin die Meldungen von Augsburger
 Allgemeine und Allgäuer Zeitung – nur eben über den Umweg des Aggregators. Als

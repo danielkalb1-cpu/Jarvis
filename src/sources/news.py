@@ -21,6 +21,10 @@ import feedparser
 from .net import FetchError, HttpConfig, Problems, fetch
 
 ENV_KEY = "ANTHROPIC_API_KEY"
+
+# Reihenfolge der Blöcke im Briefing. "agrar" ist zweigeteilt: ein Teil
+# deutschsprachig, ein Teil international.
+BLOCKS = ("top", "region", "agrar", "world")
 MAX_HEADLINES_FOR_MODEL = 220
 SUMMARY_INPUT_CHARS = 300      # Kurzbeschreibung aus dem Feed, gekürzt
 TAG_RE = re.compile(r"<[^>]+>")
@@ -54,27 +58,31 @@ def collect(config: dict[str, Any], http: HttpConfig, problems: Problems,
                reverse=True)
 
     counts = section.get("counts") or {}
+    agrar = counts.get("agrar") or {}
+    agrar_split = {
+        "deutsch": int(agrar.get("deutsch", 3)),
+        "international": int(agrar.get("international", 2)),
+    }
     wanted = {
         "top": int(counts.get("top", 5)),
         "region": int(counts.get("region", 4)),
         "world": int(counts.get("world", 4)),
+        "agrar": agrar_split["deutsch"] + agrar_split["international"],
     }
 
     if not items:
         return {
-            "enabled": True, "top": [], "region": [], "world": [],
+            "enabled": True, "top": [], "region": [], "world": [], "agrar": [],
             "note": "Keine Meldungen eingesammelt – alle Feeds waren nicht erreichbar.",
             "feed_count": len(feeds), "item_count": 0, "ranked_by": "keine",
         }
 
     llm = section.get("llm") or {}
-    selection, ranked_by, note = _rank(items, wanted, llm, problems)
+    selection, ranked_by, note = _rank(items, wanted, agrar_split, llm, problems)
 
     return {
         "enabled": True,
-        "top": selection["top"],
-        "region": selection["region"],
-        "world": selection["world"],
+        **{block: selection[block] for block in BLOCKS},
         "note": note,
         "feed_count": len(feeds),
         "item_count": len(items),
@@ -87,7 +95,12 @@ def _read_feed(feed: dict[str, Any], http: HttpConfig, problems: Problems,
     name = feed.get("name") or feed.get("url", "?")
     url = feed.get("url")
     scope = feed.get("scope", "national")
+    lang = feed.get("lang", "de")
     aggregator = bool(feed.get("aggregator"))
+    # Fachpresse erscheint seltener als Tageszeitungen – daher optional eine
+    # eigene Altersgrenze je Feed.
+    if feed.get("max_age_hours"):
+        max_age = timedelta(hours=float(feed["max_age_hours"]))
     if not url:
         return []
 
@@ -130,6 +143,7 @@ def _read_feed(feed: dict[str, Any], http: HttpConfig, problems: Problems,
             "link": link,
             "source": publisher or name,
             "scope": scope,
+            "lang": lang,
             "published": published,
         })
         if len(out) >= limit:
@@ -202,32 +216,67 @@ def _dedupe(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
 # 2. Gewichtung – erst Claude, sonst Aktualität
 # ----------------------------------------------------------------------
 
-def _rank(items: list[dict[str, Any]], wanted: dict[str, int], llm: dict[str, Any],
+def _shortlist(items: list[dict[str, Any]], limit: int) -> list[dict[str, Any]]:
+    """Auswahl fürs Modell, ohne kleine Ressorts abzuschneiden.
+
+    Stumpf die neuesten N zu nehmen würde Landwirtschaft und Region
+    verdrängen, weil die großen Häuser viel mehr Meldungen liefern. Daher
+    erst aus jedem Ressort eine Grundmenge, dann nach Aktualität auffüllen.
+    """
+    if len(items) <= limit:
+        return items
+
+    scopes: dict[str, list[dict[str, Any]]] = {}
+    for item in items:
+        scopes.setdefault(item["scope"], []).append(item)
+
+    share = max(1, limit // max(1, len(scopes)))
+    picked: list[dict[str, Any]] = []
+    seen: set[str] = set()
+    for pool in scopes.values():
+        for item in pool[:share]:
+            seen.add(item["link"])
+            picked.append(item)
+
+    for item in items:
+        if len(picked) >= limit:
+            break
+        if item["link"] not in seen:
+            picked.append(item)
+
+    picked.sort(key=lambda i: i["published"] or datetime.min.replace(tzinfo=timezone.utc),
+                reverse=True)
+    return picked[:limit]
+
+
+def _rank(items: list[dict[str, Any]], wanted: dict[str, int],
+          agrar_split: dict[str, int], llm: dict[str, Any],
           problems: Problems) -> tuple[dict[str, list[dict[str, Any]]], str, str | None]:
     if llm.get("enabled", True):
         api_key = (os.environ.get(ENV_KEY) or "").strip()
         if not api_key:
-            return (_fallback(items, wanted, llm),
+            return (_fallback(items, wanted, agrar_split, llm),
                     "Aktualität",
                     f"Kein {ENV_KEY} gesetzt – Meldungen nach Aktualität sortiert.")
         try:
-            raw = _ask_claude(items, wanted, llm, api_key)
+            raw = _ask_claude(items, wanted, agrar_split, llm, api_key)
             selection = _apply(raw, items, wanted)
             if selection is not None:
                 return selection, "Claude", None
             problems.add("Nachrichten-Gewichtung", "Antwort war kein verwertbares JSON")
-            return (_fallback(items, wanted, llm), "Aktualität",
+            return (_fallback(items, wanted, agrar_split, llm), "Aktualität",
                     "Gewichtung lieferte kein gültiges JSON – nach Aktualität sortiert.")
         except Exception as exc:  # noqa: BLE001 – Build darf nie kippen
             problems.add("Nachrichten-Gewichtung", _short(exc))
-            return (_fallback(items, wanted, llm), "Aktualität",
+            return (_fallback(items, wanted, agrar_split, llm), "Aktualität",
                     f"Gewichtung nicht verfügbar ({_short(exc)}) – nach Aktualität sortiert.")
 
-    return _fallback(items, wanted, llm), "Aktualität", None
+    return _fallback(items, wanted, agrar_split, llm), "Aktualität", None
 
 
 def _ask_claude(items: list[dict[str, Any]], wanted: dict[str, int],
-                llm: dict[str, Any], api_key: str) -> str:
+                agrar_split: dict[str, int], llm: dict[str, Any],
+                api_key: str) -> str:
     import anthropic
 
     region_terms = llm.get("region_terms") or ["Augsburg", "Allgäu"]
@@ -238,9 +287,10 @@ def _ask_claude(items: list[dict[str, Any]], wanted: dict[str, int],
             "teaser": item["teaser"][:200],
             "quelle": item["source"],
             "bereich": item["scope"],
+            "sprache": item["lang"],
             "zeit": item["published"].isoformat() if item["published"] else None,
         }
-        for index, item in enumerate(items[:MAX_HEADLINES_FOR_MODEL])
+        for index, item in enumerate(_shortlist(items, MAX_HEADLINES_FOR_MODEL))
     ]
 
     system = (
@@ -257,12 +307,18 @@ def _ask_claude(items: list[dict[str, Any]], wanted: dict[str, int],
         "Titel oder Teaser steht.\n\n"
         "Antworte ausschließlich mit JSON in genau dieser Form, ohne weiteren Text:\n"
         '{"top":[{"id":0,"summary":"...","also":["Quelle A","Quelle B"]}],'
-        '"region":[...],"world":[...]}\n\n'
+        '"region":[...],"agrar":[...],"world":[...]}\n\n'
         f'"top" = {wanted["top"]} wichtigste Meldungen insgesamt, '
         f'"region" = {wanted["region"]} Meldungen mit Bezug zur Region, '
+        f'"agrar" = {wanted["agrar"]} Meldungen aus der Landwirtschaft, davon '
+        f'{agrar_split["deutsch"]} deutschsprachige (sprache "de") und '
+        f'{agrar_split["international"]} internationale (sprache "en") – '
+        "in genau dieser Reihenfolge, erst die deutschen, dann die internationalen; "
+        'nimm dafür Meldungen aus dem Bereich "agrar", und nur wenn dort zu wenige '
+        "stehen, passende aus den übrigen Bereichen. "
         f'"world" = {wanted["world"]} internationale Meldungen. '
         '"also" listet weitere Häuser, die dieselbe Sache melden (leer lassen, wenn keine). '
-        "Keine ID doppelt über alle drei Blöcke hinweg."
+        "Keine ID doppelt über alle vier Blöcke hinweg."
     )
 
     client = anthropic.Anthropic(api_key=api_key, timeout=120.0, max_retries=2)
@@ -298,10 +354,14 @@ def _apply(raw: str, items: list[dict[str, Any]],
         return None
 
     used: set[int] = set()
-    selection: dict[str, list[dict[str, Any]]] = {"top": [], "region": [], "world": []}
+    selection: dict[str, list[dict[str, Any]]] = {block: [] for block in BLOCKS}
 
-    for block, limit in (("top", wanted["top"]), ("region", wanted["region"]),
-                         ("world", wanted["world"])):
+    for block in BLOCKS:
+        # .get(): wer in der config eine Blockgröße herausnimmt, soll damit
+        # den Block abschalten, nicht den Build zum Absturz bringen.
+        limit = wanted.get(block, 0)
+        if limit <= 0:
+            continue
         entries = data.get(block)
         if not isinstance(entries, list):
             continue
@@ -352,6 +412,7 @@ MAX_PER_SOURCE_PER_BLOCK = 2
 
 
 def _fallback(items: list[dict[str, Any]], wanted: dict[str, int],
+              agrar_split: dict[str, int],
               llm: dict[str, Any]) -> dict[str, list[dict[str, Any]]]:
     """Simple Sortierung nach Aktualität, wenn die Gewichtung ausfällt.
 
@@ -368,7 +429,7 @@ def _fallback(items: list[dict[str, Any]], wanted: dict[str, int],
         return item["scope"] == "regional" or mentions_region(item)
 
     used: set[str] = set()
-    selection: dict[str, list[dict[str, Any]]] = {"top": [], "region": [], "world": []}
+    selection: dict[str, list[dict[str, Any]]] = {block: [] for block in BLOCKS}
 
     def take(block: str, pool: list[dict[str, Any]], limit: int) -> None:
         # Ohne Gewichtung sonst schnell viermal dasselbe Haus in einem Block.
@@ -390,11 +451,19 @@ def _fallback(items: list[dict[str, Any]], wanted: dict[str, int],
     regional = [i for i in items if is_regional(i)]
     regional.sort(key=mentions_region, reverse=True)
 
-    take("region", regional, wanted["region"])
-    take("world", [i for i in items if i["scope"] == "world"], wanted["world"])
-    take("top", items, wanted["top"])
-    # Reihenfolge angleichen: "top" steht oben, auch wenn es zuletzt gefüllt wurde.
-    return {"top": selection["top"], "region": selection["region"], "world": selection["world"]}
+    agrar = [i for i in items if i["scope"] == "agrar"]
+
+    take("region", regional, wanted.get("region", 0))
+    # Erst die deutschsprachigen, dann die internationalen – die Reihenfolge
+    # im Block bleibt dadurch dieselbe wie bei der Gewichtung durch Claude.
+    take("agrar", [i for i in agrar if i["lang"] == "de"], agrar_split["deutsch"])
+    take("agrar", [i for i in agrar if i["lang"] != "de"],
+         agrar_split["deutsch"] + agrar_split["international"])
+    # Falls eine der beiden Seiten zu wenig hergab, mit dem Rest auffüllen.
+    take("agrar", agrar, wanted.get("agrar", 0))
+    take("world", [i for i in items if i["scope"] == "world"], wanted.get("world", 0))
+    take("top", items, wanted.get("top", 0))
+    return {block: selection[block] for block in BLOCKS}
 
 
 def _short(exc: Exception) -> str:
