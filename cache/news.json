@@ -1,9 +1,19 @@
 {
- "built_at": "2026-09-14T22:33:50.618012+02:00",
- "config": "a963c09388e6ff8a",
+ "built_at": "2026-09-14T22:43:56.550268+02:00",
+ "config": "b9c9250100d41a7a",
  "block": {
   "enabled": true,
   "top": [
+   {
+    "title": "Sizilien: Flughafen von Catania wegen Ätna-Aktivität vorübergehend geschlossen",
+    "teaser": "Wegen erneuter vulkanischer Aktivität des Ätna sind alle Ankünfte und Abflüge am Flughafen Catania vorübergehend ausgesetzt. Die Sperrung gilt bis Dienstagvormittag.",
+    "link": "https://www.zeit.de/gesellschaft/zeitgeschehen/2026-09/flughafen-catania-schliessung-vulkan-aetna-sizilien",
+    "source": "Zeit Online",
+    "scope": "national",
+    "published": "2026-09-14T20:36:15+00:00",
+    "summary": "",
+    "also": []
+   },
    {
     "title": "Technologie - Bundesregierung: Nehmen KI-Warnungen sehr ernst - Trump sieht Verschwörung und lehnt Regulierung ab",
     "teaser": "Seit den Forderungen von US-Tech-Firmen wie Anthropic und Open-AI nach einer Verlangsamung der KI-Forschung hat die Debatte über die Risiken der Technologie an Fahrt gewonnen. Die Bundesregierung erklärte in Berlin, man nehme die Warnungen sehr ernst.",
@@ -25,32 +35,22 @@
     "also": []
    },
    {
+    "title": "Newsblog zum Nahost-Krieg: Revolutionsgarden: Öltanker in Straße von Hormus nach Minen-Kollision explodiert",
+    "teaser": "Iran hat Teile der wirtschaftlich bedeutenden Meerenge vermint. Jetzt sei ein Tanker auf der südlichen Route auf eine Mine gefahren und in Flammen aufgegangen sein, berichten iranische Medien unter Berufung auf die Revolutionsgarden.",
+    "link": "https://www.sueddeutsche.de/politik/liveblog-nahost-usa-iran-oman-strasse-von-hormus-tanker-li.3530668",
+    "source": "Süddeutsche Zeitung",
+    "scope": "national",
+    "published": "2026-09-14T20:30:01+00:00",
+    "summary": "",
+    "also": []
+   },
+   {
     "title": "Geopolitik in der Arktis: Arktis-Gipfel fordert größeres Engagement der EU in der Region",
     "teaser": "Beim EU-Arktis-Gipfel in Finnland haben europäische Länder über die Strategie in der Region beraten. In der Abschlusserklärung fordern sie eine stärkere Präsenz der EU.",
     "link": "https://www.zeit.de/politik/ausland/2026-09/arktis-eu-russland-geopolitik",
     "source": "Zeit Online",
     "scope": "national",
     "published": "2026-09-14T20:20:45+00:00",
-    "summary": "",
-    "also": []
-   },
-   {
-    "title": "Newsblog zum Nahost-Krieg: Öltanker offenbar in Straße von Hormus nach Minen-Kollision explodiert",
-    "teaser": "Iran hat Teile der wirtschaftlich bedeutenden Meerenge vermint. Jetzt sei ein Tanker auf der südlichen Route auf eine Mine gefahren und in Flammen aufgegangen sein, berichten iranische Medien unter Berufung auf die Revolutionsgarden.",
-    "link": "https://www.sueddeutsche.de/politik/liveblog-nahost-usa-iran-oman-strasse-von-hormus-tanker-li.3530668",
-    "source": "Süddeutsche Zeitung",
-    "scope": "national",
-    "published": "2026-09-14T20:18:34+00:00",
-    "summary": "",
-    "also": []
-   },
-   {
-    "title": "Entscheidung an der Spree: Alle Daten zur Wahl in Berlin",
-    "teaser": "Wahlkampf in der deutschen Hauptstadt: Am vorletzten Sonntag im September sind rund 2,4 Millionen Berlinerinnen und Berliner dazu aufgerufen, die Mehrheitsverhältnisse im Abgeordnetenhaus neu zu bestimmen. Wer liegt in den Umfragen vorn? Die wichtigsten Informationen im Überblick.",
-    "link": "https://www.n-tv.de/politik/Alle-Daten-zur-Wahl-in-Berlin-id31237194.html",
-    "source": "n-tv",
-    "scope": "national",
-    "published": "2026-09-14T20:17:48+00:00",
     "summary": "",
     "also": []
    }
@@ -99,6 +99,16 @@
   ],
   "world": [
    {
+    "title": "Nigerian oil refinery Dangote aims to raise 1.6 billion dollars",
+    "teaser": "In tonight's edition, Nigeria's Dangote refinery opens itself to public ownership with plans to raise 1.6 billion dollars from retail investors across the continent. Also, President Felix Tshisekedi calls on the National Service to clean up the streets of Kinshasa. And with a month and a half to go ",
+    "link": "https://www.france24.com/en/nigerian-oil-refinery-dangote-aims-to-raise-1-6-billion-dollars",
+    "source": "France 24",
+    "scope": "world",
+    "published": "2026-09-14T20:31:28+00:00",
+    "summary": "",
+    "also": []
+   },
+   {
     "title": "Multiple vehicle road crash in South Africa kills 21",
     "teaser": "Fatal traffic accidents are a recurring problem for South Africa.",
     "link": "https://www.aljazeera.com/news/2026/9/14/multiple-vehicle-road-crash-in-south-africa-kills-21?traffic_source=rss",
@@ -125,16 +135,6 @@
     "source": "France 24",
     "scope": "world",
     "published": "2026-09-14T19:54:47+00:00",
-    "summary": "",
-    "also": []
-   },
-   {
-    "title": "'Axis of Iranian centrality' remains \"one of more destabilising forces in the region\", expert says",
-    "teaser": "Yemen's Houthis launched a fresh barrage of missile and drone attacks on Saudi military targets on Monday, as Iran denied any involvement in the country's revived civil war. Speaking with FRANCE 24's Mark Owen, Dr H. A. Hellyer, Senior Fellow in Geopolitics, International Security, and Middle East S",
-    "link": "https://www.france24.com/en/axis-of-iranian-centrality-remains-one-of-more-destabilising-forces-in-the-region-expert-says",
-    "source": "France 24",
-    "scope": "world",
-    "published": "2026-09-14T19:46:03+00:00",
     "summary": "",
     "also": []
    }
