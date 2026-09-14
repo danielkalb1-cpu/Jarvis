@@ -67,7 +67,7 @@ news:
     world: 4
   llm:
     enabled: true
-    model: "claude-sonnet-4-6"
+    model: "claude-sonnet-5"
     max_tokens: 8000
     # Der Workflow läuft tagsüber halbstündlich (vor allem wegen des Verkehrs).
     # Die Nachrichten werden nur alle N Minuten neu geholt und gewichtet,

@@ -119,6 +119,7 @@ Weitere nützliche Stellschrauben in derselben Datei:
 | `weather.alerts.*`                | ab wann Regen- und Frosthinweis oben erscheinen     |
 | `news.counts`                     | Größe der drei Nachrichtenblöcke (5 / 4 / 4)        |
 | `news.feeds`                      | die Feed-Liste, siehe [Feeds prüfen](#feeds-prüfen) |
+| `news.llm.model`                  | welches Claude-Modell gewichtet (Vorgabe: Sonnet 5) |
 | `news.llm.region_terms`           | was als „regional“ zählt                            |
 | `news.llm.min_interval_minutes`   | wie oft die Nachrichten neu gewichtet werden        |
 | `http.timeout_seconds` / `retries`| Geduld bei langsamen Quellen                        |

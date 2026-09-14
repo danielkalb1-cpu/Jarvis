@@ -267,7 +267,7 @@ def _ask_claude(items: list[dict[str, Any]], wanted: dict[str, int],
 
     client = anthropic.Anthropic(api_key=api_key, timeout=120.0, max_retries=2)
     request: dict[str, Any] = {
-        "model": llm.get("model", "claude-sonnet-4-6"),
+        "model": llm.get("model", "claude-sonnet-5"),
         "max_tokens": int(llm.get("max_tokens", 8000)),
         "system": system,
         "messages": [{
