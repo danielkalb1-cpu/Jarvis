@@ -7,9 +7,16 @@ Stil und Inhalt. Außerdem kann der Betrachter dort das Farbschema
 ausdrücklich setzen – die Seite folgt von sich aus nur dem Betriebssystem.
 
     python3 src/make_share_page.py [ziel.html]
+    python3 src/make_share_page.py --source <datei|url> [ziel.html]
 
 Vorgabe für das Ziel ist build/share.html. Die Datei wird anschließend als
 Artifact veröffentlicht; das Skript selbst veröffentlicht nichts.
+
+Ohne --source wird der aktuellste Stand vom Branch geholt. Mit --source
+lässt sich eine Datei oder eine URL angeben – praktisch, wenn keine
+Arbeitskopie da ist, etwa:
+
+    --source https://raw.githubusercontent.com/<user>/<repo>/main/docs/index.html
 """
 
 from __future__ import annotations
@@ -17,12 +24,23 @@ from __future__ import annotations
 import re
 import subprocess
 import sys
+import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SOURCE = ROOT / "docs" / "index.html"
 DEFAULT_TARGET = ROOT / "build" / "share.html"
 TITLE = "Jarvis Morgen-Briefing"
+
+
+def read_source(source: str) -> str:
+    """Seite aus einer Datei oder von einer URL lesen."""
+    if source.startswith(("http://", "https://")):
+        print(f"Quelle: {source}")
+        with urllib.request.urlopen(source, timeout=30) as response:
+            return response.read().decode("utf-8")
+    print(f"Quelle: {source}")
+    return Path(source).read_text(encoding="utf-8")
 
 
 def newest_page() -> str:
@@ -78,8 +96,15 @@ def to_share_page(src: str) -> str:
 
 
 def main() -> int:
-    target = Path(sys.argv[1]) if len(sys.argv) > 1 else DEFAULT_TARGET
-    page = to_share_page(newest_page())
+    args = sys.argv[1:]
+    source = None
+    if "--source" in args:
+        index = args.index("--source")
+        source = args[index + 1]
+        del args[index:index + 2]
+
+    target = Path(args[0]) if args else DEFAULT_TARGET
+    page = to_share_page(read_source(source) if source else newest_page())
 
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(page, encoding="utf-8")
