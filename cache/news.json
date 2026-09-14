@@ -1,5 +1,6 @@
 {
- "built_at": "2026-09-14T22:25:30.704187+02:00",
+ "built_at": "2026-09-14T22:28:19.335847+02:00",
+ "config": "4aa6451cac4e6c99",
  "block": {
   "enabled": true,
   "top": [
@@ -10,6 +11,16 @@
     "source": "Zeit Online",
     "scope": "national",
     "published": "2026-09-14T20:20:45+00:00",
+    "summary": "",
+    "also": []
+   },
+   {
+    "title": "Newsblog zum Nahost-Krieg: Öltanker offenbar in Straße von Hormus nach Minen-Kollision explodiert",
+    "teaser": "Iran hat Teile der wirtschaftlich bedeutenden Meerenge vermint. Jetzt sei ein Tanker auf der südlichen Route auf eine Mine gefahren und in Flammen aufgegangen sein, berichten iranische Medien unter Berufung auf die Revolutionsgarden.",
+    "link": "https://www.sueddeutsche.de/politik/liveblog-nahost-usa-iran-oman-strasse-von-hormus-tanker-li.3530668",
+    "source": "Süddeutsche Zeitung",
+    "scope": "national",
+    "published": "2026-09-14T20:18:34+00:00",
     "summary": "",
     "also": []
    },
@@ -42,24 +53,14 @@
     "published": "2026-09-14T20:06:47+00:00",
     "summary": "",
     "also": []
-   },
-   {
-    "title": "Nationaler Sicherheitsrat warnt vor „hybriden Angriffen“ Russlands – und beschließt Maßnahmen",
-    "teaser": "Die Bundesregierung teilt mit: Der Nationale Sicherheitsrat kam am Montag erneut zusammen, um über „hybride Angriffe“ zu beraten. Das Gremium beschloss Maßnahmen, Details aber bleiben offen.",
-    "link": "https://www.welt.de/politik/deutschland/article6aa84eae77bd109fcdd01432/flughafen-leipzig-nationaler-sicherheitsrat-warnt-vor-hybriden-angriffen-russlands-und-beschliesst-massnahmen.html",
-    "source": "Welt",
-    "scope": "national",
-    "published": "2026-09-14T19:57:37+00:00",
-    "summary": "",
-    "also": []
    }
   ],
   "region": [
    {
     "title": "Polizeibericht Augsburg und Region vom 14.09.2026",
-    "teaser": "Polizeibericht Augsburg und Region vom 14.09.2026 presse-augsburg.de",
+    "teaser": "Polizeibericht Augsburg und Region vom 14.09.2026 Presse Augsburg",
     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOVmprREdWV18tcWlnUEt6WWluOTBvUWxTQjJqc05lbHhPX3MxQUZBTGlTRGZKeWtJMUFVN0JQSHo3NGdrT19fLTRYZzljSHFOTUVnUWFkMXRUaVM2cXpMSDFpeVlNanZZQlZtZ0JOMHdja01WR3BRVFVNWHpoZm5oalRBWjNBTEVIYkNQLTdB?oc=5",
-    "source": "presse-augsburg.de",
+    "source": "Presse Augsburg",
     "scope": "regional",
     "published": "2026-09-14T19:26:24+00:00",
     "summary": "",
@@ -98,42 +99,42 @@
   ],
   "world": [
    {
+    "title": "Multiple vehicle road crash in South Africa kills 21",
+    "teaser": "Fatal traffic accidents are a recurring problem for South Africa.",
+    "link": "https://www.aljazeera.com/news/2026/9/14/multiple-vehicle-road-crash-in-south-africa-kills-21?traffic_source=rss",
+    "source": "Al Jazeera",
+    "scope": "world",
+    "published": "2026-09-14T20:21:01+00:00",
+    "summary": "",
+    "also": []
+   },
+   {
+    "title": "Finland shelters under French nuclear umbrella amid Russian, US uncertainty",
+    "teaser": "Finland becomes 10th European state to sign up to military cooperation and nuclear deterrence initiative.",
+    "link": "https://www.aljazeera.com/news/2026/9/14/finland-shelters-under-french-nuclear-umbrella-amid-russian-us-uncertainty?traffic_source=rss",
+    "source": "Al Jazeera",
+    "scope": "world",
+    "published": "2026-09-14T20:20:20+00:00",
+    "summary": "",
+    "also": []
+   },
+   {
+    "title": "Elon Musk’s X Corp and SpaceXAI drop antitrust lawsuit against Apple",
+    "teaser": "The companies had accused Apple of favouring OpenAI’s ChatGPT over rival AI chatbots.",
+    "link": "https://www.aljazeera.com/news/2026/9/14/elon-musks-x-corp-and-spacexai-drop-antitrust-lawsuit-against-apple?traffic_source=rss",
+    "source": "Al Jazeera",
+    "scope": "world",
+    "published": "2026-09-14T19:59:06+00:00",
+    "summary": "",
+    "also": []
+   },
+   {
     "title": "Turkey police disperse pro-LGBTQ protesters with tear gas",
     "teaser": "Turkish police fired tear gas at pro-LGBTQ demonstrators in the western city of Izmir on Monday, as activists protested a nationwide crackdown that saw dozens arrested over the weekend in a campaign authorities described as defending traditional family values.",
     "link": "https://www.france24.com/en/asia-pacific/20260914-turkey-police-disperse-pro-lgbtq-protesters-with-tear-gas",
-    "source": "© Murat Kocabas, AFP",
+    "source": "France 24",
     "scope": "world",
     "published": "2026-09-14T19:54:47+00:00",
-    "summary": "",
-    "also": []
-   },
-   {
-    "title": "Sudan aid networks at risk of collapse, UN agencies warn",
-    "teaser": "Without immediate donations, shelter and aid relief supplies could be depleted by the end of the month, says IOM.",
-    "link": "https://www.aljazeera.com/news/2026/9/14/sudan-aid-networks-at-risk-of-collapse-un-agencies-warn?traffic_source=rss",
-    "source": "Al Jazeera",
-    "scope": "world",
-    "published": "2026-09-14T19:51:26+00:00",
-    "summary": "",
-    "also": []
-   },
-   {
-    "title": "Funerals for children killed after fire spreads to school in DR Congo",
-    "teaser": "Memorial services were held for at least 28 children who were killed after a fire spread to their school in DR Congo.",
-    "link": "https://www.aljazeera.com/video/newsfeed/2026/9/14/funerals-for-children-killed-after-fire-spreads-to-school-in-dr-congo?traffic_source=rss",
-    "source": "Al Jazeera",
-    "scope": "world",
-    "published": "2026-09-14T19:50:27+00:00",
-    "summary": "",
-    "also": []
-   },
-   {
-    "title": "What’s the VAR mistake controversy in Haaland’s Man City goal vs United?",
-    "teaser": "Football players, fans, managers, and experts call for more accountability and less reliance on VAR for crucial calls.",
-    "link": "https://www.aljazeera.com/sports/2026/9/14/erling-haaland-goal-var-controversy-manchester-derby-referee?traffic_source=rss",
-    "source": "Al Jazeera",
-    "scope": "world",
-    "published": "2026-09-14T19:46:56+00:00",
     "summary": "",
     "also": []
    }
