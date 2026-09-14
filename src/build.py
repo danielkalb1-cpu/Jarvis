@@ -404,10 +404,12 @@ def demo_data(now: datetime) -> tuple[dict, dict, dict]:
 def _news_with_cache(config: dict[str, Any], http: HttpConfig, problems: Problems,
                      now: datetime) -> dict[str, Any]:
     """Nachrichten holen – oder den noch frischen Stand aus dem Cache nehmen."""
-    llm = ((config.get("news") or {}).get("llm") or {})
+    news_config = config.get("news") or {}
+    llm = news_config.get("llm") or {}
     max_age = timedelta(minutes=float(llm.get("min_interval_minutes", 0) or 0))
+    stamp = news_cache.fingerprint(news_config)
 
-    cached = news_cache.load(NEWS_CACHE, max_age, now)
+    cached = news_cache.load(NEWS_CACHE, max_age, now, stamp)
     if cached is not None:
         age = int((now - cached["cached_at"]).total_seconds() // 60)
         log.info("Nachrichten aus dem Cache (%d min alt).", age)
@@ -417,9 +419,9 @@ def _news_with_cache(config: dict[str, Any], http: HttpConfig, problems: Problem
     # Nur brauchbare Ergebnisse ablegen – ein Totalausfall soll den letzten
     # guten Stand nicht überschreiben.
     if any(block.get(key) for key in ("top", "region", "world")):
-        news_cache.save(NEWS_CACHE, block, now)
+        news_cache.save(NEWS_CACHE, block, now, stamp)
     else:
-        stale = news_cache.load(NEWS_CACHE, timedelta(days=2), now)
+        stale = news_cache.load(NEWS_CACHE, timedelta(days=2), now, stamp)
         if stale is not None:
             log.info("Keine frischen Meldungen – letzter Stand aus dem Cache.")
             stale["note"] = "Keine frischen Meldungen abrufbar – letzter bekannter Stand."

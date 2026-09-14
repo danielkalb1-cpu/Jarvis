@@ -7,10 +7,15 @@ zwischengespeichert und nur alle `min_interval_minutes` erneuert.
 
 Nebeneffekt: fällt die Gewichtung einmal aus, steht immer noch der letzte
 brauchbare Stand auf der Seite statt gar nichts.
+
+Wird die Nachrichten-Konfiguration geändert (Feeds, Blockgrößen, Modell),
+verfällt der Cache sofort – sonst würde eine Änderung bis zu drei Stunden
+lang nicht sichtbar.
 """
 
 from __future__ import annotations
 
+import hashlib
 import json
 import logging
 from datetime import datetime, timedelta, timezone
@@ -20,8 +25,16 @@ from typing import Any
 log = logging.getLogger(__name__)
 
 
-def load(path: Path, max_age: timedelta, now: datetime) -> dict[str, Any] | None:
-    """Gecachten Block zurückgeben, wenn er noch frisch genug ist."""
+def fingerprint(news_config: dict[str, Any]) -> str:
+    """Kurzer Fingerabdruck der Nachrichten-Konfiguration."""
+    text = json.dumps(news_config or {}, sort_keys=True, ensure_ascii=False,
+                      default=str)
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()[:16]
+
+
+def load(path: Path, max_age: timedelta, now: datetime,
+         expected: str | None = None) -> dict[str, Any] | None:
+    """Gecachten Block zurückgeben, wenn er noch frisch und passend ist."""
     if max_age <= timedelta(0) or not path.exists():
         return None
     try:
@@ -29,6 +42,10 @@ def load(path: Path, max_age: timedelta, now: datetime) -> dict[str, Any] | None
         built = datetime.fromisoformat(raw["built_at"])
     except (OSError, ValueError, KeyError, json.JSONDecodeError) as exc:
         log.warning("Cache nicht lesbar (%s) – wird neu geholt.", exc)
+        return None
+
+    if expected is not None and raw.get("config") != expected:
+        log.info("Konfiguration hat sich geändert – Cache verworfen.")
         return None
 
     if now - built > max_age:
@@ -39,10 +56,12 @@ def load(path: Path, max_age: timedelta, now: datetime) -> dict[str, Any] | None
     return block
 
 
-def save(path: Path, block: dict[str, Any], now: datetime) -> None:
+def save(path: Path, block: dict[str, Any], now: datetime,
+         config: str | None = None) -> None:
     try:
         path.parent.mkdir(parents=True, exist_ok=True)
-        payload = {"built_at": now.isoformat(), "block": _flatten(block)}
+        payload = {"built_at": now.isoformat(), "config": config,
+                   "block": _flatten(block)}
         path.write_text(json.dumps(payload, ensure_ascii=False, indent=1),
                         encoding="utf-8")
     except OSError as exc:
