@@ -168,7 +168,19 @@ def _entry_time(entry: Any) -> datetime | None:
 
 
 def _clean(text: str) -> str:
-    return re.sub(r"\s+", " ", html.unescape(TAG_RE.sub(" ", text or ""))).strip()
+    """Tags raus, Entities auflösen, Leerraum normalisieren.
+
+    Zweimal auflösen: manche Feeds kodieren doppelt (&amp;#x27;), sonst steht
+    auf der Seite später „&#x27;“ statt eines Apostrophs. Ausgegeben wird
+    ohnehin wieder escaped.
+    """
+    cleaned = TAG_RE.sub(" ", text or "")
+    for _ in range(2):
+        unescaped = html.unescape(cleaned)
+        if unescaped == cleaned:
+            break
+        cleaned = unescaped
+    return re.sub(r"\s+", " ", cleaned).strip()
 
 
 def _dedupe(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
