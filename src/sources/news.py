@@ -126,7 +126,6 @@ def _read_feed(feed: dict[str, Any], http: HttpConfig, problems: Problems,
             "teaser": _clean(getattr(entry, "summary", ""))[:SUMMARY_INPUT_CHARS],
             "link": link,
             "source": publisher or name,
-            "via": name if publisher else None,
             "scope": scope,
             "published": published,
         })
