@@ -1,9 +1,29 @@
 {
- "built_at": "2026-09-14T22:32:06.675675+02:00",
- "config": "4aa6451cac4e6c99",
+ "built_at": "2026-09-14T22:33:50.618012+02:00",
+ "config": "a963c09388e6ff8a",
  "block": {
   "enabled": true,
   "top": [
+   {
+    "title": "Technologie - Bundesregierung: Nehmen KI-Warnungen sehr ernst - Trump sieht Verschwörung und lehnt Regulierung ab",
+    "teaser": "Seit den Forderungen von US-Tech-Firmen wie Anthropic und Open-AI nach einer Verlangsamung der KI-Forschung hat die Debatte über die Risiken der Technologie an Fahrt gewonnen. Die Bundesregierung erklärte in Berlin, man nehme die Warnungen sehr ernst.",
+    "link": "https://www.deutschlandfunk.de/bundesregierung-nehmen-ki-warnungen-sehr-ernst-trump-sieht-verschwoerung-und-lehnt-regulierung-ab-100.html",
+    "source": "Deutschlandfunk",
+    "scope": "national",
+    "published": "2026-09-14T20:30:02+00:00",
+    "summary": "",
+    "also": []
+   },
+   {
+    "title": "Steigende Ölpreise - Benzin in Deutschland so teuer wie nie - SPD will Preisdeckel und Übergewinnsteuer",
+    "teaser": "Die SPD fordert wegen des jüngsten Anstiegs der Spritpreise einen Preisdeckel und eine Übergewinnsteuer. Das geht aus einem Positionspapier der Partei hervor, in dem es weiter heißt, Mineralölkonzerne würden die aktuelle Krise schamlos ausnutzen, um Rekordgewinne auf Kosten der Bürger zu machen.",
+    "link": "https://www.deutschlandfunk.de/benzin-in-deutschland-so-teuer-wie-nie-spd-will-preisdeckel-und-uebergewinnsteuer-100.html",
+    "source": "Deutschlandfunk",
+    "scope": "national",
+    "published": "2026-09-14T20:30:02+00:00",
+    "summary": "",
+    "also": []
+   },
    {
     "title": "Geopolitik in der Arktis: Arktis-Gipfel fordert größeres Engagement der EU in der Region",
     "teaser": "Beim EU-Arktis-Gipfel in Finnland haben europäische Länder über die Strategie in der Region beraten. In der Abschlusserklärung fordern sie eine stärkere Präsenz der EU.",
@@ -31,26 +51,6 @@
     "source": "n-tv",
     "scope": "national",
     "published": "2026-09-14T20:17:48+00:00",
-    "summary": "",
-    "also": []
-   },
-   {
-    "title": "Unfall: Motorradfahrer stirbt nach Zusammenprall mit Lkw",
-    "teaser": "",
-    "link": "https://www.zeit.de/news/2026-09/14/motorradfahrer-stirbt-nach-zusammenprall-mit-lkw",
-    "source": "Zeit Online",
-    "scope": "national",
-    "published": "2026-09-14T20:15:43+00:00",
-    "summary": "",
-    "also": []
-   },
-   {
-    "title": "LIVE-TICKER - Iran-Krieg: Öltanker ist laut iranischen Angaben in Strasse von Hormuz explodiert +++ Huthi wollen erneut Ziele in Saudiarabien angegriffen haben",
-    "teaser": "Die USA und Iran befinden sich seit Februar 2026 im Kriegszustand. Zwar haben die beiden Länder eine Waffenruhe vereinbart, doch Donald Trump hat diese Anfang Juli für beendet erklärt. Die neuesten Entwicklungen im Ticker.",
-    "link": "https://www.nzz.ch/international/iran-krieg-irans-revolutionsgarden-wollen-volle-kontrolle-ueber-strasse-von-hormuz-haben-durch-die-strasse-von-hormuz-fahren-wieder-mehr-schiffe-ld.10021246",
-    "source": "NZZ",
-    "scope": "national",
-    "published": "2026-09-14T20:06:47+00:00",
     "summary": "",
     "also": []
    }
