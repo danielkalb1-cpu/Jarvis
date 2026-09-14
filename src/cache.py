@@ -8,9 +8,9 @@ zwischengespeichert und nur alle `min_interval_minutes` erneuert.
 Nebeneffekt: fällt die Gewichtung einmal aus, steht immer noch der letzte
 brauchbare Stand auf der Seite statt gar nichts.
 
-Wird die Nachrichten-Konfiguration geändert (Feeds, Blockgrößen, Modell),
-verfällt der Cache sofort – sonst würde eine Änderung bis zu drei Stunden
-lang nicht sichtbar.
+Wird die Nachrichten-Konfiguration geändert (Feeds, Blockgrößen, Modell)
+oder der Code, der die Meldungen einsammelt, verfällt der Cache sofort –
+sonst würde eine Änderung bis zu drei Stunden lang nicht sichtbar.
 """
 
 from __future__ import annotations
@@ -25,11 +25,22 @@ from typing import Any
 log = logging.getLogger(__name__)
 
 
-def fingerprint(news_config: dict[str, Any]) -> str:
-    """Kurzer Fingerabdruck der Nachrichten-Konfiguration."""
-    text = json.dumps(news_config or {}, sort_keys=True, ensure_ascii=False,
-                      default=str)
-    return hashlib.sha256(text.encode("utf-8")).hexdigest()[:16]
+def fingerprint(news_config: dict[str, Any], *sources: Path) -> str:
+    """Fingerabdruck aus Konfiguration und dem Code, der die Meldungen holt.
+
+    Der Code gehört dazu, weil er die Form des Ergebnisses bestimmt: wird die
+    Auswahl oder die Aufbereitung geändert, wäre der alte Stand sonst noch
+    stundenlang zu sehen. Schlimmstenfalls wird einmal zu viel geholt.
+    """
+    digest = hashlib.sha256()
+    digest.update(json.dumps(news_config or {}, sort_keys=True,
+                             ensure_ascii=False, default=str).encode("utf-8"))
+    for path in sources:
+        try:
+            digest.update(path.read_bytes())
+        except OSError:
+            pass
+    return digest.hexdigest()[:16]
 
 
 def load(path: Path, max_age: timedelta, now: datetime,

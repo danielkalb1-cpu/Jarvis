@@ -125,8 +125,8 @@ Weitere nützliche Stellschrauben in derselben Datei:
 
 Nach dem Ändern committen – der nächste Lauf übernimmt es. Sofort sehen:
 **Actions → Briefing bauen → Run workflow**. Änderungen an den Nachrichten
-wirken dabei sofort: der Cache merkt sich die Konfiguration und verfällt,
-sobald sie sich ändert.
+wirken dabei sofort: der Cache merkt sich Konfiguration und Code und
+verfällt, sobald sich daran etwas ändert.
 
 ---
 

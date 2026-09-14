@@ -39,6 +39,7 @@ TEMPLATE = ROOT / "src" / "template.html"
 OUTPUT = ROOT / "docs" / "index.html"
 CONFIG = ROOT / "config.yaml"
 NEWS_CACHE = ROOT / "cache" / "news.json"
+NEWS_MODULE = ROOT / "src" / "sources" / "news.py"
 
 WEEKDAYS = ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"]
 MONTHS = ["Januar", "Februar", "März", "April", "Mai", "Juni",
@@ -407,7 +408,7 @@ def _news_with_cache(config: dict[str, Any], http: HttpConfig, problems: Problem
     news_config = config.get("news") or {}
     llm = news_config.get("llm") or {}
     max_age = timedelta(minutes=float(llm.get("min_interval_minutes", 0) or 0))
-    stamp = news_cache.fingerprint(news_config)
+    stamp = news_cache.fingerprint(news_config, NEWS_MODULE)
 
     cached = news_cache.load(NEWS_CACHE, max_age, now, stamp)
     if cached is not None:
