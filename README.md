@@ -348,6 +348,7 @@ src/template.html                   Gerüst und das komplette CSS (alles inline)
 src/cache.py                        Zwischenspeicher für den Nachrichtenblock
 src/verify_feeds.py                 prüft die Feed-Liste
 src/verify_traffic.py               prüft Key und Routen
+src/make_share_page.py              erzeugt die Fassung für den Teilen-Link
 src/sources/net.py                  Timeout, Retry, Sammelstelle für Ausfälle
 src/sources/weather.py              Bright Sky (DWD)
 src/sources/traffic.py              TomTom Routing
