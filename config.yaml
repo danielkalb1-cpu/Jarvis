@@ -123,3 +123,12 @@ news:
     - { name: "Al Jazeera",          url: "https://www.aljazeera.com/xml/rss/all.xml",                  scope: world }
     - { name: "France 24",           url: "https://www.france24.com/en/rss",                            scope: world }
     - { name: "Deutsche Welle",      url: "https://rss.dw.com/rdf/rss-en-world",                        scope: world }
+
+# ------------------------------------------------------------
+# Netzwerk – gilt für alle Abrufe
+# ------------------------------------------------------------
+http:
+  timeout_seconds: 10
+  retries: 2          # Anzahl Versuche insgesamt (nicht zusätzliche)
+  backoff_seconds: 1.5
+  user_agent: "jarvis-morning-briefing/1.0 (+https://github.com/)"

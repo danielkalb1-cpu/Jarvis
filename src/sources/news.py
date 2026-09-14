@@ -336,6 +336,9 @@ def _loose_json(raw: str) -> Any:
     return None
 
 
+MAX_PER_SOURCE_PER_BLOCK = 2
+
+
 def _fallback(items: list[dict[str, Any]], wanted: dict[str, int],
               llm: dict[str, Any]) -> dict[str, list[dict[str, Any]]]:
     """Simple Sortierung nach Aktualität, wenn die Gewichtung ausfällt.
@@ -345,25 +348,37 @@ def _fallback(items: list[dict[str, Any]], wanted: dict[str, int],
     """
     terms = [t.lower() for t in (llm.get("region_terms") or [])]
 
-    def is_regional(item: dict[str, Any]) -> bool:
-        if item["scope"] == "regional":
-            return True
+    def mentions_region(item: dict[str, Any]) -> bool:
         haystack = f"{item['title']} {item['teaser']}".lower()
         return any(term in haystack for term in terms)
+
+    def is_regional(item: dict[str, Any]) -> bool:
+        return item["scope"] == "regional" or mentions_region(item)
 
     used: set[str] = set()
     selection: dict[str, list[dict[str, Any]]] = {"top": [], "region": [], "world": []}
 
     def take(block: str, pool: list[dict[str, Any]], limit: int) -> None:
-        for item in pool:
-            if len(selection[block]) >= limit:
-                return
-            if item["link"] in used:
-                continue
-            used.add(item["link"])
-            selection[block].append({**item, "summary": "", "also": []})
+        # Ohne Gewichtung sonst schnell viermal dasselbe Haus in einem Block.
+        per_source: dict[str, int] = {}
+        for allow_repeats in (False, True):
+            for item in pool:
+                if len(selection[block]) >= limit:
+                    return
+                if item["link"] in used:
+                    continue
+                source = item["source"]
+                if not allow_repeats and per_source.get(source, 0) >= MAX_PER_SOURCE_PER_BLOCK:
+                    continue
+                per_source[source] = per_source.get(source, 0) + 1
+                used.add(item["link"])
+                selection[block].append({**item, "summary": "", "also": []})
 
-    take("region", [i for i in items if is_regional(i)], wanted["region"])
+    # Innerhalb der Region zuerst das, was Augsburg oder Allgäu namentlich nennt.
+    regional = [i for i in items if is_regional(i)]
+    regional.sort(key=mentions_region, reverse=True)
+
+    take("region", regional, wanted["region"])
     take("world", [i for i in items if i["scope"] == "world"], wanted["world"])
     take("top", items, wanted["top"])
     # Reihenfolge angleichen: "top" steht oben, auch wenn es zuletzt gefüllt wurde.

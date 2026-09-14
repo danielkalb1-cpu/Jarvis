@@ -51,6 +51,10 @@ def collect(config: dict[str, Any], http: HttpConfig, problems: Problems,
     }
 
 
+def _comma(value: float) -> str:
+    return f"{value:.1f}".replace(".", ",")
+
+
 def _one_location(place: dict[str, Any], section: dict[str, Any], http: HttpConfig,
                   problems: Problems, now: datetime) -> dict[str, Any]:
     name = place.get("name", "?")
@@ -60,6 +64,7 @@ def _one_location(place: dict[str, Any], section: dict[str, Any], http: HttpConf
         "current": None,
         "hourly": [],
         "today": None,
+        "rest_of_day": None,
         "tomorrow": None,
         "error": None,
     }
@@ -105,6 +110,10 @@ def _one_location(place: dict[str, Any], section: dict[str, Any], http: HttpConf
             until_hour=int(section.get("forecast_until_hour", 21)),
         )
         block["today"] = _day_summary(today_rows)
+        # Für die Hinweiszeile zählt nur, was noch kommt – nicht, was
+        # heute schon gefallen ist.
+        block["rest_of_day"] = _day_summary(
+            [r for r in today_rows if r["time"] >= now])
         block["tomorrow"] = _day_summary(tomorrow_rows)
     except FetchError as exc:
         problems.add(f"Wetter {name} (Vorhersage)", str(exc))
@@ -204,19 +213,23 @@ def _alerts(locations: list[dict[str, Any]], thresholds: dict[str, Any]) -> list
     for block in locations:
         name = block["name"]
         today = block.get("today") or {}
+        ahead = block.get("rest_of_day") or {}
 
-        prob = today.get("precipitation_probability")
-        amount = today.get("precipitation_sum") or 0.0
+        prob = ahead.get("precipitation_probability")
+        amount = ahead.get("precipitation_sum") or 0.0
         if (prob is not None and prob >= prob_limit) or amount >= amount_limit:
+            # Nur die Angabe nennen, die den Hinweis ausgelöst hat – sonst
+            # steht da „1 % Regenwahrscheinlichkeit“ neben 5 mm Regen.
             parts = []
-            if prob is not None:
-                parts.append(f"{int(prob)} % Regenwahrscheinlichkeit")
-            if amount >= 0.1:
-                parts.append(f"{amount:.1f} mm erwartet")
+            if prob is not None and prob >= prob_limit:
+                parts.append(f"{int(prob)} % Wahrscheinlichkeit")
+            if amount >= amount_limit:
+                parts.append(f"{_comma(amount)} mm erwartet")
+            detail = f" – {', '.join(parts)}" if parts else ""
             alerts.append({
                 "kind": "rain",
                 "icon": "rain",
-                "text": f"{name}: Regen im Tagesverlauf – {', '.join(parts)}. Schirm einpacken.",
+                "text": f"{name}: Regen im weiteren Tagesverlauf{detail}. Schirm einpacken.",
             })
 
         low = today.get("min")
