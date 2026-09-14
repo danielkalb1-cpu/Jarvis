@@ -24,7 +24,7 @@ in GitHub-Secrets und werden nur auf dem Actions-Runner gelesen.
 6. [Orte und Routen ändern](#orte-und-routen-ändern)
 7. [Lokal testen](#lokal-testen)
 8. [Feeds prüfen](#feeds-prüfen) und [Verkehr prüfen](#verkehr-prüfen)
-9. [Zeitplan und Kosten](#zeitplan-und-kosten)
+9. [Teilen-Link](#teilen-link) und [Zeitplan und Kosten](#zeitplan-und-kosten)
 10. [Wenn etwas nicht geht](#wenn-etwas-nicht-geht)
 11. [Urheberrecht](#urheberrecht-bei-den-nachrichten)
 
@@ -268,6 +268,28 @@ prüfen → Run workflow**. Die häufigsten Befunde:
 | `HTTP 403` | Key ungültig, nicht für die Routing API freigeschaltet, oder Kontingent aufgebraucht |
 | `HTTP 400` | Koordinaten in der `config.yaml` prüfen |
 | `HTTP 429` | zu viele Anfragen |
+
+---
+
+## Teilen-Link
+
+Die Seite unter GitHub Pages ist öffentlich erreichbar und aktualisiert sich
+von selbst – wer den Link hat, sieht immer den aktuellen Stand. Das ist der
+einfachste Weg, das Briefing weiterzugeben.
+
+Daneben gibt es eine Fassung als Claude-Artifact, die von einer täglichen
+Routine um 5 Uhr neu veröffentlicht wird. Gebaut wird sie mit:
+
+```bash
+python3 src/make_share_page.py                       # neuester Stand vom Branch
+python3 src/make_share_page.py --source docs/index.html
+```
+
+Das Ergebnis liegt in `build/share.html` (nicht im Repo). Gegenüber
+`docs/index.html` fehlt dort der Seitenrahmen, den die Artifact-Plattform
+selbst setzt, und es kommen die `data-theme`-Stufen dazu, damit die Seite
+auch bei Betrachtern stimmt, die Hell oder Dunkel ausdrücklich eingestellt
+haben.
 
 ---
 
