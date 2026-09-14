@@ -87,6 +87,7 @@ def _read_feed(feed: dict[str, Any], http: HttpConfig, problems: Problems,
     name = feed.get("name") or feed.get("url", "?")
     url = feed.get("url")
     scope = feed.get("scope", "national")
+    aggregator = bool(feed.get("aggregator"))
     if not url:
         return []
 
@@ -116,7 +117,9 @@ def _read_feed(feed: dict[str, Any], http: HttpConfig, problems: Problems,
         # Aggregator-Feeds (z. B. Google News) nennen im <source>-Tag das Haus,
         # von dem die Meldung stammt. Das ist die ehrlichere Quellenangabe als
         # der Name des Aggregators – und der Titel trägt den Namen dann doppelt.
-        publisher = _publisher(entry)
+        # Nur bei ausdrücklich als Aggregator markierten Feeds auswerten:
+        # andere Redaktionen stellen dort auch schon mal einen Bildnachweis hinein.
+        publisher = _publisher(entry) if aggregator else None
         if publisher:
             title = _strip_suffix(title, publisher)
 

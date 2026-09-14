@@ -108,13 +108,13 @@ news:
     # keinen Feed mehr im HTML). Ersatz: die ARD-Regionalschiene, die
     # Bayern-Ausgabe der SZ und zwei Google-News-Suchen, über die die
     # Meldungen der beiden Lokalzeitungen weiterhin hereinkommen.
-    # Bei Aggregator-Feeds wird als Quelle das meldende Haus angezeigt,
-    # nicht der Aggregator.
+    # aggregator: true heißt, dass als Quelle das meldende Haus aus dem
+    # <source>-Tag angezeigt wird statt des Aggregators.
     - { name: "tagesschau Bayern",   url: "https://www.tagesschau.de/inland/regional/bayern/index~rss2.xml", scope: regional }
     - { name: "SZ Bayern",           url: "https://rss.sueddeutsche.de/rss/Bayern",                     scope: regional }
     - { name: "Merkur Lokales",      url: "https://www.merkur.de/lokales/rssfeed.rdf",                  scope: regional }
-    - { name: "Google News Augsburg", url: "https://news.google.com/rss/search?q=Augsburg&hl=de&gl=DE&ceid=DE:de", scope: regional }
-    - { name: "Google News Allgäu",   url: "https://news.google.com/rss/search?q=Allg%C3%A4u&hl=de&gl=DE&ceid=DE:de", scope: regional }
+    - { name: "Google News Augsburg", url: "https://news.google.com/rss/search?q=Augsburg&hl=de&gl=DE&ceid=DE:de", scope: regional, aggregator: true }
+    - { name: "Google News Allgäu",   url: "https://news.google.com/rss/search?q=Allg%C3%A4u&hl=de&gl=DE&ceid=DE:de", scope: regional, aggregator: true }
     # --- International ---
     # Reuters hat seine öffentlichen Feeds eingestellt, AP weist Abrufe
     # ohne Browser ab (403). Stattdessen diese vier.

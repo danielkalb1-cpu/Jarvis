@@ -182,10 +182,40 @@ python3 src/verify_feeds.py
   FEHL  Beispielzeitung           nicht abrufbar: HTTP 404
 ```
 
+Einzelne Kandidaten testen, bevor sie in die `config.yaml` wandern:
+
+```bash
+python3 src/verify_feeds.py "https://example.de/rss" "https://example.de/feed/"
+```
+
+Und wenn unklar ist, wo eine Redaktion ihren Feed inzwischen hat – dieser
+Aufruf liest die Feed-Angaben aus dem `<head>` der Seite:
+
+```bash
+python3 src/verify_feeds.py --discover https://www.example.de/
+```
+
 Dasselbe läuft monatlich als Action (**Actions → Feeds prüfen**) und lässt sich
-dort jederzeit von Hand starten. Ein toter Feed lässt den Build **nicht**
-scheitern – er wird übersprungen und unten auf der Seite als nicht erreichbar
-vermerkt.
+dort jederzeit von Hand starten; die beiden Sonderfälle oben gibt es dort als
+Eingabefelder. Ein toter Feed lässt den Build **nicht** scheitern – er wird
+übersprungen und unten auf der Seite als nicht erreichbar vermerkt.
+
+### Zur Quellenlage
+
+Die Liste in der `config.yaml` ist geprüft: alle 22 Feeds haben beim Einrichten
+geantwortet. Fünf der ursprünglich vorgesehenen Quellen gibt es so nicht mehr:
+
+| Quelle                              | Befund                                   | Ersatz |
+| ----------------------------------- | ---------------------------------------- | ------ |
+| BR24                                | 404, kein Feed mehr im HTML deklariert    | tagesschau Bayern (ARD-Regionalschiene) |
+| Augsburger Allgemeine               | 404, kein Feed mehr im HTML deklariert    | Google-News-Suche „Augsburg“ |
+| Allgäuer Zeitung                    | 404, kein Feed mehr im HTML deklariert    | Google-News-Suche „Allgäu“ |
+| Reuters                             | öffentliche Feeds eingestellt             | Al Jazeera, France 24 |
+| AP News                             | 403, auch mit Browser-Kennung             | Deutsche Welle |
+
+Die beiden Google-News-Suchen liefern weiterhin die Meldungen von Augsburger
+Allgemeine und Allgäuer Zeitung – nur eben über den Umweg des Aggregators. Als
+Quelle wird auf der Seite dann das meldende Haus angezeigt, nicht Google.
 
 ---
 
