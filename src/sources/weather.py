@@ -109,6 +109,12 @@ def _one_location(place: dict[str, Any], section: dict[str, Any], http: HttpConf
             step=int(section.get("forecast_step_hours", 3)),
             until_hour=int(section.get("forecast_until_hour", 21)),
         )
+        # Bright Sky liefert für manche Stationen keine aktuellen Wind- oder
+        # Bewölkungswerte. Dann die Stunde aus der Vorhersage nehmen, die
+        # jetzt am nächsten liegt – sonst steht auf der Seite nur ein Strich,
+        # und die gefühlte Temperatur wird ohne Wind zu warm gerechnet.
+        _backfill_current(block.get("current"), parsed, now)
+
         block["today"] = _day_summary(today_rows)
         # Für die Hinweiszeile zählt nur, was noch kommt – nicht, was
         # heute schon gefallen ist.
@@ -122,6 +128,28 @@ def _one_location(place: dict[str, Any], section: dict[str, Any], http: HttpConf
         block["error"] = f"{existing} {note}".strip() if existing else note
 
     return block
+
+
+def _backfill_current(current: dict[str, Any] | None, rows: list[dict[str, Any]],
+                      now: datetime) -> None:
+    """Fehlende aktuelle Messwerte aus der nächstgelegenen Vorhersagestunde."""
+    if not current or not rows:
+        return
+
+    nearest = min(rows, key=lambda r: abs(r["time"] - now))
+    filled = False
+    for field in ("wind_speed", "wind_gust_speed", "cloud_cover", "relative_humidity"):
+        if current.get(field) is None and nearest.get(field) is not None:
+            current[field] = nearest[field]
+            filled = True
+
+    if filled:
+        # Die gefühlte Temperatur hängt am Wind – also neu rechnen.
+        current["feels_like"] = apparent_temperature(
+            current.get("temperature"),
+            current.get("relative_humidity"),
+            current.get("wind_speed"),
+        )
 
 
 def _record(raw: dict[str, Any]) -> dict[str, Any]:
