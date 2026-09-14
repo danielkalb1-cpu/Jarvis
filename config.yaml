@@ -1,0 +1,121 @@
+# ============================================================
+#  Jarvis – Morgen-Briefing – Konfiguration
+#  Hier alles anpassen, was sich ändern kann. Keine Keys hier!
+#  Keys kommen ausschließlich aus Environment-Variablen/Secrets.
+# ============================================================
+
+general:
+  title: "JARVIS"
+  subtitle: "Morgen-Briefing"
+  timezone: "Europe/Berlin"
+  locale: "de"
+
+# ------------------------------------------------------------
+# Wetter – Bright Sky (DWD), kein API-Key nötig
+# ------------------------------------------------------------
+weather:
+  enabled: true
+  # Erster Eintrag = Hauptstandort (große Kachel)
+  locations:
+    - name: "Augsburg"
+      lat: 48.3705
+      lon: 10.8978
+    - name: "Marktoberdorf"
+      lat: 47.7767
+      lon: 10.6167
+  # Tagesverlauf in N-Stunden-Schritten bis zur Stunde `forecast_until_hour`
+  forecast_step_hours: 3
+  forecast_until_hour: 21
+  # Schwellen für die Hinweiszeile ganz oben
+  alerts:
+    rain_probability_pct: 40     # ab dieser Regenwahrscheinlichkeit -> Hinweis
+    rain_amount_mm: 0.5          # oder ab dieser Regenmenge (Summe heute)
+    frost_temp_c: 0.0            # ab dieser Tiefsttemperatur -> Frosthinweis
+    ground_frost_temp_c: 3.0     # darunter: "Bodenfrost möglich"
+
+# ------------------------------------------------------------
+# Verkehr – TomTom Routing API (Key aus Secret TOMTOM_API_KEY)
+# Koordinaten hier später auf die genaue Adresse anpassen.
+# ------------------------------------------------------------
+traffic:
+  enabled: true
+  # Verzögerung ab hier farblich hervorheben (Minuten)
+  delay_warn_minutes: 10
+  routes:
+    - name: "Augsburg → Marktoberdorf"
+      from: { name: "Augsburg", lat: 48.3705, lon: 10.8978 }
+      to:   { name: "Marktoberdorf", lat: 47.7767, lon: 10.6167 }
+    - name: "Marktoberdorf → Augsburg"
+      from: { name: "Marktoberdorf", lat: 47.7767, lon: 10.6167 }
+      to:   { name: "Augsburg", lat: 48.3705, lon: 10.8978 }
+
+# ------------------------------------------------------------
+# Nachrichten – RSS einsammeln, Anthropic gewichtet
+# WICHTIG: Aus den Feeds werden nur Überschrift, Kurzbeschreibung,
+# Zeitstempel und Link verwendet. Keine Volltexte, keine Absätze.
+# ------------------------------------------------------------
+news:
+  enabled: true
+  # Wie alt darf eine Meldung höchstens sein
+  max_age_hours: 24
+  # Wie viele Meldungen pro Feed maximal eingesammelt werden
+  max_items_per_feed: 12
+  # Blockgrößen im Briefing
+  counts:
+    top: 5
+    region: 4
+    world: 4
+  llm:
+    enabled: true
+    model: "claude-sonnet-4-6"
+    max_tokens: 8000
+    # Der Workflow läuft tagsüber halbstündlich (vor allem wegen des Verkehrs).
+    # Die Nachrichten werden nur alle N Minuten neu geholt und gewichtet,
+    # dazwischen kommt der zwischengespeicherte Stand aus cache/news.json.
+    # 0 = jedes Mal neu holen (deutlich mehr API-Kosten).
+    min_interval_minutes: 180
+    # Begriffe, die den Regionalbezug definieren (fließen in den Prompt
+    # und in die Fallback-Sortierung ein)
+    region_terms:
+      - Augsburg
+      - Allgäu
+      - Schwaben
+      - Marktoberdorf
+      - Kaufbeuren
+      - Kempten
+      - Ostallgäu
+      - Bayern
+  feeds:
+    # --- Überregional (DE) ---
+    - { name: "tagesschau",            url: "https://www.tagesschau.de/index~rss2.xml",                    scope: national }
+    - { name: "Deutschlandfunk",       url: "https://www.deutschlandfunk.de/nachrichten-100.rss",          scope: national }
+    - { name: "Süddeutsche Zeitung",   url: "https://rss.sueddeutsche.de/rss/Topthemen",                   scope: national }
+    - { name: "FAZ",                   url: "https://www.faz.net/rss/aktuell/",                            scope: national }
+    - { name: "Zeit Online",           url: "https://newsfeed.zeit.de/index",                              scope: national }
+    - { name: "Spiegel",               url: "https://www.spiegel.de/schlagzeilen/tops/index.rss",          scope: national }
+    - { name: "Welt",                  url: "https://www.welt.de/feeds/topnews.rss",                       scope: national }
+    - { name: "Handelsblatt",          url: "https://www.handelsblatt.com/contentexport/feed/top-themen",  scope: national }
+    - { name: "taz",                   url: "https://taz.de/!p4608;rss/",                                  scope: national }
+    - { name: "n-tv",                  url: "https://www.n-tv.de/rss",                                     scope: national }
+    # --- Schweiz / Österreich ---
+    - { name: "NZZ",                   url: "https://www.nzz.ch/recent.rss",                               scope: national }
+    - { name: "Der Standard",          url: "https://www.derstandard.at/rss",                              scope: national }
+    # --- Region Bayern / Allgäu ---
+    - { name: "BR24",                  url: "https://www.br.de/nachrichten/rss/alle",                      scope: regional }
+    - { name: "Augsburger Allgemeine", url: "https://www.augsburger-allgemeine.de/rss/Home/",              scope: regional }
+    - { name: "Allgäuer Zeitung",      url: "https://www.allgaeuer-zeitung.de/rss/Home/",                  scope: regional }
+    - { name: "Merkur",                url: "https://www.merkur.de/rssfeed.rdf",                           scope: regional }
+    # --- International ---
+    - { name: "Reuters",               url: "https://www.reutersagency.com/feed/?best-topics=all&post_type=best", scope: world }
+    - { name: "BBC News",              url: "https://feeds.bbci.co.uk/news/world/rss.xml",                 scope: world }
+    - { name: "The Guardian",          url: "https://www.theguardian.com/world/rss",                       scope: world }
+    - { name: "AP News",               url: "https://apnews.com/hub/ap-top-news.rss",                      scope: world }
+
+# ------------------------------------------------------------
+# Netzwerk – gilt für alle Abrufe
+# ------------------------------------------------------------
+http:
+  timeout_seconds: 10
+  retries: 2          # Anzahl Versuche insgesamt (nicht zusätzliche)
+  backoff_seconds: 1.5
+  user_agent: "jarvis-morning-briefing/1.0 (+https://github.com/)"

@@ -1,0 +1,26 @@
+name: Feeds prüfen
+
+# Prüft jede Feed-URL aus der config.yaml mit einem echten Request.
+# RSS-Adressen ändern sich – dieser Lauf zeigt, welche tot sind.
+on:
+  workflow_dispatch:
+  schedule:
+    # einmal im Monat, Montag früh
+    - cron: '17 4 1-7 * 1'
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -r requirements.txt
+      - run: python src/verify_feeds.py

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Jarvis">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5eeaff"/>
+      <stop offset="1" stop-color="#b78cff"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="#05070d"/>
+  <rect x="26" y="26" width="460" height="460" rx="92" fill="none" stroke="url(#g)" stroke-width="3" opacity=".35"/>
+  <circle cx="256" cy="256" r="150" fill="none" stroke="url(#g)" stroke-width="6" opacity=".5"
+          stroke-dasharray="40 26" stroke-linecap="round"/>
+  <path d="M300 140v148c0 46-32 74-76 74-30 0-54-13-68-35l40-30c8 12 17 18 28 18 16 0 24-10 24-29V140z"
+        fill="url(#g)"/>
+</svg>

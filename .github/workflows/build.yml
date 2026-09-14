@@ -1,0 +1,70 @@
+name: Briefing bauen
+
+on:
+  schedule:
+    # Zeiten in UTC. Großzügiger Bereich, damit der Morgenlauf sowohl in der
+    # Winterzeit (UTC+1) als auch in der Sommerzeit (UTC+2) sicher vor
+    # 6 Uhr Ortszeit liegt: 03:00 UTC = 04:00 MEZ bzw. 05:00 MESZ.
+    # Danach halbstündlich weiter, vor allem wegen der Verkehrslage.
+    - cron: '0,30 3-19 * * 1-5'
+  workflow_dispatch:
+
+# Nur ein Lauf gleichzeitig – sonst überholen sich zwei Commits auf main.
+concurrency:
+  group: briefing
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Repo auschecken
+        uses: actions/checkout@v4
+
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Abhängigkeiten installieren
+        run: pip install -r requirements.txt
+
+      - name: Briefing rendern
+        env:
+          TOMTOM_API_KEY: ${{ secrets.TOMTOM_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python src/build.py --verbose
+
+      - name: Ergebnis zurück nach main committen
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/index.html cache/news.json
+
+          # Nur committen, wenn sich inhaltlich etwas geändert hat.
+          if git diff --cached --quiet; then
+            echo "Keine Änderung – kein Commit."
+            exit 0
+          fi
+
+          git commit -m "Briefing aktualisiert $(TZ=Europe/Berlin date '+%d.%m.%Y %H:%M') [skip ci]"
+
+          # Zwischen Rendern und Push kann ein anderer Lauf gepusht haben.
+          for i in 1 2 3 4; do
+            if git push; then
+              echo "Gepusht."
+              exit 0
+            fi
+            echo "Push fehlgeschlagen, neuer Versuch ($i) …"
+            sleep $((2 ** i))
+            git pull --rebase origin "${GITHUB_REF_NAME}" || true
+          done
+          echo "Push endgültig fehlgeschlagen."
+          exit 1
