@@ -126,7 +126,8 @@ Weitere nützliche Stellschrauben in derselben Datei:
 | `news.counts`                     | Größe der Nachrichtenblöcke (5 / 4 / 3+2 / 4)       |
 | `news.feeds`                      | die Feed-Liste, siehe [Feeds prüfen](#feeds-prüfen) |
 | `news.llm.model`                  | welches Claude-Modell gewichtet (Vorgabe: Sonnet 5) |
-| `news.llm.once_per_day`           | genau ein Modellaufruf pro Tag (Vorgabe: an)        |
+| `news.llm.run_after`              | ab wann der tägliche Modellaufruf fällig ist        |
+| `news.counts.updates`             | wie viele Nachträge zwischen den Tagesläufen        |
 | `news.llm.effort`                 | Sorgfalt des Modells: low bis max (Vorgabe: high)   |
 | `news.llm.region_terms`           | was als „regional“ zählt                            |
 | `news.llm.min_interval_minutes`   | wie oft die Nachrichten neu gewichtet werden        |
@@ -331,11 +332,18 @@ und verwirft sie im Zweifel ganz, und `:00` und `:30` sind die am stärksten
 überbuchten Zeitpunkte. Fällt trotzdem einmal ein Lauf aus, holt der nächste
 eine halbe Stunde später alles nach – dafür ist die dichte Taktung da.
 
-**Zu den Kosten:** die vielen Läufe sind für den Verkehr gedacht. Die
-Nachrichten werden dagegen **genau einmal am Tag** gewichtet
-(`news.llm.once_per_day: true`): der erste Lauf des Tages holt und bewertet,
-alle weiteren nehmen den Stand aus `cache/news.json`. Die Verkehrslage
-aktualisiert trotzdem halbstündlich.
+**Zu den Kosten:** Einsammeln und Gewichten sind getrennt.
+
+Die **Feeds werden bei jedem Lauf geholt**, also halbstündlich – das kostet
+nichts außer ein paar HTTP-Abrufen. **Gewichtet wird einmal am Tag**, beim
+ersten Lauf ab `news.llm.run_after` (Vorgabe 05:30). Dort steckt der
+Modellaufruf.
+
+Zwischen den Tagesläufen bleibt die Auswahl vom Morgen stehen und bekommt
+oben einen Block „Seit heute früh" mit dem, was seitdem dazugekommen ist –
+nach Aktualität, höchstens zwei Meldungen je Haus, ohne Zusammenfassung
+(die gäbe es nur mit einem weiteren Modellaufruf). Größe über
+`news.counts.updates`.
 
 Weil der Aufruf nur einmal fällt, darf er gründlich sein: bis zu 400
 Überschriften als Eingabe, adaptives Denken, `effort: high`. Das sind rund
@@ -343,8 +351,8 @@ Weil der Aufruf nur einmal fällt, darf er gründlich sein: bis zu 400
 Eingabe, 10 $ je Mio. Ausgabe) etwa **zehn Cent pro Tag**, also rund zwei Euro
 im Monat. Halbstündlich wäre dasselbe bei über 60 Euro gelandet.
 
-Wer es anders will: `once_per_day: false` schaltet auf
-`min_interval_minutes` um, `effort` lässt sich auf `medium` senken, und
+Wer es anders will: `run_after` verschiebt den Zeitpunkt, `effort` lässt
+sich auf `medium` senken, und
 `news.llm.enabled: false` schaltet die Gewichtung ganz ab (dann wird nach
 Aktualität sortiert und es gibt keine Lage-Einschätzung).
 

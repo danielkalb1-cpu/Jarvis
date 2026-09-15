@@ -268,8 +268,17 @@ def render_news(block: dict[str, Any], tz: ZoneInfo) -> str:
               "agrar": "Landwirtschaft", "eu": "Neues Regelwerk",
               "world": "Weltweit"}
     blocks = [(key, titles.get(key, key.title())) for key in news_source.BLOCKS]
+
     parts: list[str] = ['    <div class="panel">']
-    any_story = False
+    updates = block.get("updates") or []
+    any_story = bool(updates)
+
+    # Nachträge zuerst: das ist das Einzige, was seit heute früh neu ist.
+    if updates:
+        parts.append('      <div class="block__title block__title--neu">'
+                     'Seit heute früh</div>')
+        for story in updates:
+            parts.append(_story(story, tz))
 
     for key, label in blocks:
         stories = block.get(key) or []
@@ -407,6 +416,12 @@ def demo_data(now: datetime) -> tuple[dict, dict, dict]:
                 "die geänderte Düngeverordnung, die ab Januar die roten Gebiete "
                 "betrifft. Sonst nichts, was den Tag umwirft.",
         "feed_count": 20, "item_count": 128, "ranked_by": "Demo",
+        "updates": [
+            story("Bahnstrecke Augsburg–Buchloe nach Stellwerkstörung wieder frei",
+                  "Augsburger Allgemeine", "", 0),
+            story("EZB-Protokoll deutet auf längere Zinspause hin",
+                  "Handelsblatt", "", 1),
+        ],
         "top": [
             story("Bundestag beschließt Reform der Netzentgelte", "tagesschau",
                   "Das Parlament hat eine Neuverteilung der Stromnetzkosten verabschiedet. "
@@ -484,39 +499,75 @@ def demo_data(now: datetime) -> tuple[dict, dict, dict]:
 # Hauptlauf
 # ======================================================================
 
-def _news_with_cache(config: dict[str, Any], http: HttpConfig, problems: Problems,
-                     now: datetime) -> dict[str, Any]:
-    """Nachrichten holen – oder den noch frischen Stand aus dem Cache nehmen."""
+def _due_for_curation(cached: dict[str, Any] | None, now: datetime,
+                      run_after: str) -> bool:
+    """Ist der tägliche Modellaufruf jetzt fällig?
+
+    Fällig, wenn es noch keinen Stand von heute gibt UND die Uhrzeit erreicht
+    ist. Vor der Uhrzeit bleibt der Stand von gestern stehen – lieber ein
+    Briefing von gestern früh als eines, das um drei Uhr nachts entsteht.
+    Gibt es gar keinen Stand, wird sofort gewichtet.
+    """
+    if cached is None:
+        return True
+
+    built = cached.get("cached_at")
+    if built is None or built.date() != now.date():
+        try:
+            hour, minute = (int(x) for x in run_after.split(":"))
+        except (ValueError, AttributeError):
+            hour, minute = 5, 30
+        return (now.hour, now.minute) >= (hour, minute)
+
+    return False
+
+
+def _news_block(config: dict[str, Any], http: HttpConfig, problems: Problems,
+                now: datetime) -> dict[str, Any]:
+    """Nachrichten zusammenstellen.
+
+    Zweigeteilt: Die Feeds werden bei jedem Lauf geholt, also halbstündlich.
+    Gewichtet wird nur einmal am Tag ab `run_after` – dort steckt der
+    Modellaufruf. Dazwischen bleibt die Auswahl vom Morgen stehen und
+    bekommt nur nachgetragen, was seitdem dazugekommen ist.
+    """
     news_config = config.get("news") or {}
     llm = news_config.get("llm") or {}
-    once_per_day = bool(llm.get("once_per_day", True))
-    max_age = timedelta(minutes=float(llm.get("min_interval_minutes", 0) or 0))
     stamp = news_cache.fingerprint(news_config, NEWS_MODULE)
-
-    cached = news_cache.load(NEWS_CACHE, max_age, now, stamp, once_per_day)
-    if cached is not None:
-        age = int((now - cached["cached_at"]).total_seconds() // 60)
-        log.info("Nachrichten aus dem Cache (%d min alt, Stand von heute früh).", age)
-        return cached
+    run_after = str(llm.get("run_after", "05:30"))
 
     seen = news_cache.load_seen(SEEN_FILE)
-    block = news_source.collect(config, http, problems,
-                                now.astimezone(timezone.utc), seen)
-    # Erst vermerken, wenn der Abruf wirklich etwas gebracht hat – sonst
-    # gilt eine Meldung als gesehen, die nie auf der Seite stand.
-    update = block.get("seen_update") or {}
-    if update and any(block.get(key) for key in news_source.BLOCKS):
-        news_cache.save_seen(SEEN_FILE, {**seen, **update}, now)
-    # Nur brauchbare Ergebnisse ablegen – ein Totalausfall soll den letzten
-    # guten Stand nicht überschreiben.
-    if any(block.get(key) for key in news_source.BLOCKS):
-        news_cache.save(NEWS_CACHE, block, now, stamp)
-    else:
-        stale = news_cache.load(NEWS_CACHE, timedelta(days=2), now, stamp)
-        if stale is not None:
-            log.info("Keine frischen Meldungen – letzter Stand aus dem Cache.")
-            stale["note"] = "Keine frischen Meldungen abrufbar – letzter bekannter Stand."
-            return stale
+    # Der Cache gilt bis Mitternacht; ob er genutzt wird, entscheidet
+    # _due_for_curation.
+    cached = news_cache.load(NEWS_CACHE, timedelta(0), now, stamp, same_day=True)
+    if cached is None:
+        cached = news_cache.load(NEWS_CACHE, timedelta(days=2), now, stamp)
+
+    items = news_source.gather(config, http, problems, now.astimezone(timezone.utc), seen)
+
+    if _due_for_curation(cached, now, run_after):
+        log.info("Tägliche Gewichtung fällig (ab %s) – Modell wird befragt.", run_after)
+        block = news_source.curate(items, config, problems,
+                                   now.astimezone(timezone.utc), seen)
+        if any(block.get(key) for key in news_source.BLOCKS):
+            news_cache.save(NEWS_CACHE, block, now, stamp)
+            update = block.get("seen_update") or {}
+            if update:
+                news_cache.save_seen(SEEN_FILE, {**seen, **update}, now)
+        elif cached is not None:
+            log.info("Keine frischen Meldungen – letzter Stand bleibt stehen.")
+            block = dict(cached)
+            block["note"] = "Keine frischen Meldungen abrufbar – letzter bekannter Stand."
+        return block
+
+    # Zwischen den Tagesläufen: Auswahl vom Morgen, plus Nachträge.
+    age = int((now - cached["cached_at"]).total_seconds() // 60)
+    block = dict(cached)
+    limit = int((news_config.get("counts") or {}).get("updates", 4))
+    block["updates"] = news_source.updates_since(items, cached, limit)
+    block["item_count"] = len(items)
+    log.info("Auswahl vom Morgen (%d min alt), %d Nachträge.",
+             age, len(block["updates"]))
     return block
 
 
@@ -535,7 +586,7 @@ def build(demo: bool = False) -> int:
     else:
         weather_block = weather_source.collect(config, http, problems, now)
         traffic_block = traffic_source.collect(config, http, problems)
-        news_block = _news_with_cache(config, http, problems, now)
+        news_block = _news_block(config, http, problems, now)
 
     stamp = (f"{WEEKDAYS[now.weekday()]} · {now.strftime('%d.%m.%Y')} · "
              f"{now.strftime('%H:%M')} Uhr")

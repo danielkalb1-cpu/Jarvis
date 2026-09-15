@@ -328,6 +328,10 @@ body::after{
 }
 .block__title::after{content:""; flex:1; height:1px; background:linear-gradient(90deg,var(--line),transparent)}
 .block__title:first-child{margin-top:0}
+/* Nachträge seit dem Morgenlauf – ohne Zusammenfassung, deshalb optisch
+   etwas leiser als die kuratierten Blöcke. */
+.block__title--neu{color:var(--accent-2)}
+.block__title--neu::after{background:linear-gradient(90deg,rgba(183,140,255,.3),transparent)}
 
 .story{
   display:block; text-decoration:none; color:inherit;

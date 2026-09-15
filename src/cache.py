@@ -98,7 +98,10 @@ def _flatten(block: dict[str, Any]) -> dict[str, Any]:
              "published": story["published"].isoformat() if story.get("published") else None}
             for story in block.get(key) or []
         ]
+    # Nachträge gehören nicht in den Tagesstand – die entstehen bei jedem
+    # Lauf neu aus den frisch geholten Meldungen.
     out.pop("cached_at", None)
+    out.pop("updates", None)
     return out
 
 

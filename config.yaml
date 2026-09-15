@@ -71,6 +71,10 @@ news:
     # Zeigt nur, was neu dazugekommen ist – an den meisten Tagen also nichts,
     # dann entfällt der Block ganz.
     eu: 3
+    # Nachträge zwischen den Tagesläufen: Meldungen, die seit der Gewichtung
+    # heute früh dazugekommen sind. Ohne Modell, daher ohne Zusammenfassung.
+    # 0 schaltet sie ab.
+    updates: 4
   llm:
     enabled: true
     model: "claude-sonnet-5"
@@ -81,13 +85,16 @@ news:
     # Aufwand des Modells: low | medium | high | xhigh | max.
     # Der Aufruf passiert nur einmal am Tag, also lohnt sich Sorgfalt.
     effort: high
-    # true = genau ein Modellaufruf pro Kalendertag. Der erste Lauf des Tages
-    # (morgens) holt und gewichtet, alle weiteren nehmen diesen Stand aus
-    # cache/news.json. Die Verkehrslage aktualisiert trotzdem halbstündlich.
-    once_per_day: true
-    # Nur wirksam, wenn once_per_day: false — dann wird alle N Minuten neu
-    # gewichtet. 0 = bei jedem Lauf (teuer).
-    min_interval_minutes: 180
+    # Genau ein Modellaufruf pro Kalendertag, und zwar beim ersten Lauf ab
+    # dieser Ortszeit. Vorher bleibt der Stand von gestern stehen – lieber
+    # ein Briefing von gestern früh als eines, das um drei Uhr nachts
+    # entsteht. Die Feeds werden trotzdem bei jedem Lauf geholt, und was
+    # seit der Gewichtung dazukam, steht unter „Seit heute früh".
+    #
+    # Der Zeitplan läuft auf :07 und :37, der erste Lauf ab 05:30 ist also
+    # der um 05:37. Wer mehr Luft will, trägt hier 05:00 ein – dann
+    # gewichtet der Lauf um 05:07.
+    run_after: "05:30"
     # Begriffe, die den Regionalbezug definieren (fließen in den Prompt
     # und in die Fallback-Sortierung ein)
     # Ohne Gewichtung durch Claude muss eine Meldung im Block „Neues

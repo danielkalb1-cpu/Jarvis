@@ -49,33 +49,36 @@ log = logging.getLogger(__name__)
 # 1. Feeds einsammeln
 # ----------------------------------------------------------------------
 
-def collect(config: dict[str, Any], http: HttpConfig, problems: Problems,
-            now: datetime, seen: dict[str, str] | None = None) -> dict[str, Any]:
-    section = config.get("news") or {}
-    if not section.get("enabled", True):
-        return {"enabled": False, "top": [], "region": [], "world": [], "note": None}
+def gather(config: dict[str, Any], http: HttpConfig, problems: Problems,
+           now: datetime, seen: dict[str, str] | None = None) -> list[dict[str, Any]]:
+    """Alle Feeds einsammeln und aufbereiten – ohne Modell, ohne Auswahl.
 
+    Passiert bei jedem Lauf, also halbstündlich. Kostet nichts außer ein paar
+    HTTP-Abrufen.
+    """
+    section = config.get("news") or {}
     feeds = section.get("feeds") or []
     max_age = timedelta(hours=float(section.get("max_age_hours", 24)))
     per_feed = int(section.get("max_items_per_feed", 12))
 
     items: list[dict[str, Any]] = []
     with ThreadPoolExecutor(max_workers=8) as pool:
-        results = pool.map(
+        for chunk in pool.map(
             lambda feed: _read_feed(feed, http, problems, now, max_age, per_feed),
             feeds,
-        )
-        for chunk in results:
+        ):
             items.extend(chunk)
 
     items = _dedupe(items)
     items = _relevant_for_scope(items, (section.get("llm") or {}))
-    seen = seen or {}
-    items = _only_new(items, seen, now)
+    items = _only_new(items, seen or {}, now)
     items.sort(key=lambda i: i["published"] or datetime.min.replace(tzinfo=timezone.utc),
                reverse=True)
+    return items
 
-    counts = section.get("counts") or {}
+
+def block_sizes(config: dict[str, Any]) -> tuple[dict[str, int], dict[str, int]]:
+    counts = ((config.get("news") or {}).get("counts")) or {}
     agrar = counts.get("agrar") or {}
     agrar_split = {
         "deutsch": int(agrar.get("deutsch", 3)),
@@ -88,6 +91,22 @@ def collect(config: dict[str, Any], http: HttpConfig, problems: Problems,
         "agrar": agrar_split["deutsch"] + agrar_split["international"],
         "eu": int(counts.get("eu", 3)),
     }
+    return wanted, agrar_split
+
+
+def curate(items: list[dict[str, Any]], config: dict[str, Any], problems: Problems,
+           now: datetime, seen: dict[str, str] | None = None) -> dict[str, Any]:
+    """Aus den eingesammelten Meldungen das Briefing bauen.
+
+    Hier steckt der Modellaufruf – deshalb passiert das nur einmal am Tag.
+    """
+    section = config.get("news") or {}
+    if not section.get("enabled", True):
+        return {"enabled": False, **{b: [] for b in BLOCKS}, "lage": "", "note": None}
+
+    feeds = section.get("feeds") or []
+    wanted, agrar_split = block_sizes(config)
+    seen = seen or {}
 
     if not items:
         return {
@@ -109,6 +128,44 @@ def collect(config: dict[str, Any], http: HttpConfig, problems: Problems,
         "item_count": len(items),
         "ranked_by": ranked_by,
     }
+
+
+def collect(config: dict[str, Any], http: HttpConfig, problems: Problems,
+            now: datetime, seen: dict[str, str] | None = None) -> dict[str, Any]:
+    """Einsammeln und auswählen in einem Rutsch."""
+    section = config.get("news") or {}
+    if not section.get("enabled", True):
+        return {"enabled": False, **{b: [] for b in BLOCKS}, "lage": "", "note": None}
+    items = gather(config, http, problems, now, seen)
+    return curate(items, config, problems, now, seen)
+
+
+def updates_since(items: list[dict[str, Any]], block: dict[str, Any],
+                  limit: int) -> list[dict[str, Any]]:
+    """Was seit der Auswahl vom Morgen dazugekommen ist.
+
+    Ohne Modell, also ohne Zusammenfassung – nach Aktualität, höchstens zwei
+    Meldungen je Haus, und nichts, was oben ohnehin schon steht.
+    """
+    if limit <= 0:
+        return []
+
+    known = {story["link"] for name in BLOCKS for story in block.get(name) or []}
+    per_source: dict[str, int] = {}
+    fresh: list[dict[str, Any]] = []
+
+    for item in items:
+        if len(fresh) >= limit:
+            break
+        if item["link"] in known:
+            continue
+        source = item["source"]
+        if per_source.get(source, 0) >= 2:
+            continue
+        per_source[source] = per_source.get(source, 0) + 1
+        fresh.append({**item, "summary": "", "also": []})
+
+    return fresh
 
 
 def _relevant_for_scope(items: list[dict[str, Any]],
