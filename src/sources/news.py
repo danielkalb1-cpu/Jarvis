@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import html
 import json
+import logging
 import os
 import re
 from concurrent.futures import ThreadPoolExecutor
@@ -36,6 +37,8 @@ ONLY_NEW = ("eu",)
 MAX_HEADLINES_FOR_MODEL = 400
 SUMMARY_INPUT_CHARS = 300      # Kurzbeschreibung aus dem Feed, gekürzt
 TAG_RE = re.compile(r"<[^>]+>")
+
+log = logging.getLogger(__name__)
 
 
 # ----------------------------------------------------------------------
@@ -311,6 +314,8 @@ def _rank(items: list[dict[str, Any]], wanted: dict[str, int],
             selection = _apply(raw, items, wanted)
             if selection is not None:
                 return selection, "Claude", None
+            log.warning("Gewichtung: Antwort nicht als JSON lesbar (%d Zeichen). "
+                        "Anfang: %.200s", len(raw), raw.replace("\n", " "))
             problems.add("Nachrichten-Gewichtung", "Antwort war kein verwertbares JSON")
             return (_fallback(items, wanted, agrar_split, llm), "Aktualität",
                     "Gewichtung lieferte kein gültiges JSON – nach Aktualität sortiert.")
@@ -430,8 +435,26 @@ def _ask_claude(items: list[dict[str, Any]], wanted: dict[str, int],
         # Ältere SDK- oder Modellstände kennen diese Parameter nicht – dann eben ohne.
         response = ask()
 
-    return "".join(block.text for block in response.content
+    stop = getattr(response, "stop_reason", None)
+    usage = getattr(response, "usage", None)
+    log.info("Gewichtung: stop_reason=%s, Eingabe %s / Ausgabe %s Token",
+             stop, getattr(usage, "input_tokens", "?"),
+             getattr(usage, "output_tokens", "?"))
+
+    text = "".join(block.text for block in response.content
                    if getattr(block, "type", None) == "text")
+
+    if stop == "max_tokens":
+        # max_tokens deckt auch die Denk-Token ab. Reicht das Budget nicht,
+        # bleibt von der eigentlichen Antwort nichts oder nur ein Bruchstück.
+        raise RuntimeError(
+            f"Antwort abgeschnitten – max_tokens ({request['max_tokens']}) "
+            "war zu knapp für Denken und Ausgabe zusammen. In der config "
+            "news.llm.max_tokens erhöhen oder effort senken.")
+    if not text.strip():
+        raise RuntimeError(f"Antwort enthielt keinen Text (stop_reason={stop}).")
+
+    return text
 
 
 def _apply(raw: str, items: list[dict[str, Any]],

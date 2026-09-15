@@ -74,7 +74,10 @@ news:
   llm:
     enabled: true
     model: "claude-sonnet-5"
-    max_tokens: 16000
+    # Deckt Denken UND Ausgabe ab. Bei effort: high und 400 Überschriften
+    # verbraucht das Denken den Löwenanteil – mit 16.000 kam beim ersten
+    # echten Lauf gar kein Text mehr heraus.
+    max_tokens: 32000
     # Aufwand des Modells: low | medium | high | xhigh | max.
     # Der Aufruf passiert nur einmal am Tag, also lohnt sich Sorgfalt.
     effort: high
