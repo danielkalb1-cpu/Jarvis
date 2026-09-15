@@ -30,7 +30,10 @@ BLOCKS = ("top", "region", "agrar", "eu", "world")
 # auftauchen. Regulatorik bewegt sich langsam – ohne das stünden dort
 # wochenlang dieselben Einträge.
 ONLY_NEW = ("eu",)
-MAX_HEADLINES_FOR_MODEL = 220
+# Der Modellaufruf passiert nur einmal am Tag – dann darf er auch das ganze
+# Material sehen. 400 Überschriften sind rund 17.000 Token Eingabe, also
+# wenige Cent.
+MAX_HEADLINES_FOR_MODEL = 400
 SUMMARY_INPUT_CHARS = 300      # Kurzbeschreibung aus dem Feed, gekürzt
 TAG_RE = re.compile(r"<[^>]+>")
 
@@ -80,7 +83,7 @@ def collect(config: dict[str, Any], http: HttpConfig, problems: Problems,
 
     if not items:
         return {
-            "enabled": True, **{b: [] for b in BLOCKS}, "seen_update": {},
+            "enabled": True, **{b: [] for b in BLOCKS}, "lage": "", "seen_update": {},
             "note": "Keine Meldungen eingesammelt – alle Feeds waren nicht erreichbar.",
             "feed_count": len(feeds), "item_count": 0, "ranked_by": "keine",
         }
@@ -90,6 +93,7 @@ def collect(config: dict[str, Any], http: HttpConfig, problems: Problems,
 
     return {
         "enabled": True,
+        "lage": selection.get("lage", ""),
         "seen_update": _newly_shown(selection, seen, now),
         **{block: selection[block] for block in BLOCKS},
         "note": note,
@@ -338,36 +342,59 @@ def _ask_claude(items: list[dict[str, Any]], wanted: dict[str, int],
     ]
 
     system = (
-        "Du bist Redakteur für ein persönliches Morgen-Briefing. Du bekommst RSS-Überschriften "
-        "vieler Redaktionen und wählst daraus die wichtigsten aus.\n\n"
-        "Gewichte nach:\n"
-        "1. Bedeutung der Meldung.\n"
-        "2. Mehrfachberichterstattung: berichten mehrere unabhängige Häuser über dieselbe Sache, "
-        "ist sie wichtiger. Nimm die Sache dann nur EINMAL auf.\n"
-        f"3. Regionalbezug zu: {', '.join(region_terms)}.\n\n"
-        "Schreibe zu jeder ausgewählten Meldung eine eigene Zusammenfassung in ein bis zwei "
-        "vollständigen deutschen Sätzen. Formuliere in eigenen Worten und übernimm keine "
-        "Formulierungen aus Titel oder Teaser wörtlich. Erfinde nichts dazu, was nicht in "
-        "Titel oder Teaser steht.\n\n"
-        "Antworte ausschließlich mit JSON in genau dieser Form, ohne weiteren Text:\n"
-        '{"top":[{"id":0,"summary":"...","also":["Quelle A","Quelle B"]}],'
+        "Du bist Redakteur für ein persönliches Morgen-Briefing. Es wird um "
+        "Viertel vor sechs mit einem Auge überflogen, von jemandem im Allgäu, "
+        "der werktags nach Augsburg pendelt und beruflich mit Landwirtschaft "
+        "und Landmaschinen zu tun hat.\n\n"
+
+        "Du bekommst alle Überschriften, die heute früh eingesammelt wurden. "
+        "Geh sie vollständig durch, bevor du auswählst.\n\n"
+
+        "So gewichtest du:\n"
+        "1. Tragweite – was ändert sich für viele Menschen, und wie stark?\n"
+        "2. Mehrfachberichterstattung: Melden mehrere unabhängige Häuser "
+        "dieselbe Sache, ist sie wichtiger. Fasse solche Meldungen zu EINER "
+        "zusammen und trage die übrigen Häuser in \"also\" nach.\n"
+        f"3. Bezug zu ihm: {', '.join(region_terms)}, Landwirtschaft, "
+        "Pendeln zwischen Allgäu und Augsburg.\n"
+        "4. Aktualität – bei gleichem Gewicht das Neuere.\n\n"
+
+        "Aussortieren: Sport-Ergebnisse, Promi- und Boulevardmeldungen, "
+        "Ratgeber, Produkttests, reine Ankündigungen, Live-Ticker ohne neuen "
+        "Stand. Lieber ein Block mit vier guten Meldungen als fünf mit einer "
+        "schwachen.\n\n"
+
+        "Zu jeder ausgewählten Meldung schreibst du ein bis zwei vollständige "
+        "deutsche Sätze: was ist passiert, und was folgt daraus. In eigenen "
+        "Worten – übernimm keine Formulierung aus Titel oder Teaser wörtlich. "
+        "Erfinde nichts, was nicht in Titel oder Teaser steht; wenn der Teaser "
+        "dünn ist, schreib lieber weniger. Keine Floskeln wie \"es bleibt "
+        "abzuwarten\".\n\n"
+
+        "Zusätzlich \"lage\": zwei bis drei Sätze, die den Tag einordnen – "
+        "was heute zählt, worauf er sich einstellen sollte. Schreib ihn direkt "
+        "an, in ruhigem, sachlichem Ton, ohne Anrede und ohne Aufzählung. "
+        "Wenn wenig los ist, sag genau das; erfundene Dringlichkeit ist "
+        "schlimmer als ein ruhiger Tag.\n\n"
+
+        "Antworte ausschließlich mit JSON in genau dieser Form, ohne weiteren "
+        "Text:\n"
+        '{"lage":"...","top":[{"id":0,"summary":"...","also":["Quelle A"]}],'
         '"region":[...],"agrar":[...],"eu":[...],"world":[...]}\n\n'
         f'"top" = {wanted["top"]} wichtigste Meldungen insgesamt, '
-        f'"region" = {wanted["region"]} Meldungen mit Bezug zur Region, '
-        f'"agrar" = {wanted["agrar"]} Meldungen aus der Landwirtschaft, davon '
+        f'"region" = {wanted["region"]} mit Bezug zur Region, '
+        f'"agrar" = {wanted["agrar"]} aus der Landwirtschaft, davon '
         f'{agrar_split["deutsch"]} deutschsprachige (sprache "de") und '
-        f'{agrar_split["international"]} internationale (sprache "en") – '
-        "in genau dieser Reihenfolge, erst die deutschen, dann die internationalen; "
-        'nimm dafür Meldungen aus dem Bereich "agrar", und nur wenn dort zu wenige '
-        "stehen, passende aus den übrigen Bereichen. "
+        f'{agrar_split["international"]} internationale (sprache "en"), erst '
+        "die deutschen. "
         f'"eu" = bis zu {wanted["eu"]} Meldungen aus dem Bereich "eu" zu neuem '
         "EU-Regelwerk mit Bezug zu Landwirtschaft, Landmaschinen oder "
-        "Anbaugeräten – Verordnungen, Richtlinien, Typgenehmigung, Fristen. "
-        "Nimm hier NUR Meldungen aus dem Bereich \"eu\", und lass den Block "
-        "lieber leer, als ihn mit allgemeiner Agrarpolitik zu füllen. "
+        "Anbaugeräten. Nimm dort NUR Meldungen aus dem Bereich \"eu\" und "
+        "lass den Block lieber leer, als ihn mit allgemeiner Agrarpolitik zu "
+        "füllen. "
         f'"world" = {wanted["world"]} internationale Meldungen. '
-        '"also" listet weitere Häuser, die dieselbe Sache melden (leer lassen, wenn keine). '
-        "Keine ID doppelt über alle Blöcke hinweg."
+        '"also" listet weitere Häuser, die dieselbe Sache melden (leer lassen, '
+        "wenn keine). Keine ID doppelt über alle Blöcke hinweg."
     )
 
     client = anthropic.Anthropic(api_key=api_key, timeout=120.0, max_retries=2)
@@ -382,11 +409,14 @@ def _ask_claude(items: list[dict[str, Any]], wanted: dict[str, int],
         }],
     }
 
+    # Der Aufruf passiert einmal am Tag, also darf er gründlich sein:
+    # adaptives Denken und hoher Aufwand. Kostet ein paar Cent mehr und
+    # entscheidet über die Qualität des ganzen Briefings.
     try:
         response = client.messages.create(
             **request,
             thinking={"type": "adaptive"},
-            output_config={"effort": "medium"},
+            output_config={"effort": llm.get("effort", "high")},
         )
     except Exception:
         # Ältere SDK- oder Modellstände kennen diese Parameter nicht – dann eben ohne.
@@ -397,7 +427,7 @@ def _ask_claude(items: list[dict[str, Any]], wanted: dict[str, int],
 
 
 def _apply(raw: str, items: list[dict[str, Any]],
-           wanted: dict[str, int]) -> dict[str, list[dict[str, Any]]] | None:
+           wanted: dict[str, int]) -> dict[str, Any] | None:
     data = _loose_json(raw)
     if not isinstance(data, dict):
         return None
@@ -433,8 +463,12 @@ def _apply(raw: str, items: list[dict[str, Any]],
                 "also": [str(a) for a in also][:6] if isinstance(also, list) else [],
             })
 
-    if not any(selection.values()):
+    if not any(selection.get(b) for b in BLOCKS):
         return None
+
+    lage = str(data.get("lage") or "").strip()
+    # Ein Absatz, keine Abhandlung – und nichts, was wie Markup aussieht.
+    selection["lage"] = re.sub(r"\s+", " ", TAG_RE.sub(" ", lage))[:600]
     return selection
 
 
@@ -524,7 +558,7 @@ def _fallback(items: list[dict[str, Any]], wanted: dict[str, int],
          wanted.get("eu", 0))
     take("world", [i for i in items if i["scope"] == "world"], wanted.get("world", 0))
     take("top", items, wanted.get("top", 0))
-    return {block: selection[block] for block in BLOCKS}
+    return {**{block: selection[block] for block in BLOCKS}, "lage": ""}
 
 
 def _short(exc: Exception) -> str:

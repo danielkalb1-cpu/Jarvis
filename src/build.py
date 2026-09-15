@@ -72,6 +72,16 @@ def num(value: Any, digits: int = 0, dash: str = "–") -> str:
 # Fragmente
 # ======================================================================
 
+def render_lage(text: str) -> str:
+    """Die Einordnung des Tages – nur vorhanden, wenn Claude gewichtet hat."""
+    if not (text or "").strip():
+        return ""
+    return (f'  <section class="lage" aria-label="Lage">\n'
+            f'    <span class="lage__k">Lage</span>\n'
+            f'    <p class="lage__t">{esc(text.strip())}</p>\n'
+            f'  </section>\n')
+
+
 def render_alerts(alerts: list[dict[str, str]]) -> str:
     if not alerts:
         return ""
@@ -84,14 +94,49 @@ def render_alerts(alerts: list[dict[str, str]]) -> str:
     return f'  <div class="alerts">\n{rows}\n  </div>\n'
 
 
-def render_weather(block: dict[str, Any]) -> str:
+def render_weather(block: dict[str, Any], alerts_here: str = "") -> str:
     if not block.get("enabled", True):
         return note("Wetter ist in der config.yaml abgeschaltet.")
 
-    out: list[str] = []
-    for location in block.get("locations", []):
-        out.append(_weather_panel(location))
-    return "\n".join(out) or note("Keine Standorte konfiguriert.")
+    locations = block.get("locations") or []
+    if not locations:
+        return note("Keine Standorte konfiguriert.")
+
+    # Der erste Ort bekommt die volle Kachel, die weiteren eine Zeile. Zwei
+    # gleich aufgebaute Kacheln kosteten je einen halben Bildschirm und
+    # zeigten meist fast dieselben Zahlen.
+    out = [alerts_here] if alerts_here else []
+    out.append(_weather_panel(locations[0]))
+    rest = [_weather_row(loc) for loc in locations[1:]]
+    if rest:
+        out.append('    <div class="panel wx__more">\n' + "\n".join(rest) + "\n    </div>")
+    return "\n".join(out)
+
+
+def _weather_row(location: dict[str, Any]) -> str:
+    """Weiterer Standort als eine Zeile statt als zweite Vollkachel."""
+    current = location.get("current") or {}
+    today = location.get("today") or {}
+
+    if location.get("error") and not current:
+        return ('      <div class="wxrow"><span class="wxrow__n">'
+                f'{esc(location["name"])}</span>'
+                f'<span class="wxrow__e">nicht verfügbar</span></div>')
+
+    facts = [f'{num(today.get("min"))}° / {num(today.get("max"))}°']
+    prob = today.get("precipitation_probability")
+    if prob is not None:
+        facts.append(f'{num(prob)} % Regen')
+    wind = current.get("wind_speed")
+    if wind is not None:
+        facts.append(f'{num(wind)} km/h')
+
+    return f"""      <div class="wxrow">
+        <span class="wxrow__n">{esc(location["name"])}</span>
+        {icon(current.get("icon"), "wxrow__i")}
+        <span class="wxrow__t">{num(current.get("temperature"), 1)}°</span>
+        <span class="wxrow__f">{esc(" · ".join(facts))}</span>
+      </div>"""
 
 
 def _weather_panel(location: dict[str, Any]) -> str:
@@ -356,6 +401,11 @@ def demo_data(now: datetime) -> tuple[dict, dict, dict]:
 
     news = {
         "enabled": True, "note": "Demo-Daten – keine echten Meldungen.",
+        "lage": "Ruhiger Vormittag, ab elf zieht Regen auf – wenn du nach Augsburg "
+                "und zurück willst, leg die Rückfahrt vor den Nachmittag. "
+                "Politisch dominiert die Netzentgelt-Reform, für dich relevanter ist "
+                "die geänderte Düngeverordnung, die ab Januar die roten Gebiete "
+                "betrifft. Sonst nichts, was den Tag umwirft.",
         "feed_count": 20, "item_count": 128, "ranked_by": "Demo",
         "top": [
             story("Bundestag beschließt Reform der Netzentgelte", "tagesschau",
@@ -439,13 +489,14 @@ def _news_with_cache(config: dict[str, Any], http: HttpConfig, problems: Problem
     """Nachrichten holen – oder den noch frischen Stand aus dem Cache nehmen."""
     news_config = config.get("news") or {}
     llm = news_config.get("llm") or {}
+    once_per_day = bool(llm.get("once_per_day", True))
     max_age = timedelta(minutes=float(llm.get("min_interval_minutes", 0) or 0))
     stamp = news_cache.fingerprint(news_config, NEWS_MODULE)
 
-    cached = news_cache.load(NEWS_CACHE, max_age, now, stamp)
+    cached = news_cache.load(NEWS_CACHE, max_age, now, stamp, once_per_day)
     if cached is not None:
         age = int((now - cached["cached_at"]).total_seconds() // 60)
-        log.info("Nachrichten aus dem Cache (%d min alt).", age)
+        log.info("Nachrichten aus dem Cache (%d min alt, Stand von heute früh).", age)
         return cached
 
     seen = news_cache.load_seen(SEEN_FILE)
@@ -489,13 +540,19 @@ def build(demo: bool = False) -> int:
     stamp = (f"{WEEKDAYS[now.weekday()]} · {now.strftime('%d.%m.%Y')} · "
              f"{now.strftime('%H:%M')} Uhr")
 
+    lage_html = render_lage(news_block.get("lage") or "")
+    alerts_html = render_alerts(weather_block.get("alerts") or [])
+
     page = TEMPLATE.read_text(encoding="utf-8")
     for key, value in {
         "TITLE": esc(general.get("title", "JARVIS")),
         "SUBTITLE": esc(general.get("subtitle", "Morgen-Briefing")),
         "STAMP": esc(stamp),
-        "ALERTS": render_alerts(weather_block.get("alerts") or []),
-        "WEATHER": render_weather(weather_block),
+        "LAGE": lage_html,
+        # Gibt es eine Lage, fasst sie das Wetter ohnehin in Worte – die
+        # genauen Hinweise stehen dann im Wetterblock statt doppelt oben.
+        "ALERTS": "" if lage_html else alerts_html,
+        "WEATHER": render_weather(weather_block, alerts_html if lage_html else ""),
         "TRAFFIC": render_traffic(traffic_block),
         "NEWS": render_news(news_block, tz),
         "FOOTER": render_footer(now, problems, news_block),

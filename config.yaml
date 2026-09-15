@@ -74,11 +74,16 @@ news:
   llm:
     enabled: true
     model: "claude-sonnet-5"
-    max_tokens: 8000
-    # Der Workflow läuft tagsüber halbstündlich (vor allem wegen des Verkehrs).
-    # Die Nachrichten werden nur alle N Minuten neu geholt und gewichtet,
-    # dazwischen kommt der zwischengespeicherte Stand aus cache/news.json.
-    # 0 = jedes Mal neu holen (deutlich mehr API-Kosten).
+    max_tokens: 16000
+    # Aufwand des Modells: low | medium | high | xhigh | max.
+    # Der Aufruf passiert nur einmal am Tag, also lohnt sich Sorgfalt.
+    effort: high
+    # true = genau ein Modellaufruf pro Kalendertag. Der erste Lauf des Tages
+    # (morgens) holt und gewichtet, alle weiteren nehmen diesen Stand aus
+    # cache/news.json. Die Verkehrslage aktualisiert trotzdem halbstündlich.
+    once_per_day: true
+    # Nur wirksam, wenn once_per_day: false — dann wird alle N Minuten neu
+    # gewichtet. 0 = bei jedem Lauf (teuer).
     min_interval_minutes: 180
     # Begriffe, die den Regionalbezug definieren (fließen in den Prompt
     # und in die Fallback-Sortierung ein)

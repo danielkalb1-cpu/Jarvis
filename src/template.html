@@ -141,6 +141,30 @@ body::after{
 }
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
 
+/* ===================== Lage ======================
+   Das Erste auf der Seite: zwei, drei Sätze, die den Tag einordnen.
+   Bewusst keine Monospace und keine Kennzahlen – das hier soll gelesen
+   klingen, nicht abgelesen. */
+.lage{
+  margin:22px 0 4px;
+  padding:16px 18px 17px;
+  border:1px solid var(--line);
+  border-left:3px solid transparent;
+  border-image:linear-gradient(180deg,var(--accent),var(--accent-2)) 1;
+  border-image-slice:1;
+  background:var(--panel);
+  backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);
+}
+.lage__k{
+  display:block; margin-bottom:8px;
+  font-family:var(--mono); font-size:9.5px; letter-spacing:.24em;
+  text-transform:uppercase; color:var(--accent); opacity:.85;
+}
+.lage__t{
+  margin:0; font-size:17px; line-height:1.55;
+  letter-spacing:-.003em; text-wrap:pretty;
+}
+
 /* ===================== Hinweiszeile ===================== */
 .alerts{display:flex; flex-direction:column; gap:8px; margin:18px 0 4px}
 .alert{
@@ -214,6 +238,36 @@ body::after{
   margin-top:3px; display:block;
 }
 .metric__v small{font-size:11.5px; color:var(--text-dim); letter-spacing:.02em}
+
+/* Weitere Standorte: eine Zeile je Ort */
+.wx__more{padding:4px 16px}
+/* Zwei Ebenen statt einer Zeile: sonst quetscht die Faktenspalte den
+   Ortsnamen zusammen – bei 390 px blieben ihm 39 px. */
+.wxrow{
+  display:grid;
+  grid-template-columns:1fr auto auto;
+  align-items:center; gap:3px 10px;
+  padding:11px 0; border-top:1px solid var(--line-soft);
+}
+.wxrow:first-child{border-top:0}
+.wxrow__n{
+  font-family:var(--mono); font-size:11px; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--muted);
+  flex:1 1 auto; min-width:0;
+  overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+}
+.wxrow__i{font-size:17px; color:var(--accent); flex:none; opacity:.9}
+.wxrow__t{
+  font-family:var(--mono); font-size:20px; font-variant-numeric:tabular-nums;
+  flex:none;
+}
+.wxrow__f{
+  grid-column:1 / -1;
+  font-family:var(--mono); font-size:10.5px; color:var(--text-dim);
+  letter-spacing:.02em;
+}
+.wxrow__e{grid-column:2 / -1; text-align:right}
+.wxrow__e{font-size:12px; color:var(--muted); grid-column:2 / -1; text-align:right}
 
 /* Tagesverlauf – horizontal scrollbar, ohne Balken */
 .hours{
@@ -372,6 +426,7 @@ body::after{
     <div class="head__rule"></div>
   </header>
 
+  {{LAGE}}
   {{ALERTS}}
 
   <section class="section">

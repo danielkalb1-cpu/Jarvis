@@ -126,6 +126,8 @@ Weitere nützliche Stellschrauben in derselben Datei:
 | `news.counts`                     | Größe der Nachrichtenblöcke (5 / 4 / 3+2 / 4)       |
 | `news.feeds`                      | die Feed-Liste, siehe [Feeds prüfen](#feeds-prüfen) |
 | `news.llm.model`                  | welches Claude-Modell gewichtet (Vorgabe: Sonnet 5) |
+| `news.llm.once_per_day`           | genau ein Modellaufruf pro Tag (Vorgabe: an)        |
+| `news.llm.effort`                 | Sorgfalt des Modells: low bis max (Vorgabe: high)   |
 | `news.llm.region_terms`           | was als „regional“ zählt                            |
 | `news.llm.min_interval_minutes`   | wie oft die Nachrichten neu gewichtet werden        |
 | `http.timeout_seconds` / `retries`| Geduld bei langsamen Quellen                        |
@@ -330,12 +332,21 @@ und verwirft sie im Zweifel ganz, und `:00` und `:30` sind die am stärksten
 eine halbe Stunde später alles nach – dafür ist die dichte Taktung da.
 
 **Zu den Kosten:** die vielen Läufe sind für den Verkehr gedacht. Die
-Nachrichten jedes Mal neu von Claude gewichten zu lassen, wäre teuer, deshalb
-wird das Ergebnis in `cache/news.json` zwischengespeichert und nur alle
-drei Stunden erneuert (`news.llm.min_interval_minutes`). Damit bleiben etwa
-sechs API-Aufrufe pro Werktag übrig statt über dreißig. Wer die Nachrichten
-lieber jedes Mal frisch will, setzt den Wert auf `0` – wer gar keine
-KI-Gewichtung will, setzt `news.llm.enabled: false`.
+Nachrichten werden dagegen **genau einmal am Tag** gewichtet
+(`news.llm.once_per_day: true`): der erste Lauf des Tages holt und bewertet,
+alle weiteren nehmen den Stand aus `cache/news.json`. Die Verkehrslage
+aktualisiert trotzdem halbstündlich.
+
+Weil der Aufruf nur einmal fällt, darf er gründlich sein: bis zu 400
+Überschriften als Eingabe, adaptives Denken, `effort: high`. Das sind rund
+17.000 Token Eingabe und ein paar tausend Ausgabe – bei Sonnet 5 (2 $ je Mio.
+Eingabe, 10 $ je Mio. Ausgabe) etwa **zehn Cent pro Tag**, also rund zwei Euro
+im Monat. Halbstündlich wäre dasselbe bei über 60 Euro gelandet.
+
+Wer es anders will: `once_per_day: false` schaltet auf
+`min_interval_minutes` um, `effort` lässt sich auf `medium` senken, und
+`news.llm.enabled: false` schaltet die Gewichtung ganz ab (dann wird nach
+Aktualität sortiert und es gibt keine Lage-Einschätzung).
 
 **Zur Repo-Größe:** jeder Lauf mit Änderung erzeugt einen Commit mit der neu
 gerenderten `docs/index.html`. Das sind etwa 30 Commits pro Werktag. Git packt

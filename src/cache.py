@@ -46,9 +46,14 @@ def fingerprint(news_config: dict[str, Any], *sources: Path) -> str:
 
 
 def load(path: Path, max_age: timedelta, now: datetime,
-         expected: str | None = None) -> dict[str, Any] | None:
-    """Gecachten Block zurückgeben, wenn er noch frisch und passend ist."""
-    if max_age <= timedelta(0) or not path.exists():
+         expected: str | None = None, same_day: bool = False) -> dict[str, Any] | None:
+    """Gecachten Block zurückgeben, wenn er noch frisch und passend ist.
+
+    same_day=True heißt: gültig bis Mitternacht. Der erste Lauf eines Tages
+    holt also frisch, alle weiteren nehmen diesen Stand – genau ein
+    Modellaufruf pro Tag, und zwar der am frühen Morgen.
+    """
+    if not path.exists() or (not same_day and max_age <= timedelta(0)):
         return None
     try:
         raw = json.loads(path.read_text(encoding="utf-8"))
@@ -61,7 +66,10 @@ def load(path: Path, max_age: timedelta, now: datetime,
         log.info("Konfiguration hat sich geändert – Cache verworfen.")
         return None
 
-    if now - built > max_age:
+    if same_day:
+        if built.date() != now.date():
+            return None
+    elif now - built > max_age:
         return None
 
     block = _revive(raw["block"])

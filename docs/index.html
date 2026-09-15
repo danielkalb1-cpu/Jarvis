@@ -141,6 +141,30 @@ body::after{
 }
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
 
+/* ===================== Lage ======================
+   Das Erste auf der Seite: zwei, drei Sätze, die den Tag einordnen.
+   Bewusst keine Monospace und keine Kennzahlen – das hier soll gelesen
+   klingen, nicht abgelesen. */
+.lage{
+  margin:22px 0 4px;
+  padding:16px 18px 17px;
+  border:1px solid var(--line);
+  border-left:3px solid transparent;
+  border-image:linear-gradient(180deg,var(--accent),var(--accent-2)) 1;
+  border-image-slice:1;
+  background:var(--panel);
+  backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);
+}
+.lage__k{
+  display:block; margin-bottom:8px;
+  font-family:var(--mono); font-size:9.5px; letter-spacing:.24em;
+  text-transform:uppercase; color:var(--accent); opacity:.85;
+}
+.lage__t{
+  margin:0; font-size:17px; line-height:1.55;
+  letter-spacing:-.003em; text-wrap:pretty;
+}
+
 /* ===================== Hinweiszeile ===================== */
 .alerts{display:flex; flex-direction:column; gap:8px; margin:18px 0 4px}
 .alert{
@@ -214,6 +238,36 @@ body::after{
   margin-top:3px; display:block;
 }
 .metric__v small{font-size:11.5px; color:var(--text-dim); letter-spacing:.02em}
+
+/* Weitere Standorte: eine Zeile je Ort */
+.wx__more{padding:4px 16px}
+/* Zwei Ebenen statt einer Zeile: sonst quetscht die Faktenspalte den
+   Ortsnamen zusammen – bei 390 px blieben ihm 39 px. */
+.wxrow{
+  display:grid;
+  grid-template-columns:1fr auto auto;
+  align-items:center; gap:3px 10px;
+  padding:11px 0; border-top:1px solid var(--line-soft);
+}
+.wxrow:first-child{border-top:0}
+.wxrow__n{
+  font-family:var(--mono); font-size:11px; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--muted);
+  flex:1 1 auto; min-width:0;
+  overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+}
+.wxrow__i{font-size:17px; color:var(--accent); flex:none; opacity:.9}
+.wxrow__t{
+  font-family:var(--mono); font-size:20px; font-variant-numeric:tabular-nums;
+  flex:none;
+}
+.wxrow__f{
+  grid-column:1 / -1;
+  font-family:var(--mono); font-size:10.5px; color:var(--text-dim);
+  letter-spacing:.02em;
+}
+.wxrow__e{grid-column:2 / -1; text-align:right}
+.wxrow__e{font-size:12px; color:var(--muted); grid-column:2 / -1; text-align:right}
 
 /* Tagesverlauf – horizontal scrollbar, ohne Balken */
 .hours{
@@ -368,9 +422,14 @@ body::after{
       <h1 class="brand__mark">JARVIS</h1>
       <span class="brand__sub">Morgen-Briefing</span>
     </div>
-    <div class="stamp"><span class="pulse"></span>Dienstag · 15.09.2026 · 22:43 Uhr</div>
+    <div class="stamp"><span class="pulse"></span>Dienstag · 15.09.2026 · 23:05 Uhr</div>
     <div class="head__rule"></div>
   </header>
+
+    <section class="lage" aria-label="Lage">
+    <span class="lage__k">Lage</span>
+    <p class="lage__t">Ruhiger Vormittag, ab elf zieht Regen auf – wenn du nach Augsburg und zurück willst, leg die Rückfahrt vor den Nachmittag. Politisch dominiert die Netzentgelt-Reform, für dich relevanter ist die geänderte Düngeverordnung, die ab Januar die roten Gebiete betrifft. Sonst nichts, was den Tag umwirft.</p>
+  </section>
 
   
 
@@ -380,35 +439,34 @@ body::after{
       <h2 class="section__title">Wetter</h2>
       <span class="section__line"></span>
     </div>
-        <div class="panel">
-      <div class="wx__top">
-        <div>
-          <div class="wx__place">Augsburg</div>
-          <div class="wx__temp">17,6<sup>°C</sup></div>
-          <div class="wx__feels">gefühlt 17,6 °C</div>
-        </div>
-        <div class="wx__cond">
-          <svg class="ic wx__glyph" aria-hidden="true"><use href="#i-cloud"></use></svg>
-          <span class="wx__label">bewölkt</span>
-        </div>
-      </div>
-      <div class="wx__grid"><div class="metric"><span class="metric__k">Regen</span><span class="metric__v">1 <small>%</small></span></div><div class="metric"><span class="metric__k">Menge</span><span class="metric__v">0,0 <small>mm</small></span></div><div class="metric"><span class="metric__k">Wind</span><span class="metric__v">6 <small>km/h</small></span></div><div class="metric"><span class="metric__k">Wolken</span><span class="metric__v">100 <small>%</small></span></div></div>
-      <div class="wx__days"><span>Heute <b>10°</b> / <b>25°</b></span><span>Morgen <b>14°</b> / <b>22°</b></span></div>
-    </div>
+      <div class="alerts">
+    <div class="alert alert--rain"><span class="alert__icon"><svg class="ic " aria-hidden="true"><use href="#i-rain"></use></svg></span><span>Augsburg: Regen ab dem späten Vormittag – 70 % Regenwahrscheinlichkeit, 2,4 mm erwartet. Schirm einpacken.</span></div>
+    <div class="alert alert--frost"><span class="alert__icon"><svg class="ic " aria-hidden="true"><use href="#i-snow"></use></svg></span><span>Marktoberdorf: Bodenfrost möglich, Tiefstwert 2 °C.</span></div>
+  </div>
+
     <div class="panel">
       <div class="wx__top">
         <div>
-          <div class="wx__place">Marktoberdorf</div>
-          <div class="wx__temp">17,3<sup>°C</sup></div>
-          <div class="wx__feels">gefühlt 16,8 °C</div>
+          <div class="wx__place">Augsburg</div>
+          <div class="wx__temp">8,4<sup>°C</sup></div>
+          <div class="wx__feels">gefühlt 5,5 °C</div>
         </div>
         <div class="wx__cond">
-          <svg class="ic wx__glyph" aria-hidden="true"><use href="#i-cloud"></use></svg>
-          <span class="wx__label">bewölkt</span>
+          <svg class="ic wx__glyph" aria-hidden="true"><use href="#i-partly-day"></use></svg>
+          <span class="wx__label">teils bewölkt</span>
         </div>
       </div>
-      <div class="wx__grid"><div class="metric"><span class="metric__k">Regen</span><span class="metric__v">1 <small>%</small></span></div><div class="metric"><span class="metric__k">Menge</span><span class="metric__v">0,0 <small>mm</small></span></div><div class="metric"><span class="metric__k">Wind</span><span class="metric__v">6 <small>km/h</small></span></div><div class="metric"><span class="metric__k">Wolken</span><span class="metric__v">100 <small>%</small></span></div></div>
-      <div class="wx__days"><span>Heute <b>13°</b> / <b>23°</b></span><span>Morgen <b>13°</b> / <b>22°</b></span></div>
+      <div class="wx__grid"><div class="metric"><span class="metric__k">Regen</span><span class="metric__v">70 <small>%</small></span></div><div class="metric"><span class="metric__k">Menge</span><span class="metric__v">2,4 <small>mm</small></span></div><div class="metric"><span class="metric__k">Wind</span><span class="metric__v">11 <small>km/h</small></span></div><div class="metric"><span class="metric__k">Wolken</span><span class="metric__v">75 <small>%</small></span></div></div>
+      <div class="hours"><div class="hour"><div class="hour__t">06</div><svg class="ic hour__i" aria-hidden="true"><use href="#i-cloud"></use></svg><div class="hour__d">8°</div><div class="hour__p">10%</div></div><div class="hour"><div class="hour__t">09</div><svg class="ic hour__i" aria-hidden="true"><use href="#i-partly-day"></use></svg><div class="hour__d">10°</div><div class="hour__p">20%</div></div><div class="hour"><div class="hour__t">12</div><svg class="ic hour__i" aria-hidden="true"><use href="#i-rain"></use></svg><div class="hour__d">13°</div><div class="hour__p">70%</div></div><div class="hour"><div class="hour__t">15</div><svg class="ic hour__i" aria-hidden="true"><use href="#i-rain"></use></svg><div class="hour__d">14°</div><div class="hour__p">65%</div></div><div class="hour"><div class="hour__t">18</div><svg class="ic hour__i" aria-hidden="true"><use href="#i-partly-day"></use></svg><div class="hour__d">12°</div><div class="hour__p">20%</div></div><div class="hour"><div class="hour__t">21</div><svg class="ic hour__i" aria-hidden="true"><use href="#i-moon"></use></svg><div class="hour__d">9°</div><div class="hour__p">10%</div></div></div>
+      <div class="wx__days"><span>Heute <b>7°</b> / <b>14°</b></span><span>Morgen <b>5°</b> / <b>16°</b></span></div>
+    </div>
+    <div class="panel wx__more">
+      <div class="wxrow">
+        <span class="wxrow__n">Marktoberdorf</span>
+        <svg class="ic wxrow__i" aria-hidden="true"><use href="#i-cloud"></use></svg>
+        <span class="wxrow__t">6,1°</span>
+        <span class="wxrow__f">2° / 12° · 60 % Regen · 8 km/h</span>
+      </div>
     </div>
   </section>
 
@@ -418,8 +476,30 @@ body::after{
       <h2 class="section__title">Verkehr</h2>
       <span class="section__line"></span>
     </div>
-        <div class="note"><span class="note__i">!</span><span>Kein TOMTOM_API_KEY hinterlegt – daher keine Fahrzeiten. Kostenlosen Key auf developer.tomtom.com holen (Produkt „Routing API“) und im Repo unter Settings → Secrets and variables → Actions als TOMTOM_API_KEY eintragen.</span></div>
-
+        <div class="panel">
+      <div class="route__head">
+        <span class="route__name">Augsburg → Marktoberdorf</span>
+        <span class="route__km">96,4 km</span>
+      </div>
+      <div class="route__times">
+        <span class="route__live">83<small>min</small></span>
+        <span class="delay delay--warn">+14 min</span>
+        <span class="route__free">ohne Verkehr 69 min</span>
+      </div>
+      <div class="bar"><span class="bar__fill bar__fill--warn" style="width:17%"></span></div>
+    </div>
+    <div class="panel">
+      <div class="route__head">
+        <span class="route__name">Marktoberdorf → Augsburg</span>
+        <span class="route__km">95,1 km</span>
+      </div>
+      <div class="route__times">
+        <span class="route__live">71<small>min</small></span>
+        <span class="delay">+3 min</span>
+        <span class="route__free">ohne Verkehr 68 min</span>
+      </div>
+      <div class="bar"><span class="bar__fill" style="width:4%"></span></div>
+    </div>
   </section>
 
   <section class="section">
@@ -430,88 +510,117 @@ body::after{
     </div>
         <div class="panel">
       <div class="block__title">Wichtigstes heute</div>
-      <a class="story" href="https://www.spiegel.de/kultur/ralf-richter-ist-tot-ein-typ-fuer-die-ewigkeit-a-89fa8d82-0ffb-4ebd-be6f-e40fb13a7699#ref=rss" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Ralf Richter ist tot: Ein Typ für die Ewigkeit</h3>
-        <div class="story__m"><span class="chip chip--src">Spiegel</span><span class="chip">22:35</span></div>
+      <a class="story" href="https://example.org/" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Bundestag beschließt Reform der Netzentgelte</h3>
+        <p class="story__s">Das Parlament hat eine Neuverteilung der Stromnetzkosten verabschiedet. Haushalte in Regionen mit vielen Windrädern sollen dadurch entlastet werden.</p>
+        <div class="story__m"><span class="chip chip--src">tagesschau</span><span class="chip">21:05</span><span class="chip chip--also">auch: Zeit Online, FAZ, Spiegel</span></div>
       </a>
-      <a class="story" href="https://www.faz.net/aktuell/feuilleton/kunst-und-architektur/ist-das-kennedy-center-ohne-trump-bald-bankrott-accg-201226825.html" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Kulturzentrum in Washington: Trump droht mit Aus für das Kennedy Center</h3>
-        <div class="story__m"><span class="chip chip--src">FAZ</span><span class="chip">22:33</span></div>
+      <a class="story" href="https://example.org/" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">EZB lässt Leitzins unverändert</h3>
+        <p class="story__s">Die Notenbank belässt den Zins auf dem bisherigen Niveau und verweist auf die zuletzt wieder anziehende Kerninflation.</p>
+        <div class="story__m"><span class="chip chip--src">Handelsblatt</span><span class="chip">20:05</span><span class="chip chip--also">auch: Süddeutsche Zeitung, n-tv</span></div>
       </a>
-      <a class="story" href="https://www.zeit.de/news/2026-09/15/gruene-und-bsw-bei-marineschiffbau-in-tv-debatte-uneins" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Mecklenburg-Vorpommern: Grüne und BSW bei Marineschiffbau in TV-Debatte uneins</h3>
-        <div class="story__m"><span class="chip chip--src">Zeit Online</span><span class="chip">22:28</span></div>
+      <a class="story" href="https://example.org/" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Tarifrunde im öffentlichen Dienst vertagt</h3>
+        <p class="story__s">Die Verhandlungen sind ohne Ergebnis unterbrochen worden. Beide Seiten kündigten für kommende Woche einen neuen Anlauf an.</p>
+        <div class="story__m"><span class="chip chip--src">Deutschlandfunk</span><span class="chip">18:05</span></div>
       </a>
-      <a class="story" href="https://www.deutschlandfunk.de/pistorius-und-hegseth-kuendigen-engere-ruestungskooperation-an-100.html" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">USA - Pistorius und Hegseth kündigen engere Rüstungskooperation an</h3>
-        <div class="story__m"><span class="chip chip--src">Deutschlandfunk</span><span class="chip">22:28</span></div>
+      <a class="story" href="https://example.org/" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Studie: Bahnverkehr erneut unpünktlicher</h3>
+        <p class="story__s">Eine Auswertung der Fahrplandaten zeigt eine weiter sinkende Pünktlichkeit im Fernverkehr, besonders auf den Nord-Süd-Strecken.</p>
+        <div class="story__m"><span class="chip chip--src">Zeit Online</span><span class="chip">16:05</span></div>
       </a>
-      <a class="story" href="https://www.deutschlandfunk.de/trump-kuendigt-schliessung-des-kennedy-center-an-106.html" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Vereinigten Staaten - Trump kündigt Schließung des Kennedy Center an</h3>
-        <div class="story__m"><span class="chip chip--src">Deutschlandfunk</span><span class="chip">22:28</span></div>
+      <a class="story" href="https://example.org/" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Neue Regeln für Solaranlagen auf Dächern</h3>
+        <p class="story__s">Ab dem kommenden Quartal gelten vereinfachte Anmeldeverfahren für kleine Photovoltaikanlagen.</p>
+        <div class="story__m"><span class="chip chip--src">Welt</span><span class="chip">15:05</span></div>
       </a>
       <div class="block__title">Region</div>
-      <a class="story" href="https://www.merkur.de/lokales/bad-toelz/bad-toelz-ort28297/ikonisches-motiv-ausstellung-in-oberbayern-nimmt-mit-auf-faltboot-expeditionen-in-den-1930er-jahren-94493710.html" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">„Ikonisches Motiv“: Ausstellung in Oberbayern nimmt mit auf historische Faltboot-Expeditionen</h3>
-        <div class="story__m"><span class="chip chip--src">Merkur Lokales</span><span class="chip">19:03</span></div>
+      <a class="story" href="https://example.org/" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">A8 bei Augsburg nach Unfall wieder frei</h3>
+        <p class="story__s">Nach einem Auffahrunfall am frühen Morgen war die Autobahn zeitweise gesperrt. Seit etwa einer Stunde rollt der Verkehr wieder.</p>
+        <div class="story__m"><span class="chip chip--src">Augsburger Allgemeine</span><span class="chip">22:05</span></div>
       </a>
-      <a class="story" href="https://www.sueddeutsche.de/bayern/bayern-ig-metall-irmischer-li.3547972" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Wirtschaft in Bayern: Neuer Chef für die IG Metall</h3>
-        <div class="story__m"><span class="chip chip--src">SZ Bayern</span><span class="chip">15:45</span></div>
+      <a class="story" href="https://example.org/" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Klinikverbund im Ostallgäu plant Umbau</h3>
+        <p class="story__s">Der Trägerverbund will Standorte bündeln; über Details soll der Kreistag im Herbst entscheiden.</p>
+        <div class="story__m"><span class="chip chip--src">Allgäuer Zeitung</span><span class="chip">19:05</span></div>
       </a>
-      <a class="story" href="https://www.sueddeutsche.de/bayern/pilze-bayern-auswirkungen-duerre-klima-li.3544425" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Pilzsaison in Bayern beginnt: Wie die Schwammerl unter dem Dürresommer leiden</h3>
-        <div class="story__m"><span class="chip chip--src">SZ Bayern</span><span class="chip">15:37</span></div>
+      <a class="story" href="https://example.org/" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Augsburger Straßenbahnlinie wird verlängert</h3>
+        <p class="story__s">Die Verlängerung soll die westlichen Stadtteile besser anbinden. Der Bau beginnt im Frühjahr.</p>
+        <div class="story__m"><span class="chip chip--src">BR24</span><span class="chip">17:05</span></div>
       </a>
-      <a class="story" href="https://www.tagesschau.de/inland/regional/bayern/br-neues-schuljahr-was-auf-bayerns-schueler-zukommt-102.html" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Neues Schuljahr: Was auf Bayerns Schüler zukommt</h3>
-        <div class="story__m"><span class="chip chip--src">tagesschau Bayern</span><span class="chip">05:03</span></div>
+      <a class="story" href="https://example.org/" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Marktoberdorf beschließt neuen Haushalt</h3>
+        <p class="story__s">Der Stadtrat hat den Etat mit Schwerpunkt auf Schulsanierungen beschlossen.</p>
+        <div class="story__m"><span class="chip chip--src">Merkur</span><span class="chip">14:05</span></div>
       </a>
       <div class="block__title">Landwirtschaft</div>
-      <a class="story" href="https://www.agriland.ie/farming-news/heydon-bovine-tb-eradication-possible-with-current-progress/" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Heydon: Bovine TB eradication possible with current progress</h3>
-        <div class="story__m"><span class="chip chip--src">Agriland</span><span class="chip">22:41</span></div>
+      <a class="story" href="https://example.org/" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Milchpreis zieht im September weiter an</h3>
+        <p class="story__s">Die Molkereien zahlen im Schnitt zwei Cent mehr je Kilogramm als im Vormonat. Als Grund gilt die knappere Anlieferung im Süden.</p>
+        <div class="story__m"><span class="chip chip--src">agrarheute</span><span class="chip">19:05</span></div>
       </a>
-      <a class="story" href="https://www.agriculture.com/corn-down-nearly-3cent-or-tuesday-sept-15-2026-12122289" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Soybeans Close Up 14½¢ | Tuesday, Sept. 15, 2026</h3>
-        <div class="story__m"><span class="chip chip--src">Successful Farming</span><span class="chip">22:24</span></div>
+      <a class="story" href="https://example.org/" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Bundesrat billigt Änderung bei der Düngeverordnung</h3>
+        <p class="story__s">Die Länder haben der Neufassung zugestimmt; für rote Gebiete gelten ab kommendem Jahr veränderte Aufzeichnungspflichten.</p>
+        <div class="story__m"><span class="chip chip--src">top agrar</span><span class="chip">17:05</span><span class="chip chip--also">auch: Proplanta</span></div>
       </a>
-      <a class="story" href="https://www.agriland.ie/farming-news/video-taoiseach-notes-significant-pressures-facing-farming-sector/" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Video: Taoiseach notes ‘significant’ pressures facing farming sector</h3>
-        <div class="story__m"><span class="chip chip--src">Agriland</span><span class="chip">20:00</span></div>
+      <a class="story" href="https://example.org/" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Maisernte im Allgäu läuft früher als üblich</h3>
+        <p class="story__s">Wegen der trockenen Wochen im August beginnt der Häckselbetrieb in vielen Betrieben gut zwei Wochen vor dem Durchschnitt.</p>
+        <div class="story__m"><span class="chip chip--src">Allgäuer Zeitung</span><span class="chip">16:05</span></div>
       </a>
-      <a class="story" href="https://www.agriculture.com/corn-funds-hit-a-record-long-position-what-should-farmers-do-now-12122464" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Corn Funds Hit a Record Long Position — What Should Farmers Do Now?</h3>
-        <div class="story__m"><span class="chip chip--src">Successful Farming</span><span class="chip">17:59</span></div>
+      <a class="story" href="https://example.org/" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">EU farm ministers revisit protein crop targets</h3>
+        <p class="story__s">Ministers discussed raising domestic protein production to cut reliance on imported feed, with no decision expected before December.</p>
+        <div class="story__m"><span class="chip chip--src">Agriland</span><span class="chip">18:05</span></div>
       </a>
-      <a class="story" href="https://www.agriland.ie/farming-news/watch-the-latest-ploughing-forecast-from-carlow-weather/" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Watch: The latest Ploughing forecast from Carlow Weather</h3>
-        <div class="story__m"><span class="chip chip--src">Agriland</span><span class="chip">19:30</span></div>
+      <a class="story" href="https://example.org/" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">US corn harvest ahead of five-year average</h3>
+        <p class="story__s">Field reports put harvest progress several points above the usual pace for mid-September, helped by dry weather across the Corn Belt.</p>
+        <div class="story__m"><span class="chip chip--src">Successful Farming</span><span class="chip">14:05</span></div>
+      </a>
+      <div class="block__title">Neues Regelwerk</div>
+      <a class="story" href="https://example.org/" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Neue Typgenehmigungsfristen für Anbaugeräte beschlossen</h3>
+        <p class="story__s">Die EU hat die Übergangsfristen für die Typgenehmigung angehängter Arbeitsgeräte verlängert; betroffen sind Geräte über drei Tonnen.</p>
+        <div class="story__m"><span class="chip chip--src">agrarheute</span><span class="chip">03:05</span><span class="chip chip--also">auch: Profi</span></div>
+      </a>
+      <a class="story" href="https://example.org/" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Kommission legt Entwurf zur Maschinenverordnung vor</h3>
+        <p class="story__s">Der Entwurf betrifft unter anderem Nachrüstsätze und die Einstufung von Software-Updates als wesentliche Veränderung.</p>
+        <div class="story__m"><span class="chip chip--src">CEMA</span><span class="chip">17:05</span></div>
       </a>
       <div class="block__title">Weltweit</div>
-      <a class="story" href="https://www.bbc.co.uk/news/articles/c9gk58xgng0vo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Iran war has led to US munitions shortfalls, Pentagon inspector confirms</h3>
-        <div class="story__m"><span class="chip chip--src">BBC News</span><span class="chip">22:34</span></div>
+      <a class="story" href="https://example.org/" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">UN-Vollversammlung startet in New York</h3>
+        <p class="story__s">Die Generaldebatte beginnt mit Reden zahlreicher Staats- und Regierungschefs.</p>
+        <div class="story__m"><span class="chip chip--src">Reuters</span><span class="chip">20:05</span><span class="chip chip--also">auch: BBC News, AP News</span></div>
       </a>
-      <a class="story" href="http://www.france24.com/en/europe/20260915-nato-jets-down-drone-over-lithuania-as-russian-ship-fires-flares-at-danish-helicopter" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">NATO jets down drone over Lithuania as Russian ship fires flares at Danish helicopter</h3>
-        <div class="story__m"><span class="chip chip--src">France 24</span><span class="chip">22:26</span></div>
+      <a class="story" href="https://example.org/" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Schwere Überschwemmungen in Südostasien</h3>
+        <p class="story__s">Nach tagelangem Starkregen mussten zehntausende Menschen ihre Häuser verlassen.</p>
+        <div class="story__m"><span class="chip chip--src">BBC News</span><span class="chip">18:05</span></div>
       </a>
-      <a class="story" href="https://www.aljazeera.com/video/lets-focus/2026/9/15/what-makes-these-midterms-so-pivotal?traffic_source=rss" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">What makes these midterms so pivotal?</h3>
-        <div class="story__m"><span class="chip chip--src">Al Jazeera</span><span class="chip">22:19</span></div>
+      <a class="story" href="https://example.org/" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Handelsgespräche vor neuer Runde</h3>
+        <p class="story__s">Beide Seiten deuten Bewegung an, ein Abschluss gilt aber weiter als offen.</p>
+        <div class="story__m"><span class="chip chip--src">AP News</span><span class="chip">17:05</span></div>
       </a>
-      <a class="story" href="https://www.aljazeera.com/video/inside-story/2026/9/15/why-do-some-african-leaders-gamble-with-term-limits-2?traffic_source=rss" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Why do some African leaders gamble with term limits?</h3>
-        <div class="story__m"><span class="chip chip--src">Al Jazeera</span><span class="chip">22:17</span></div>
+      <a class="story" href="https://example.org/" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Rekordhitze im Süden Australiens gemessen</h3>
+        <p class="story__s">Der Wetterdienst meldet für mehrere Regionen die höchsten je gemessenen Septemberwerte.</p>
+        <div class="story__m"><span class="chip chip--src">The Guardian</span><span class="chip">13:05</span></div>
       </a>
-      <div class="note"><span class="note__i">!</span><span>Kein ANTHROPIC_API_KEY gesetzt – Meldungen nach Aktualität sortiert.</span></div>
+      <div class="note"><span class="note__i">!</span><span>Demo-Daten – keine echten Meldungen.</span></div>
     </div>
   </section>
 
-  <footer class="foot">Stand <b>Dienstag, 15. September 2026 · 22:43 Uhr</b> (CEST, Europe/Berlin)<br>
-    241 Meldungen aus 30 Feeds · Gewichtung: Aktualität<br>
-    <span class="foot__down">Nicht erreichbar:</span> Feed Agrar Berufsstand, Feed Agrar International, Feed Google News Augsburg, Feed Agrar Deutschland, Feed EU-Regelwerk Technik, Feed Google News Allgäu, Feed EU-Agrarrecht, Feed EU Machinery Rules<br>
+  <footer class="foot">Stand <b>Dienstag, 15. September 2026 · 23:05 Uhr</b> (CEST, Europe/Berlin)<br>
+    128 Meldungen aus 20 Feeds · Gewichtung: Demo<br>
+    Alle Quellen erreichbar.<br>
     Gebaut aus statischem HTML · keine Skripte, keine Tracker</footer>
 
 </div>
