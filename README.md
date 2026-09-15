@@ -61,12 +61,18 @@ Der kostenlose Tarif umfasst ein tägliches Kontingent an Anfragen. Dieses
 Briefing braucht **zwei Anfragen pro Lauf** (eine je Richtung), also rund
 70 pro Werktag – das passt bequem hinein.
 
-### 3. GitHub Pages auf `/docs` stellen
+### 3. Default-Branch und GitHub Pages
 
-1. Im Repo auf **Settings → Pages**.
-2. Bei **Source** *Deploy from a branch* auswählen.
-3. Bei **Branch**: `main` wählen, daneben den Ordner **`/docs`**.
-4. **Save** drücken.
+Zuerst der Default-Branch, dann Pages – in dieser Reihenfolge, sonst läuft
+der Cron auf dem einen und Pages liest vom anderen Branch.
+
+**Geplante Workflows laufen bei GitHub ausschließlich auf dem
+Default-Branch.** Steht der noch auf einem anderen Branch, committet der
+Cron dorthin, und die von Pages gelesene Seite friert ein.
+
+1. **Settings → General → Default branch** – auf `main` umstellen.
+2. **Settings → Pages**: bei **Source** *Deploy from a branch*, bei
+   **Branch** `main` und daneben den Ordner **`/docs`**, dann **Save**.
 
 Nach ein bis zwei Minuten ist die Seite erreichbar unter:
 
