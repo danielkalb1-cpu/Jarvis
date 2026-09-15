@@ -1,0 +1,292 @@
+{
+ "built_at": "2026-09-15T23:19:02.602603+02:00",
+ "config": "59816cecc525ba06",
+ "block": {
+  "enabled": true,
+  "lage": "Der Tag steht im Zeichen der Ölkrise am Roten Meer, die sich direkt in den Rekord-Spritpreisen niederschlägt, und der wachsenden Krise um Kanzler Merz, der seine New-York-Reise abgesagt hat und sich vor den Landtagswahlen am Wochenende dem Druck in der eigenen Partei stellt. Dazu kommt sicherheitspolitische Anspannung durch den Drohnenabschuss über Litauen und den Vorfall mit einem russischen Kriegsschiff vor Dänemark. Regional ist es ruhig: Der Augsburger Busverkehr fährt wieder im dichteren Takt, und ein Blick über die Grenze nach Österreich kann sich beim Tanken weiterhin lohnen.",
+  "seen_update": {
+   "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOa3lXeFpQYzFvNUJLTFNYLVNINmljbGtzd1Y2Q2kxc3BwVFVhM1ZYaTh1RXJObnpQZkkteDlaYkl2dGZpSy1GaEt3N1dZcktFNnFZUEplbmJ6aWVZblN6elpxajJsUDVHVkxPNVRUU21ReGpPMTZ1QTBvZUI3WFZhU044OEc1U0U4dk41M2NUTk9DM043ajlSX0pjMW0ycWUwaVNQX2oxalV5U3RlYjVTdXZfaG9VaFNiQlR1NUlVTUwwRkx5Yld4Wi13b3JacjkxSTZwZ2FRaVRvWndIZ3JCUjJVakFUU3BNR1JxdFV6N1Y?oc=5": "2026-09-15",
+   "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOMzBQYm9NNmg4S0JYMnpRVXBULXJ1YXE2a01ibGg1VlA1UFZDWGtFSlFwQ0VSbFA0UXg4NkZQVS15TzNKMnFjM3lkdS14S2h5TDB1b3poNjB5WkZQMkJQUHl3elRGczFjOUZXajJBSzdkV2VYNXZVMFVfNkZTWGZjZks4aXA2aTlaTG9HTnhXb2dUd1dTcUVSNVFOMXFtcHFPcXN1TjE1MnRnS0ZINmlrZXFzRE5sbTFH?oc=5": "2026-09-15",
+   "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPaFd1VEJoYWk2UGVZT3pwVVJXa0c0ckROVjktME05Rm5ZNXpqYnlpLTJYV0ZYQ25fdkphamZEYl92S0tzUmR6bzFtdWFSQThVY0I1WWxvZ1poeWwyN3NxRm1leWhZNGRxRmprMy1QTlJJZEN2ei1VZzFReU5leE9kZUFzRlpWak1OazVTeFZJTldFc0FCai1IZmczanpTRmdMa3p0ZWpkUmp5UFUzVnhnbF91TFlBWTU0a0J0WF9XM2RsZGJOU3JUSzhtZHlzQVhxQktzOA?oc=5": "2026-09-15"
+  },
+  "top": [
+   {
+    "title": "Energiekrise spitzt sich zu: Saudi-Arabien muss einige Öllieferungen nach Europa stornieren",
+    "teaser": "Die Huthi-Rebellen treffen eine enorm wichtige Öl-Pipeline in Saudi-Arabien mit einer Drohne und sorgen damit für einen Betriebsstopp. Die Reparaturarbeiten könnten länger dauern - nun gibt es offenbar erste Auswirkungen auf die saudischen Öllieferungen.",
+    "link": "https://www.n-tv.de/wirtschaft/Saudi-Arabien-muss-einige-Oellieferungen-nach-Europa-stornieren-id31309422.html",
+    "source": "n-tv",
+    "scope": "national",
+    "lang": "de",
+    "published": "2026-09-15T16:23:52+00:00",
+    "summary": "Saudi-Arabien storniert nach Huthi-Angriffen auf eine wichtige Pipeline Öllieferungen nach Europa, was die ohnehin angespannte Versorgungslage weiter verschärft. Parallel kündigt Kanzler Merz wegen der Rekord-Spritpreise Entlastungen für Autofahrer an, deren konkrete Ausgestaltung zwischen CDU und SPD aber noch umstritten ist.",
+    "also": [
+     "tagesschau",
+     "n-tv",
+     "taz",
+     "Welt",
+     "Handelsblatt"
+    ]
+   },
+   {
+    "title": "NATO jets down drone over Lithuania as Russian ship fires flares at Danish helicopter",
+    "teaser": "NATO fighter jets shot down a drone that entered Lithuanian airspace and Denmark accused a Russian frigate of firing flares at a Danish military helicopter on Tuesday, in incidents that heightened tensions along the alliance’s eastern flank.",
+    "link": "http://www.france24.com/en/europe/20260915-nato-jets-down-drone-over-lithuania-as-russian-ship-fires-flares-at-danish-helicopter",
+    "source": "France 24",
+    "scope": "world",
+    "lang": "de",
+    "published": "2026-09-15T20:26:27+00:00",
+    "summary": "Ein NATO-Kampfjet hat über Litauen eine mutmaßlich aus Russland stammende Drohne abgeschossen, während Dänemark Russland vorwirft, mit Leuchtraketen auf einen Militärhubschrauber geschossen zu haben. Die EU warnt, dass solche Vorfälle die Gefahr einer Ausweitung des Ukraine-Kriegs auf NATO-Gebiet erhöhen.",
+    "also": [
+     "BBC News",
+     "Al Jazeera",
+     "France 24",
+     "FAZ",
+     "n-tv",
+     "Der Standard"
+    ]
+   },
+   {
+    "title": "Friedrich Merz sagt Reise zur Uno-Generaldebatte nach New York ab",
+    "teaser": "Kommende Woche sollte es zur Uno-Generalversammlung in die USA gehen, doch Kanzler Friedrich Merz will sich offenbar nach den weiteren Parlamentswahlen den innenpolitischen Debatten in der Bundeshauptstadt stellen.",
+    "link": "https://www.spiegel.de/politik/deutschland/friedrich-merz-sagt-reise-zur-uno-generaldebatte-nach-new-york-ab-a-c24aed89-2908-46b9-bb0a-5d8be810c170#ref=rss",
+    "source": "Spiegel",
+    "scope": "national",
+    "lang": "de",
+    "published": "2026-09-15T17:30:00+00:00",
+    "summary": "Bundeskanzler Merz sagt seine für nächste Woche geplante Reise zur UN-Generalversammlung ab, um sich angesichts der Landtagswahlen in Berlin und Mecklenburg-Vorpommern auf die innerparteiliche Krise zu konzentrieren. Die Kritik an seiner Führung wächst, ein CDU-Präsidium ist bereits für den Wahlabend einberufen worden.",
+    "also": [
+     "n-tv",
+     "Handelsblatt",
+     "FAZ",
+     "Welt",
+     "Süddeutsche Zeitung",
+     "taz"
+    ]
+   },
+   {
+    "title": "Kennedy Center in Washington D.C.: Donald Trump ordnet sofortige Schließung des Kennedy Centers an",
+    "teaser": "Ein Gericht hatte Donald Trump wiederholt die Anbringung seines Namens an der Fassade des Kennedy Centers untersagt. Nun lässt er das nationale Kulturzentrum schließen.",
+    "link": "https://www.zeit.de/politik/ausland/2026-09/kennedy-center-washington-dc-schliessung-donald-trump-renovierung",
+    "source": "Zeit Online",
+    "scope": "national",
+    "lang": "de",
+    "published": "2026-09-15T20:25:25+00:00",
+    "summary": "Die von Trump eingesetzte Führung des Kennedy Centers in Washington hat die sofortige Schließung der Kultureinrichtung angeordnet, nachdem ein Gericht Trump erneut untersagt hatte, seinen Namen an der Fassade anzubringen. Als Begründung werden Sicherheitsmängel und nötige Renovierungen genannt.",
+    "also": [
+     "Spiegel",
+     "FAZ",
+     "n-tv",
+     "Der Standard",
+     "Deutschlandfunk",
+     "Al Jazeera"
+    ]
+   },
+   {
+    "title": "Pistorius unterzeichnet Rüstungsvereinbarung mit USA",
+    "teaser": "Deutschland und die USA stärken ihre Rüstungsindustrie auf beiden Seiten des Atlantiks. Eine Absichtserklärung umfasst auch Lizenzen, Lieferketten und den Austausch von Technik.",
+    "link": "https://www.welt.de/politik/deutschland/article6aa9ae17a3450cf42e4533ff/verteidigungsminister-pistorius-unterzeichnet-ruestungsvereinbarung-mit-usa.html",
+    "source": "Welt",
+    "scope": "national",
+    "lang": "de",
+    "published": "2026-09-15T20:49:20+00:00",
+    "summary": "Verteidigungsminister Pistorius hat mit seinem US-Kollegen Hegseth eine Absichtserklärung für engere Zusammenarbeit in der Rüstungsindustrie unterzeichnet, die Lizenzen, Lieferketten und Technologieaustausch umfasst. Deutschland und die USA rücken damit bei der Waffenproduktion enger zusammen.",
+    "also": [
+     "Zeit Online",
+     "Deutschlandfunk",
+     "Handelsblatt"
+    ]
+   }
+  ],
+  "region": [
+   {
+    "title": "Nach drei Jahren Einschränkungen: Augsburger Stadtwerke-Busse fahren wieder alle 15 Minuten",
+    "teaser": "Nach drei Jahren Einschränkungen: Augsburger Stadtwerke-Busse fahren wieder alle 15 Minuten Augsburger Allgemeine",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNU28tUndxcHZPYklQWTktbnc5N1d3cGdzRHE2TUo4dmlsR2VmZlg1T05qV1pVbGk4WGtXakZmYzNsbHNYZU9CRHU3RTQ0WlBZNHhoLUlRU3lOUnNMb0ozRW5adTVBaXRGdGEwNW9DZ1ZzX01DOHAwRy11Z3ZhOXNSOUM4M1oxSFNCalpremlpT0RYb1F3ZGx1MDR3Qmt0WlBwQjllYk1uLTFMV2xBVVpBOXpMeEpLNTg?oc=5",
+    "source": "Augsburger Allgemeine",
+    "scope": "regional",
+    "lang": "de",
+    "published": "2026-09-15T12:14:56+00:00",
+    "summary": "Die Augsburger Stadtwerke-Busse fahren nach drei Jahren mit eingeschränktem Betrieb wieder im 15-Minuten-Takt. Das verkürzt die Wartezeiten für Pendler in und um Augsburg wieder spürbar.",
+    "also": []
+   },
+   {
+    "title": "Zum Tanken über die Grenze? Wann sich die Fahrt vom Allgäu nach Österreich jetzt lohnt",
+    "teaser": "Zum Tanken über die Grenze? Wann sich die Fahrt vom Allgäu nach Österreich jetzt lohnt Allgäuer Zeitung",
+    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNVkZmWTlYUFVmUmdILW1acWVsdkVSWTU3YzZKeFRrLU91S2NMM2RIZVZaVklsN0tXVzFVM1FlTS00VGUxREdPTW1JOGJuLTd0NFF4R002UzhkX1hlaWJzUTdqMzBRcktZVG41NUtMZXVVTnRYc3RlbnY3b0xidmJ1eDJIMWhEWWVMOUx1RmdSSWljcHc3UlNGd29rdXhSbWRDYUpmaU1ZS08zYmFMSFJPdzlPa0VFRnh5aklSQ3hvRHczNGhnVWVqbjlORHB5UE0?oc=5",
+    "source": "Allgäuer Zeitung",
+    "scope": "regional",
+    "lang": "de",
+    "published": "2026-09-15T03:53:37+00:00",
+    "summary": "Wegen der hohen deutschen Spritpreise lohnt sich für Allgäuer derzeit wieder häufiger der Tankstopp jenseits der österreichischen Grenze. Ein Vergleich zeigt, ab welchem Preisunterschied sich der Umweg tatsächlich rechnet.",
+    "also": []
+   },
+   {
+    "title": "Energiewende im Allgäu wird gut: Augsburger Universität veröffentlicht Studie",
+    "teaser": "Energiewende im Allgäu wird gut: Augsburger Universität veröffentlicht Studie Radio Fantasy",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUUJvLVhNSGc1dEwwVDVCUDFVQ0JsZWhVakF2R09VTS1uellqUHBQMnFUSUN6NFU4YWFXVkFSWnhmdEFqWjlhX3hpNG1mcmVzMGl3YTd5ZTkySkFpVTBDT2JGUUZsLXdLNzFWdkR1U1BLYnBscTRxWWIybjExQWlzVVg4TkwxUUpjalJKUWlHWTJubzJIcDFlaEZGZmpwbFFTZ2gyb0hFSE5PQ0E?oc=5",
+    "source": "Radio Fantasy",
+    "scope": "regional",
+    "lang": "de",
+    "published": "2026-09-15T08:11:00+00:00",
+    "summary": "Eine Studie der Universität Augsburg kommt zu dem Schluss, dass die Energiewende im Allgäu insgesamt gut vorankommt. Das dürfte die lokale Debatte um Ausbau und Akzeptanz erneuerbarer Energien beeinflussen.",
+    "also": []
+   },
+   {
+    "title": "Nie dagewesene Trockenheit im Allgäu: Bad Wörishofen verbraucht doppelt so viel Wasser wie der Schnitt",
+    "teaser": "Nie dagewesene Trockenheit im Allgäu: Bad Wörishofen verbraucht doppelt so viel Wasser wie der Schnitt Augsburger Allgemeine",
+    "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQaWJSMHp1V0ZCN0V3Mjc2aXVKWG43VTlCQmZsVVJ2cWlrQm4yUFVLa1hjNXRGenFGelBNcEtOZTRHMlNNV2NaM2lYSnpDZTBCMjVCdWZhTnhmWDNEcmE5V2xOTE9QT1RoM1E5M1FIcldLdzV2SjhYem0zcFFfUXFGemltZXRJQjBZdUZJeXBueXl0R2RtdHM0REhTMUd3N2xJUnhuSWxvbHFfWFpuX3NBZU54azFHbWhZVEZROHl0c0V2eTAxbEo3Zi1FSEpDejhxV0JITkRvTXdWZ1k1TDY3MExWeEFwNDZpSmRV?oc=5",
+    "source": "Augsburger Allgemeine",
+    "scope": "regional",
+    "lang": "de",
+    "published": "2026-09-15T03:46:57+00:00",
+    "summary": "Die anhaltende Trockenheit im Allgäu treibt den Wasserverbrauch in Bad Wörishofen auf das Doppelte des sonst üblichen Wertes. Die Gemeinde muss sich damit auf einen dauerhaft höheren Bedarf einstellen.",
+    "also": []
+   }
+  ],
+  "agrar": [
+   {
+    "title": "Bauern im Ostallgäu kämpfen mit Ertragsausfällen. Steigen jetzt die Preise für Milch und Fleisch?",
+    "teaser": "Bauern im Ostallgäu kämpfen mit Ertragsausfällen. Steigen jetzt die Preise für Milch und Fleisch? Allgäuer Zeitung",
+    "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNa2JZN0g0QjctM1R6clMwRHBQVTNfWUlMZGRSWVcyVmZ2R2R5bXRfUTl2bFNaRUk5bWwwT3VDVWZ0dWdVM19sTGFTS3M1bEFjaE0zbHNhd0ZSX1BDai1CWTFXV2x2ZVFyaFl2LWctalJvYVUzMTU5UDgzUFF2bEhaYXFCajYwUzBuMWhYc0lHR1VmQVJMWE1TeTlMY2czSFhHUktqV2hVSFZTWmpMZ0NkczVoLW56WTNPNHRUQXRnYzdIT1VENXNYOFZ2Vm5wc0szZmJQTktHcUhxODRVOF9MVUZnSmw?oc=5",
+    "source": "Allgäuer Zeitung",
+    "scope": "agrar",
+    "lang": "de",
+    "published": "2026-09-15T15:30:00+00:00",
+    "summary": "Landwirte im Ostallgäu klagen über deutliche Ertragseinbußen nach dem trockenen Sommer. Ob das zu steigenden Milch- und Fleischpreisen führt, ist derzeit noch offen.",
+    "also": []
+   },
+   {
+    "title": "Auf hohe Einkommen folgt der tiefe Fall – sind die Dürrehilfen für Bauern fair?",
+    "teaser": "18 Prozent mehr Einkommen im Vorjahr, heuer massive Einbußen: Zwischen guten Preisen und historischer Dürre liegen für die Bauern nur wenige Monate. Das heizt die Diskussion über staatliche Hilfen neu an",
+    "link": "https://www.derstandard.at/story/3000000339885/auf-hohe-einkommen-folgt-der-tiefe-fall-sind-die-duerrehilfen-fuer-bauern-fair?ref=rss",
+    "source": "Der Standard",
+    "scope": "national",
+    "lang": "de",
+    "published": "2026-09-15T16:00:00+00:00",
+    "summary": "Nach einem Jahr mit 18 Prozent mehr Einkommen brechen die Erträge der Bauern durch die historische Dürre nun massiv ein. Das entfacht die Debatte über staatliche Dürrehilfen neu.",
+    "also": []
+   },
+   {
+    "title": "Ernährung sichern, Landwirtschaft stärken: EU-Kommissionspräsidentin von der Leyen muss jetzt Priorität setzen",
+    "teaser": "Ernährung sichern, Landwirtschaft stärken: EU-Kommissionspräsidentin von der Leyen muss jetzt Priorität setzen Bayerischer Bauernverband",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNdkxlV0x3amZBLWJRamV0UGRGVG0yY3RXN3liZHdsR3g4VWxKWDNPaE1lOGdQQnRnbExkc3dxTmFVVktGekFCYTVuaEpqOVlQUGRoTXp4ZzU2STE2MWdVSHlzMDFaMzN2ODh5TjFORDh4dzFub2NJSDhneDdXd3NlSHhyVEluWkVhaUs0ZFhaYTdPZG8?oc=5",
+    "source": "Bayerischer Bauernverband",
+    "scope": "agrar",
+    "lang": "de",
+    "published": "2026-09-15T07:05:54+00:00",
+    "summary": "Der Bayerische Bauernverband fordert von EU-Kommissionspräsidentin von der Leyen, Ernährungssicherung und Landwirtschaft in der EU-Agenda deutlich stärker zu priorisieren.",
+    "also": []
+   },
+   {
+    "title": "TD warns survey reveals a ‘looming crisis in Irish agriculture’",
+    "teaser": "There is “a looming crisis in Irish agriculture”, Sinn Féin’s Matt Carthy has warned. The Sinn Féin TD for Cavan/Monaghan made the comments following today’s release of a survey from Agriland and the Irish Creamery and Milk Suppliers’ Association (ICMSA) on the future of farming. Deputy Carthy said ",
+    "link": "https://www.agriland.ie/farming-news/td-warns-survey-reveals-a-looming-crisis-in-irish-agriculture/",
+    "source": "Agriland",
+    "scope": "agrar",
+    "lang": "en",
+    "published": "2026-09-15T16:30:00+00:00",
+    "summary": "Eine Umfrage unter irischen Landwirten zeigt, dass jeder Dritte plant, den Sektor innerhalb von fünf Jahren zu verlassen. Politiker sprechen bereits von einer drohenden Krise der irischen Landwirtschaft.",
+    "also": []
+   },
+   {
+    "title": "AI expands precision agriculture with plant-level management",
+    "teaser": "AI expands precision agriculture with plant-level management Brownfield Ag News",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQRnJ5WnZBYnJPVldGakRTZXJVLWlGMTBUR21VcUlUNVRiSGxPNkdBS3Ixbm5uRWFmeVk0cTJjSTRCOTBnOWdGdjBraElBQ0s5R21mWGdra0wwdWZ2SXRWaTZibDRSR0lQRDJ1OWZCVXcxenhnemVoWVpGZmVGNXNZYmgwUmlWaGJqQ09jVERoWUJXMzBuZDdzdld5M0ZuVm1J?oc=5",
+    "source": "Brownfield Ag News",
+    "scope": "agrar",
+    "lang": "en",
+    "published": "2026-09-15T21:03:56+00:00",
+    "summary": "Neue KI-Anwendungen ermöglichen in der Präzisionslandwirtschaft inzwischen ein Management einzelner Pflanzen statt ganzer Felder. Das dürfte Effizienz und Ressourceneinsatz in der Branche weiter verändern.",
+    "also": []
+   }
+  ],
+  "eu": [
+   {
+    "title": "Moldova to require approval of tractors and farm machinery",
+    "teaser": "Moldova to require approval of tractors and farm machinery logos-pres.md",
+    "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOa3lXeFpQYzFvNUJLTFNYLVNINmljbGtzd1Y2Q2kxc3BwVFVhM1ZYaTh1RXJObnpQZkkteDlaYkl2dGZpSy1GaEt3N1dZcktFNnFZUEplbmJ6aWVZblN6elpxajJsUDVHVkxPNVRUU21ReGpPMTZ1QTBvZUI3WFZhU044OEc1U0U4dk41M2NUTk9DM043ajlSX0pjMW0ycWUwaVNQX2oxalV5U3RlYjVTdXZfaG9VaFNiQlR1NUlVTUwwRkx5Yld4Wi13b3JacjkxSTZwZ2FRaVRvWndIZ3JCUjJVakFUU3BNR1JxdFV6N1Y?oc=5",
+    "source": "logos-pres.md",
+    "scope": "eu",
+    "lang": "en",
+    "published": "2026-09-04T11:51:55+00:00",
+    "summary": "Moldau will künftig eine Zulassungspflicht für Traktoren und Landmaschinen einführen. Das betrifft besonders den Import und Weiterverkauf gebrauchter Geräte aus dem Ausland.",
+    "also": []
+   },
+   {
+    "title": "Ivanov warns Moldova could become a market for used farm machinery",
+    "teaser": "Ivanov warns Moldova could become a market for used farm machinery logos-pres.md",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOMzBQYm9NNmg4S0JYMnpRVXBULXJ1YXE2a01ibGg1VlA1UFZDWGtFSlFwQ0VSbFA0UXg4NkZQVS15TzNKMnFjM3lkdS14S2h5TDB1b3poNjB5WkZQMkJQUHl3elRGczFjOUZXajJBSzdkV2VYNXZVMFVfNkZTWGZjZks4aXA2aTlaTG9HTnhXb2dUd1dTcUVSNVFOMXFtcHFPcXN1TjE1MnRnS0ZINmlrZXFzRE5sbTFH?oc=5",
+    "source": "logos-pres.md",
+    "scope": "eu",
+    "lang": "en",
+    "published": "2026-09-04T11:31:22+00:00",
+    "summary": "Ein moldauischer Regierungsvertreter warnt, das Land könne ohne klare Regeln zum Auffangbecken für gebrauchte Landmaschinen aus anderen Ländern werden.",
+    "also": []
+   },
+   {
+    "title": "Landmaschinen und Ersatzteile nach Russland: Wann der Agrarexport zum AWG-Strafverfahren wird",
+    "teaser": "Landmaschinen und Ersatzteile nach Russland: Wann der Agrarexport zum AWG-Strafverfahren wird Anwalt.de",
+    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPaFd1VEJoYWk2UGVZT3pwVVJXa0c0ckROVjktME05Rm5ZNXpqYnlpLTJYV0ZYQ25fdkphamZEYl92S0tzUmR6bzFtdWFSQThVY0I1WWxvZ1poeWwyN3NxRm1leWhZNGRxRmprMy1QTlJJZEN2ei1VZzFReU5leE9kZUFzRlpWak1OazVTeFZJTldFc0FCai1IZmczanpTRmdMa3p0ZWpkUmp5UFUzVnhnbF91TFlBWTU0a0J0WF9XM2RsZGJOU3JUSzhtZHlzQVhxQktzOA?oc=5",
+    "source": "Anwalt.de",
+    "scope": "eu",
+    "lang": "de",
+    "published": "2026-08-31T07:00:00+00:00",
+    "summary": "Ein juristischer Beitrag erklärt, wann der Export von Landmaschinen und Ersatzteilen nach Russland zum strafbaren Verstoß gegen das Außenwirtschaftsgesetz wird. Für Händler und Hersteller der Branche ist das eine wichtige rechtliche Klarstellung.",
+    "also": []
+   }
+  ],
+  "world": [
+   {
+    "title": "US acknowledges for the first time that it has deployed weapons in space",
+    "teaser": "The United States has confirmed for the first time that it has deployed weapons in space, a remarkable revelation after previous warnings about countries such as Russia possibly weaponizing a global frontier long agreed in treaties to be used for only peaceful purposes. FRANCE 24's Emerald Maxwell r",
+    "link": "http://www.france24.com/en/us-acknowledges-for-the-first-time-that-it-has-deployed-weapons-in-space",
+    "source": "France 24",
+    "scope": "world",
+    "lang": "de",
+    "published": "2026-09-15T18:34:46+00:00",
+    "summary": "Die USA haben erstmals offiziell bestätigt, Waffen im Weltraum stationiert zu haben. Fachleute warnen vor einem gefährlichen Signal an Russland und China und einem möglichen Wettrüsten im Orbit.",
+    "also": []
+   },
+   {
+    "title": "Carney says Canada will pursue ‘unique security and economic alliance’ with EU amid US trade spat",
+    "teaser": "Prime minister speaks of strengthening Canada’s economic and political ties to Europe at Canada Investment Summit Mark Carney said Canada will pursue a “unique security and economic alliance” with Europe as he positions his country as a base to build in the “new global economic order”. Speaking to i",
+    "link": "https://www.theguardian.com/world/2026/sep/15/canada-eu-economic-alliance",
+    "source": "The Guardian",
+    "scope": "world",
+    "lang": "de",
+    "published": "2026-09-15T19:08:37+00:00",
+    "summary": "Kanadas Premierminister Carney sucht angesichts des Handelsstreits mit den USA eine engere sicherheits- und wirtschaftspolitische Allianz mit der EU und wirbt bei einem Investitionsgipfel um internationales Kapital für sein Land.",
+    "also": [
+     "France 24",
+     "BBC News"
+    ]
+   },
+   {
+    "title": "Romanian shepards and farmers clash with police",
+    "teaser": "Dozens injured as 2,000 farmers - backed by far-right groups - protest the extension of a livestock export ban.",
+    "link": "https://www.aljazeera.com/news/2026/9/15/romanian-shepards-and-farmers-clash-with-police?traffic_source=rss",
+    "source": "Al Jazeera",
+    "scope": "world",
+    "lang": "de",
+    "published": "2026-09-15T20:40:05+00:00",
+    "summary": "Bei Protesten rumänischer Schafhirten und Landwirte gegen die Verlängerung eines Exportverbots für Vieh kam es zu gewaltsamen Zusammenstößen mit der Polizei, an denen auch rechtsextreme Gruppen beteiligt waren. Dutzende Menschen wurden verletzt.",
+    "also": []
+   },
+   {
+    "title": "Two sailors missing after tanker attacked in Strait of Hormuz, Oman says",
+    "teaser": "Iran says El Gaia caught fire after hitting mines, but the US says the oil tanker was struck by a missile and then a drone.",
+    "link": "https://www.bbc.co.uk/news/articles/c3n07ydqdzlvo?at_medium=RSS&at_campaign=rss",
+    "source": "BBC News",
+    "scope": "world",
+    "lang": "de",
+    "published": "2026-09-15T16:13:41+00:00",
+    "summary": "Nach einem Angriff auf einen Öltanker in der Straße von Hormus werden zwei Seeleute vermisst. Während Iran von einer Explosion durch Minen spricht, gehen die USA von einem gezielten Raketen- und Drohnenangriff aus.",
+    "also": []
+   }
+  ],
+  "note": null,
+  "feed_count": 30,
+  "item_count": 302,
+  "ranked_by": "Claude"
+ }
+}
