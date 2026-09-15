@@ -1,6 +1,6 @@
 {
- "built_at": "2026-09-15T22:39:21.453822+02:00",
- "config": "9a6101e55667a2e3",
+ "built_at": "2026-09-15T22:41:12.533976+02:00",
+ "config": "22e8c1f07994ff0f",
  "block": {
   "enabled": true,
   "seen_update": {
@@ -89,6 +89,17 @@
     "also": []
    },
    {
+    "title": "Spielschema | 1. FC Nürnberg II - Schwaben Augsburg 5:0 | 9. Spieltag | Regionalliga Bayern 2026/27",
+    "teaser": "Spielschema | 1. FC Nürnberg II - Schwaben Augsburg 5:0 | 9. Spieltag | Regionalliga Bayern 2026/27 Kicker",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQd0VTU3k2Q3ZmNmFtQ1R5aVljZERMWmRyX3RJMTRnOTFtdi1kSnVlWXhwemp0ZE1ad3BaT09wX2ctLTNoSVJrRk9HOVlzTkkzTENKTkpfQ0ZzOGF0ZTRhRmhRanUtQzhHcmF1a3hsWXdSR2xGSmx5S0pDMEthRGIwWVVnNENzdFdOVnlnUnJQWXpiNE0xYzk3NzJB?oc=5",
+    "source": "Kicker",
+    "scope": "regional",
+    "lang": "de",
+    "published": "2026-09-15T17:22:28+00:00",
+    "summary": "",
+    "also": []
+   },
+   {
     "title": "Kostenlose Achterbahnfahrt: Diese Aktionen gibt es für Erstklässler rund um Augsburg",
     "teaser": "Kostenlose Achterbahnfahrt: Diese Aktionen gibt es für Erstklässler rund um Augsburg Augsburger Allgemeine",
     "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPQS1QYnBka0lMbHFpQUZCbDl6M0o1M3ZZdWd1THZBWjdhdHlFdExDNXN6X2VRME8ycTRudkp2VWU1MlByS3ltXzVOSzJtQy1JdDRzMVZ3eGctQ2hVdHAwYlpCMkRHd1R2VmZpTE1sNzVrNGtnSXQ0RV9rVTZoU1JMSWdOZl9OcVRaMWQ5MFZGZUlUS2l4UmNFcW1RaDZ3ZFRlelBReGlDYmd2RzhRenRUaDRybmJ0Uzk0R3A4cGNiVXRRNEduNWx1OEkzWmpMM2JnYVI3WQ?oc=5",
@@ -96,17 +107,6 @@
     "scope": "regional",
     "lang": "de",
     "published": "2026-09-15T17:17:01+00:00",
-    "summary": "",
-    "also": []
-   },
-   {
-    "title": "„Ikonisches Motiv“: Ausstellung in Oberbayern nimmt mit auf historische Faltboot-Expeditionen",
-    "teaser": "Das Stadtmuseum Bad Tölz zeigt Fotos von Expeditionen der 1930er-Jahre nach Gran Canaria und Spitzbergen. Die Tagebücher der Abenteurer verraten, was in den Büchern geschönt wurde.",
-    "link": "https://www.merkur.de/lokales/bad-toelz/bad-toelz-ort28297/ikonisches-motiv-ausstellung-in-oberbayern-nimmt-mit-auf-faltboot-expeditionen-in-den-1930er-jahren-94493710.html",
-    "source": "Merkur Lokales",
-    "scope": "regional",
-    "lang": "de",
-    "published": "2026-09-15T17:03:00+00:00",
     "summary": "",
     "also": []
    }
@@ -168,41 +168,7 @@
     "also": []
    }
   ],
-  "eu": [
-   {
-    "title": "Moldova to require approval of tractors and farm machinery",
-    "teaser": "Moldova to require approval of tractors and farm machinery logos-pres.md",
-    "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOa3lXeFpQYzFvNUJLTFNYLVNINmljbGtzd1Y2Q2kxc3BwVFVhM1ZYaTh1RXJObnpQZkkteDlaYkl2dGZpSy1GaEt3N1dZcktFNnFZUEplbmJ6aWVZblN6elpxajJsUDVHVkxPNVRUU21ReGpPMTZ1QTBvZUI3WFZhU044OEc1U0U4dk41M2NUTk9DM043ajlSX0pjMW0ycWUwaVNQX2oxalV5U3RlYjVTdXZfaG9VaFNiQlR1NUlVTUwwRkx5Yld4Wi13b3JacjkxSTZwZ2FRaVRvWndIZ3JCUjJVakFUU3BNR1JxdFV6N1Y?oc=5",
-    "source": "logos-pres.md",
-    "scope": "eu",
-    "lang": "en",
-    "published": "2026-09-04T11:51:55+00:00",
-    "summary": "",
-    "also": []
-   },
-   {
-    "title": "Ivanov warns Moldova could become a market for used farm machinery",
-    "teaser": "Ivanov warns Moldova could become a market for used farm machinery logos-pres.md",
-    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOMzBQYm9NNmg4S0JYMnpRVXBULXJ1YXE2a01ibGg1VlA1UFZDWGtFSlFwQ0VSbFA0UXg4NkZQVS15TzNKMnFjM3lkdS14S2h5TDB1b3poNjB5WkZQMkJQUHl3elRGczFjOUZXajJBSzdkV2VYNXZVMFVfNkZTWGZjZks4aXA2aTlaTG9HTnhXb2dUd1dTcUVSNVFOMXFtcHFPcXN1TjE1MnRnS0ZINmlrZXFzRE5sbTFH?oc=5",
-    "source": "logos-pres.md",
-    "scope": "eu",
-    "lang": "en",
-    "published": "2026-09-04T11:31:22+00:00",
-    "summary": "",
-    "also": []
-   },
-   {
-    "title": "Landmaschinen und Ersatzteile nach Russland: Wann der Agrarexport zum AWG-Strafverfahren wird",
-    "teaser": "Landmaschinen und Ersatzteile nach Russland: Wann der Agrarexport zum AWG-Strafverfahren wird Anwalt.de",
-    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPaFd1VEJoYWk2UGVZT3pwVVJXa0c0ckROVjktME05Rm5ZNXpqYnlpLTJYV0ZYQ25fdkphamZEYl92S0tzUmR6bzFtdWFSQThVY0I1WWxvZ1poeWwyN3NxRm1leWhZNGRxRmprMy1QTlJJZEN2ei1VZzFReU5leE9kZUFzRlpWak1OazVTeFZJTldFc0FCai1IZmczanpTRmdMa3p0ZWpkUmp5UFUzVnhnbF91TFlBWTU0a0J0WF9XM2RsZGJOU3JUSzhtZHlzQVhxQktzOA?oc=5",
-    "source": "Anwalt.de",
-    "scope": "eu",
-    "lang": "de",
-    "published": "2026-08-31T07:00:00+00:00",
-    "summary": "",
-    "also": []
-   }
-  ],
+  "eu": [],
   "world": [
    {
     "title": "Iran war has led to US munitions shortfalls, Pentagon inspector confirms",
@@ -227,24 +193,24 @@
     "also": []
    },
    {
-    "title": "What makes these midterms so pivotal?",
-    "teaser": "The 2026 midterms could reshape Washington as voters weigh Trump, party divisions and the issues driving the election.",
-    "link": "https://www.aljazeera.com/video/lets-focus/2026/9/15/what-makes-these-midterms-so-pivotal?traffic_source=rss",
-    "source": "Al Jazeera",
+    "title": "With a performance defined by emotion, Céline Dion brings her story to Paris",
+    "teaser": "Céline Dion on Saturday fulfilled her dream of returning to the stage after years battling a rare neurological disorder with a sell-out concert in an arena west of Paris. Speaking with FRANCE 24's Mark Owen, vocal coach Elena Hurstel says that Céline Dion's performance in Paris has been defined by e",
+    "link": "http://www.france24.com/en/video/20260915-with-a-performance-defined-by-emotion-c%C3%A9line-dion-brings-her-story-to-paris",
+    "source": "France 24",
     "scope": "world",
     "lang": "de",
-    "published": "2026-09-15T20:19:26+00:00",
+    "published": "2026-09-15T20:12:45+00:00",
     "summary": "",
     "also": []
    },
    {
-    "title": "Why do some African leaders gamble with term limits?",
-    "teaser": "Protesters in the DRC denounce law that could extend president's term.",
-    "link": "https://www.aljazeera.com/video/inside-story/2026/9/15/why-do-some-african-leaders-gamble-with-term-limits-2?traffic_source=rss",
+    "title": "NATO jet shoots down suspected Russian drone over Lithuania",
+    "teaser": "EU chief warns of wider conflict as border incursions stoke fears that Ukraine war is spilling into neighbouring states.",
+    "link": "https://www.aljazeera.com/news/2026/9/15/nato-jet-shoots-down-suspected-russian-drone-over-lithuania?traffic_source=rss",
     "source": "Al Jazeera",
     "scope": "world",
     "lang": "de",
-    "published": "2026-09-15T20:17:52+00:00",
+    "published": "2026-09-15T19:59:00+00:00",
     "summary": "",
     "also": []
    }
