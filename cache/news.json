@@ -1,14 +1,21 @@
 {
- "built_at": "2026-09-15T22:41:12.533976+02:00",
- "config": "22e8c1f07994ff0f",
+ "built_at": "2026-09-15T22:43:27.407550+02:00",
+ "config": "f7da5d29a07cc03e",
  "block": {
   "enabled": true,
-  "seen_update": {
-   "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPaFd1VEJoYWk2UGVZT3pwVVJXa0c0ckROVjktME05Rm5ZNXpqYnlpLTJYV0ZYQ25fdkphamZEYl92S0tzUmR6bzFtdWFSQThVY0I1WWxvZ1poeWwyN3NxRm1leWhZNGRxRmprMy1QTlJJZEN2ei1VZzFReU5leE9kZUFzRlpWak1OazVTeFZJTldFc0FCai1IZmczanpTRmdMa3p0ZWpkUmp5UFUzVnhnbF91TFlBWTU0a0J0WF9XM2RsZGJOU3JUSzhtZHlzQVhxQktzOA?oc=5": "2026-09-15",
-   "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOa3lXeFpQYzFvNUJLTFNYLVNINmljbGtzd1Y2Q2kxc3BwVFVhM1ZYaTh1RXJObnpQZkkteDlaYkl2dGZpSy1GaEt3N1dZcktFNnFZUEplbmJ6aWVZblN6elpxajJsUDVHVkxPNVRUU21ReGpPMTZ1QTBvZUI3WFZhU044OEc1U0U4dk41M2NUTk9DM043ajlSX0pjMW0ycWUwaVNQX2oxalV5U3RlYjVTdXZfaG9VaFNiQlR1NUlVTUwwRkx5Yld4Wi13b3JacjkxSTZwZ2FRaVRvWndIZ3JCUjJVakFUU3BNR1JxdFV6N1Y?oc=5": "2026-09-15",
-   "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOMzBQYm9NNmg4S0JYMnpRVXBULXJ1YXE2a01ibGg1VlA1UFZDWGtFSlFwQ0VSbFA0UXg4NkZQVS15TzNKMnFjM3lkdS14S2h5TDB1b3poNjB5WkZQMkJQUHl3elRGczFjOUZXajJBSzdkV2VYNXZVMFVfNkZTWGZjZks4aXA2aTlaTG9HTnhXb2dUd1dTcUVSNVFOMXFtcHFPcXN1TjE1MnRnS0ZINmlrZXFzRE5sbTFH?oc=5": "2026-09-15"
-  },
+  "seen_update": {},
   "top": [
+   {
+    "title": "Ralf Richter ist tot: Ein Typ für die Ewigkeit",
+    "teaser": "Mit Vokuhila und Schnauzbart auf Rachefeldzug: Niemand hatte den Ruhrpott-Malocher so drauf wie Ralf Richter. Nun ist der Schauspieler im Alter von 69 Jahren gestorben.",
+    "link": "https://www.spiegel.de/kultur/ralf-richter-ist-tot-ein-typ-fuer-die-ewigkeit-a-89fa8d82-0ffb-4ebd-be6f-e40fb13a7699#ref=rss",
+    "source": "Spiegel",
+    "scope": "national",
+    "lang": "de",
+    "published": "2026-09-15T20:35:00+00:00",
+    "summary": "",
+    "also": []
+   },
    {
     "title": "Kulturzentrum in Washington: Trump droht mit Aus für das Kennedy Center",
     "teaser": "Das Kennedy Center hat die sofortige Schließung für die Renovierung beschlossen. Ein Bundesrichter verbot erneut, Donald Trumps Namen an der Fassade anzubringen. Der droht nun mit dem Aus für das Kulturzentrum.",
@@ -52,107 +59,63 @@
     "published": "2026-09-15T20:28:12+00:00",
     "summary": "",
     "also": []
-   },
-   {
-    "title": "Kennedy Center in Washington D.C.: Donald Trump ordnet sofortige Schließung des Kennedy Centers an",
-    "teaser": "Ein Gericht hatte Donald Trump wiederholt die Anbringung seines Namens an der Fassade des Kennedy Centers untersagt. Nun lässt er das nationale Kulturzentrum schließen.",
-    "link": "https://www.zeit.de/politik/ausland/2026-09/kennedy-center-washington-dc-schliessung-donald-trump-renovierung",
-    "source": "Zeit Online",
-    "scope": "national",
-    "lang": "de",
-    "published": "2026-09-15T20:25:25+00:00",
-    "summary": "",
-    "also": []
    }
   ],
   "region": [
    {
-    "title": "FC Augsburg: Behrens startet durch - und bald zu Klopp?",
-    "teaser": "FC Augsburg: Behrens startet durch - und bald zu Klopp? Kicker",
-    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPYkJjbE9KcnNYNm9rMlhLbkotdFVmdjVlYU1YU1VQQ2ZPZkdYN3lxczRFNHBZVHRIa05kajEtMkdKSm80N3NWcm9wVzFmdndHMEIwQmRpWFpMbVlzMTNoNHhhRzhUc0FPOHAxdFVfZG5lRXc1X2tlN09DRFpwRDlYal96MA?oc=5",
-    "source": "Kicker",
+    "title": "„Ikonisches Motiv“: Ausstellung in Oberbayern nimmt mit auf historische Faltboot-Expeditionen",
+    "teaser": "Das Stadtmuseum Bad Tölz zeigt Fotos von Expeditionen der 1930er-Jahre nach Gran Canaria und Spitzbergen. Die Tagebücher der Abenteurer verraten, was in den Büchern geschönt wurde.",
+    "link": "https://www.merkur.de/lokales/bad-toelz/bad-toelz-ort28297/ikonisches-motiv-ausstellung-in-oberbayern-nimmt-mit-auf-faltboot-expeditionen-in-den-1930er-jahren-94493710.html",
+    "source": "Merkur Lokales",
     "scope": "regional",
     "lang": "de",
-    "published": "2026-09-15T20:00:27+00:00",
+    "published": "2026-09-15T17:03:00+00:00",
     "summary": "",
     "also": []
    },
    {
-    "title": "Polizeibericht Augsburg und Region vom 15.09.2026",
-    "teaser": "Polizeibericht Augsburg und Region vom 15.09.2026 Presse Augsburg",
-    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPLXlaRkthMWZyc0RrMnJBc0U3QkVLWHRsVXNfd0Q3UWhPT2ZvcWpZT1IwMkxFOUJjYjVYZlpFTWt2aUxQSFUzRGI3QkNTc2NXWk9DNEhWSzlRQ3ptRU1ZX2RrbXRsSUotUGc3T0FDMlBDWjJLRnh1ZmlYeVlyeXJ0UE9aTGQ2RkhrNGQ4VDZ3?oc=5",
-    "source": "Presse Augsburg",
+    "title": "Wirtschaft in Bayern: Neuer Chef für die IG Metall",
+    "teaser": "Horst Ott geht zum Jahresende in den Ruhestand. Nachfolger wird Rico Irmischer aus Regensburg.",
+    "link": "https://www.sueddeutsche.de/bayern/bayern-ig-metall-irmischer-li.3547972",
+    "source": "SZ Bayern",
     "scope": "regional",
     "lang": "de",
-    "published": "2026-09-15T19:15:09+00:00",
+    "published": "2026-09-15T13:45:32+00:00",
     "summary": "",
     "also": []
    },
    {
-    "title": "Spielschema | 1. FC Nürnberg II - Schwaben Augsburg 5:0 | 9. Spieltag | Regionalliga Bayern 2026/27",
-    "teaser": "Spielschema | 1. FC Nürnberg II - Schwaben Augsburg 5:0 | 9. Spieltag | Regionalliga Bayern 2026/27 Kicker",
-    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQd0VTU3k2Q3ZmNmFtQ1R5aVljZERMWmRyX3RJMTRnOTFtdi1kSnVlWXhwemp0ZE1ad3BaT09wX2ctLTNoSVJrRk9HOVlzTkkzTENKTkpfQ0ZzOGF0ZTRhRmhRanUtQzhHcmF1a3hsWXdSR2xGSmx5S0pDMEthRGIwWVVnNENzdFdOVnlnUnJQWXpiNE0xYzk3NzJB?oc=5",
-    "source": "Kicker",
+    "title": "Pilzsaison in Bayern beginnt: Wie die Schwammerl unter dem Dürresommer leiden",
+    "teaser": "Die Saison verzögert sich – aber bei Regen kann es ganz schnell gehen auf dem Waldboden. Allerdings: Der trockene Sommer hat auch gefährliche Doppelgänger in die Wälder gebracht.",
+    "link": "https://www.sueddeutsche.de/bayern/pilze-bayern-auswirkungen-duerre-klima-li.3544425",
+    "source": "SZ Bayern",
     "scope": "regional",
     "lang": "de",
-    "published": "2026-09-15T17:22:28+00:00",
+    "published": "2026-09-15T13:37:13+00:00",
     "summary": "",
     "also": []
    },
    {
-    "title": "Kostenlose Achterbahnfahrt: Diese Aktionen gibt es für Erstklässler rund um Augsburg",
-    "teaser": "Kostenlose Achterbahnfahrt: Diese Aktionen gibt es für Erstklässler rund um Augsburg Augsburger Allgemeine",
-    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPQS1QYnBka0lMbHFpQUZCbDl6M0o1M3ZZdWd1THZBWjdhdHlFdExDNXN6X2VRME8ycTRudkp2VWU1MlByS3ltXzVOSzJtQy1JdDRzMVZ3eGctQ2hVdHAwYlpCMkRHd1R2VmZpTE1sNzVrNGtnSXQ0RV9rVTZoU1JMSWdOZl9OcVRaMWQ5MFZGZUlUS2l4UmNFcW1RaDZ3ZFRlelBReGlDYmd2RzhRenRUaDRybmJ0Uzk0R3A4cGNiVXRRNEduNWx1OEkzWmpMM2JnYVI3WQ?oc=5",
-    "source": "Augsburger Allgemeine",
+    "title": "Neues Schuljahr: Was auf Bayerns Schüler zukommt",
+    "teaser": "Rund 1,8 Millionen Schülerinnen und Schüler starten heute in Bayern ins neue Schuljahr. Auf sie kommen einige Neuerungen zu: etwa bei Handynutzung, Prüfungsformaten und Ganztagsbetreuung. BR24 berichtet live um 16 Uhr.",
+    "link": "https://www.tagesschau.de/inland/regional/bayern/br-neues-schuljahr-was-auf-bayerns-schueler-zukommt-102.html",
+    "source": "tagesschau Bayern",
     "scope": "regional",
     "lang": "de",
-    "published": "2026-09-15T17:17:01+00:00",
+    "published": "2026-09-15T03:03:57+00:00",
     "summary": "",
     "also": []
    }
   ],
   "agrar": [
    {
-    "title": "Burnout auf dem Bauernhof: Wenn die Last des Hofs zu schwer wird",
-    "teaser": "Burnout auf dem Bauernhof: Wenn die Last des Hofs zu schwer wird SRF",
-    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPZ1J0dlVGMGtYbUd2dURZOUZjMnRqSzY4NVVrV1lBbFZocy1NWjhIcnJhSnpzYy1LWDZBX0N2Y2dXSWZQTUg3MWRjeElLb3JIbm5UMi1OT3poeUpmVjBzcE5kem01ZUVKQ0J3TGI4c0lKeHZIVnVabFpRd0Z2eTduMnVFN0x6U3ZnZ2ZselZrQkNDYkNqa1Jwb21ncTFlYXZMSFltQ0NISlNTcVJHV0t6QlFtWnhfX21HM0ZDeGVMbmY5Z1V6UFVOMG10WWpiaUs0dlVxUTdsSQ?oc=5",
-    "source": "SRF",
-    "scope": "agrar",
-    "lang": "de",
-    "published": "2026-09-15T16:56:22+00:00",
-    "summary": "",
-    "also": []
-   },
-   {
-    "title": "Landwirtschaft rund um Wendlingen wegen Hitze und Trockenheit unter Druck",
-    "teaser": "Landwirtschaft rund um Wendlingen wegen Hitze und Trockenheit unter Druck Nürtinger Zeitung",
-    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOd1dzM29qREh0RHVpT3poblNYTWwyTFNONW4xSlJLSjl6WmJJX1BERzltbjhRV0ZvVDBwa25TWlI2ZFdQUThXNmd4X2R1LXNmc3ItX1dpTlZSXzJrQ1lJYjhrVmhOU3JkSlRjbl9FNVVva2RFX3B6RFJXX2ZGRW1FUEZ4STNwUHhudHowRXVybUczcldwU014UFJkSTZEcFd2OUE1dmgzRnNsdGdxUmRRemh3?oc=5",
-    "source": "Nürtinger Zeitung",
-    "scope": "agrar",
-    "lang": "de",
-    "published": "2026-09-15T16:00:00+00:00",
-    "summary": "",
-    "also": []
-   },
-   {
-    "title": "\"Wollte nur die Ruhe stören\": Beschuldigter Landwirt äußert sich nach Vorfall bei Konzert in Bad Kissingen",
-    "teaser": "\"Wollte nur die Ruhe stören\": Beschuldigter Landwirt äußert sich nach Vorfall bei Konzert in Bad Kissingen Main-Post",
-    "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxQamtvdjdLTVJITC1IQy1qTjJGdjlmSGQtTHFsVHJlZldTUHpGakF6ZXdBZHZ4UnBuelUwSFNJWE1pVlFiSEFfU3JTLUxraHN1TWlhTnQ2eUp6UHQxbzhYUkMyVWNzaDVQRnR4WGYxMlAycU1YdlFNd2cxNzlJVGV5M3NNc3ZEeHltcEtuMjBzODdTdndyYXRwMkxaRlhqcVRKLV9UTnNVTGI5X19CRU5DeHpodGFGSUpURlppV1ZjUDFxbzBzQ09hZUlLWFI3Nzd2enkzU05zUFFiR085bHdFbV9vLVZ3WnphNWlQbmR6aGQzb1BZSFhRVWQ3TjRQSkVnNHgwNEQ2cC0zZzdhV2h3?oc=5",
-    "source": "Main-Post",
-    "scope": "agrar",
-    "lang": "de",
-    "published": "2026-09-15T16:00:00+00:00",
-    "summary": "",
-    "also": []
-   },
-   {
-    "title": "Keeping the “Farm” in the Farm Safety Net - National Sustainable Agriculture Coalition",
-    "teaser": "Keeping the “Farm” in the Farm Safety Net National Sustainable Agriculture Coalition",
-    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPdkQwdl9mLXpUZlZwYU5IWEZtMmpGN2laOEZXWjlYWjFxN1V4THlERmFVSVhEdFMxNTFHazRSaUVicnB3T0dQM1Q1cW9McGhaSXRibVJwOW9WNjdoQXZpWTg0RHNwYXVBNk1KV2N0VkRFOHZUMkQ5WFl6M203Y0ROVm90Q2oxS1E?oc=5",
-    "source": "National Sustainable Agriculture Coaliti",
+    "title": "Heydon: Bovine TB eradication possible with current progress",
+    "teaser": "Minister for Agriculture, Food and the Marine Martin Heydon said progress on reducing bovine tuberculosis (TB) means that eradication of the disease in Ireland is once again possible. Speaking at the Agriland tent at the National Ploughing Championships today (Tuesday, September 15), the minister wa",
+    "link": "https://www.agriland.ie/farming-news/heydon-bovine-tb-eradication-possible-with-current-progress/",
+    "source": "Agriland",
     "scope": "agrar",
     "lang": "en",
-    "published": "2026-09-15T20:33:16+00:00",
+    "published": "2026-09-15T20:41:24+00:00",
     "summary": "",
     "also": []
    },
@@ -164,6 +127,39 @@
     "scope": "agrar",
     "lang": "en",
     "published": "2026-09-15T20:24:54+00:00",
+    "summary": "",
+    "also": []
+   },
+   {
+    "title": "Video: Taoiseach notes ‘significant’ pressures facing farming sector",
+    "teaser": "Taoiseach Micheál Martin told Agriland that succession represents a “huge challenge” and that pressures on farming are “significant”. Speaking with Agriland editor Stella Meehan at the Ploughing Championships today (September 15), the Taoiseach was asked for on his views on an Agriland survey findin",
+    "link": "https://www.agriland.ie/farming-news/video-taoiseach-notes-significant-pressures-facing-farming-sector/",
+    "source": "Agriland",
+    "scope": "agrar",
+    "lang": "en",
+    "published": "2026-09-15T18:00:00+00:00",
+    "summary": "",
+    "also": []
+   },
+   {
+    "title": "Corn Funds Hit a Record Long Position — What Should Farmers Do Now?",
+    "teaser": "",
+    "link": "https://www.agriculture.com/corn-funds-hit-a-record-long-position-what-should-farmers-do-now-12122464",
+    "source": "Successful Farming",
+    "scope": "agrar",
+    "lang": "en",
+    "published": "2026-09-15T15:59:37+00:00",
+    "summary": "",
+    "also": []
+   },
+   {
+    "title": "Watch: The latest Ploughing forecast from Carlow Weather",
+    "teaser": "Visitors to the National Ploughing Championships over the coming days are being advised to pack raincoats and suncream. That’s the message from Alan O’Reilly of Carlow Weather who said the two remaining days of the 95th championships at Screggan, Tullamore, Co. Offaly will bring mixed conditions. Th",
+    "link": "https://www.agriland.ie/farming-news/watch-the-latest-ploughing-forecast-from-carlow-weather/",
+    "source": "Agriland",
+    "scope": "agrar",
+    "lang": "en",
+    "published": "2026-09-15T17:30:00+00:00",
     "summary": "",
     "also": []
    }
@@ -193,31 +189,31 @@
     "also": []
    },
    {
-    "title": "With a performance defined by emotion, Céline Dion brings her story to Paris",
-    "teaser": "Céline Dion on Saturday fulfilled her dream of returning to the stage after years battling a rare neurological disorder with a sell-out concert in an arena west of Paris. Speaking with FRANCE 24's Mark Owen, vocal coach Elena Hurstel says that Céline Dion's performance in Paris has been defined by e",
-    "link": "http://www.france24.com/en/video/20260915-with-a-performance-defined-by-emotion-c%C3%A9line-dion-brings-her-story-to-paris",
-    "source": "France 24",
+    "title": "What makes these midterms so pivotal?",
+    "teaser": "The 2026 midterms could reshape Washington as voters weigh Trump, party divisions and the issues driving the election.",
+    "link": "https://www.aljazeera.com/video/lets-focus/2026/9/15/what-makes-these-midterms-so-pivotal?traffic_source=rss",
+    "source": "Al Jazeera",
     "scope": "world",
     "lang": "de",
-    "published": "2026-09-15T20:12:45+00:00",
+    "published": "2026-09-15T20:19:26+00:00",
     "summary": "",
     "also": []
    },
    {
-    "title": "NATO jet shoots down suspected Russian drone over Lithuania",
-    "teaser": "EU chief warns of wider conflict as border incursions stoke fears that Ukraine war is spilling into neighbouring states.",
-    "link": "https://www.aljazeera.com/news/2026/9/15/nato-jet-shoots-down-suspected-russian-drone-over-lithuania?traffic_source=rss",
+    "title": "Why do some African leaders gamble with term limits?",
+    "teaser": "Protesters in the DRC denounce law that could extend president's term.",
+    "link": "https://www.aljazeera.com/video/inside-story/2026/9/15/why-do-some-african-leaders-gamble-with-term-limits-2?traffic_source=rss",
     "source": "Al Jazeera",
     "scope": "world",
     "lang": "de",
-    "published": "2026-09-15T19:59:00+00:00",
+    "published": "2026-09-15T20:17:52+00:00",
     "summary": "",
     "also": []
    }
   ],
   "note": "Kein ANTHROPIC_API_KEY gesetzt – Meldungen nach Aktualität sortiert.",
   "feed_count": 30,
-  "item_count": 302,
+  "item_count": 241,
   "ranked_by": "Aktualität"
  }
 }
