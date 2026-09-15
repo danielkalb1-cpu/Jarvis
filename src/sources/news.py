@@ -24,7 +24,12 @@ ENV_KEY = "ANTHROPIC_API_KEY"
 
 # Reihenfolge der Blöcke im Briefing. "agrar" ist zweigeteilt: ein Teil
 # deutschsprachig, ein Teil international.
-BLOCKS = ("top", "region", "agrar", "world")
+BLOCKS = ("top", "region", "agrar", "eu", "world")
+
+# Blöcke, in denen nur Meldungen stehen, die heute zum ersten Mal
+# auftauchen. Regulatorik bewegt sich langsam – ohne das stünden dort
+# wochenlang dieselben Einträge.
+ONLY_NEW = ("eu",)
 MAX_HEADLINES_FOR_MODEL = 220
 SUMMARY_INPUT_CHARS = 300      # Kurzbeschreibung aus dem Feed, gekürzt
 TAG_RE = re.compile(r"<[^>]+>")
@@ -35,7 +40,7 @@ TAG_RE = re.compile(r"<[^>]+>")
 # ----------------------------------------------------------------------
 
 def collect(config: dict[str, Any], http: HttpConfig, problems: Problems,
-            now: datetime) -> dict[str, Any]:
+            now: datetime, seen: dict[str, str] | None = None) -> dict[str, Any]:
     section = config.get("news") or {}
     if not section.get("enabled", True):
         return {"enabled": False, "top": [], "region": [], "world": [], "note": None}
@@ -54,6 +59,7 @@ def collect(config: dict[str, Any], http: HttpConfig, problems: Problems,
             items.extend(chunk)
 
     items = _dedupe(items)
+    items, seen_update = _only_new(items, seen or {}, now)
     items.sort(key=lambda i: i["published"] or datetime.min.replace(tzinfo=timezone.utc),
                reverse=True)
 
@@ -68,11 +74,12 @@ def collect(config: dict[str, Any], http: HttpConfig, problems: Problems,
         "region": int(counts.get("region", 4)),
         "world": int(counts.get("world", 4)),
         "agrar": agrar_split["deutsch"] + agrar_split["international"],
+        "eu": int(counts.get("eu", 3)),
     }
 
     if not items:
         return {
-            "enabled": True, "top": [], "region": [], "world": [], "agrar": [],
+            "enabled": True, **{b: [] for b in BLOCKS}, "seen_update": seen_update,
             "note": "Keine Meldungen eingesammelt – alle Feeds waren nicht erreichbar.",
             "feed_count": len(feeds), "item_count": 0, "ranked_by": "keine",
         }
@@ -82,12 +89,40 @@ def collect(config: dict[str, Any], http: HttpConfig, problems: Problems,
 
     return {
         "enabled": True,
+        "seen_update": seen_update,
         **{block: selection[block] for block in BLOCKS},
         "note": note,
         "feed_count": len(feeds),
         "item_count": len(items),
         "ranked_by": ranked_by,
     }
+
+
+def _only_new(items: list[dict[str, Any]], seen: dict[str, str],
+              now: datetime) -> tuple[list[dict[str, Any]], dict[str, str]]:
+    """Aus ONLY_NEW-Ressorts nur behalten, was heute zum ersten Mal auftaucht.
+
+    Gibt zusätzlich zurück, was neu vermerkt werden soll. Der Vermerk hält den
+    Tag des ersten Auftauchens fest: innerhalb desselben Tages bleibt eine
+    Meldung stehen, am nächsten Tag ist sie weg.
+    """
+    today = now.date().isoformat()
+    kept: list[dict[str, Any]] = []
+    update: dict[str, str] = {}
+
+    for item in items:
+        if item["scope"] not in ONLY_NEW:
+            kept.append(item)
+            continue
+        first = seen.get(item["link"])
+        if first is None:
+            update[item["link"]] = today
+            kept.append(item)
+        elif first == today:
+            kept.append(item)
+        # älter als heute -> stillschweigend weglassen
+
+    return kept, update
 
 
 def _read_feed(feed: dict[str, Any], http: HttpConfig, problems: Problems,
@@ -307,7 +342,7 @@ def _ask_claude(items: list[dict[str, Any]], wanted: dict[str, int],
         "Titel oder Teaser steht.\n\n"
         "Antworte ausschließlich mit JSON in genau dieser Form, ohne weiteren Text:\n"
         '{"top":[{"id":0,"summary":"...","also":["Quelle A","Quelle B"]}],'
-        '"region":[...],"agrar":[...],"world":[...]}\n\n'
+        '"region":[...],"agrar":[...],"eu":[...],"world":[...]}\n\n'
         f'"top" = {wanted["top"]} wichtigste Meldungen insgesamt, '
         f'"region" = {wanted["region"]} Meldungen mit Bezug zur Region, '
         f'"agrar" = {wanted["agrar"]} Meldungen aus der Landwirtschaft, davon '
@@ -316,9 +351,14 @@ def _ask_claude(items: list[dict[str, Any]], wanted: dict[str, int],
         "in genau dieser Reihenfolge, erst die deutschen, dann die internationalen; "
         'nimm dafür Meldungen aus dem Bereich "agrar", und nur wenn dort zu wenige '
         "stehen, passende aus den übrigen Bereichen. "
+        f'"eu" = bis zu {wanted["eu"]} Meldungen aus dem Bereich "eu" zu neuem '
+        "EU-Regelwerk mit Bezug zu Landwirtschaft, Landmaschinen oder "
+        "Anbaugeräten – Verordnungen, Richtlinien, Typgenehmigung, Fristen. "
+        "Nimm hier NUR Meldungen aus dem Bereich \"eu\", und lass den Block "
+        "lieber leer, als ihn mit allgemeiner Agrarpolitik zu füllen. "
         f'"world" = {wanted["world"]} internationale Meldungen. '
         '"also" listet weitere Häuser, die dieselbe Sache melden (leer lassen, wenn keine). '
-        "Keine ID doppelt über alle vier Blöcke hinweg."
+        "Keine ID doppelt über alle Blöcke hinweg."
     )
 
     client = anthropic.Anthropic(api_key=api_key, timeout=120.0, max_retries=2)
@@ -461,6 +501,7 @@ def _fallback(items: list[dict[str, Any]], wanted: dict[str, int],
          agrar_split["deutsch"] + agrar_split["international"])
     # Falls eine der beiden Seiten zu wenig hergab, mit dem Rest auffüllen.
     take("agrar", agrar, wanted.get("agrar", 0))
+    take("eu", [i for i in items if i["scope"] == "eu"], wanted.get("eu", 0))
     take("world", [i for i in items if i["scope"] == "world"], wanted.get("world", 0))
     take("top", items, wanted.get("top", 0))
     return {block: selection[block] for block in BLOCKS}

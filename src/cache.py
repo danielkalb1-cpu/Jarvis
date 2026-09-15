@@ -107,6 +107,37 @@ def _revive(block: dict[str, Any]) -> dict[str, Any]:
     return out
 
 
+# ----------------------------------------------------------------------
+# Gesehene Meldungen – für Blöcke, die nur Neues zeigen sollen
+# ----------------------------------------------------------------------
+
+SEEN_KEEP_DAYS = 90
+
+
+def load_seen(path: Path) -> dict[str, str]:
+    """Link -> Datum, an dem er zum ersten Mal auftauchte."""
+    if not path.exists():
+        return {}
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        return {str(k): str(v) for k, v in data.items()} if isinstance(data, dict) else {}
+    except (OSError, ValueError) as exc:
+        log.warning("Gesehenes nicht lesbar (%s) – wird neu aufgebaut.", exc)
+        return {}
+
+
+def save_seen(path: Path, seen: dict[str, str], now: datetime) -> None:
+    """Ablegen und dabei alte Einträge ausmisten."""
+    cutoff = (now - timedelta(days=SEEN_KEEP_DAYS)).date().isoformat()
+    pruned = {link: day for link, day in seen.items() if day >= cutoff}
+    try:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps(pruned, ensure_ascii=False, indent=1, sort_keys=True),
+                        encoding="utf-8")
+    except OSError as exc:
+        log.warning("Gesehenes konnte nicht geschrieben werden: %s", exc)
+
+
 def _parse(value: str) -> datetime | None:
     try:
         parsed = datetime.fromisoformat(value)

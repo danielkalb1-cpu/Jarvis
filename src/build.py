@@ -40,6 +40,7 @@ OUTPUT = ROOT / "docs" / "index.html"
 CONFIG = ROOT / "config.yaml"
 NEWS_CACHE = ROOT / "cache" / "news.json"
 NEWS_MODULE = ROOT / "src" / "sources" / "news.py"
+SEEN_FILE = ROOT / "cache" / "seen.json"
 
 WEEKDAYS = ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"]
 MONTHS = ["Januar", "Februar", "März", "April", "Mai", "Juni",
@@ -219,7 +220,8 @@ def render_news(block: dict[str, Any], tz: ZoneInfo) -> str:
     # Überschriften zu den Blöcken aus sources/news.py – die Reihenfolge
     # gibt dort BLOCKS vor.
     titles = {"top": "Wichtigstes heute", "region": "Region",
-              "agrar": "Landwirtschaft", "world": "Weltweit"}
+              "agrar": "Landwirtschaft", "eu": "Neues Regelwerk",
+              "world": "Weltweit"}
     blocks = [(key, titles.get(key, key.title())) for key in news_source.BLOCKS]
     parts: list[str] = ['    <div class="panel">']
     any_story = False
@@ -403,6 +405,15 @@ def demo_data(now: datetime) -> tuple[dict, dict, dict]:
                   "Field reports put harvest progress several points above the usual pace "
                   "for mid-September, helped by dry weather across the Corn Belt.", 9),
         ],
+        "eu": [
+            story("Neue Typgenehmigungsfristen für Anbaugeräte beschlossen", "agrarheute",
+                  "Die EU hat die Übergangsfristen für die Typgenehmigung angehängter "
+                  "Arbeitsgeräte verlängert; betroffen sind Geräte über drei Tonnen.", 20,
+                  ["Profi"]),
+            story("Kommission legt Entwurf zur Maschinenverordnung vor", "CEMA",
+                  "Der Entwurf betrifft unter anderem Nachrüstsätze und die Einstufung "
+                  "von Software-Updates als wesentliche Veränderung.", 30),
+        ],
         "world": [
             story("UN-Vollversammlung startet in New York", "Reuters",
                   "Die Generaldebatte beginnt mit Reden zahlreicher Staats- und Regierungschefs.",
@@ -437,7 +448,14 @@ def _news_with_cache(config: dict[str, Any], http: HttpConfig, problems: Problem
         log.info("Nachrichten aus dem Cache (%d min alt).", age)
         return cached
 
-    block = news_source.collect(config, http, problems, now.astimezone(timezone.utc))
+    seen = news_cache.load_seen(SEEN_FILE)
+    block = news_source.collect(config, http, problems,
+                                now.astimezone(timezone.utc), seen)
+    # Erst vermerken, wenn der Abruf wirklich etwas gebracht hat – sonst
+    # gilt eine Meldung als gesehen, die nie auf der Seite stand.
+    update = block.get("seen_update") or {}
+    if update and any(block.get(key) for key in news_source.BLOCKS):
+        news_cache.save_seen(SEEN_FILE, {**seen, **update}, now)
     # Nur brauchbare Ergebnisse ablegen – ein Totalausfall soll den letzten
     # guten Stand nicht überschreiben.
     if any(block.get(key) for key in news_source.BLOCKS):

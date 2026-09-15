@@ -68,6 +68,9 @@ news:
     agrar:
       deutsch: 3
       international: 2
+    # Zeigt nur, was neu dazugekommen ist – an den meisten Tagen also nichts,
+    # dann entfällt der Block ganz.
+    eu: 3
   llm:
     enabled: true
     model: "claude-sonnet-5"
@@ -138,6 +141,16 @@ news:
     - { name: "Agriland",            url: "https://www.agriland.ie/feed/",                              scope: agrar, lang: en, max_age_hours: 48 }
     - { name: "Successful Farming",  url: "https://feeds-api.dotdashmeredith.com/v1/rss/google/77cb61c1-0387-45bf-80e6-3f2976e90672", scope: agrar, lang: en, max_age_hours: 48 }
     - { name: "Agrar International", url: "https://news.google.com/rss/search?q=when:2d+agriculture+OR+farming+policy&hl=en-US&gl=US&ceid=US:en", scope: agrar, lang: en, aggregator: true, max_age_hours: 48 }
+    # --- EU-Regelwerk ---
+    # Die offiziellen Quellen liefern keinen Feed: EU-Kommission (Agrar wie
+    # Binnenmarkt), BMEL, CEMA und VDMA – geprüft, alles 404 oder unlesbar.
+    # Bleiben Google-News-Suchen. Regulatorik bewegt sich langsam: die
+    # neuesten Treffer waren bei der Prüfung 11 bis 15 Tage alt. Deshalb ein
+    # weites Zeitfenster – und im Block landet trotzdem nur, was seit dem
+    # letzten Mal dazugekommen ist (siehe ONLY_NEW in sources/news.py).
+    - { name: "EU-Regelwerk Technik", url: "https://news.google.com/rss/search?q=EU-Verordnung+Landmaschine+OR+Traktor+OR+Anbauger%C3%A4t&hl=de&gl=DE&ceid=DE:de", scope: eu, lang: de, aggregator: true, max_age_hours: 720 }
+    - { name: "EU Machinery Rules", url: "https://news.google.com/rss/search?q=EU+regulation+agricultural+machinery+OR+tractor+type-approval&hl=en-US&gl=US&ceid=US:en", scope: eu, lang: en, aggregator: true, max_age_hours: 720 }
+    - { name: "EU-Agrarrecht", url: "https://news.google.com/rss/search?q=EU+Agrarpolitik+Verordnung+OR+Richtlinie+Landwirtschaft&hl=de&gl=DE&ceid=DE:de", scope: eu, lang: de, aggregator: true, max_age_hours: 720 }
 
 # ------------------------------------------------------------
 # Netzwerk – gilt für alle Abrufe
