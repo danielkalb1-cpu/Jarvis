@@ -397,7 +397,10 @@ def _ask_claude(items: list[dict[str, Any]], wanted: dict[str, int],
         "wenn keine). Keine ID doppelt über alle Blöcke hinweg."
     )
 
-    client = anthropic.Anthropic(api_key=api_key, timeout=120.0, max_retries=2)
+    # Großzügiges Zeitlimit: 400 Überschriften mit hohem Aufwand und
+    # adaptivem Denken brauchen deutlich länger als eine kurze Anfrage.
+    # Der Workflow selbst bricht nach 15 Minuten ab.
+    client = anthropic.Anthropic(api_key=api_key, timeout=600.0, max_retries=2)
     request: dict[str, Any] = {
         "model": llm.get("model", "claude-sonnet-5"),
         "max_tokens": int(llm.get("max_tokens", 8000)),
@@ -412,15 +415,20 @@ def _ask_claude(items: list[dict[str, Any]], wanted: dict[str, int],
     # Der Aufruf passiert einmal am Tag, also darf er gründlich sein:
     # adaptives Denken und hoher Aufwand. Kostet ein paar Cent mehr und
     # entscheidet über die Qualität des ganzen Briefings.
+    #
+    # Gestreamt, nicht als einzelne Antwort: bei dieser Menge Eingabe und
+    # 16.000 möglichen Ausgabe-Token läuft eine gewöhnliche Anfrage sonst
+    # ins Zeitlimit, noch bevor das Modell fertig ist.
+    def ask(**extra: Any) -> Any:
+        with client.messages.stream(**request, **extra) as stream:
+            return stream.get_final_message()
+
     try:
-        response = client.messages.create(
-            **request,
-            thinking={"type": "adaptive"},
-            output_config={"effort": llm.get("effort", "high")},
-        )
+        response = ask(thinking={"type": "adaptive"},
+                       output_config={"effort": llm.get("effort", "high")})
     except Exception:
         # Ältere SDK- oder Modellstände kennen diese Parameter nicht – dann eben ohne.
-        response = client.messages.create(**request)
+        response = ask()
 
     return "".join(block.text for block in response.content
                    if getattr(block, "type", None) == "text")
