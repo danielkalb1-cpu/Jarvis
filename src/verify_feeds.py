@@ -136,6 +136,10 @@ def main() -> int:
     with ThreadPoolExecutor(max_workers=8) as pool:
         results = list(pool.map(lambda f: check(f, http), feeds))
 
+    # Beim Durchprobieren von Kandidaten sind tote URLs der Normalfall und
+    # kein Grund, den Lauf rot zu machen – sonst verschickt GitHub eine
+    # Fehlermeldung für etwas, das gar kein Fehler ist. Rot wird der Lauf nur
+    # bei der Prüfung der Feeds aus der config.
     broken = []
     for (feed, (name, ok, detail)) in zip(feeds, results):
         label = name if name != feed.get("name") else feed.get("name", "?")
@@ -147,11 +151,17 @@ def main() -> int:
 
     print()
     if broken:
+        if given:
+            print(f"{len(broken)} von {len(feeds)} Kandidaten nicht nutzbar: "
+                  f"{', '.join(broken)}")
+            print("Das ist beim Durchprobieren normal – nimm die brauchbaren "
+                  "in die config.yaml.")
+            return 0
         print(f"{len(broken)} von {len(feeds)} Feeds nicht nutzbar: {', '.join(broken)}")
         print("Bitte die URL in config.yaml korrigieren oder den Eintrag entfernen.")
         return 1
 
-    print(f"Alle {len(feeds)} Feeds in Ordnung.")
+    print(f"Alle {len(feeds)} {'Kandidaten' if given else 'Feeds'} in Ordnung.")
     return 0
 
 
