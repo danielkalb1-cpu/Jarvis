@@ -460,6 +460,7 @@ def _fallback(items: list[dict[str, Any]], wanted: dict[str, int],
     Überschrift mit Quelle und Link da, was urheberrechtlich unbedenklich ist.
     """
     terms = [t.lower() for t in (llm.get("region_terms") or [])]
+    eu_terms = [t.lower() for t in (llm.get("eu_terms") or [])]
 
     def mentions_region(item: dict[str, Any]) -> bool:
         haystack = f"{item['title']} {item['teaser']}".lower()
@@ -501,7 +502,17 @@ def _fallback(items: list[dict[str, Any]], wanted: dict[str, int],
          agrar_split["deutsch"] + agrar_split["international"])
     # Falls eine der beiden Seiten zu wenig hergab, mit dem Rest auffüllen.
     take("agrar", agrar, wanted.get("agrar", 0))
-    take("eu", [i for i in items if i["scope"] == "eu"], wanted.get("eu", 0))
+    # Ohne Gewichtung durch Claude landet sonst alles im Block, was die
+    # Suchbegriffe lose trifft – zuletzt zweimal Moldau. Mindestens ein
+    # Begriff aus eu_terms muss vorkommen.
+    def is_regulatory(item: dict[str, Any]) -> bool:
+        if not eu_terms:
+            return True
+        haystack = f"{item['title']} {item['teaser']}".lower()
+        return any(term in haystack for term in eu_terms)
+
+    take("eu", [i for i in items if i["scope"] == "eu" and is_regulatory(i)],
+         wanted.get("eu", 0))
     take("world", [i for i in items if i["scope"] == "world"], wanted.get("world", 0))
     take("top", items, wanted.get("top", 0))
     return {block: selection[block] for block in BLOCKS}

@@ -82,6 +82,18 @@ news:
     min_interval_minutes: 180
     # Begriffe, die den Regionalbezug definieren (fließen in den Prompt
     # und in die Fallback-Sortierung ein)
+    # Ohne Gewichtung durch Claude muss eine Meldung im Block „Neues
+    # Regelwerk" mindestens einen dieser Begriffe enthalten.
+    eu_terms:
+      - EU
+      - Brüssel
+      - Verordnung
+      - Richtlinie
+      - Typgenehmigung
+      - type-approval
+      - regulation
+      - directive
+      - Kommission
     region_terms:
       - Augsburg
       - Allgäu
