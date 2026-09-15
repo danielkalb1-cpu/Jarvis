@@ -273,15 +273,19 @@ prüfen → Run workflow**. Die häufigsten Befunde:
 
 ## Teilen-Link
 
-Die Seite unter GitHub Pages ist öffentlich erreichbar und aktualisiert sich
-von selbst – wer den Link hat, sieht immer den aktuellen Stand. Das ist der
-einfachste Weg, das Briefing weiterzugeben.
+**GitHub Pages ist der Weg zum Teilen.** Die Seite dort ist öffentlich
+erreichbar, aktualisiert sich alle 30 Minuten von selbst, und Empfänger
+brauchen kein Konto:
 
-Daneben gibt es eine Fassung als Claude-Artifact, die von einer täglichen
-Routine um 5 Uhr neu veröffentlicht wird. Gebaut wird sie mit:
+```
+https://danielkalb1-cpu.github.io/Jarvis/
+```
+
+Es gibt zusätzlich `src/make_share_page.py`, das aus `docs/index.html` eine
+Fassung für ein Claude-Artifact baut:
 
 ```bash
-python3 src/make_share_page.py                       # neuester Stand vom Branch
+python3 src/make_share_page.py                        # neuester Stand vom Branch
 python3 src/make_share_page.py --source docs/index.html
 ```
 
@@ -290,6 +294,14 @@ Das Ergebnis liegt in `build/share.html` (nicht im Repo). Gegenüber
 selbst setzt, und es kommen die `data-theme`-Stufen dazu, damit die Seite
 auch bei Betrachtern stimmt, die Hell oder Dunkel ausdrücklich eingestellt
 haben.
+
+> **Ein Artifact taugt nicht als sich selbst aktualisierender Teilen-Link.**
+> Sobald „General access“ auf *Anyone with the link* steht, lässt sich die
+> geteilte Version nicht mehr auf *Latest* stellen – die Plattform lehnt das
+> ab („Can't switch to Latest while people outside your organization can open
+> this artifact“). Wer öffentlich teilt, bleibt also auf einer festgepinnten
+> Version stehen, egal wie oft neu veröffentlicht wird. Ein Artifact ist
+> damit eine Momentaufnahme; für einen mitlaufenden Link ist Pages zuständig.
 
 ---
 
