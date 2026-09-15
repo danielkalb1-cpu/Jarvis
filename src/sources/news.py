@@ -59,7 +59,8 @@ def collect(config: dict[str, Any], http: HttpConfig, problems: Problems,
             items.extend(chunk)
 
     items = _dedupe(items)
-    items, seen_update = _only_new(items, seen or {}, now)
+    seen = seen or {}
+    items = _only_new(items, seen, now)
     items.sort(key=lambda i: i["published"] or datetime.min.replace(tzinfo=timezone.utc),
                reverse=True)
 
@@ -79,7 +80,7 @@ def collect(config: dict[str, Any], http: HttpConfig, problems: Problems,
 
     if not items:
         return {
-            "enabled": True, **{b: [] for b in BLOCKS}, "seen_update": seen_update,
+            "enabled": True, **{b: [] for b in BLOCKS}, "seen_update": {},
             "note": "Keine Meldungen eingesammelt – alle Feeds waren nicht erreichbar.",
             "feed_count": len(feeds), "item_count": 0, "ranked_by": "keine",
         }
@@ -89,7 +90,7 @@ def collect(config: dict[str, Any], http: HttpConfig, problems: Problems,
 
     return {
         "enabled": True,
-        "seen_update": seen_update,
+        "seen_update": _newly_shown(selection, seen, now),
         **{block: selection[block] for block in BLOCKS},
         "note": note,
         "feed_count": len(feeds),
@@ -99,30 +100,38 @@ def collect(config: dict[str, Any], http: HttpConfig, problems: Problems,
 
 
 def _only_new(items: list[dict[str, Any]], seen: dict[str, str],
-              now: datetime) -> tuple[list[dict[str, Any]], dict[str, str]]:
-    """Aus ONLY_NEW-Ressorts nur behalten, was heute zum ersten Mal auftaucht.
-
-    Gibt zusätzlich zurück, was neu vermerkt werden soll. Der Vermerk hält den
-    Tag des ersten Auftauchens fest: innerhalb desselben Tages bleibt eine
-    Meldung stehen, am nächsten Tag ist sie weg.
-    """
+              now: datetime) -> list[dict[str, Any]]:
+    """Aus ONLY_NEW-Ressorts nur behalten, was heute zum ersten Mal auftaucht."""
     today = now.date().isoformat()
     kept: list[dict[str, Any]] = []
-    update: dict[str, str] = {}
 
     for item in items:
         if item["scope"] not in ONLY_NEW:
             kept.append(item)
             continue
         first = seen.get(item["link"])
-        if first is None:
-            update[item["link"]] = today
+        # noch nie dagewesen, oder heute zum ersten Mal -> zeigen
+        if first is None or first == today:
             kept.append(item)
-        elif first == today:
-            kept.append(item)
-        # älter als heute -> stillschweigend weglassen
 
-    return kept, update
+    return kept
+
+
+def _newly_shown(selection: dict[str, list[dict[str, Any]]], seen: dict[str, str],
+                 now: datetime) -> dict[str, str]:
+    """Vermerken, was tatsächlich auf der Seite gelandet ist.
+
+    Absichtlich nicht schon beim Einsammeln: eine Meldung, die die Auswahl
+    aussortiert, darf nicht als gesehen gelten – sonst wäre sie für immer
+    verbrannt, obwohl sie nie jemand zu Gesicht bekommen hat.
+    """
+    today = now.date().isoformat()
+    return {
+        story["link"]: today
+        for block in ONLY_NEW
+        for story in selection.get(block) or []
+        if story["link"] not in seen
+    }
 
 
 def _read_feed(feed: dict[str, Any], http: HttpConfig, problems: Problems,
