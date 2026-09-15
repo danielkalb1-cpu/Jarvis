@@ -35,6 +35,10 @@ ONLY_NEW = ("eu",)
 # Material sehen. 400 Überschriften sind rund 17.000 Token Eingabe, also
 # wenige Cent.
 MAX_HEADLINES_FOR_MODEL = 400
+
+# Die Lage steht ganz oben und wird im Vorbeigehen gelesen. Mehr als das
+# füllt den ganzen ersten Bildschirm.
+LAGE_MAX_CHARS = 380
 SUMMARY_INPUT_CHARS = 300      # Kurzbeschreibung aus dem Feed, gekürzt
 TAG_RE = re.compile(r"<[^>]+>")
 
@@ -65,6 +69,7 @@ def collect(config: dict[str, Any], http: HttpConfig, problems: Problems,
             items.extend(chunk)
 
     items = _dedupe(items)
+    items = _relevant_for_scope(items, (section.get("llm") or {}))
     seen = seen or {}
     items = _only_new(items, seen, now)
     items.sort(key=lambda i: i["published"] or datetime.min.replace(tzinfo=timezone.utc),
@@ -104,6 +109,30 @@ def collect(config: dict[str, Any], http: HttpConfig, problems: Problems,
         "item_count": len(items),
         "ranked_by": ranked_by,
     }
+
+
+def _relevant_for_scope(items: list[dict[str, Any]],
+                        llm: dict[str, Any]) -> list[dict[str, Any]]:
+    """Regelwerks-Meldungen müssen nach Regelwerk klingen.
+
+    Der Filter saß bisher nur in der Ersatzlogik. Im ersten Lauf mit Modell
+    landeten deshalb wieder zwei Moldau-Meldungen im Block: aus dem richtigen
+    Ressort, aber eben kein EU-Regelwerk. Jetzt greift er, bevor überhaupt
+    jemand auswählt – Modell wie Ersatzlogik.
+    """
+    terms = [t.lower() for t in (llm.get("eu_terms") or [])]
+    if not terms:
+        return items
+
+    kept = []
+    for item in items:
+        if item["scope"] != "eu":
+            kept.append(item)
+            continue
+        haystack = f"{item['title']} {item['teaser']}".lower()
+        if any(term in haystack for term in terms):
+            kept.append(item)
+    return kept
 
 
 def _only_new(items: list[dict[str, Any]], seen: dict[str, str],
@@ -376,11 +405,14 @@ def _ask_claude(items: list[dict[str, Any]], wanted: dict[str, int],
         "dünn ist, schreib lieber weniger. Keine Floskeln wie \"es bleibt "
         "abzuwarten\".\n\n"
 
-        "Zusätzlich \"lage\": zwei bis drei Sätze, die den Tag einordnen – "
-        "was heute zählt, worauf er sich einstellen sollte. Schreib ihn direkt "
-        "an, in ruhigem, sachlichem Ton, ohne Anrede und ohne Aufzählung. "
-        "Wenn wenig los ist, sag genau das; erfundene Dringlichkeit ist "
-        "schlimmer als ein ruhiger Tag.\n\n"
+        "Zusätzlich \"lage\": zwei, höchstens drei kurze Sätze, die den Tag "
+        "einordnen – was heute zählt, worauf er sich einstellen sollte. "
+        "ZUSAMMEN HÖCHSTENS 350 ZEICHEN. Das wird um Viertel vor sechs mit "
+        "einem Auge gelesen; lieber ein Gedanke zu wenig als ein Satz zu viel. "
+        "Zähle nicht die Schlagzeilen auf, die ohnehin darunter stehen, "
+        "sondern sag, was sie zusammen bedeuten. Ruhiger, sachlicher Ton, "
+        "ohne Anrede und ohne Aufzählung. Wenn wenig los ist, sag genau das; "
+        "erfundene Dringlichkeit ist schlimmer als ein ruhiger Tag.\n\n"
 
         "Antworte ausschließlich mit JSON in genau dieser Form, ohne weiteren "
         "Text:\n"
@@ -497,10 +529,23 @@ def _apply(raw: str, items: list[dict[str, Any]],
     if not any(selection.get(b) for b in BLOCKS):
         return None
 
-    lage = str(data.get("lage") or "").strip()
-    # Ein Absatz, keine Abhandlung – und nichts, was wie Markup aussieht.
-    selection["lage"] = re.sub(r"\s+", " ", TAG_RE.sub(" ", lage))[:600]
+    lage = re.sub(r"\s+", " ", TAG_RE.sub(" ", str(data.get("lage") or ""))).strip()
+    selection["lage"] = _trim_sentences(lage, LAGE_MAX_CHARS)
     return selection
+
+
+def _trim_sentences(text: str, limit: int) -> str:
+    """Auf ganze Sätze kürzen statt mitten im Wort abzuschneiden.
+
+    Das Modell hält sich meist an die Vorgabe; hält es sie nicht ein, soll
+    trotzdem nichts Angefangenes auf der Seite stehen.
+    """
+    if len(text) <= limit:
+        return text
+    cut = max(text.rfind(m, 0, limit + 1) for m in (". ", "! ", "? "))
+    if cut > limit // 2:
+        return text[:cut + 1]
+    return text[:limit].rsplit(" ", 1)[0] + " …"
 
 
 def _loose_json(raw: str) -> Any:
@@ -534,7 +579,6 @@ def _fallback(items: list[dict[str, Any]], wanted: dict[str, int],
     Überschrift mit Quelle und Link da, was urheberrechtlich unbedenklich ist.
     """
     terms = [t.lower() for t in (llm.get("region_terms") or [])]
-    eu_terms = [t.lower() for t in (llm.get("eu_terms") or [])]
 
     def mentions_region(item: dict[str, Any]) -> bool:
         haystack = f"{item['title']} {item['teaser']}".lower()
@@ -576,17 +620,8 @@ def _fallback(items: list[dict[str, Any]], wanted: dict[str, int],
          agrar_split["deutsch"] + agrar_split["international"])
     # Falls eine der beiden Seiten zu wenig hergab, mit dem Rest auffüllen.
     take("agrar", agrar, wanted.get("agrar", 0))
-    # Ohne Gewichtung durch Claude landet sonst alles im Block, was die
-    # Suchbegriffe lose trifft – zuletzt zweimal Moldau. Mindestens ein
-    # Begriff aus eu_terms muss vorkommen.
-    def is_regulatory(item: dict[str, Any]) -> bool:
-        if not eu_terms:
-            return True
-        haystack = f"{item['title']} {item['teaser']}".lower()
-        return any(term in haystack for term in eu_terms)
-
-    take("eu", [i for i in items if i["scope"] == "eu" and is_regulatory(i)],
-         wanted.get("eu", 0))
+    # Der Regelwerks-Filter greift schon beim Einsammeln (_relevant_for_scope).
+    take("eu", [i for i in items if i["scope"] == "eu"], wanted.get("eu", 0))
     take("world", [i for i in items if i["scope"] == "world"], wanted.get("world", 0))
     take("top", items, wanted.get("top", 0))
     return {**{block: selection[block] for block in BLOCKS}, "lage": ""}
