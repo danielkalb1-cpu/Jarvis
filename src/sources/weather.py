@@ -93,7 +93,11 @@ def _one_location(place: dict[str, Any], section: dict[str, Any], http: HttpConf
             params={
                 **params_common,
                 "date": today.isoformat(),
-                "last_date": (today + timedelta(days=1)).isoformat(),
+                # Bright Sky versteht last_date als Zeitstempel des letzten
+                # Datensatzes, nicht als "bis zu diesem Tag". Mit
+                # today + 1 Tag kam für morgen genau ein Wert zurück
+                # (Mitternacht) – Tief und Hoch waren dann identisch.
+                "last_date": (today + timedelta(days=2)).isoformat(),
             },
         )
         records = data.get("weather") or []
@@ -213,17 +217,23 @@ def _course(rows: list[dict[str, Any]], now: datetime, step: int,
     return out
 
 
+# Unter so vielen Stundenwerten ist ein Tagesminimum oder -maximum nicht
+# aussagekräftig. Dann lieber einen Strich zeigen als eine falsche Zahl.
+MIN_ROWS_FOR_RANGE = 6
+
+
 def _day_summary(rows: list[dict[str, Any]]) -> dict[str, Any] | None:
     if not rows:
         return None
+    partial = len(rows) < MIN_ROWS_FOR_RANGE
     temps = [r["temperature"] for r in rows if r["temperature"] is not None]
     probs = [r["precipitation_probability"] for r in rows
              if r["precipitation_probability"] is not None]
     rain = [r["precipitation"] for r in rows if r["precipitation"] is not None]
     gusts = [r["wind_gust_speed"] for r in rows if r["wind_gust_speed"] is not None]
     return {
-        "min": min(temps) if temps else None,
-        "max": max(temps) if temps else None,
+        "min": min(temps) if temps and not partial else None,
+        "max": max(temps) if temps and not partial else None,
         "precipitation_probability": max(probs) if probs else None,
         "precipitation_sum": round(sum(rain), 1) if rain else 0.0,
         "wind_gust_max": max(gusts) if gusts else None,
