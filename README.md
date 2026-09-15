@@ -316,7 +316,7 @@ haben.
 Der Build läuft werktags halbstündlich zwischen 03:00 und 19:30 UTC:
 
 ```yaml
-- cron: '0,30 3-19 * * 1-5'
+- cron: '7,37 3-19 * * 1-5'
 ```
 
 Der Bereich ist absichtlich großzügig gewählt, weil GitHub Cron in UTC rechnet
@@ -324,8 +324,10 @@ und sich die Ortszeit mit der Sommerzeit verschiebt: 03:00 UTC sind 04:00 Uhr in
 der Winterzeit und 05:00 Uhr in der Sommerzeit. So liegt in beiden Fällen ein
 Lauf sicher vor sechs Uhr morgens.
 
-Geplante Läufe starten bei GitHub gelegentlich einige Minuten später als
-eingetragen – dafür ist die halbstündliche Taktung da.
+Die krummen Minuten sind Absicht: GitHub verzögert geplante Läufe bei Last
+und verwirft sie im Zweifel ganz, und `:00` und `:30` sind die am stärksten
+überbuchten Zeitpunkte. Fällt trotzdem einmal ein Lauf aus, holt der nächste
+eine halbe Stunde später alles nach – dafür ist die dichte Taktung da.
 
 **Zu den Kosten:** die vielen Läufe sind für den Verkehr gedacht. Die
 Nachrichten jedes Mal neu von Claude gewichten zu lassen, wäre teuer, deshalb

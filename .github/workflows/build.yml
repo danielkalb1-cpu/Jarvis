@@ -4,9 +4,14 @@ on:
   schedule:
     # Zeiten in UTC. Großzügiger Bereich, damit der Morgenlauf sowohl in der
     # Winterzeit (UTC+1) als auch in der Sommerzeit (UTC+2) sicher vor
-    # 6 Uhr Ortszeit liegt: 03:00 UTC = 04:00 MEZ bzw. 05:00 MESZ.
+    # 6 Uhr Ortszeit liegt: 03:07 UTC = 04:07 MEZ bzw. 05:07 MESZ.
     # Danach halbstündlich weiter, vor allem wegen der Verkehrslage.
-    - cron: '0,30 3-19 * * 1-5'
+    #
+    # Absichtlich nicht zur vollen und halben Stunde: GitHub verzögert
+    # geplante Läufe bei Last und verwirft sie im Zweifel, und genau :00
+    # und :30 sind die am stärksten überbuchten Minuten. Zwei Läufe an
+    # denselben Minuten fielen hier bereits ersatzlos aus.
+    - cron: '7,37 3-19 * * 1-5'
   workflow_dispatch:
 
 # Nur ein Lauf gleichzeitig – sonst überholen sich zwei Commits auf main.
