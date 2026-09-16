@@ -426,13 +426,13 @@ body::after{
       <h1 class="brand__mark">JARVIS</h1>
       <span class="brand__sub">Morgen-Briefing</span>
     </div>
-    <div class="stamp"><span class="pulse"></span>Dienstag · 15.09.2026 · 23:35 Uhr</div>
+    <div class="stamp"><span class="pulse"></span>Mittwoch · 16.09.2026 · 10:29 Uhr</div>
     <div class="head__rule"></div>
   </header>
 
     <section class="lage" aria-label="Lage">
     <span class="lage__k">Lage</span>
-    <p class="lage__t">Innenpolitisch dominiert die Merz-Krise vor den Landtagswahlen am Sonntag, während hohe Spritpreise durch die Huthi-Angriffe im Roten Meer für Streit sorgen. International wächst die Nervosität nach NATO-Zwischenfällen mit Russland bei Litauen und Dänemark. Ein angespannter, aber kein akut dramatischer Tag.</p>
+    <p class="lage__t">Heute bestimmen die Spritpreis-Debatte und von der Leyens EU-Rede zu Kanada und einem neuen Alarmmechanismus die Agenda. Die CDU sucht nach den Landtagswahlen ihren Kurs, niedrige Gasspeicher und ein sprengstoffbestückter Drohnenfund in Litauen halten die Lage angespannt. Im Allgäu bleibt die Trockenheit prägend.</p>
   </section>
 
   
@@ -443,27 +443,33 @@ body::after{
       <h2 class="section__title">Wetter</h2>
       <span class="section__line"></span>
     </div>
-        <div class="panel">
+      <div class="alerts">
+    <div class="alert alert--rain"><span class="alert__icon"><svg class="ic " aria-hidden="true"><use href="#i-rain"></use></svg></span><span>Augsburg: Regen im weiteren Tagesverlauf – 49 % Wahrscheinlichkeit, 3,7 mm erwartet. Schirm einpacken.</span></div>
+    <div class="alert alert--rain"><span class="alert__icon"><svg class="ic " aria-hidden="true"><use href="#i-rain"></use></svg></span><span>Marktoberdorf: Regen im weiteren Tagesverlauf – 72 % Wahrscheinlichkeit, 10,8 mm erwartet. Schirm einpacken.</span></div>
+  </div>
+
+    <div class="panel">
       <div class="wx__top">
         <div>
           <div class="wx__place">Augsburg</div>
-          <div class="wx__temp">17,5<sup>°C</sup></div>
-          <div class="wx__feels">gefühlt 17,1 °C</div>
+          <div class="wx__temp">21,9<sup>°C</sup></div>
+          <div class="wx__feels">gefühlt 21,6 °C</div>
         </div>
         <div class="wx__cond">
-          <svg class="ic wx__glyph" aria-hidden="true"><use href="#i-cloud"></use></svg>
-          <span class="wx__label">bewölkt</span>
+          <svg class="ic wx__glyph" aria-hidden="true"><use href="#i-partly-day"></use></svg>
+          <span class="wx__label">teils bewölkt</span>
         </div>
       </div>
-      <div class="wx__grid"><div class="metric"><span class="metric__k">Regen</span><span class="metric__v">1 <small>%</small></span></div><div class="metric"><span class="metric__k">Menge</span><span class="metric__v">0,0 <small>mm</small></span></div><div class="metric"><span class="metric__k">Wind</span><span class="metric__v">7 <small>km/h</small></span></div><div class="metric"><span class="metric__k">Wolken</span><span class="metric__v">100 <small>%</small></span></div></div>
-      <div class="wx__days"><span>Heute <b>10°</b> / <b>25°</b></span><span>Morgen <b>14°</b> / <b>22°</b></span></div>
+      <div class="wx__grid"><div class="metric"><span class="metric__k">Regen</span><span class="metric__v">49 <small>%</small></span></div><div class="metric"><span class="metric__k">Menge</span><span class="metric__v">3,7 <small>mm</small></span></div><div class="metric"><span class="metric__k">Wind</span><span class="metric__v">9 <small>km/h</small></span></div><div class="metric"><span class="metric__k">Wolken</span><span class="metric__v">75 <small>%</small></span></div></div>
+      <div class="hours"><div class="hour"><div class="hour__t">12</div><svg class="ic hour__i" aria-hidden="true"><use href="#i-cloud"></use></svg><div class="hour__d">22°</div><div class="hour__p">12%</div></div><div class="hour"><div class="hour__t">15</div><svg class="ic hour__i" aria-hidden="true"><use href="#i-cloud"></use></svg><div class="hour__d">21°</div><div class="hour__p">36%</div></div><div class="hour"><div class="hour__t">18</div><svg class="ic hour__i" aria-hidden="true"><use href="#i-cloud"></use></svg><div class="hour__d">18°</div><div class="hour__p">49%</div></div><div class="hour"><div class="hour__t">21</div><svg class="ic hour__i" aria-hidden="true"><use href="#i-cloud"></use></svg><div class="hour__d">15°</div><div class="hour__p">35%</div></div></div>
+      <div class="wx__days"><span>Heute <b>14°</b> / <b>22°</b></span><span>Morgen <b>10°</b> / <b>20°</b></span></div>
     </div>
     <div class="panel wx__more">
       <div class="wxrow">
         <span class="wxrow__n">Marktoberdorf</span>
-        <svg class="ic wxrow__i" aria-hidden="true"><use href="#i-partly-night"></use></svg>
-        <span class="wxrow__t">17,1°</span>
-        <span class="wxrow__f">13° / 23° · 1 % Regen · 6 km/h</span>
+        <svg class="ic wxrow__i" aria-hidden="true"><use href="#i-cloud"></use></svg>
+        <span class="wxrow__t">21,7°</span>
+        <span class="wxrow__f">13° / 22° · 72 % Regen · 7 km/h</span>
       </div>
     </div>
   </section>
@@ -485,122 +491,105 @@ body::after{
       <span class="section__line"></span>
     </div>
         <div class="panel">
-      <div class="block__title block__title--neu">Seit heute früh</div>
-      <a class="story" href="https://www.deutschlandfunk.de/pistorius-und-hegseth-kuendigen-engere-ruestungskooperation-an-100.html" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">USA - Pistorius und Hegseth kündigen engere Rüstungskooperation an</h3>
-        <div class="story__m"><span class="chip chip--src">Deutschlandfunk</span><span class="chip">23:31</span></div>
-      </a>
-      <a class="story" href="https://www.deutschlandfunk.de/trump-kuendigt-schliessung-des-kennedy-center-an-106.html" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Vereinigten Staaten - Trump kündigt Schließung des Kennedy Center an</h3>
-        <div class="story__m"><span class="chip chip--src">Deutschlandfunk</span><span class="chip">23:31</span></div>
-      </a>
-      <a class="story" href="https://www.spiegel.de/politik/deutschland/friedrich-merz-zum-durchschnaufen-muss-der-kanzler-in-der-keller-a-1254d182-0b86-463a-8e76-228529c5404f#ref=rss" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Friedrich Merz: Zum Durchschnaufen muss der Kanzler in der Keller</h3>
-        <div class="story__m"><span class="chip chip--src">Spiegel</span><span class="chip">23:23</span></div>
-      </a>
-      <a class="story" href="https://www.zeit.de/news/2026-09/15/wohltuend-langweilig-tv-runde-der-kleineren-parteien" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">TV-Runde vor Landtagswahl: «Wohltuend langweilig» – TV-Runde der kleineren Parteien</h3>
-        <div class="story__m"><span class="chip chip--src">Zeit Online</span><span class="chip">23:19</span></div>
-      </a>
       <div class="block__title">Wichtigstes heute</div>
-      <a class="story" href="https://www.deutschlandfunk.de/merz-haelt-an-koalition-und-an-reformkurs-fest-praesidiumssitzung-fuer-kommenden-wahlabend-einberufe-104.html" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Bundesregierung - Merz hält an Koalition und an Reformkurs fest - Präsidiumssitzung für kommenden Wahlabend einberufen</h3>
-        <p class="story__s">Kanzler Merz beharrt trotz wachsender Kritik in der eigenen Partei auf seinem Reformkurs und hat für den Abend der bevorstehenden Landtagswahlen in Berlin und Mecklenburg-Vorpommern eine Sitzung des CDU-Präsidiums einberufen. Zugleich sagt er seine für nächste Woche geplante Reise zur UN-Generalversammlung ab, weil seine Präsenz in Berlin nötiger sei – ein Signal für die Schwere der Koalitionskris</p>
-        <div class="story__m"><span class="chip chip--src">Deutschlandfunk</span><span class="chip">22:28</span><span class="chip chip--also">auch: n-tv, Welt, FAZ</span></div>
+      <a class="story" href="https://www.tagesschau.de/wirtschaft/verbraucher/diskussion-entlastungen-hohe-spritpreise-100.html" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Debatte über Spritpreis-Entlastungen: Reiche gegen Preisdeckel und Übergewinnsteuer</h3>
+        <p class="story__s">Nach den auf Rekordniveau gestiegenen Sprit- und Dieselpreisen fordert Unionsfraktionschef Frei rasche Entlastungen bis Anfang Oktober, etwa über eine gesenkte Mehrwertsteuer, während das Wirtschaftsministerium einen Preisdeckel oder eine Übergewinnsteuer für rechtlich riskant hält. Die SPD drängt dagegen auf mehr Druck auf die Mineralölkonzerne, sodass sich der Koalitionsstreit über den richtigen</p>
+        <div class="story__m"><span class="chip chip--src">tagesschau</span><span class="chip">09:26</span><span class="chip chip--also">auch: Spiegel, tagesschau, n-tv</span></div>
       </a>
-      <a class="story" href="https://www.tagesschau.de/video/video-1649386.html" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Merz kündigt Entlastungen bei Spritpreisen an</h3>
-        <p class="story__s">Bundeskanzler Merz hat wegen der historisch hohen Spritpreise Entlastungen für Autofahrer angekündigt, ohne bislang konkrete Instrumente zu benennen. In der Koalition ist offen, ob eine Übergewinnsteuer oder ein Preisdeckel kommen, denn CDU und SPD liegen in der Frage auseinander.</p>
-        <div class="story__m"><span class="chip chip--src">tagesschau</span><span class="chip">16:15</span><span class="chip chip--also">auch: n-tv, Welt, tagesschau</span></div>
+      <a class="story" href="https://www.zeit.de/politik/ausland/2026-09/lage-der-union-ursula-von-der-leyen-eu-rede" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Rede zur Lage der Union: Von der Leyen würdigt Stärke der EU und warnt vor Abhängigkeiten</h3>
+        <p class="story__s">In ihrer Rede zur Lage der EU hat Kommissionschefin von der Leyen eine engere, &#x27;assoziierte&#x27; Anbindung Kanadas an die EU sowie einen eigenen Artikel-4-Alarmmechanismus für Sicherheitskrisen vorgeschlagen und zugleich eine EU-weite Mindestaltersgrenze von 13 Jahren für soziale Medien angekündigt. Die Vorschläge sollen die EU unabhängiger von Importen machen und geopolitisch handlungsfähiger aufstel</p>
+        <div class="story__m"><span class="chip chip--src">Zeit Online</span><span class="chip">10:25</span><span class="chip chip--also">auch: Handelsblatt, Deutschlandfunk, FAZ</span></div>
       </a>
-      <a class="story" href="http://www.france24.com/en/tv-shows/the-debate/20260915-first-hormuz-now-the-red-sea-oil-spikes-as-saudis-sucked-into-yemen-spiral" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">First Hormuz, now the Red Sea? Oil spikes as Saudis sucked into Yemen spiral</h3>
-        <p class="story__s">Nach dem Drohnenangriff auf eine wichtige saudische Ost-West-Pipeline stockt die Ölversorgung, und Saudi-Arabien muss laut US-Angaben erste Lieferungen nach Europa stornieren. Die Huthi-Kontrolle über die Meerenge Bab al-Mandab verteuert zugleich Schifffahrtsrouten und heizt die Sorge vor weiter steigenden Kraftstoffpreisen an.</p>
-        <div class="story__m"><span class="chip chip--src">France 24</span><span class="chip">20:32</span><span class="chip chip--also">auch: n-tv, tagesschau, Deutsche Welle</span></div>
+      <a class="story" href="https://www.faz.net/aktuell/wirtschaft/klima-nachhaltigkeit/wirtschaftsministerin-katherina-reiche-plant-ausschreibungen-fuer-gasspeicher-accg-201231227.html" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Nur halb voll: Reiche plant Ausschreibungen für Gasspeicher</h3>
+        <p class="story__s">Wegen historisch niedriger Füllstände der Gasspeicher will Wirtschaftsministerin Reiche nun doch mit höheren Ausschreibungen und zusätzlichen Käufen über den staatlichen Importeur Sefe gegensteuern, nachdem sie zuvor auf reine Marktanreize gesetzt hatte. Das soll die Versorgungssicherheit für den Winter erhöhen, auch wenn ein Engpass damit noch nicht ausgeschlossen ist.</p>
+        <div class="story__m"><span class="chip chip--src">FAZ</span><span class="chip">09:02</span><span class="chip chip--also">auch: FAZ, Handelsblatt, n-tv</span></div>
       </a>
-      <a class="story" href="http://www.france24.com/en/europe/20260915-nato-jets-down-drone-over-lithuania-as-russian-ship-fires-flares-at-danish-helicopter" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">NATO jets down drone over Lithuania as Russian ship fires flares at Danish helicopter</h3>
-        <p class="story__s">Ein Nato-Kampfjet hat über Litauen eine mutmaßlich russische Drohne abgeschossen, während Dänemark meldet, ein russisches Kriegsschiff habe mit Leuchtraketen auf einen Hubschrauber gefeuert. Die Vorfälle verschärfen die Sorge, dass sich der Krieg gegen die Ukraine auf Nato-Gebiet ausweitet.</p>
-        <div class="story__m"><span class="chip chip--src">France 24</span><span class="chip">22:26</span><span class="chip chip--also">auch: BBC News, Al Jazeera, FAZ</span></div>
+      <a class="story" href="https://www.zeit.de/politik/deutschland/2026-09/csd-berlin-anschlag-islamistischer-terrorismus-zehn-punkte-plan-alexander-dobrindt-stefanie-hubig" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Anschlag auf den Berliner CSD: Regierung legt Zehn-Punkte-Plan für Strafverschärfungen vor</h3>
+        <p class="story__s">Als Reaktion auf den islamistischen Anschlag beim Berliner CSD hat die Bundesregierung einen Zehn-Punkte-Plan mit schärferen Strafen etwa bei Messerdelikten und Spenden an Terrorgruppen sowie einer besseren Überwachung von Gefährdern vorgelegt. Einzelne Maßnahmen sind konkret, andere Details zur Umsetzung bleiben aber noch offen.</p>
+        <div class="story__m"><span class="chip chip--src">Zeit Online</span><span class="chip">10:25</span><span class="chip chip--also">auch: Welt</span></div>
       </a>
-      <a class="story" href="https://www.welt.de/politik/deutschland/article6aa9ae17a3450cf42e4533ff/verteidigungsminister-pistorius-unterzeichnet-ruestungsvereinbarung-mit-usa.html" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Pistorius unterzeichnet Rüstungsvereinbarung mit USA</h3>
-        <p class="story__s">Verteidigungsminister Pistorius hat mit seinem US-Kollegen Hegseth eine Absichtserklärung für eine engere Zusammenarbeit der Rüstungsindustrie beider Länder unterzeichnet, die Lizenzen, Lieferketten und Technologieaustausch umfasst. Die USA loben zugleich die gestiegenen deutschen Verteidigungsinvestitionen.</p>
-        <div class="story__m"><span class="chip chip--src">Welt</span><span class="chip">22:49</span><span class="chip chip--also">auch: Zeit Online, Handelsblatt, Deutschlandfunk</span></div>
+      <a class="story" href="https://www.deutschlandfunk.de/merz-und-cdu-parteispitze-setzen-beratungen-an-kanzlerrede-auf-uno-vollversammlung-abgesagt-100.html" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Landtagswahlen - Merz und CDU-Parteispitze setzen Beratungen an - Kanzlerrede auf UNO-Vollversammlung abgesagt</h3>
+        <p class="story__s">Nach den enttäuschenden Ergebnissen bei den jüngsten Landtagswahlen setzt die CDU-Spitze um Kanzler Merz mehrere Beratungsrunden an, Merz sagt dafür sogar seine Rede vor der UNO-Vollversammlung ab. Parallel wird in Berlin bereits über mögliche Nachfolger diskutiert, auch wenn Merz bei einer Parteiveranstaltung noch Rückhalt demonstriert bekam.</p>
+        <div class="story__m"><span class="chip chip--src">Deutschlandfunk</span><span class="chip">10:24</span><span class="chip chip--also">auch: tagesschau, Süddeutsche Zeitung</span></div>
       </a>
       <div class="block__title">Region</div>
-      <a class="story" href="https://news.google.com/rss/articles/CBMi6wFBVV95cUxQaWJSMHp1V0ZCN0V3Mjc2aXVKWG43VTlCQmZsVVJ2cWlrQm4yUFVLa1hjNXRGenFGelBNcEtOZTRHMlNNV2NaM2lYSnpDZTBCMjVCdWZhTnhmWDNEcmE5V2xOTE9QT1RoM1E5M1FIcldLdzV2SjhYem0zcFFfUXFGemltZXRJQjBZdUZJeXBueXl0R2RtdHM0REhTMUd3N2xJUnhuSWxvbHFfWFpuX3NBZU54azFHbWhZVEZROHl0c0V2eTAxbEo3Zi1FSEpDejhxV0JITkRvTXdWZ1k1TDY3MExWeEFwNDZpSmRV?oc=5" target="_blank" rel="noopener noreferrer">
+      <a class="story" href="https://www.sueddeutsche.de/bayern/sommer-hitze-bayern-wetter-bilanz-2026-rekord-li.3548268" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Hitzerekorde in Bayern: Jetzt amtlich: „Jahrhundertsommer“ teilweise übertroffen</h3>
+        <p class="story__s">Der Sommer 2026 hat in allen bayerischen Regierungsbezirken neue Hitzerekorde gebracht und den &#x27;Jahrhundertsommer&#x27; von 2003 bei den Durchschnittstemperaturen teilweise übertroffen. Die Bilanz fällt regional unterschiedlich aus, zeigt aber insgesamt eine deutliche Erwärmungstendenz.</p>
+        <div class="story__m"><span class="chip chip--src">SZ Bayern</span><span class="chip">09:00</span><span class="chip chip--also">auch: tagesschau Bayern</span></div>
+      </a>
+      <a class="story" href="https://news.google.com/rss/articles/CBMi6wFBVV95cUxNSmtjVjRrM2JVRGh4aTJ1aU5NX0JobkdXMk5SbTlaSVh5eG5DTFZuSkFXWVpjSnN1bnpvYm1yekt0RWpoR3hiQVgxbFVFSmxoWHQ4U2Fnd3U5ZDNwS2VFbExIVzl0WE1YRlJNZ0hMdUdvTDFtejdJcXp1UExmeGxOTGxQU2NsS2FuUnFad3ZzbUFfTDVqNzdtSWFWWksxeGMxbHQ2UERuUjVoSEk0cEZ4VFpDYVNsc2JYY3NxOEotZlNPOTdvUVVSVWZKamxMTzN1TW1EU3VfVWpuQVVOREhlR0UtZGhraHROWkk4?oc=5" target="_blank" rel="noopener noreferrer">
         <h3 class="story__h">Nie dagewesene Trockenheit im Allgäu: Bad Wörishofen verbraucht doppelt so viel Wasser wie der Schnitt</h3>
-        <p class="story__s">Die anhaltende Dürre im Allgäu zeigt sich auch am Wasserverbrauch: Bad Wörishofen verbraucht derzeit doppelt so viel Wasser wie im langjährigen Schnitt. Das dürfte die Debatte um Wasserknappheit und Sparmaßnahmen in der Region weiter befeuern.</p>
+        <p class="story__s">Bad Wörishofen verbraucht wegen der anhaltenden Trockenheit im Allgäu derzeit doppelt so viel Wasser wie im langjährigen Durchschnitt. Das zeigt, wie stark die Wasserversorgung der Region durch die diesjährige Dürre unter Druck gerät.</p>
         <div class="story__m"><span class="chip chip--src">Augsburger Allgemeine</span><span class="chip">05:46</span></div>
+      </a>
+      <a class="story" href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxONnZSTEZCc2t1eDh2Q2p3NFhzcExKQUMtVTBlTE1WbnVEaVpNeXZ6RHpYMVM3ODlacWdvVXJqaExrWFNiUkVtVGhOM0V0U2FYZkJFMFdZa1l0OE1rUTQ0UFdEWmtsSkhoSzQ4SEotdHdRTk9QMWY0c1BmOUg2OFBIVVNfZzlwcmNmVllGMlBXZk4wMHJ4REVvRUdJQVUxLXJRRmFQdE1ETkZNU1FrUS1rODR4aTMzbFdSRTdr?oc=5" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Auf dieser bekannten Allgäuer Alphütte endet mit dem Viehscheid eine Ära</h3>
+        <p class="story__s">Auf einer bekannten Allgäuer Alphütte geht mit dem diesjährigen Viehscheid eine langjährige Tradition zu Ende. Der Fall steht beispielhaft für den Wandel, den die Alpwirtschaft in der Region derzeit durchläuft.</p>
+        <div class="story__m"><span class="chip chip--src">Allgäuer Zeitung</span><span class="chip">05:00</span></div>
       </a>
       <a class="story" href="https://news.google.com/rss/articles/CBMitwFBVV95cUxNU28tUndxcHZPYklQWTktbnc5N1d3cGdzRHE2TUo4dmlsR2VmZlg1T05qV1pVbGk4WGtXakZmYzNsbHNYZU9CRHU3RTQ0WlBZNHhoLUlRU3lOUnNMb0ozRW5adTVBaXRGdGEwNW9DZ1ZzX01DOHAwRy11Z3ZhOXNSOUM4M1oxSFNCalpremlpT0RYb1F3ZGx1MDR3Qmt0WlBwQjllYk1uLTFMV2xBVVpBOXpMeEpLNTg?oc=5" target="_blank" rel="noopener noreferrer">
         <h3 class="story__h">Nach drei Jahren Einschränkungen: Augsburger Stadtwerke-Busse fahren wieder alle 15 Minuten</h3>
-        <p class="story__s">Die Augsburger Stadtwerke fahren nach drei Jahren mit eingeschränktem Takt ihre Busse wieder alle 15 Minuten. Für Pendler in und um Augsburg verbessert sich damit die Anbindung im Nahverkehr wieder spürbar.</p>
+        <p class="story__s">Nach drei Jahren mit eingeschränktem Fahrplan fahren die Busse der Augsburger Stadtwerke wieder im 15-Minuten-Takt. Für Pendler in und um Augsburg verbessert das die Taktdichte im öffentlichen Nahverkehr spürbar.</p>
         <div class="story__m"><span class="chip chip--src">Augsburger Allgemeine</span><span class="chip">14:14</span></div>
       </a>
-      <a class="story" href="https://www.sueddeutsche.de/bayern/bayern-schuljahr-2026-2027-start-regeln-li.3547743" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Schulstart in Bayern: Das Schuljahr bringt neue Regeln und alte Herausforderungen</h3>
-        <p class="story__s">Für rund 1,8 Millionen bayerische Schüler hat das neue Schuljahr begonnen, mit mehr Ganztagsbetreuung, strengeren Handyregeln und neuen Prüfungsformaten – zusätzliche Lehrkräfte gibt es dafür aber nicht. Der Personalmangel bleibt damit trotz neuer Vorgaben ungelöst.</p>
-        <div class="story__m"><span class="chip chip--src">SZ Bayern</span><span class="chip">15:00</span><span class="chip chip--also">auch: tagesschau Bayern</span></div>
-      </a>
-      <a class="story" href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUUJvLVhNSGc1dEwwVDVCUDFVQ0JsZWhVakF2R09VTS1uellqUHBQMnFUSUN6NFU4YWFXVkFSWnhmdEFqWjlhX3hpNG1mcmVzMGl3YTd5ZTkySkFpVTBDT2JGUUZsLXdLNzFWdkR1U1BLYnBscTRxWWIybjExQWlzVVg4TkwxUUpjalJKUWlHWTJubzJIcDFlaEZGZmpwbFFTZ2gyb0hFSE5PQ0E?oc=5" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Energiewende im Allgäu wird gut: Augsburger Universität veröffentlicht Studie</h3>
-        <p class="story__s">Eine neue Studie der Universität Augsburg kommt zu einem positiven Fazit für die Energiewende im Allgäu. Das dürfte regionalen Befürwortern von Wind- und Solarprojekten Rückenwind geben.</p>
-        <div class="story__m"><span class="chip chip--src">Radio Fantasy</span><span class="chip">10:11</span></div>
-      </a>
       <div class="block__title">Landwirtschaft</div>
-      <a class="story" href="https://news.google.com/rss/articles/CBMi5AFBVV95cUxNa2JZN0g0QjctM1R6clMwRHBQVTNfWUlMZGRSWVcyVmZ2R2R5bXRfUTl2bFNaRUk5bWwwT3VDVWZ0dWdVM19sTGFTS3M1bEFjaE0zbHNhd0ZSX1BDai1CWTFXV2x2ZVFyaFl2LWctalJvYVUzMTU5UDgzUFF2bEhaYXFCajYwUzBuMWhYc0lHR1VmQVJMWE1TeTlMY2czSFhHUktqV2hVSFZTWmpMZ0NkczVoLW56WTNPNHRUQXRnYzdIT1VENXNYOFZ2Vm5wc0szZmJQTktHcUhxODRVOF9MVUZnSmw?oc=5" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Bauern im Ostallgäu kämpfen mit Ertragsausfällen. Steigen jetzt die Preise für Milch und Fleisch?</h3>
-        <p class="story__s">Landwirte im Ostallgäu leiden nach dem trockenen Sommer unter deutlichen Ertragsausfällen bei Futter und Ernte. Das nährt Spekulationen, ob dadurch bald auch Milch- und Fleischpreise steigen könnten.</p>
-        <div class="story__m"><span class="chip chip--src">Allgäuer Zeitung</span><span class="chip">17:30</span></div>
+      <a class="story" href="https://news.google.com/rss/articles/CBMikwFBVV95cUxNdkxlV0x3amZBLWJRamV0UGRGVG0yY3RXN3liZHdsR3g4VWxKWDNPaE1lOGdQQnRnbExkc3dxTmFVVktGekFCYTVuaEpqOVlQUGRoTXp4ZzU2STE2MWdVSHlzMDFaMzN2ODh5TjFORDh4dzFub2NJSDhneDdXd3NlSHhyVEluWkVhaUs0ZFhaYTdPZG8?oc=5" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Ernährung sichern, Landwirtschaft stärken: EU-Kommissionspräsidentin von der Leyen muss jetzt Priorität setzen</h3>
+        <p class="story__s">Der Bayerische Bauernverband fordert von EU-Kommissionspräsidentin von der Leyen, nach ihrer Rede zur Lage der Union konkrete Prioritäten für Ernährungssicherung und Landwirtschaft zu setzen. Der Verband mahnt an, dass die angekündigte Unabhängigkeit von Importen auch die heimische Agrarproduktion stärken müsse.</p>
+        <div class="story__m"><span class="chip chip--src">Bayerischer Bauernverband</span><span class="chip">09:05</span></div>
       </a>
-      <a class="story" href="https://www.derstandard.at/story/3000000339885/auf-hohe-einkommen-folgt-der-tiefe-fall-sind-die-duerrehilfen-fuer-bauern-fair?ref=rss" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Auf hohe Einkommen folgt der tiefe Fall – sind die Dürrehilfen für Bauern fair?</h3>
-        <p class="story__s">Nach einem Rekordeinkommen im Vorjahr treffen viele Bauern nun massive Einbußen durch die historische Dürre, was die Debatte über staatliche Dürrehilfen neu entfacht. Kritiker fragen, ob Hilfen angesichts der starken Einkommensschwankungen überhaupt gerecht bemessen werden können.</p>
-        <div class="story__m"><span class="chip chip--src">Der Standard</span><span class="chip">18:00</span></div>
+      <a class="story" href="https://news.google.com/rss/articles/CBMi_wFBVV95cUxQM0FZR0h3ZEE0VzVzSW1DR1RGY3pXakxHMWRQbjRIYVhFRXYtTnRVUTkxaFU3c0NvdFV3OUVRU19KdXJpcVc3eG5hMFo3TnpzV1c0bmFNcFdySmp2ejlDMGNrd1RkUGgxNzJNOFo4TlFDbmFwTlBta3drakhxdnVVeF9QZWJDODhIOW1sallPdlltcnBuYTI1WEVFa2JBMkZEc1N0R2JacHNwd1Vnby1QOWloeFdoelJzRGkyR1VFR1dJVDJzUW1xTVMxZUlvN29lU1N0V08wTmZWeS1kd19hWURTdmxHNElvalVlS0g2d1JUX09uOU9QNmlLWERLenPSAZsCQVVfeXFMTmFXNUMzNklYWlFnSU0tY2Nwa2VrUDY4WmpmN3RVZUw1RXVlaXBqTmtLYUlIaWQwQ2g1c0xmS2ZadElvMi04QS1EUWFaUHcxYTZQemFJVkt0SGdiUWlEdXFBOUhKOEV4STZpYlk0NHBPenRlcjdva1JucnVsc0oxRzhYdDBUVjgtb2k3c0psc1VlYTZDdTJfRFVjRWpTNkY4M212NjFQb2ROVnhlUU5iQ1dVM3NXU1gwYnJYYVRHNS04UEFvREJFZVBVbFlRVDN3a3ZFTnhOdVNGLVZtTE8zVlJmMFFKY2trRDBzNzA5b244SUJ3UXhOZ0dTclRtbXp2TnBCNFNPaUtmcjdNNWMtWGtrYnlYeWY3VGoxMA?oc=5" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Kreis Nordsachsen: Bauern bei Leipzig müssen Felder komplett umstellen wegen Klimawandel</h3>
+        <p class="story__s">Landwirte im Kreis Nordsachsen bei Leipzig müssen wegen des Klimawandels ihre Felder komplett umstellen, um mit zunehmender Trockenheit zurechtzukommen. Der Bericht zeigt, wie konkret sich veränderte Wetterbedingungen bereits auf den Anbau auswirken.</p>
+        <div class="story__m"><span class="chip chip--src">LVZ - Leipziger Volkszeitung</span><span class="chip">04:34</span></div>
       </a>
-      <a class="story" href="https://news.google.com/rss/articles/CBMivAFBVV95cUxNUF9uN2JDLTdtR1RGNXdkMGZRZ1hMWXBibWl5NjM3ZDljTVFCaVhpRkFDVUxDcE5hWUtuUjlCWmhEenhhRFNUcmdBeVVrbGRlZkVpS2NIVTFPTzVQVzhndlVkUDRXb0JtQTZqbFA1VElkVUtLWC1qQU1YSFgxRUNocXkzbUQ5QmJQU05nMjFkSWJyem9BUGxFOVNDakdveDMzVXYybkNwLWF5Ti02SnI5VDE1ekNlYmxrcHM5ZA?oc=5" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Landwirt will Millionen-Angebot nicht annehmen: Stadt startet nächsten Anlauf für Enteignung</h3>
-        <p class="story__s">Ein Landwirt lehnt ein millionenschweres Kaufangebot für sein Land ab, woraufhin die zuständige Stadt einen neuen Anlauf zur Enteignung startet. Der Fall zeigt, wie sehr Flächenbedarf für Bauprojekte zunehmend mit landwirtschaftlichen Interessen kollidiert.</p>
-        <div class="story__m"><span class="chip chip--src">NDR.de</span><span class="chip">09:00</span></div>
+      <a class="story" href="https://news.google.com/rss/articles/CBMiygFBVV95cUxQbEJ3NllUQnNhOWs0em9CZlBNVU1TdU53T3V5SklaUEx6bmt3UjAwZjltWEx2a0xRVjE1Y3N0UHFnaE1MSWxmTHl3NWtvYW14NUdnajZhRW9wdS16YkRUb0FZc09kT3N1aFM3aWVNVDc4UHFCdDVkRVFqdVMtdEIwR18wV3BMYjhxdWZnUldZajBxY0xZZ0pfWFFrMWw2WDZuZmlfZWVwcWRXRkJ0X0xOb0ExbEJNSGNyU3UtSjRzMXc1TGRnQl81empR?oc=5" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Zusammenhalt im Donauried: Landwirt Lorenz Dirr erzählt von 90 Jahren Lebenserfahrung</h3>
+        <p class="story__s">Der 90-jährige Landwirt Lorenz Dirr aus dem Donauried erzählt im Porträt von neun Jahrzehnten Lebens- und Betriebserfahrung und dem Zusammenhalt in der Region. Die Geschichte zeigt beispielhaft, wie sich bäuerliches Leben in Schwaben über Generationen gewandelt hat.</p>
+        <div class="story__m"><span class="chip chip--src">Augsburger Allgemeine</span><span class="chip">09:53</span></div>
+      </a>
+      <a class="story" href="https://www.agriland.ie/farming-news/farmers-asked-for-feedback-on-cap-investment-scheme/" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Farmers asked for feedback on CAP investment scheme</h3>
+        <p class="story__s">Irische Landwirte werden um Rückmeldung zu ihren Erfahrungen mit Investitionsförderungen aus dem EU-Agrarpolitik-Strategieplan 2023-2027 gebeten. Die Ergebnisse sollen helfen, das Modernisierungsprogramm für landwirtschaftliche Betriebe weiterzuentwickeln.</p>
+        <div class="story__m"><span class="chip chip--src">Agriland</span><span class="chip">09:00</span></div>
       </a>
       <a class="story" href="https://news.google.com/rss/articles/CBMioAFBVV95cUxQRnJ5WnZBYnJPVldGakRTZXJVLWlGMTBUR21VcUlUNVRiSGxPNkdBS3Ixbm5uRWFmeVk0cTJjSTRCOTBnOWdGdjBraElBQ0s5R21mWGdra0wwdWZ2SXRWaTZibDRSR0lQRDJ1OWZCVXcxenhnemVoWVpGZmVGNXNZYmgwUmlWaGJqQ09jVERoWUJXMzBuZDdzdld5M0ZuVm1J?oc=5" target="_blank" rel="noopener noreferrer">
         <h3 class="story__h">AI expands precision agriculture with plant-level management</h3>
-        <p class="story__s">New AI tools are pushing precision agriculture down to the level of individual plants, enabling far more targeted management of crops than before. This marks a further step toward data-driven farm machinery and input use.</p>
+        <p class="story__s">Neue KI-Anwendungen ermöglichen in der Präzisionslandwirtschaft inzwischen ein Management einzelner Pflanzen statt ganzer Felder. Für Landmaschinenhersteller und Betriebe eröffnet das genauere Steuerungsmöglichkeiten bei Düngung und Pflanzenschutz.</p>
         <div class="story__m"><span class="chip chip--src">Brownfield Ag News</span><span class="chip">23:03</span></div>
       </a>
-      <a class="story" href="https://www.agriland.ie/farming-news/td-warns-survey-reveals-a-looming-crisis-in-irish-agriculture/" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">TD warns survey reveals a ‘looming crisis in Irish agriculture’</h3>
-        <p class="story__s">A new survey cited by an Irish opposition politician points to a looming crisis in Irish agriculture, with a significant share of farmers considering leaving the sector. The findings add pressure on the government ahead of the upcoming budget to offer more support.</p>
-        <div class="story__m"><span class="chip chip--src">Agriland</span><span class="chip">18:30</span></div>
-      </a>
       <div class="block__title">Weltweit</div>
-      <a class="story" href="https://www.aljazeera.com/news/2026/9/15/kennedy-center-closes-amid-financial-crisis-and-trump-name-dispute?traffic_source=rss" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Kennedy Center closes amid financial crisis and Trump name dispute</h3>
-        <p class="story__s">Das Kennedy Center in Washington schließt nach eigenen Angaben ab sofort für Renovierungsarbeiten, nachdem ein Gericht Trump zuvor untersagt hatte, seinen Namen an der Fassade anzubringen. Kritiker sehen darin eher einen politischen Machtkampf um die Kulturinstitution als eine reine Bauentscheidung.</p>
-        <div class="story__m"><span class="chip chip--src">Al Jazeera</span><span class="chip">22:14</span><span class="chip chip--also">auch: Spiegel, FAZ, Zeit Online</span></div>
+      <a class="story" href="https://www.n-tv.de/politik/Abgeschossene-Drohne-ueber-Litauen-trug-Sprengstoff-id31310690.html" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Nationaler Sicherheitsrat tagt: Abgeschossene Drohne über Litauen trug Sprengstoff</h3>
+        <p class="story__s">Die von Nato-Kampfjets über Litauen abgeschossene Drohne aus Belarus war nach neuen Erkenntnissen mit einer Sprengladung bestückt. Der nationale Sicherheitsrat Litauens tagt deshalb, der Vorfall unterstreicht die wachsende Bedrohung für Nato-Mitgliedstaaten durch den Ukraine-Krieg.</p>
+        <div class="story__m"><span class="chip chip--src">n-tv</span><span class="chip">07:04</span><span class="chip chip--also">auch: NZZ, Der Standard, FAZ</span></div>
       </a>
-      <a class="story" href="http://www.france24.com/en/technology/20260915-openai-anthropic-and-google-in-talks-to-create-a-standards-body-as-ai-fears-rise" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">OpenAI, Anthropic and Google in talks to create a standards body as AI fears rise</h3>
-        <p class="story__s">OpenAI, Anthropic und Google arbeiten an einer gemeinsamen Standardisierungsorganisation für Künstliche Intelligenz, nachdem US-Präsident Trump eine staatliche Regulierung abgelehnt hatte. Kritiker sehen darin eher ein Signal an die Öffentlichkeit als einen echten Sicherheitsschritt der Konzerne selbst.</p>
-        <div class="story__m"><span class="chip chip--src">France 24</span><span class="chip">19:03</span><span class="chip chip--also">auch: Zeit Online</span></div>
+      <a class="story" href="https://www.bbc.co.uk/news/articles/cvp8d00j9gg5o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">At least 12 killed after war-damaged Gaza building collapses</h3>
+        <p class="story__s">In Gaza-Stadt ist ein durch frühere Angriffe beschädigtes Wohngebäude eingestürzt, mindestens zwölf Menschen kamen ums Leben und Dutzende werden noch unter den Trümmern vermisst. Der Einsturz zeigt erneut, wie prekär der Zustand vieler Gebäude im Gazastreifen nach Monaten des Krieges ist.</p>
+        <div class="story__m"><span class="chip chip--src">BBC News</span><span class="chip">09:58</span><span class="chip chip--also">auch: Al Jazeera, BBC News</span></div>
       </a>
-      <a class="story" href="http://www.france24.com/en/us-acknowledges-for-the-first-time-that-it-has-deployed-weapons-in-space" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">US acknowledges for the first time that it has deployed weapons in space</h3>
-        <p class="story__s">Die USA haben erstmals offiziell bestätigt, Waffen im Weltraum stationiert zu haben, nachdem sie zuvor vor allem vor entsprechenden Plänen Russlands gewarnt hatten. Das dürfte ein Wettrüsten im Orbit zwischen den Großmächten befeuern.</p>
-        <div class="story__m"><span class="chip chip--src">France 24</span><span class="chip">20:34</span><span class="chip chip--also">auch: Spiegel, taz, BBC News</span></div>
+      <a class="story" href="https://www.faz.net/aktuell/politik/ausland/urteil-in-den-haag-war-hashim-thaci-ein-kriegsverbrecher-accg-201227866.html" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Prozess in den Haag: Wird Hashim Thaçi heute als Kriegsverbrecher verurteilt?</h3>
+        <p class="story__s">Nach mehr als 230 Verhandlungstagen soll in Den Haag das Urteil gegen den früheren kosovarischen Präsidenten Hashim Thaçi wegen mutmaßlicher Kriegsverbrechen im Unabhängigkeitskrieg gegen Serbien fallen. Die Anklage hatte für ihn und drei weitere ehemalige Kommandeure eine Haftstrafe von bis zu 45 Jahren gefordert.</p>
+        <div class="story__m"><span class="chip chip--src">FAZ</span><span class="chip">06:00</span><span class="chip chip--also">auch: Deutsche Welle, Al Jazeera</span></div>
       </a>
-      <a class="story" href="https://www.theguardian.com/world/2026/sep/15/canada-eu-economic-alliance" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Carney says Canada will pursue ‘unique security and economic alliance’ with EU amid US trade spat</h3>
-        <p class="story__s">Kanadas Premierminister Carney treibt angesichts des Handelsstreits mit den USA eine engere sicherheits- und wirtschaftspolitische Allianz mit der EU voran. Das unterstreicht, wie sehr sich traditionelle Partner Washingtons wegen Trumps Kurs nach Europa umorientieren.</p>
-        <div class="story__m"><span class="chip chip--src">The Guardian</span><span class="chip">21:08</span><span class="chip chip--also">auch: France 24, BBC News</span></div>
+      <a class="story" href="https://www.spiegel.de/ausland/usa-koennten-israel-bald-zehntausende-schwere-bomben-liefern-a-f9600e07-58ad-47fe-b814-c9895a77d320#ref=rss" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">USA könnten Israel bald Zehntausende schwere Bomben liefern</h3>
+        <p class="story__s">Medienberichten zufolge hat die Trump-Regierung den Verkauf von Zehntausenden schweren Bomben im Milliardenwert an Israel gebilligt. Der Deal dürfte angesichts der Kritik an früheren Angriffen im Gazastreifen und Libanon neue Sorgen um die Zivilbevölkerung auslösen.</p>
+        <div class="story__m"><span class="chip chip--src">Spiegel</span><span class="chip">09:40</span><span class="chip chip--also">auch: Süddeutsche Zeitung</span></div>
       </a>
     </div>
   </section>
 
-  <footer class="foot">Stand <b>Dienstag, 15. September 2026 · 23:35 Uhr</b> (CEST, Europe/Berlin)<br>
-    299 Meldungen aus 30 Feeds · Gewichtung: Claude · Nachrichten von 23:31 Uhr<br>
+  <footer class="foot">Stand <b>Mittwoch, 16. September 2026 · 10:29 Uhr</b> (CEST, Europe/Berlin)<br>
+    300 Meldungen aus 30 Feeds · Gewichtung: Claude<br>
     Alle Quellen erreichbar.<br>
     Gebaut aus statischem HTML · keine Skripte, keine Tracker</footer>
 

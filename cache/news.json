@@ -1,105 +1,124 @@
 {
- "built_at": "2026-09-15T23:31:41.841162+02:00",
+ "built_at": "2026-09-16T10:29:37.229880+02:00",
  "config": "813804dcdda646a5",
  "block": {
   "enabled": true,
-  "lage": "Innenpolitisch dominiert die Merz-Krise vor den Landtagswahlen am Sonntag, während hohe Spritpreise durch die Huthi-Angriffe im Roten Meer für Streit sorgen. International wächst die Nervosität nach NATO-Zwischenfällen mit Russland bei Litauen und Dänemark. Ein angespannter, aber kein akut dramatischer Tag.",
+  "lage": "Heute bestimmen die Spritpreis-Debatte und von der Leyens EU-Rede zu Kanada und einem neuen Alarmmechanismus die Agenda. Die CDU sucht nach den Landtagswahlen ihren Kurs, niedrige Gasspeicher und ein sprengstoffbestückter Drohnenfund in Litauen halten die Lage angespannt. Im Allgäu bleibt die Trockenheit prägend.",
   "seen_update": {},
   "top": [
    {
-    "title": "Bundesregierung - Merz hält an Koalition und an Reformkurs fest - Präsidiumssitzung für kommenden Wahlabend einberufen",
-    "teaser": "Bundeskanzler Merz will trotz parteiinterner Kritik an seiner Person im Amt ‌bleiben und seinen Kurs gemeinsam mit der ⁠SPD fortsetzen. Dazu sei er fest entschlossen, sagte der CDU-Vorsitzende beim Bundesverband Groß- und Außenhandel.",
-    "link": "https://www.deutschlandfunk.de/merz-haelt-an-koalition-und-an-reformkurs-fest-praesidiumssitzung-fuer-kommenden-wahlabend-einberufe-104.html",
-    "source": "Deutschlandfunk",
-    "scope": "national",
-    "lang": "de",
-    "published": "2026-09-15T20:28:12+00:00",
-    "summary": "Kanzler Merz beharrt trotz wachsender Kritik in der eigenen Partei auf seinem Reformkurs und hat für den Abend der bevorstehenden Landtagswahlen in Berlin und Mecklenburg-Vorpommern eine Sitzung des CDU-Präsidiums einberufen. Zugleich sagt er seine für nächste Woche geplante Reise zur UN-Generalversammlung ab, weil seine Präsenz in Berlin nötiger sei – ein Signal für die Schwere der Koalitionskris",
-    "also": [
-     "n-tv",
-     "Welt",
-     "FAZ",
-     "Handelsblatt",
-     "Süddeutsche Zeitung",
-     "taz"
-    ]
-   },
-   {
-    "title": "Merz kündigt Entlastungen bei Spritpreisen an",
-    "teaser": "Merz kündigt Entlastungen bei Spritpreisen an",
-    "link": "https://www.tagesschau.de/video/video-1649386.html",
+    "title": "Debatte über Spritpreis-Entlastungen: Reiche gegen Preisdeckel und Übergewinnsteuer",
+    "teaser": "Kanzler Merz hat Entlastungen beim Spritpreis angekündigt. Doch wie? Preisdeckel und Übergewinnsteuer hält das Wirtschaftsministerium für problematisch. Unionsfraktionschef Frei schlägt nun eine Senkung der Mehrwertsteuer auf Sprit vor.",
+    "link": "https://www.tagesschau.de/wirtschaft/verbraucher/diskussion-entlastungen-hohe-spritpreise-100.html",
     "source": "tagesschau",
     "scope": "national",
     "lang": "de",
-    "published": "2026-09-15T14:15:54+00:00",
-    "summary": "Bundeskanzler Merz hat wegen der historisch hohen Spritpreise Entlastungen für Autofahrer angekündigt, ohne bislang konkrete Instrumente zu benennen. In der Koalition ist offen, ob eine Übergewinnsteuer oder ein Preisdeckel kommen, denn CDU und SPD liegen in der Frage auseinander.",
+    "published": "2026-09-16T07:26:59+00:00",
+    "summary": "Nach den auf Rekordniveau gestiegenen Sprit- und Dieselpreisen fordert Unionsfraktionschef Frei rasche Entlastungen bis Anfang Oktober, etwa über eine gesenkte Mehrwertsteuer, während das Wirtschaftsministerium einen Preisdeckel oder eine Übergewinnsteuer für rechtlich riskant hält. Die SPD drängt dagegen auf mehr Druck auf die Mineralölkonzerne, sodass sich der Koalitionsstreit über den richtigen",
     "also": [
-     "n-tv",
-     "Welt",
+     "Spiegel",
      "tagesschau",
+     "n-tv",
+     "FAZ",
+     "taz",
+     "Deutschlandfunk"
+    ]
+   },
+   {
+    "title": "Rede zur Lage der Union: Von der Leyen würdigt Stärke der EU und warnt vor Abhängigkeiten",
+    "teaser": "Die EU ist laut Ursula von der Leyen »so stark wie nie«, steht aber vor »außerordentlichen« Problemen. Abhängigkeit von Importen müsse gesenkt und KI reguliert werden.",
+    "link": "https://www.zeit.de/politik/ausland/2026-09/lage-der-union-ursula-von-der-leyen-eu-rede",
+    "source": "Zeit Online",
+    "scope": "national",
+    "lang": "de",
+    "published": "2026-09-16T08:25:51+00:00",
+    "summary": "In ihrer Rede zur Lage der EU hat Kommissionschefin von der Leyen eine engere, 'assoziierte' Anbindung Kanadas an die EU sowie einen eigenen Artikel-4-Alarmmechanismus für Sicherheitskrisen vorgeschlagen und zugleich eine EU-weite Mindestaltersgrenze von 13 Jahren für soziale Medien angekündigt. Die Vorschläge sollen die EU unabhängiger von Importen machen und geopolitisch handlungsfähiger aufstel",
+    "also": [
+     "Handelsblatt",
      "Deutschlandfunk",
+     "FAZ",
+     "Der Standard",
+     "France 24"
+    ]
+   },
+   {
+    "title": "Nur halb voll: Reiche plant Ausschreibungen für Gasspeicher",
+    "teaser": "Die Bundeswirtschaftsministerin will nun doch etwas gegen die Schieflage am Gasmarkt tun. Spritpreisdeckel und Übergewinnsteuern für Mineralölkonzerne lehnt sie ab.",
+    "link": "https://www.faz.net/aktuell/wirtschaft/klima-nachhaltigkeit/wirtschaftsministerin-katherina-reiche-plant-ausschreibungen-fuer-gasspeicher-accg-201231227.html",
+    "source": "FAZ",
+    "scope": "national",
+    "lang": "de",
+    "published": "2026-09-16T07:02:07+00:00",
+    "summary": "Wegen historisch niedriger Füllstände der Gasspeicher will Wirtschaftsministerin Reiche nun doch mit höheren Ausschreibungen und zusätzlichen Käufen über den staatlichen Importeur Sefe gegensteuern, nachdem sie zuvor auf reine Marktanreize gesetzt hatte. Das soll die Versorgungssicherheit für den Winter erhöhen, auch wenn ein Engpass damit noch nicht ausgeschlossen ist.",
+    "also": [
+     "FAZ",
+     "Handelsblatt",
+     "n-tv",
      "taz"
     ]
    },
    {
-    "title": "First Hormuz, now the Red Sea? Oil spikes as Saudis sucked into Yemen spiral",
-    "teaser": "First, there was Donald Trump’s surprise decision to strike Iran. Then, came the quagmire of a war without an exit strategy. Now, six months later, with access to the Gulf all but shut… global shipping holding its breath over the other end of the Arabian Peninsula. Saudi Arabia drawn back into Yemen",
-    "link": "http://www.france24.com/en/tv-shows/the-debate/20260915-first-hormuz-now-the-red-sea-oil-spikes-as-saudis-sucked-into-yemen-spiral",
-    "source": "France 24",
-    "scope": "world",
-    "lang": "de",
-    "published": "2026-09-15T18:32:47+00:00",
-    "summary": "Nach dem Drohnenangriff auf eine wichtige saudische Ost-West-Pipeline stockt die Ölversorgung, und Saudi-Arabien muss laut US-Angaben erste Lieferungen nach Europa stornieren. Die Huthi-Kontrolle über die Meerenge Bab al-Mandab verteuert zugleich Schifffahrtsrouten und heizt die Sorge vor weiter steigenden Kraftstoffpreisen an.",
-    "also": [
-     "n-tv",
-     "tagesschau",
-     "Deutsche Welle",
-     "Handelsblatt"
-    ]
-   },
-   {
-    "title": "NATO jets down drone over Lithuania as Russian ship fires flares at Danish helicopter",
-    "teaser": "NATO fighter jets shot down a drone that entered Lithuanian airspace and Denmark accused a Russian frigate of firing flares at a Danish military helicopter on Tuesday, in incidents that heightened tensions along the alliance’s eastern flank.",
-    "link": "http://www.france24.com/en/europe/20260915-nato-jets-down-drone-over-lithuania-as-russian-ship-fires-flares-at-danish-helicopter",
-    "source": "France 24",
-    "scope": "world",
-    "lang": "de",
-    "published": "2026-09-15T20:26:27+00:00",
-    "summary": "Ein Nato-Kampfjet hat über Litauen eine mutmaßlich russische Drohne abgeschossen, während Dänemark meldet, ein russisches Kriegsschiff habe mit Leuchtraketen auf einen Hubschrauber gefeuert. Die Vorfälle verschärfen die Sorge, dass sich der Krieg gegen die Ukraine auf Nato-Gebiet ausweitet.",
-    "also": [
-     "BBC News",
-     "Al Jazeera",
-     "FAZ",
-     "n-tv",
-     "Der Standard"
-    ]
-   },
-   {
-    "title": "Pistorius unterzeichnet Rüstungsvereinbarung mit USA",
-    "teaser": "Deutschland und die USA stärken ihre Rüstungsindustrie auf beiden Seiten des Atlantiks. Eine Absichtserklärung umfasst auch Lizenzen, Lieferketten und den Austausch von Technik.",
-    "link": "https://www.welt.de/politik/deutschland/article6aa9ae17a3450cf42e4533ff/verteidigungsminister-pistorius-unterzeichnet-ruestungsvereinbarung-mit-usa.html",
-    "source": "Welt",
+    "title": "Anschlag auf den Berliner CSD: Regierung legt Zehn-Punkte-Plan für Strafverschärfungen vor",
+    "teaser": "Im Vorgehen gegen islamistischen Terrorismus hat die Bundesregierung Strafverschärfungen angekündigt. Spenden für terroristische Gruppen sollen zur Straftat werden.",
+    "link": "https://www.zeit.de/politik/deutschland/2026-09/csd-berlin-anschlag-islamistischer-terrorismus-zehn-punkte-plan-alexander-dobrindt-stefanie-hubig",
+    "source": "Zeit Online",
     "scope": "national",
     "lang": "de",
-    "published": "2026-09-15T20:49:20+00:00",
-    "summary": "Verteidigungsminister Pistorius hat mit seinem US-Kollegen Hegseth eine Absichtserklärung für eine engere Zusammenarbeit der Rüstungsindustrie beider Länder unterzeichnet, die Lizenzen, Lieferketten und Technologieaustausch umfasst. Die USA loben zugleich die gestiegenen deutschen Verteidigungsinvestitionen.",
+    "published": "2026-09-16T08:25:29+00:00",
+    "summary": "Als Reaktion auf den islamistischen Anschlag beim Berliner CSD hat die Bundesregierung einen Zehn-Punkte-Plan mit schärferen Strafen etwa bei Messerdelikten und Spenden an Terrorgruppen sowie einer besseren Überwachung von Gefährdern vorgelegt. Einzelne Maßnahmen sind konkret, andere Details zur Umsetzung bleiben aber noch offen.",
     "also": [
-     "Zeit Online",
-     "Handelsblatt",
-     "Deutschlandfunk"
+     "Welt"
+    ]
+   },
+   {
+    "title": "Landtagswahlen - Merz und CDU-Parteispitze setzen Beratungen an - Kanzlerrede auf UNO-Vollversammlung abgesagt",
+    "teaser": "Bundeskanzler Merz und die CDU-Parteispitze haben mehrere Sitzungen zu Beratungen über die Ergebnisse bei den Landtagswahlen und den parteiinternen Druck angekündigt. Merz sagte dafür auch die Reise zur Generaldebatte der UNO-Vollversammlung in der kommenden Woche ab, wie aus Regierungskreisen bekan",
+    "link": "https://www.deutschlandfunk.de/merz-und-cdu-parteispitze-setzen-beratungen-an-kanzlerrede-auf-uno-vollversammlung-abgesagt-100.html",
+    "source": "Deutschlandfunk",
+    "scope": "national",
+    "lang": "de",
+    "published": "2026-09-16T08:24:53+00:00",
+    "summary": "Nach den enttäuschenden Ergebnissen bei den jüngsten Landtagswahlen setzt die CDU-Spitze um Kanzler Merz mehrere Beratungsrunden an, Merz sagt dafür sogar seine Rede vor der UNO-Vollversammlung ab. Parallel wird in Berlin bereits über mögliche Nachfolger diskutiert, auch wenn Merz bei einer Parteiveranstaltung noch Rückhalt demonstriert bekam.",
+    "also": [
+     "tagesschau",
+     "Süddeutsche Zeitung"
     ]
    }
   ],
   "region": [
    {
+    "title": "Hitzerekorde in Bayern: Jetzt amtlich: „Jahrhundertsommer“ teilweise übertroffen",
+    "teaser": "In Bayern gab es im Sommer 2026 so viele heiße Tage mit Temperaturen über 30 Grad wie noch nie seit Beginn der Wetteraufzeichnungen. Die Bilanz fällt aber nicht für alle Regierungsbezirke gleich aus.",
+    "link": "https://www.sueddeutsche.de/bayern/sommer-hitze-bayern-wetter-bilanz-2026-rekord-li.3548268",
+    "source": "SZ Bayern",
+    "scope": "regional",
+    "lang": "de",
+    "published": "2026-09-16T07:00:23+00:00",
+    "summary": "Der Sommer 2026 hat in allen bayerischen Regierungsbezirken neue Hitzerekorde gebracht und den 'Jahrhundertsommer' von 2003 bei den Durchschnittstemperaturen teilweise übertroffen. Die Bilanz fällt regional unterschiedlich aus, zeigt aber insgesamt eine deutliche Erwärmungstendenz.",
+    "also": [
+     "tagesschau Bayern"
+    ]
+   },
+   {
     "title": "Nie dagewesene Trockenheit im Allgäu: Bad Wörishofen verbraucht doppelt so viel Wasser wie der Schnitt",
     "teaser": "Nie dagewesene Trockenheit im Allgäu: Bad Wörishofen verbraucht doppelt so viel Wasser wie der Schnitt Augsburger Allgemeine",
-    "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQaWJSMHp1V0ZCN0V3Mjc2aXVKWG43VTlCQmZsVVJ2cWlrQm4yUFVLa1hjNXRGenFGelBNcEtOZTRHMlNNV2NaM2lYSnpDZTBCMjVCdWZhTnhmWDNEcmE5V2xOTE9QT1RoM1E5M1FIcldLdzV2SjhYem0zcFFfUXFGemltZXRJQjBZdUZJeXBueXl0R2RtdHM0REhTMUd3N2xJUnhuSWxvbHFfWFpuX3NBZU54azFHbWhZVEZROHl0c0V2eTAxbEo3Zi1FSEpDejhxV0JITkRvTXdWZ1k1TDY3MExWeEFwNDZpSmRV?oc=5",
+    "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNSmtjVjRrM2JVRGh4aTJ1aU5NX0JobkdXMk5SbTlaSVh5eG5DTFZuSkFXWVpjSnN1bnpvYm1yekt0RWpoR3hiQVgxbFVFSmxoWHQ4U2Fnd3U5ZDNwS2VFbExIVzl0WE1YRlJNZ0hMdUdvTDFtejdJcXp1UExmeGxOTGxQU2NsS2FuUnFad3ZzbUFfTDVqNzdtSWFWWksxeGMxbHQ2UERuUjVoSEk0cEZ4VFpDYVNsc2JYY3NxOEotZlNPOTdvUVVSVWZKamxMTzN1TW1EU3VfVWpuQVVOREhlR0UtZGhraHROWkk4?oc=5",
     "source": "Augsburger Allgemeine",
     "scope": "regional",
     "lang": "de",
-    "published": "2026-09-15T03:46:57+00:00",
-    "summary": "Die anhaltende Dürre im Allgäu zeigt sich auch am Wasserverbrauch: Bad Wörishofen verbraucht derzeit doppelt so viel Wasser wie im langjährigen Schnitt. Das dürfte die Debatte um Wasserknappheit und Sparmaßnahmen in der Region weiter befeuern.",
+    "published": "2026-09-16T03:46:53+00:00",
+    "summary": "Bad Wörishofen verbraucht wegen der anhaltenden Trockenheit im Allgäu derzeit doppelt so viel Wasser wie im langjährigen Durchschnitt. Das zeigt, wie stark die Wasserversorgung der Region durch die diesjährige Dürre unter Druck gerät.",
+    "also": []
+   },
+   {
+    "title": "Auf dieser bekannten Allgäuer Alphütte endet mit dem Viehscheid eine Ära",
+    "teaser": "Auf dieser bekannten Allgäuer Alphütte endet mit dem Viehscheid eine Ära Allgäuer Zeitung",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxONnZSTEZCc2t1eDh2Q2p3NFhzcExKQUMtVTBlTE1WbnVEaVpNeXZ6RHpYMVM3ODlacWdvVXJqaExrWFNiUkVtVGhOM0V0U2FYZkJFMFdZa1l0OE1rUTQ0UFdEWmtsSkhoSzQ4SEotdHdRTk9QMWY0c1BmOUg2OFBIVVNfZzlwcmNmVllGMlBXZk4wMHJ4REVvRUdJQVUxLXJRRmFQdE1ETkZNU1FrUS1rODR4aTMzbFdSRTdr?oc=5",
+    "source": "Allgäuer Zeitung",
+    "scope": "regional",
+    "lang": "de",
+    "published": "2026-09-16T03:00:00+00:00",
+    "summary": "Auf einer bekannten Allgäuer Alphütte geht mit dem diesjährigen Viehscheid eine langjährige Tradition zu Ende. Der Fall steht beispielhaft für den Wandel, den die Alpwirtschaft in der Region derzeit durchläuft.",
     "also": []
    },
    {
@@ -110,66 +129,53 @@
     "scope": "regional",
     "lang": "de",
     "published": "2026-09-15T12:14:56+00:00",
-    "summary": "Die Augsburger Stadtwerke fahren nach drei Jahren mit eingeschränktem Takt ihre Busse wieder alle 15 Minuten. Für Pendler in und um Augsburg verbessert sich damit die Anbindung im Nahverkehr wieder spürbar.",
-    "also": []
-   },
-   {
-    "title": "Schulstart in Bayern: Das Schuljahr bringt neue Regeln und alte Herausforderungen",
-    "teaser": "Mehr Ganztagsbetreuung, weniger Handy, neue Tests und mehr Aufmerksamkeit für Mittelschulen. Doch mehr Lehrkräfte gibt es nicht. Was auf Kinder und Jugendliche im Schuljahr 2026/2027 zukommt.",
-    "link": "https://www.sueddeutsche.de/bayern/bayern-schuljahr-2026-2027-start-regeln-li.3547743",
-    "source": "SZ Bayern",
-    "scope": "regional",
-    "lang": "de",
-    "published": "2026-09-15T13:00:26+00:00",
-    "summary": "Für rund 1,8 Millionen bayerische Schüler hat das neue Schuljahr begonnen, mit mehr Ganztagsbetreuung, strengeren Handyregeln und neuen Prüfungsformaten – zusätzliche Lehrkräfte gibt es dafür aber nicht. Der Personalmangel bleibt damit trotz neuer Vorgaben ungelöst.",
-    "also": [
-     "tagesschau Bayern"
-    ]
-   },
-   {
-    "title": "Energiewende im Allgäu wird gut: Augsburger Universität veröffentlicht Studie",
-    "teaser": "Energiewende im Allgäu wird gut: Augsburger Universität veröffentlicht Studie Radio Fantasy",
-    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUUJvLVhNSGc1dEwwVDVCUDFVQ0JsZWhVakF2R09VTS1uellqUHBQMnFUSUN6NFU4YWFXVkFSWnhmdEFqWjlhX3hpNG1mcmVzMGl3YTd5ZTkySkFpVTBDT2JGUUZsLXdLNzFWdkR1U1BLYnBscTRxWWIybjExQWlzVVg4TkwxUUpjalJKUWlHWTJubzJIcDFlaEZGZmpwbFFTZ2gyb0hFSE5PQ0E?oc=5",
-    "source": "Radio Fantasy",
-    "scope": "regional",
-    "lang": "de",
-    "published": "2026-09-15T08:11:00+00:00",
-    "summary": "Eine neue Studie der Universität Augsburg kommt zu einem positiven Fazit für die Energiewende im Allgäu. Das dürfte regionalen Befürwortern von Wind- und Solarprojekten Rückenwind geben.",
+    "summary": "Nach drei Jahren mit eingeschränktem Fahrplan fahren die Busse der Augsburger Stadtwerke wieder im 15-Minuten-Takt. Für Pendler in und um Augsburg verbessert das die Taktdichte im öffentlichen Nahverkehr spürbar.",
     "also": []
    }
   ],
   "agrar": [
    {
-    "title": "Bauern im Ostallgäu kämpfen mit Ertragsausfällen. Steigen jetzt die Preise für Milch und Fleisch?",
-    "teaser": "Bauern im Ostallgäu kämpfen mit Ertragsausfällen. Steigen jetzt die Preise für Milch und Fleisch? Allgäuer Zeitung",
-    "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNa2JZN0g0QjctM1R6clMwRHBQVTNfWUlMZGRSWVcyVmZ2R2R5bXRfUTl2bFNaRUk5bWwwT3VDVWZ0dWdVM19sTGFTS3M1bEFjaE0zbHNhd0ZSX1BDai1CWTFXV2x2ZVFyaFl2LWctalJvYVUzMTU5UDgzUFF2bEhaYXFCajYwUzBuMWhYc0lHR1VmQVJMWE1TeTlMY2czSFhHUktqV2hVSFZTWmpMZ0NkczVoLW56WTNPNHRUQXRnYzdIT1VENXNYOFZ2Vm5wc0szZmJQTktHcUhxODRVOF9MVUZnSmw?oc=5",
-    "source": "Allgäuer Zeitung",
+    "title": "Ernährung sichern, Landwirtschaft stärken: EU-Kommissionspräsidentin von der Leyen muss jetzt Priorität setzen",
+    "teaser": "Ernährung sichern, Landwirtschaft stärken: EU-Kommissionspräsidentin von der Leyen muss jetzt Priorität setzen Bayerischer Bauernverband",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNdkxlV0x3amZBLWJRamV0UGRGVG0yY3RXN3liZHdsR3g4VWxKWDNPaE1lOGdQQnRnbExkc3dxTmFVVktGekFCYTVuaEpqOVlQUGRoTXp4ZzU2STE2MWdVSHlzMDFaMzN2ODh5TjFORDh4dzFub2NJSDhneDdXd3NlSHhyVEluWkVhaUs0ZFhaYTdPZG8?oc=5",
+    "source": "Bayerischer Bauernverband",
     "scope": "agrar",
     "lang": "de",
-    "published": "2026-09-15T15:30:00+00:00",
-    "summary": "Landwirte im Ostallgäu leiden nach dem trockenen Sommer unter deutlichen Ertragsausfällen bei Futter und Ernte. Das nährt Spekulationen, ob dadurch bald auch Milch- und Fleischpreise steigen könnten.",
+    "published": "2026-09-15T07:05:54+00:00",
+    "summary": "Der Bayerische Bauernverband fordert von EU-Kommissionspräsidentin von der Leyen, nach ihrer Rede zur Lage der Union konkrete Prioritäten für Ernährungssicherung und Landwirtschaft zu setzen. Der Verband mahnt an, dass die angekündigte Unabhängigkeit von Importen auch die heimische Agrarproduktion stärken müsse.",
     "also": []
    },
    {
-    "title": "Auf hohe Einkommen folgt der tiefe Fall – sind die Dürrehilfen für Bauern fair?",
-    "teaser": "18 Prozent mehr Einkommen im Vorjahr, heuer massive Einbußen: Zwischen guten Preisen und historischer Dürre liegen für die Bauern nur wenige Monate. Das heizt die Diskussion über staatliche Hilfen neu an",
-    "link": "https://www.derstandard.at/story/3000000339885/auf-hohe-einkommen-folgt-der-tiefe-fall-sind-die-duerrehilfen-fuer-bauern-fair?ref=rss",
-    "source": "Der Standard",
-    "scope": "national",
+    "title": "Kreis Nordsachsen: Bauern bei Leipzig müssen Felder komplett umstellen wegen Klimawandel",
+    "teaser": "Kreis Nordsachsen: Bauern bei Leipzig müssen Felder komplett umstellen wegen Klimawandel LVZ - Leipziger Volkszeitung",
+    "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQM0FZR0h3ZEE0VzVzSW1DR1RGY3pXakxHMWRQbjRIYVhFRXYtTnRVUTkxaFU3c0NvdFV3OUVRU19KdXJpcVc3eG5hMFo3TnpzV1c0bmFNcFdySmp2ejlDMGNrd1RkUGgxNzJNOFo4TlFDbmFwTlBta3drakhxdnVVeF9QZWJDODhIOW1sallPdlltcnBuYTI1WEVFa2JBMkZEc1N0R2JacHNwd1Vnby1QOWloeFdoelJzRGkyR1VFR1dJVDJzUW1xTVMxZUlvN29lU1N0V08wTmZWeS1kd19hWURTdmxHNElvalVlS0g2d1JUX09uOU9QNmlLWERLenPSAZsCQVVfeXFMTmFXNUMzNklYWlFnSU0tY2Nwa2VrUDY4WmpmN3RVZUw1RXVlaXBqTmtLYUlIaWQwQ2g1c0xmS2ZadElvMi04QS1EUWFaUHcxYTZQemFJVkt0SGdiUWlEdXFBOUhKOEV4STZpYlk0NHBPenRlcjdva1JucnVsc0oxRzhYdDBUVjgtb2k3c0psc1VlYTZDdTJfRFVjRWpTNkY4M212NjFQb2ROVnhlUU5iQ1dVM3NXU1gwYnJYYVRHNS04UEFvREJFZVBVbFlRVDN3a3ZFTnhOdVNGLVZtTE8zVlJmMFFKY2trRDBzNzA5b244SUJ3UXhOZ0dTclRtbXp2TnBCNFNPaUtmcjdNNWMtWGtrYnlYeWY3VGoxMA?oc=5",
+    "source": "LVZ - Leipziger Volkszeitung",
+    "scope": "agrar",
     "lang": "de",
-    "published": "2026-09-15T16:00:00+00:00",
-    "summary": "Nach einem Rekordeinkommen im Vorjahr treffen viele Bauern nun massive Einbußen durch die historische Dürre, was die Debatte über staatliche Dürrehilfen neu entfacht. Kritiker fragen, ob Hilfen angesichts der starken Einkommensschwankungen überhaupt gerecht bemessen werden können.",
+    "published": "2026-09-16T02:34:47+00:00",
+    "summary": "Landwirte im Kreis Nordsachsen bei Leipzig müssen wegen des Klimawandels ihre Felder komplett umstellen, um mit zunehmender Trockenheit zurechtzukommen. Der Bericht zeigt, wie konkret sich veränderte Wetterbedingungen bereits auf den Anbau auswirken.",
     "also": []
    },
    {
-    "title": "Landwirt will Millionen-Angebot nicht annehmen: Stadt startet nächsten Anlauf für Enteignung",
-    "teaser": "Landwirt will Millionen-Angebot nicht annehmen: Stadt startet nächsten Anlauf für Enteignung NDR.de",
-    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNUF9uN2JDLTdtR1RGNXdkMGZRZ1hMWXBibWl5NjM3ZDljTVFCaVhpRkFDVUxDcE5hWUtuUjlCWmhEenhhRFNUcmdBeVVrbGRlZkVpS2NIVTFPTzVQVzhndlVkUDRXb0JtQTZqbFA1VElkVUtLWC1qQU1YSFgxRUNocXkzbUQ5QmJQU05nMjFkSWJyem9BUGxFOVNDakdveDMzVXYybkNwLWF5Ti02SnI5VDE1ekNlYmxrcHM5ZA?oc=5",
-    "source": "NDR.de",
+    "title": "Zusammenhalt im Donauried: Landwirt Lorenz Dirr erzählt von 90 Jahren Lebenserfahrung",
+    "teaser": "Zusammenhalt im Donauried: Landwirt Lorenz Dirr erzählt von 90 Jahren Lebenserfahrung Augsburger Allgemeine",
+    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQbEJ3NllUQnNhOWs0em9CZlBNVU1TdU53T3V5SklaUEx6bmt3UjAwZjltWEx2a0xRVjE1Y3N0UHFnaE1MSWxmTHl3NWtvYW14NUdnajZhRW9wdS16YkRUb0FZc09kT3N1aFM3aWVNVDc4UHFCdDVkRVFqdVMtdEIwR18wV3BMYjhxdWZnUldZajBxY0xZZ0pfWFFrMWw2WDZuZmlfZWVwcWRXRkJ0X0xOb0ExbEJNSGNyU3UtSjRzMXc1TGRnQl81empR?oc=5",
+    "source": "Augsburger Allgemeine",
     "scope": "agrar",
     "lang": "de",
-    "published": "2026-09-14T07:00:00+00:00",
-    "summary": "Ein Landwirt lehnt ein millionenschweres Kaufangebot für sein Land ab, woraufhin die zuständige Stadt einen neuen Anlauf zur Enteignung startet. Der Fall zeigt, wie sehr Flächenbedarf für Bauprojekte zunehmend mit landwirtschaftlichen Interessen kollidiert.",
+    "published": "2026-09-16T07:53:14+00:00",
+    "summary": "Der 90-jährige Landwirt Lorenz Dirr aus dem Donauried erzählt im Porträt von neun Jahrzehnten Lebens- und Betriebserfahrung und dem Zusammenhalt in der Region. Die Geschichte zeigt beispielhaft, wie sich bäuerliches Leben in Schwaben über Generationen gewandelt hat.",
+    "also": []
+   },
+   {
+    "title": "Farmers asked for feedback on CAP investment scheme",
+    "teaser": "Farmers have been asked for feedback on their experiences with on-farm investments supported under the Common Agricultural Policy (CAP) Strategic Plan 2023-2027 and the Targeted Agricultural Modernisation Scheme (TAMS 3). They are also invited to provide recommendations on potential new innovative i",
+    "link": "https://www.agriland.ie/farming-news/farmers-asked-for-feedback-on-cap-investment-scheme/",
+    "source": "Agriland",
+    "scope": "agrar",
+    "lang": "en",
+    "published": "2026-09-16T07:00:00+00:00",
+    "summary": "Irische Landwirte werden um Rückmeldung zu ihren Erfahrungen mit Investitionsförderungen aus dem EU-Agrarpolitik-Strategieplan 2023-2027 gebeten. Die Ergebnisse sollen helfen, das Modernisierungsprogramm für landwirtschaftliche Betriebe weiterzuentwickeln.",
     "also": []
    },
    {
@@ -180,87 +186,72 @@
     "scope": "agrar",
     "lang": "en",
     "published": "2026-09-15T21:03:56+00:00",
-    "summary": "New AI tools are pushing precision agriculture down to the level of individual plants, enabling far more targeted management of crops than before. This marks a further step toward data-driven farm machinery and input use.",
-    "also": []
-   },
-   {
-    "title": "TD warns survey reveals a ‘looming crisis in Irish agriculture’",
-    "teaser": "There is “a looming crisis in Irish agriculture”, Sinn Féin’s Matt Carthy has warned. The Sinn Féin TD for Cavan/Monaghan made the comments following today’s release of a survey from Agriland and the Irish Creamery and Milk Suppliers’ Association (ICMSA) on the future of farming. Deputy Carthy said ",
-    "link": "https://www.agriland.ie/farming-news/td-warns-survey-reveals-a-looming-crisis-in-irish-agriculture/",
-    "source": "Agriland",
-    "scope": "agrar",
-    "lang": "en",
-    "published": "2026-09-15T16:30:00+00:00",
-    "summary": "A new survey cited by an Irish opposition politician points to a looming crisis in Irish agriculture, with a significant share of farmers considering leaving the sector. The findings add pressure on the government ahead of the upcoming budget to offer more support.",
+    "summary": "Neue KI-Anwendungen ermöglichen in der Präzisionslandwirtschaft inzwischen ein Management einzelner Pflanzen statt ganzer Felder. Für Landmaschinenhersteller und Betriebe eröffnet das genauere Steuerungsmöglichkeiten bei Düngung und Pflanzenschutz.",
     "also": []
    }
   ],
   "eu": [],
   "world": [
    {
-    "title": "Kennedy Center closes amid financial crisis and Trump name dispute",
-    "teaser": "Trump claims closure of US's Kennedy Center stems from safety concerns, urging name change as crucial for its survival.",
-    "link": "https://www.aljazeera.com/news/2026/9/15/kennedy-center-closes-amid-financial-crisis-and-trump-name-dispute?traffic_source=rss",
-    "source": "Al Jazeera",
-    "scope": "world",
+    "title": "Nationaler Sicherheitsrat tagt: Abgeschossene Drohne über Litauen trug Sprengstoff",
+    "teaser": "Verletzte und Schäden gibt es nicht, als Nato-Kampfjets in Litauen eine Drohne abschießen. Doch jetzt wird bekannt: Es hätte womöglich auch ganz anders ausgehen können.",
+    "link": "https://www.n-tv.de/politik/Abgeschossene-Drohne-ueber-Litauen-trug-Sprengstoff-id31310690.html",
+    "source": "n-tv",
+    "scope": "national",
     "lang": "de",
-    "published": "2026-09-15T20:14:22+00:00",
-    "summary": "Das Kennedy Center in Washington schließt nach eigenen Angaben ab sofort für Renovierungsarbeiten, nachdem ein Gericht Trump zuvor untersagt hatte, seinen Namen an der Fassade anzubringen. Kritiker sehen darin eher einen politischen Machtkampf um die Kulturinstitution als eine reine Bauentscheidung.",
+    "published": "2026-09-16T05:04:15+00:00",
+    "summary": "Die von Nato-Kampfjets über Litauen abgeschossene Drohne aus Belarus war nach neuen Erkenntnissen mit einer Sprengladung bestückt. Der nationale Sicherheitsrat Litauens tagt deshalb, der Vorfall unterstreicht die wachsende Bedrohung für Nato-Mitgliedstaaten durch den Ukraine-Krieg.",
     "also": [
-     "Spiegel",
-     "FAZ",
-     "Zeit Online",
-     "n-tv",
+     "NZZ",
      "Der Standard",
-     "Deutschlandfunk"
+     "FAZ"
     ]
    },
    {
-    "title": "OpenAI, Anthropic and Google in talks to create a standards body as AI fears rise",
-    "teaser": "The world’s biggest AI companies are working to create a new industry standards body, OpenAI said on Tuesday, as rising concerns over the risks of artificial intelligence fuel pressure for greater oversight and safer development of the technology.",
-    "link": "http://www.france24.com/en/technology/20260915-openai-anthropic-and-google-in-talks-to-create-a-standards-body-as-ai-fears-rise",
-    "source": "France 24",
+    "title": "At least 12 killed after war-damaged Gaza building collapses",
+    "teaser": "Dozens of people are missing beneath the rubble of the building in Gaza City, where 10 families had reportedly been living.",
+    "link": "https://www.bbc.co.uk/news/articles/cvp8d00j9gg5o?at_medium=RSS&at_campaign=rss",
+    "source": "BBC News",
     "scope": "world",
     "lang": "de",
-    "published": "2026-09-15T17:03:25+00:00",
-    "summary": "OpenAI, Anthropic und Google arbeiten an einer gemeinsamen Standardisierungsorganisation für Künstliche Intelligenz, nachdem US-Präsident Trump eine staatliche Regulierung abgelehnt hatte. Kritiker sehen darin eher ein Signal an die Öffentlichkeit als einen echten Sicherheitsschritt der Konzerne selbst.",
+    "published": "2026-09-16T07:58:22+00:00",
+    "summary": "In Gaza-Stadt ist ein durch frühere Angriffe beschädigtes Wohngebäude eingestürzt, mindestens zwölf Menschen kamen ums Leben und Dutzende werden noch unter den Trümmern vermisst. Der Einsturz zeigt erneut, wie prekär der Zustand vieler Gebäude im Gazastreifen nach Monaten des Krieges ist.",
     "also": [
-     "Zeit Online"
-    ]
-   },
-   {
-    "title": "US acknowledges for the first time that it has deployed weapons in space",
-    "teaser": "The United States has confirmed for the first time that it has deployed weapons in space, a remarkable revelation after previous warnings about countries such as Russia possibly weaponizing a global frontier long agreed in treaties to be used for only peaceful purposes. FRANCE 24's Emerald Maxwell r",
-    "link": "http://www.france24.com/en/us-acknowledges-for-the-first-time-that-it-has-deployed-weapons-in-space",
-    "source": "France 24",
-    "scope": "world",
-    "lang": "de",
-    "published": "2026-09-15T18:34:46+00:00",
-    "summary": "Die USA haben erstmals offiziell bestätigt, Waffen im Weltraum stationiert zu haben, nachdem sie zuvor vor allem vor entsprechenden Plänen Russlands gewarnt hatten. Das dürfte ein Wettrüsten im Orbit zwischen den Großmächten befeuern.",
-    "also": [
-     "Spiegel",
-     "taz",
+     "Al Jazeera",
      "BBC News"
     ]
    },
    {
-    "title": "Carney says Canada will pursue ‘unique security and economic alliance’ with EU amid US trade spat",
-    "teaser": "Prime minister speaks of strengthening Canada’s economic and political ties to Europe at Canada Investment Summit Mark Carney said Canada will pursue a “unique security and economic alliance” with Europe as he positions his country as a base to build in the “new global economic order”. Speaking to i",
-    "link": "https://www.theguardian.com/world/2026/sep/15/canada-eu-economic-alliance",
-    "source": "The Guardian",
-    "scope": "world",
+    "title": "Prozess in den Haag: Wird Hashim Thaçi heute als Kriegsverbrecher verurteilt?",
+    "teaser": "234 Verhandlungstage, mehr als 270 Zeugen: Nun fällt das Urteil im Prozess gegen Kosovos früheren Präsidenten. Davon hängt auch für die Deutung des NATO-Einsatzes 1999 einiges ab.",
+    "link": "https://www.faz.net/aktuell/politik/ausland/urteil-in-den-haag-war-hashim-thaci-ein-kriegsverbrecher-accg-201227866.html",
+    "source": "FAZ",
+    "scope": "national",
     "lang": "de",
-    "published": "2026-09-15T19:08:37+00:00",
-    "summary": "Kanadas Premierminister Carney treibt angesichts des Handelsstreits mit den USA eine engere sicherheits- und wirtschaftspolitische Allianz mit der EU voran. Das unterstreicht, wie sehr sich traditionelle Partner Washingtons wegen Trumps Kurs nach Europa umorientieren.",
+    "published": "2026-09-16T04:00:00+00:00",
+    "summary": "Nach mehr als 230 Verhandlungstagen soll in Den Haag das Urteil gegen den früheren kosovarischen Präsidenten Hashim Thaçi wegen mutmaßlicher Kriegsverbrechen im Unabhängigkeitskrieg gegen Serbien fallen. Die Anklage hatte für ihn und drei weitere ehemalige Kommandeure eine Haftstrafe von bis zu 45 Jahren gefordert.",
     "also": [
-     "France 24",
-     "BBC News"
+     "Deutsche Welle",
+     "Al Jazeera"
+    ]
+   },
+   {
+    "title": "USA könnten Israel bald Zehntausende schwere Bomben liefern",
+    "teaser": "Donald Trump hat Medienberichten zufolge den Verkauf von Zehntausenden Bomben an Israel gebilligt. Der Milliardendeal lässt neue Sorgen für die Zivilbevölkerung im Gazastreifen aufflammen.",
+    "link": "https://www.spiegel.de/ausland/usa-koennten-israel-bald-zehntausende-schwere-bomben-liefern-a-f9600e07-58ad-47fe-b814-c9895a77d320#ref=rss",
+    "source": "Spiegel",
+    "scope": "national",
+    "lang": "de",
+    "published": "2026-09-16T07:40:00+00:00",
+    "summary": "Medienberichten zufolge hat die Trump-Regierung den Verkauf von Zehntausenden schweren Bomben im Milliardenwert an Israel gebilligt. Der Deal dürfte angesichts der Kritik an früheren Angriffen im Gazastreifen und Libanon neue Sorgen um die Zivilbevölkerung auslösen.",
+    "also": [
+     "Süddeutsche Zeitung"
     ]
    }
   ],
   "note": null,
   "feed_count": 30,
-  "item_count": 299,
+  "item_count": 300,
   "ranked_by": "Claude"
  }
 }
