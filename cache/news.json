@@ -1,281 +1,278 @@
 {
- "built_at": "2026-09-18T10:10:15.722720+02:00",
+ "built_at": "2026-09-21T10:50:09.856610+02:00",
  "config": "813804dcdda646a5",
  "block": {
   "enabled": true,
-  "lage": "Der Tag steht im Zeichen steigender Kosten: Sprit, Energie und Erzeugerpreise ziehen weiter an, während die Politik über Entlastungen streitet. Zugleich beginnt in Russland die Parlamentswahl, und vor den Landtagswahlen am Sonntag verschieben sich die Umfragen deutlich. Für Pendler und die Autoindustrie bleibt die Lage angespannt.",
+  "lage": "Der Tag steht im Zeichen der Wahlniederlage der CDU und des AfD-Erfolgs in Mecklenburg-Vorpommern sowie des Linke-Siegs in Berlin, mit Nachwirkungen bis in die Bundespolitik. International sorgt die Lage in der Straße von Hormus für Unsicherheit bei Öl und Sprit. Im Allgäu bleiben Trockenheit, Verkehr und Kritik an der Luftwaffe die lokalen Themen.",
   "seen_update": {
-   "https://www.agriland.ie/farming-news/watch-ifa-to-explain-cap-cuts-at-regional-meetings/": "2026-09-18",
-   "https://www.agriland.ie/farming-news/hansen-backs-macra-call-for-10-ring-fenced-funding-for-young-farmers/": "2026-09-18",
-   "https://www.agriland.ie/farming-news/cap-in-urgent-need-of-rebalancing-towards-food-production/": "2026-09-18"
+   "https://www.agriland.ie/farming-news/kelly-still-confident-of-cbam-safeguard-despite-parliament-rejection/": "2026-09-21",
+   "https://www.agriland.ie/farming-news/thai-poultry-audit-sparks-call-for-robust-import-controls/": "2026-09-21",
+   "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOQjRzcTJ3VGtLRUQxclNvWl9oQThZSTNyREE3MFAyTTA0Q2hPMWNsYmdKTGpIcHNoUW1jT1RfUjVzZnpZMjdJcWZNczlDRmFnYzk1MGlPQ09CWnlWRkpFY1h0dVRPOUk3WU5KZS1XX1N0M1NNQUw2Rnl3RzM3NTRiQWtDNllNUy14Wi0wd2V2cWtZNHZVZGlyMVFLVXdjMVNjM2JfVTQyakVRdkpsZXBuc2phZjNqU1NL?oc=5": "2026-09-21"
   },
   "top": [
    {
-    "title": "Streit um Spritpreise – CDU stellt Entlastung von bis zu 25 Cent in Aussicht",
-    "teaser": "Bis Anfang Oktober will die Bundesregierung eine spürbare Entlastung an der Zapfsäule auf den Weg bringen. CDU-Generalsekretärin Franziska Hoppermann bringt nun erstmals eine Senkung um bis zu 25 Cent pro Liter ins Spiel.",
-    "link": "https://www.welt.de/politik/deutschland/article6aacc6aeb1857e86757a593c/spritpreise-cdu-stellt-entlastung-von-bis-zu-25-cent-in-aussicht.html",
-    "source": "Welt",
+    "title": "Landtagswahl in Mecklenburg-Vorpommern 2026: Das vorläufige Ergebnis: AfD vor SPD - CDU verpasst Einzug",
+    "teaser": "Die AfD hat die Landtagswahl 2026 in Mecklenburg-Vorpommern vor der SPD gewonnen. Die CDU verpasst den Einzug in den Schweriner Landtag. Das vorläufige Ergebnis.",
+    "link": "https://www.sueddeutsche.de/politik/landtagswahl-mecklenburg-vorpommern-2026-ergebnis-afd-spd-cdu-li.3550920",
+    "source": "Süddeutsche Zeitung",
     "scope": "national",
     "lang": "de",
-    "published": "2026-09-18T05:43:49+00:00",
-    "summary": "Die CDU-Generalsekretärin Hoppermann hat erstmals konkrete Eckwerte für eine Entlastung an der Zapfsäule genannt, im Gespräch sind 21 bis 25 Cent pro Liter. Bis Anfang Oktober soll die Bundesregierung ein Modell vorlegen, wobei Mehrwertsteuersenkung, Preisdeckel und Übergewinnsteuer weiter umstritten sind.",
+    "published": "2026-09-21T05:57:40+00:00",
+    "summary": "In Mecklenburg-Vorpommern verpasst die CDU erstmals den Einzug in ein Landesparlament, während die AfD stärkste Kraft vor der SPD wird; in Berlin gewinnt die Linke klar vor der CDU. Kanzler Merz kündigt trotz des historischen Rückschlags an, im Amt zu bleiben und seinen Reformkurs fortzusetzen, doch der Druck auf ihn wächst deutlich.",
     "also": [
      "tagesschau",
      "n-tv",
+     "Welt",
+     "Handelsblatt",
+     "FAZ",
+     "Süddeutsche Zeitung"
+    ]
+   },
+   {
+    "title": "Iran-Krieg: Schiffsverkehr durch Straße von Hormus kommt praktisch zum Erliegen",
+    "teaser": "Am Wochenende ist der Schiffsverkehr durch die Straße von Hormus noch einmal deutlich zurückgegangen. Saudi-Arabien konnte seine Ölexporte trotzdem steigern.",
+    "link": "https://www.spiegel.de/wirtschaft/nahostkrise-schiffsverkehr-durch-strasse-von-hormus-kommt-praktisch-zum-erliegen-a-c6606b16-1a6f-4d45-bdd2-42af859203ee#ref=rss",
+    "source": "Spiegel",
+    "scope": "national",
+    "lang": "de",
+    "published": "2026-09-21T05:05:00+00:00",
+    "summary": "Der Schiffsverkehr durch die Straße von Hormus ist am Wochenende drastisch eingebrochen, nur noch rund ein Dutzend Frachter passierten die Meerenge gegenüber 35 in der Vorwoche. Saudi-Arabien konnte seine Ölexporte trotz der Spannungen und Pipeline-Schäden dennoch steigern, was vorerst für stabile Lieferketten spricht.",
+    "also": [
+     "Süddeutsche Zeitung",
+     "Handelsblatt",
+     "n-tv"
+    ]
+   },
+   {
+    "title": "Gegen Jobabbau und Einschnitte - Autobranche: IG Metall ruft zu bundesweitem Aktionstag auf",
+    "teaser": "Die IG Metall hat für heute bundesweit zu Protesten bei Herstellern und Zulieferern der Autoindustrie aufgerufen. Geplant sind Aktionen an mehr als 200 Orten. Nach Angaben der Gewerkschaft soll es Betriebsversammlungen, Sternmärsche und Demonstrationen geben, zu denen mehr als 100.000 Teilnehmer erw",
+    "link": "https://www.deutschlandfunk.de/autobranche-ig-metall-ruft-zu-bundesweitem-aktionstag-auf-100.html",
+    "source": "Deutschlandfunk",
+    "scope": "national",
+    "lang": "de",
+    "published": "2026-09-21T08:45:11+00:00",
+    "summary": "Die IG Metall ruft heute bundesweit an mehr als 200 Standorten zu Protesten gegen Stellenabbau und Sparpläne in der Autoindustrie auf. Die Gewerkschaft erhöht damit den Druck auf Hersteller und Zulieferer, die im internationalen Wettbewerb um Kosten und Standorte ringen.",
+    "also": [
      "Spiegel"
     ]
    },
    {
-    "title": "Mecklenburg-Vorpommern: SPD überholt laut Umfrage AfD, Linke in Berlin vorn",
-    "teaser": "Lange lag die SPD in Mecklenburg-Vorpommern weit hinter der rechtsextremen AfD. Nun könnte sie laut einer aktuellen Umfrage doch noch stärkste Kraft werden. Der Union droht hingegen ein historisches Debakel.",
-    "link": "https://www.spiegel.de/politik/deutschland/spd-ueberholt-laut-umfrage-afd-in-mecklenburg-vorpommern-linke-in-berlin-vorn-a-e4656c6f-5d7a-4728-839d-5b035822056f#ref=rss",
-    "source": "Spiegel",
+    "title": "Falschaussage zur Maut: Prozess gegen Andreas Scheuer wegen Falschaussage hat begonnen",
+    "teaser": "Der frühere Verkehrsminister Scheuer soll vor dem Maut-Untersuchungsausschuss gelogen haben. Rund sieben Jahre nach dem Scheitern der Maut hat der Prozess begonnen.",
+    "link": "https://www.zeit.de/mobilitaet/2026-09/andreas-scheuer-csu-prozess-falschaussage-pkw-maut-gerhard-schulz",
+    "source": "Zeit Online",
     "scope": "national",
     "lang": "de",
-    "published": "2026-09-17T20:56:00+00:00",
-    "summary": "Kurz vor den Landtagswahlen am Sonntag zeigt eine neue Umfrage die SPD in Mecklenburg-Vorpommern erstmals vor der AfD, während in Berlin die Linke knapp vor der CDU liegt. Der Union droht in beiden Ländern ein deutliches Minus, was den Ausgang offener macht als erwartet.",
-    "also": [
-     "Süddeutsche Zeitung",
-     "n-tv",
-     "Handelsblatt"
-    ]
-   },
-   {
-    "title": "Irankrieg: Erzeugerpreise in Deutschland steigen stärker als erwartet – Ölpreise als Treiber",
-    "teaser": "Erzeugerpreise gelten als Barometer für die Inflation und können damit Hinweise geben auf die wirtschaftliche Stabilität des Landes. Neueste Daten zeigen: Sie steigen hierzulande weiter – und schneller als gedacht.",
-    "link": "https://www.spiegel.de/wirtschaft/service/irankrieg-erzeugerpreise-in-deutschland-steigen-staerker-als-erwartet-oelpreise-als-treiber-a-431a1495-ad8b-484d-8143-417f1c0550cf#ref=rss",
-    "source": "Spiegel",
-    "scope": "national",
-    "lang": "de",
-    "published": "2026-09-18T07:53:00+00:00",
-    "summary": "Die Erzeugerpreise in Deutschland sind wegen der durch den Iran-Krieg verteuerten Energie stärker gestiegen als von Ökonomen erwartet. Das gilt als Frühindikator für Inflation und dürfte die Debatte über staatliche Entlastungen weiter befeuern.",
-    "also": [
-     "Zeit Online",
-     "Deutschlandfunk"
-    ]
-   },
-   {
-    "title": "Duma-Wahl in Russland: Alles unter Kontrolle - und doch ein Stresstest?",
-    "teaser": "In Russland hat die Parlamentswahl begonnen. Parteien, die den Ukraine-Krieg kritisieren, sind bei der dreitägigen Abstimmung nicht zugelassen. Doch vom Abschneiden einzelner Kandidaten könnte ein Signal ausgehen. Von S. Laack.",
-    "link": "https://www.tagesschau.de/ausland/europa/russland-duma-wahl-auftakt-100.html",
-    "source": "tagesschau",
-    "scope": "national",
-    "lang": "de",
-    "published": "2026-09-18T05:04:24+00:00",
-    "summary": "In Russland hat die dreitägige Parlamentswahl begonnen, bei der echte Oppositionsparteien von vornherein ausgeschlossen sind. Trotz des vorhersehbaren Ergebnisses gilt die Abstimmung als Stimmungstest, weil der Krieg den Alltag der Menschen inzwischen deutlich stärker belastet.",
+    "published": "2026-09-21T08:41:26+00:00",
+    "summary": "Vor dem Landgericht Berlin hat der Prozess gegen den früheren Verkehrsminister Scheuer wegen des Verdachts der Falschaussage im Maut-Untersuchungsausschuss begonnen. Rund sieben Jahre nach dem Scheitern der Pkw-Maut muss er sich nun strafrechtlich verantworten.",
     "also": [
      "Deutschlandfunk",
-     "France 24",
-     "Al Jazeera",
-     "NZZ"
+     "taz"
     ]
    },
    {
-    "title": "Bundeswehr bekommt ersten F-35-Tarnkappenflieger",
-    "teaser": "Er ist superschnell, super unsichtbar – und super teuer: 19 Länder haben den F-35-Tarnkappenjet in den USA bestellt. Verteidigungsminister Pistorius nimmt heute den ersten Flieger für die Bundeswehr in Empfang.",
-    "link": "https://www.spiegel.de/politik/bundeswehr-bekommt-ersten-f-35-tarnkappen-flieger-a-d44e9029-34db-4527-a9bc-7c9940d5921f#ref=rss",
-    "source": "Spiegel",
+    "title": "Russland: Putins Partei Geeintes Russland gewinnt Parlamentswahl",
+    "teaser": "Die Kremlpartei Geeintes Russland von Präsident Wladimir Putin hat wie zu erwarten die Parlamentswahlen gewonnen. Die Wahl in Russland gilt als unfrei und undemokratisch.",
+    "link": "https://www.zeit.de/politik/ausland/2026-09/parlamentswahl-russland-geeintes-russland-jabloko-ella-pamfilowa",
+    "source": "Zeit Online",
     "scope": "national",
     "lang": "de",
-    "published": "2026-09-18T05:38:00+00:00",
-    "summary": "Verteidigungsminister Pistorius nimmt heute den ersten F-35-Tarnkappenjet für die Bundeswehr in Empfang, während die USA parallel den Verkauf von 48 solchen Maschinen an Saudi-Arabien freigegeben haben. Damit wächst der Kreis der Nutzerstaaten dieses milliardenschweren Rüstungsprogramms weiter.",
+    "published": "2026-09-21T08:43:39+00:00",
+    "summary": "Die Kremlpartei Geeintes Russland hat die Duma-Wahl mit einer Zweidrittelmehrheit gewonnen, wobei die Abstimmung international als unfrei gilt. Das Ergebnis bestätigt Putins Kriegskurs gegen die Ukraine und dürfte innenpolitisch als Rückhalt für weitere Mobilisierung dienen.",
     "also": [
-     "France 24",
-     "taz",
      "NZZ",
+     "Der Standard",
      "Handelsblatt"
     ]
    }
   ],
   "region": [
    {
-    "title": "\"Motor für Wohlstand\": Söder, Özdemir und Lies kämpfen fürs Auto",
-    "teaser": "Drei Länder, drei Politiker von drei Parteien, ein Anliegen: Die Ministerpräsidenten der Autoländer Bayern, Baden-Württemberg und Niedersachsen – Söder, Özdemir und Lies – fordern vom Bund und der EU Entschlossenheit im Kampf für ihre Leitindustrie.",
-    "link": "https://www.tagesschau.de/inland/regional/bayern/br-motor-fuer-wohlstand-soeder-oezdemir-und-lies-kaempfen-fuers-auto-102.html",
-    "source": "tagesschau Bayern",
+    "title": "Demo gegen B12-Ausbau: Bundesstraße zwei Stunden dicht",
+    "teaser": "Demo gegen B12-Ausbau: Bundesstraße zwei Stunden dicht Allgäuer Zeitung",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOSkJnU2J2cEtWRlU1bi1iYU4zcXlmSkhKQTlUc0N0bXBqa2poMFFqVXNxU2ZkaThBZ1ZOU3pmUnI1eHpyMHhOUzhTVEZBa1A5NG1ZLXFlYURHeFFBRUNoSVRuRlZuQUVsd1ltR0JGa1ZRU3U0U0NNN3RIbXZBTkJ4SHg2VEg0YTZCUkdnVFJlVVMxZGNZT1ZJaTZjM0tqNjR6eDVKWEkzZnlXWkgzWllDZEhHckk0Z3E4cWFqZlVqa3BxQ1JBQ2c?oc=5",
+    "source": "Allgäuer Zeitung",
     "scope": "regional",
     "lang": "de",
-    "published": "2026-09-17T16:22:57+00:00",
-    "summary": "Die Ministerpräsidenten von Bayern, Baden-Württemberg und Niedersachsen warnen in einem gemeinsamen Brief an Bund und EU vor irreversiblen Schäden für die Autoindustrie. Söder, Özdemir und Lies fordern rasche Entlastungen, weil sie den Wohlstand ganzer Regionen gefährdet sehen.",
-    "also": [
-     "Welt"
-    ]
-   },
-   {
-    "title": "Bahnstrecke München-Mühldorf: Bürgermeister wollen Pendlerzüge zurück",
-    "teaser": "Auf einer viel befahrenen Pendlerstrecke sind weniger Züge unterwegs, die Bahnkunden müssen früher aufstehen. Oberbayerische Rathauschefs schlagen Alarm",
-    "link": "https://www.sueddeutsche.de/bayern/muehldorf-muenchen-pendler-bahn-buergermeister-brief-protest-li.3549799",
-    "source": "SZ Bayern",
-    "scope": "regional",
-    "lang": "de",
-    "published": "2026-09-18T05:17:48+00:00",
-    "summary": "Oberbayerische Bürgermeister fordern auf der stark genutzten Pendlerstrecke München-Mühldorf mehr Zugverbindungen zurück, weil das ausgedünnte Angebot Berufstätige zu früherem Aufstehen zwingt. Der Vorstoß richtet sich an Bahn und Verkehrsplaner.",
+    "published": "2026-09-21T05:46:45+00:00",
+    "summary": "Bei einer Demonstration gegen den Ausbau der B12 im Allgäu war die Bundesstraße rund zwei Stunden gesperrt. Der Protest zeigt den anhaltenden Widerstand gegen die geplante Streckenführung in der Region.",
     "also": []
    },
    {
-    "title": "Finanzielle Risiken: Will niemand mehr die Landesgartenschau?",
-    "teaser": "Mit staatlichen Zuschüssen eine Brachfläche neu beleben – so funktioniert in Bayern häufig das Prinzip Landesgartenschau. Doch immer öfter gibt es Absagen.",
-    "link": "https://www.sueddeutsche.de/bayern/bayern-landesgartenschau-absagen-kommunen-finanzielle-risiken-li.3549800",
-    "source": "SZ Bayern",
+    "title": "„Die Kritik ist angekommen“ – Luftwaffe reagiert auf Sorgen wegen Arrow im Allgäu",
+    "teaser": "„Die Kritik ist angekommen“ – Luftwaffe reagiert auf Sorgen wegen Arrow im Allgäu Allgäuer Zeitung",
+    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNWWVfNEplNHlDTzItWkVtNDB1LUdtMEdCd3U5a2htTFp3Q3dvM1cxRThYSUx3RXZ4RTN0THpDVVMzanF6ZWZRdWthdzNhRk5OdW1uQllBYUl0THQyZE9Wc0RYZE1PR2hyV040ZG9GeHpqRjhpZDJDQ25uTkJCZnJ0RjJtWHVvY0dIRWMtM09tUXBYckROWHlHLXFGLTd0aktQa3ZSZXJkRmhYOC1QTkczcHA2clNGQzNZaWxwSGtZX2ZzZTVzcTE1UnJCc3RtV1k?oc=5",
+    "source": "Allgäuer Zeitung",
     "scope": "regional",
     "lang": "de",
-    "published": "2026-09-18T05:31:35+00:00",
-    "summary": "Immer mehr bayerische Kommunen sagen die Ausrichtung einer Landesgartenschau ab, obwohl der Staat dafür Zuschüsse zur Aufwertung von Brachflächen bereitstellt. Offenbar schrecken steigende Kosten und finanzielle Risiken die Städte zunehmend ab.",
+    "published": "2026-09-21T05:25:46+00:00",
+    "summary": "Die Luftwaffe reagiert auf anhaltende Sorgen aus dem Allgäu wegen der Übungen mit dem Flugabwehrsystem Arrow und räumt ein, dass die Kritik angekommen sei. Konkrete Änderungen am Übungsbetrieb bleiben zunächst offen.",
     "also": []
    },
    {
     "title": "Nie dagewesene Trockenheit im Allgäu: Bad Wörishofen verbraucht doppelt so viel Wasser wie der Schnitt",
     "teaser": "Nie dagewesene Trockenheit im Allgäu: Bad Wörishofen verbraucht doppelt so viel Wasser wie der Schnitt Augsburger Allgemeine",
-    "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOeGQxaHVZaVBBdHFQY0pNNU9zd1FWNWo2cEcycFZJRlhTaFVyUTNuQ3ZGVkF0elFWNFVKdXJjTS1rQk5QZDF1Y1pVcm1pdTg4dmxRU0o4VzA5Szl0akZsNjNKY0lvVTFmS01fSElIcTJNWDRsd0lnbTgxdVdscUhYNVFEdFFRdjFFV0M5OGFfZ2RtX1IxUmk2MXJuVnNYcWloZExpTmJlNjJZTGpOUDVGU0dtREJpeWhXejI4Ump3dWRidXFqdGk4R2VfOWhRUGYxT085SnFUcmxGejlMa0FabC1IeEM1MDNHbVpZ?oc=5",
+    "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPenpVM0x1eGJWWU5QdkJySnZUdDI0cGxLSnFUajBZZm1vMnhPTDNEUlJ3QWFfQk9UZDBsXy01N0I0MXF5M25CTXlhUTBLY3FyamhOamRwalN4ZDNaWVpjMkpRVTJuNF83cHdLY0FjeXIzNjVoc0NTd09NRTdncjFzbS03OFpNQW83cUhseS0tcVVWaHlPOWMxUllja2VjQnViSUwtc0JhM3Zib1RpTThVYjdnZmVPQU1JZ09hZDdkd05Yb3FyeDFobTlrUC15dllDUlcwckRkQThPVjh2ZzV5dUFtS0puUTJNSXZn?oc=5",
     "source": "Augsburger Allgemeine",
     "scope": "regional",
     "lang": "de",
-    "published": "2026-09-18T03:46:46+00:00",
-    "summary": "Im Allgäu zeigt sich die anhaltende Trockenheit besonders deutlich: Bad Wörishofen verbraucht derzeit doppelt so viel Wasser wie im sonstigen Durchschnitt üblich. Das verschärft die Diskussion über Wasserknappheit in der Region.",
+    "published": "2026-09-21T03:46:39+00:00",
+    "summary": "Bad Wörishofen verbraucht wegen der anhaltenden Trockenheit im Allgäu derzeit doppelt so viel Wasser wie im langjährigen Schnitt. Die Kurstadt steht damit exemplarisch für die Folgen des trockenen Sommers in der Region.",
+    "also": []
+   },
+   {
+    "title": "„Fühle mich schlecht beim Kassieren“: Was der Rekord-Spritpreis mit Tankstellen-Mitarbeitern macht",
+    "teaser": "„Fühle mich schlecht beim Kassieren“: Was der Rekord-Spritpreis mit Tankstellen-Mitarbeitern macht Augsburger Allgemeine",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPUzd3U3k4ZWhqdGFfUGt3VzR0VFIzNVFnRk5SeHJ1dWljY2tlQ1otLVp0aExXM0JwOVBRYXZ3YVdTTllJdE9LU1p5YlZiMzJfSEo5NlN1ZUlhRXFvaGNqdWdwbnZUNUFkU0JVVF8tc3dOZEx3ckpMVXFtLWZPd19VSFk4dXNnUlVmMjhnaFEtRDZyVnB0ZTlQU3dNR29vMHdsd0RJ?oc=5",
+    "source": "Augsburger Allgemeine",
+    "scope": "regional",
+    "lang": "de",
+    "published": "2026-09-21T05:41:43+00:00",
+    "summary": "Der Rekord-Spritpreis belastet nicht nur Autofahrer, sondern zunehmend auch Tankstellen-Mitarbeiter in der Region Augsburg, die sich beim Kassieren unwohl fühlen. Der Bericht zeigt, wie die hohen Kosten im Alltag ankommen.",
     "also": []
    }
   ],
   "agrar": [
    {
-    "title": "Nordrhein-Westfalen: Landwirte sorgen sich um ihre Existenz",
-    "teaser": "Nordrhein-Westfalen: Landwirte sorgen sich um ihre Existenz tagesschau.de",
-    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQSHc0eHgxY0ZSbENsek0zTk1NQTdoZ25rR094Ym1fNTd1clRPZG1TQkpfSHBnV2tRV1V2ZkhRak9PUjBUY09nNW1QZ0ZoMW5VQmVhXzExRWlfS2ZmckY4NjQwemR3RVBJX0R3WTRmM3pmTHVJeXVpYS1kc2dGYkpWMHpEVWxqZk9WNGlqM2NwSi15NFE3UWxOcDF4d3ZrVVloMnV1Z2ZmcDRlYjdMd1JGYWRxME1Ta3JybTVZTzlfdlcxaGJQVkl5bDFn?oc=5",
-    "source": "tagesschau.de",
+    "title": "Grüner Bericht 2026 enthüllt: Niedriglohn für Bauern und immer höhere Importabhängigkeit",
+    "teaser": "Grüner Bericht 2026 enthüllt: Niedriglohn für Bauern und immer höhere Importabhängigkeit OTS.at",
+    "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOTndwb0NTTVpMUE5rWlc2V1JUNnZiZmxtRDUzVmJqVlVvNjdKSkIxb3o5MTN5M24yX0NJQ3E5MjJkbHBVQjFHTXprNW5xQUxyRHRvY2swSHZ2SU92YzZJUFJlSGJOTks5bVVqWlVBYU1aSFUxUDBkblBBOU5LWk9jODZYd0hUU2luQ1JxaWxHYzNGdElvUkdPZzVQZnJ4R1Z5RFNjTTNqRHI3YXQxV0M4OWYzZmMxQUVWOUt6MWRqQ0ZIOHdTQ1VESjR3dVpHdEh0NHFKQmJ3OTA3aGxBUU1zYXU1VQ?oc=5",
+    "source": "OTS.at",
     "scope": "agrar",
     "lang": "de",
-    "published": "2026-09-16T15:15:00+00:00",
-    "summary": "Landwirte in Nordrhein-Westfalen berichten von wachsender Sorge um die wirtschaftliche Existenz ihrer Betriebe. Steigende Energie- und Betriebskosten erhöhen den Druck auf die Höfe zusätzlich.",
+    "published": "2026-09-21T08:34:02+00:00",
+    "summary": "Der österreichische Grüne Bericht 2026 zeigt, dass viele Bauern trotz steigender Importabhängigkeit weiterhin nur Niedriglöhne erzielen. Die Zahlen verdeutlichen den wachsenden Druck auf die heimische Landwirtschaft im Vergleich zu ausländischer Konkurrenz.",
     "also": []
    },
    {
-    "title": "Mehr Einbrüche und Diebstähle an niedersächsischen Landwirtschaftsbetrieben: Täter wollen teure GPS-Technik",
-    "teaser": "Mehr Einbrüche und Diebstähle an niedersächsischen Landwirtschaftsbetrieben: Täter wollen teure GPS-Technik NDR.de",
-    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOa3NEQ05QQjBlNlBiQjFVS2JwSmI0ZUxCTFlONEhyRkhkVm1hSkJKdjdmQmdHQ05mbFc5bXJEazRQNDBiYlBxYVFHTUxMTlVnQzQ5R25ZdTg2T25vZkw4YVc5MFpyWlp2anlrbFUxNGh5djJXUWJnV3lrN19CT3d3VWdtZkFXU1dLY29LdnNjUTJnTTBzTHRDNVRhTjBpSFZHX2RwaFdib3c4Q04wOThTOUlTQTFBaGhzQ2REeFB3UEJaMnpiQXB2RDdIVllQbUpPbHRELWh1ZzVBLTQ?oc=5",
-    "source": "NDR.de",
+    "title": "DBV-Fachausschuss Agrarpolitik: GAP nach 2027 – klare Forderungen zur künftigen Basiszahlung",
+    "teaser": "DBV-Fachausschuss Agrarpolitik: GAP nach 2027 – klare Forderungen zur künftigen Basiszahlung Thüringer Bauernverband",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQZm5fWHFOQ0ZLc3dKOUdVVHlCSmM2ZGZIak55M3hLUXNxZ3hqOGcxRExKYzkzS3dkb2FIME5ZdVR4bHctblZNS2V3a3Uza1VMRHRuYmdtdjl1bnpKZHVwZVI2NE0tMk02NlRLVW5nTWxWUC1IVXlTRlloajBhWWxVbjlUUE1fak5iMG5YbjhseDU5aDhMSXRmcy01d3BIZHJvTzNXOUhzM21uWTFHOWMtM1VYaVlzRVBDdmJBZzRTdlVOVUVoX3NrNWlxYw?oc=5",
+    "source": "Thüringer Bauernverband",
     "scope": "agrar",
     "lang": "de",
-    "published": "2026-09-16T17:52:44+00:00",
-    "summary": "In Niedersachsen häufen sich Einbrüche und Diebstähle auf landwirtschaftlichen Betrieben, bei denen es Tätern gezielt um teure GPS-Technik für Landmaschinen geht. Die hochwertige Ausstattung moderner Traktoren macht Höfe zunehmend zum Ziel organisierter Diebe.",
+    "published": "2026-09-21T07:14:05+00:00",
+    "summary": "Der Fachausschuss Agrarpolitik des Bauernverbands hat klare Forderungen zur künftigen Basiszahlung nach 2027 formuliert. Damit positioniert sich der Verband frühzeitig in der Debatte über die nächste EU-Agrarförderperiode.",
     "also": []
    },
    {
-    "title": "Spritpreisexplosion: Bauernverband hält Senkung der Mehrwertsteuer für sinnlos",
-    "teaser": "Spritpreisexplosion: Bauernverband hält Senkung der Mehrwertsteuer für sinnlos top agrar",
-    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNVUdGem5sRk8yRzBHb0Y3WW5FaTU3aTF2SE5rR01LV1NsbjBCT2JjLTJSanNRcWx6TXZsT3ZmYTJHQ0ZJaFRmbW8wQURLR0hrSW9TZnA0MTBya0prZkROYzk1cHZ0TGpCZDFWUnRoQm1FNVByWGVHV29TT3RsWGJLaVZCUmQ5WS1HNXd5dUctR2pick1KS2RsajI0VWFtN2Viall2cURqNHNHTnRBdUlwbERfSzd6Z04zRTBRSlI3YzlISnFMN2drWUl0ZkNfa1ZlYUtiTUVEWGR5NkZi?oc=5",
-    "source": "top agrar",
+    "title": "Landwirtschaft in Oder-Spree: Spritpreis wird existenziell gefährlich für Bauern",
+    "teaser": "Landwirtschaft in Oder-Spree: Spritpreis wird existenziell gefährlich für Bauern MOZ.de",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxORHRaZWlBMDZlZ0RwOERtT0tScXJRQl9DbmZjMGZ3RGtlc3ZjM3VwbW5MUnNhQVMyQXY1QUozWHpyTHBuOC1GakpkVVp2UlFyY0lOUXVETU5uR3NRZDFYdkZLUDcyeFVEWDBTNW9sR09xamxheWE5eTlXa05NSW5CZVhZcm1vbXVTLVZJNlFVVWZ1REtnVmpMZDFqbmZxT0hhVUNsLU1EdlRqQnI2VExoR04zWXZvdkhGLTlaVG5DNktWWkk?oc=5",
+    "source": "MOZ.de",
     "scope": "agrar",
     "lang": "de",
-    "published": "2026-09-16T13:00:00+00:00",
-    "summary": "Der Bauernverband hält eine Mehrwertsteuersenkung als Antwort auf die explodierenden Spritpreise für wirkungslos und fordert andere Entlastungsinstrumente. Damit positioniert er sich in der laufenden Debatte um die richtige Form staatlicher Hilfe an der Tankstelle.",
+    "published": "2026-09-21T06:25:00+00:00",
+    "summary": "In der Region Oder-Spree wird der hohe Spritpreis für Landwirte zunehmend zu einem existenziellen Problem. Steigende Betriebskosten treffen die Höfe in einer ohnehin angespannten wirtschaftlichen Lage zusätzlich.",
     "also": []
    },
    {
-    "title": "Senate Republicans manage to advance farm bill with McConnell’s return",
-    "teaser": "Senate Republicans manage to advance farm bill with McConnell’s return The Washington Post",
-    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQdFozODFwcFZrZldUZThSNndzeHU2N19jLVZMZzhPRi1ibi04U2xrNlNRMjl6ZFlvNWJvMFJMNzFSVllJZ1U2eUd1d2tZLUxMVUNTWGVnMElGeFJhc3UtaFdZdHM1WTd0NzNBOFBYdm14UXhUVm5YeldnRXBHWU1BZmI4YTlIUUFZTDZZSzR4ZDc1T0ZVTUdCTUw0MnVpTXBIbGt6UUQ3c29UcWh3ZFdQbFlfOVN6blp0ckE?oc=5",
-    "source": "The Washington Post",
+    "title": "Carbery increases milk price for August",
+    "teaser": "Carbery Group has announced its milk price for August. Carbery has increased its base milk price by 1c/L for the month of August. The additional 0.5c/L support payment introduced in July in recognition of challenging weather conditions will remain in place for August. A stability fund payment of 1c/",
+    "link": "https://www.agriland.ie/farming-news/carbery-increases-milk-price-for-august/",
+    "source": "Agriland",
     "scope": "agrar",
     "lang": "en",
-    "published": "2026-09-17T03:03:40+00:00",
-    "summary": "Der US-Senatsausschuss für Landwirtschaft hat mit der Rückkehr von Senator McConnell den Weg für eine neue Farm-Bill frei gemacht. Das Gesetzespaket regelt milliardenschwere Förderprogramme für die amerikanische Landwirtschaft und dürfte auch die Agrarmärkte beeinflussen.",
+    "published": "2026-09-21T08:47:50+00:00",
+    "summary": "Die irische Molkerei Carbery hat ihren Basis-Milchpreis für August um 1 Cent pro Liter erhöht und den im Juli eingeführten Unterstützungszuschlag von 0,5 Cent beibehalten. Das bedeutet eine leicht verbesserte Erlössituation für die angeschlossenen Milchbauern.",
     "also": []
    },
    {
-    "title": "Iowa agriculture secretary says farm bill, fuel costs top concerns as harvest begins",
-    "teaser": "Iowa agriculture secretary says farm bill, fuel costs top concerns as harvest begins KTIV",
-    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPYkcwTzhOZWhvYlBoZVhHVkpfVlliem5ZYzEwMFJrdTdCMHZXNDVBLUt2SWFSbE5kSkNuN0hkWUk5TVRGOEpxbWE4UFdYaFd6dmNOeGs5bzVaTXpwclFPUklKZFB0SGtKUWNGNXlLMzMydkVsMHg2c3FjQVJ6Q3hEdWp5UWsxTHhYSmNGd0ppd2gzVjN4b0thWXAycHI0OGx4WkdxYzVvb1BIV0thRFRaLW1Vd9IBxwFBVV95cUxQTlF5RGZFU2haem1tenNodEdZekdNeFZfaThBMUZueHB3VG5takRFbFBHaENXWlR6dDREbHdLZi02ZlZsUXhGWnpZV0w4RVVDWnJybkRkRDV0b2czUEpOekE5bEN4YTFrYlR3aXhFbGhQZGhaazFQS0tJT3ZpYlltNnFOWmhBdGRiaVJ0bkg3WE0tNlgwWkZaMXdmQk8tdTFmanJtTlpoS2hqVkFEd3Z2MHFHZzFLNVFKTFpMV3l3aS1VcFFZMFl3?oc=5",
-    "source": "KTIV",
+    "title": "Pneumonia detected in calves without symptoms via lung scans",
+    "teaser": "Lung scanning can detect respiratory disease in visibly healthy calves, new research from the Agri-Food and Biosciences Institute (AFBI) has shown. A study by researchers at AFBI Hillsborough, funded by Feed For Growth (Volac Milk Replacers Ltd), used thoracic ultrasound scanning to investigate if b",
+    "link": "https://www.agriland.ie/farming-news/research-lung-scanning-can-detect-pneumonia-in-visibly-healthy-calves/",
+    "source": "Agriland",
     "scope": "agrar",
     "lang": "en",
-    "published": "2026-09-17T17:28:00+00:00",
-    "summary": "Iowas Landwirtschaftsministerin nennt zum Start der Erntesaison die ausstehende Farm-Bill und die hohen Kraftstoffkosten als größte Sorgen der Landwirte. Beide Themen belasten die Betriebe genau in der arbeitsintensiven Erntephase.",
+    "published": "2026-09-20T16:00:00+00:00",
+    "summary": "Neue Forschung des AFBI zeigt, dass Lungenscans Atemwegserkrankungen bei Kälbern erkennen können, noch bevor äußere Symptome auftreten. Das eröffnet Landwirten die Möglichkeit, frühzeitiger einzugreifen und Tierverluste zu reduzieren.",
     "also": []
    }
   ],
   "eu": [
    {
-    "title": "Watch: IFA to explain CAP cuts at regional meetings",
-    "teaser": "The Irish Farmers’ Association (IFA) is set to hold a series of regional information meetings to explain the proposed cuts to the Common Agricultural Policy (CAP). According to IFA president Francie Gorman, the next three months will be critical in the campaign to secure a CAP budget that will under",
-    "link": "https://www.agriland.ie/farming-news/watch-ifa-to-explain-cap-cuts-at-regional-meetings/",
+    "title": "Kelly still confident of CBAM safeguard despite parliament rejection",
+    "teaser": "Irish MEP Seán Kelly has expressed confidence that a key proposed safeguard under the Carbon Border Adjustment Mechanism (CBAM) will be adopted, despite the European Parliament voting against it. In a vote this week, the full European Parliament voted against adopting this safeguard; but the margin ",
+    "link": "https://www.agriland.ie/farming-news/kelly-still-confident-of-cbam-safeguard-despite-parliament-rejection/",
     "source": "Agriland",
     "scope": "agrar",
     "lang": "en",
-    "published": "2026-09-18T05:00:00+00:00",
-    "summary": "Der irische Bauernverband IFA erklärt in regionalen Informationsveranstaltungen die geplanten Kürzungen bei der EU-Agrarpolitik. Ziel ist es, Landwirte frühzeitig auf die finanziellen Folgen der Brüsseler Sparpläne vorzubereiten.",
+    "published": "2026-09-20T19:50:38+00:00",
+    "summary": "Trotz einer ablehnenden Abstimmung im EU-Parlament zeigt sich der irische Europaabgeordnete Kelly weiterhin zuversichtlich, dass eine Schutzklausel im Rahmen des CO2-Grenzausgleichsmechanismus CBAM kommen wird. Die Regelung ist relevant für Agrarimporte und -exporte innerhalb der EU.",
     "also": []
    },
    {
-    "title": "Hansen backs Macra call for 10% ring-fenced funding for young farmers",
-    "teaser": "European Commissioner for Agriculture and Food Christophe Hansen has told Macra he was committed to pushing for 10% ring-fenced funding for young farmers. The commissioner made the comments during a sit-down meeting with Macra national president Josephine O’Neill and National Agricultural Affairs Co",
-    "link": "https://www.agriland.ie/farming-news/hansen-backs-macra-call-for-10-ring-fenced-funding-for-young-farmers/",
+    "title": "Thai poultry audit sparks call for robust import controls",
+    "teaser": "The Ulster Farmers’ Union (UFU) has called for import standards to be upheld after concerns were raised about poultry controls in Thailand. The comments follow the findings of a recent European Commission audit into Thailand’s poultry export system. The audit, carried out in June, noted that an offi",
+    "link": "https://www.agriland.ie/farming-news/thai-poultry-audit-sparks-call-for-robust-import-controls/",
     "source": "Agriland",
     "scope": "agrar",
     "lang": "en",
-    "published": "2026-09-17T16:30:00+00:00",
-    "summary": "EU-Agrarkommissar Hansen unterstützt die Forderung, zehn Prozent der künftigen CAP-Mittel fest für Junglandwirte zu reservieren. Das soll den Generationswechsel in der europäischen Landwirtschaft absichern.",
+    "published": "2026-09-21T08:04:27+00:00",
+    "summary": "Nach einem EU-Kommissionsbericht zu Kontrolllücken bei thailändischem Geflügel fordert die nordirische Bauernvereinigung strengere Importstandards. Der Fall zeigt, wie EU-Auditergebnisse Druck auf Handelsvorschriften für Agrarimporte erzeugen können.",
     "also": []
    },
    {
-    "title": "CAP ‘in urgent need of rebalancing’ towards food production",
-    "teaser": "The Irish Creamery and Milk Suppliers Association (ICMSA) has told EU Agriculture Commissioner Christoph Hansen that there is a need for a “clear definition of an active farmer”. The association outlined its key issues for Common Agricultural Policy (CAP) post-2027 on the final day of the National P",
-    "link": "https://www.agriland.ie/farming-news/cap-in-urgent-need-of-rebalancing-towards-food-production/",
-    "source": "Agriland",
+    "title": "Kanada-EU-Deal: Landwirtschaft wäre wohl außen vor",
+    "teaser": "Kanada-EU-Deal: Landwirtschaft wäre wohl außen vor top agrar",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOQjRzcTJ3VGtLRUQxclNvWl9oQThZSTNyREE3MFAyTTA0Q2hPMWNsYmdKTGpIcHNoUW1jT1RfUjVzZnpZMjdJcWZNczlDRmFnYzk1MGlPQ09CWnlWRkpFY1h0dVRPOUk3WU5KZS1XX1N0M1NNQUw2Rnl3RzM3NTRiQWtDNllNUy14Wi0wd2V2cWtZNHZVZGlyMVFLVXdjMVNjM2JfVTQyakVRdkpsZXBuc2phZjNqU1NL?oc=5",
+    "source": "top agrar",
     "scope": "agrar",
-    "lang": "en",
-    "published": "2026-09-17T15:15:00+00:00",
-    "summary": "Der irische Milcherzeugerverband ICMSA fordert von der EU-Kommission eine klare Definition des „aktiven Landwirts“ und eine stärkere Ausrichtung der Agrarpolitik auf die Lebensmittelproduktion. Der Vorstoß zielt auf die laufende Reform der Gemeinsamen Agrarpolitik.",
+    "lang": "de",
+    "published": "2026-09-19T09:30:00+00:00",
+    "summary": "Im geplanten Handelsabkommen zwischen der EU und Kanada dürfte die Landwirtschaft weitgehend ausgeklammert bleiben. Das könnte Agrarverbände enttäuschen, die auf verbesserte Marktzugänge gehofft hatten.",
     "also": []
    }
   ],
   "world": [
    {
-    "title": "French PM vows to cut public spending by €54 billion to reduce deficit",
-    "teaser": "Prime Minister Sébastien Lecornu said on Thursday that France will cut public spending by €54 billion next year to reduce the country's deficit. The announcement comes seven months ahead of the country's presidential election, and the government is wary of a new wave of demonstrations with a jump in",
-    "link": "https://www.france24.com/en/france/20260918-french-pm-vows-to-cut-public-spending-by-%E2%82%AC54-billion-to-reduce-deficit",
-    "source": "France 24",
-    "scope": "world",
-    "lang": "de",
-    "published": "2026-09-18T07:23:41+00:00",
-    "summary": "Frankreichs Premierminister Lecornu kündigt Einsparungen von 54 Milliarden Euro im kommenden Haushalt an, um das Staatsdefizit zu senken. Der Schritt kommt inmitten wachsender Sorgen der Finanzmärkte über die Stabilität Frankreichs.",
-    "also": []
-   },
-   {
-    "title": "Japan raises interest rates to 31-year high to curb impact of rising prices",
-    "teaser": "Increase from 1% to 1.25% follows US Federal Reserve and European Central Bank tightening monetary policy Business live – latest updates Japan’s central bank has increased interest rates to a fresh 31-year high as it attempts to combat high global inflation linked to the war in Iran. The Bank of Jap",
-    "link": "https://www.theguardian.com/business/2026/sep/18/japan-raises-interest-rates-to-31-year-high-rising-prices",
-    "source": "The Guardian",
-    "scope": "world",
-    "lang": "de",
-    "published": "2026-09-18T07:14:13+00:00",
-    "summary": "Die japanische Zentralbank hat den Leitzins auf den höchsten Stand seit 31 Jahren angehoben, um steigende Preise einzudämmen. Damit zieht Japan nach der US-Notenbank und der EZB ebenfalls die Zinsschraube an.",
-    "also": []
-   },
-   {
-    "title": "Kanadas Premier offen für Idee einer assoziierten EU-Mitgliedschaft",
-    "teaser": "Kanadas Premier Carney hat sich im Europaparlament in Straßburg für eine stärkere Zusammenarbeit seines Landes mit der EU ausgesprochen. Eine Partnerschaft müsse auf Werten begründet sein, nicht auf Eigensinn. Von Andreas Meyer-Feist.",
-    "link": "https://www.tagesschau.de/ausland/europa/bruessel-carney-eu-besuch-100.html",
-    "source": "tagesschau",
-    "scope": "national",
-    "lang": "de",
-    "published": "2026-09-17T17:19:34+00:00",
-    "summary": "Kanadas Premier Carney hat sich im Europaparlament offen für eine engere, wertebasierte Partnerschaft mit der EU gezeigt, bis hin zu einer möglichen assoziierten Mitgliedschaft. Konkrete Details dazu bleiben aber noch offen.",
-    "also": []
-   },
-   {
-    "title": "Swedish PM Kristersson resigns after election loss",
-    "teaser": "Left-wing opposition parties led by Magdalena Andersson look set to form the next government.",
-    "link": "https://www.bbc.co.uk/news/articles/cxr50l3d762po?at_medium=RSS&at_campaign=rss",
+    "title": "US and China discuss AI safety plan ahead of Trump-Xi summit",
+    "teaser": "Top US and Chinese officials held talks in New York on Sunday ahead of a Trump-Xi summit this week.",
+    "link": "https://www.bbc.co.uk/news/articles/c8vgyzn2d31yo?at_medium=RSS&at_campaign=rss",
     "source": "BBC News",
     "scope": "world",
     "lang": "de",
-    "published": "2026-09-17T12:41:05+00:00",
-    "summary": "Schwedens Ministerpräsident Kristersson tritt nach der Wahlniederlage seiner Regierung zurück. Die linke Opposition unter Magdalena Andersson dürfte nun die nächste Regierung bilden.",
+    "published": "2026-09-21T05:50:56+00:00",
+    "summary": "US-amerikanische und chinesische Delegierte haben in New York vor dem geplanten Gipfel zwischen Trump und Xi über einen Meldemechanismus für KI-Sicherheitsrisiken gesprochen. Die Gespräche gelten als Annäherung, konkrete Vereinbarungen stehen aber noch aus.",
+    "also": []
+   },
+   {
+    "title": "Das geheime System hinter Trumps Drittstaaten-Abschiebungen",
+    "teaser": "Zehntausende Menschen wurden von der US-Einwanderungsbehörde ICE in Länder abgeschoben, zu denen sie keinen Bezug haben. Dahinter steckt ein weltweites System aus Millionendeals",
+    "link": "https://www.derstandard.at/story/3000000340135/das-geheime-system-hinter-trumps-drittstaaten-abschiebungen?ref=rss",
+    "source": "Der Standard",
+    "scope": "national",
+    "lang": "de",
+    "published": "2026-09-21T05:00:00+00:00",
+    "summary": "Eine internationale Recherche deckt auf, wie die US-Einwanderungsbehörde ICE Zehntausende Migranten über ein weltweites System von Millionendeals in Drittstaaten abschiebt, zu denen die Betroffenen keinen Bezug haben. Die Recherche zeigt Ausmaß und Mechanismen dieser bislang meist geheimen Praxis.",
+    "also": []
+   },
+   {
+    "title": "Asien - Taifun \"Dujuan\" bewegt sich auf Japan zu - 275 Flüge gestrichen",
+    "teaser": "Der Taifun \"Dujuan\" hat sich auf die Region Tokio zubewegt und zur Streichung von mindestens 275 Flügen in Japan geführt.",
+    "link": "https://www.deutschlandfunk.de/taifun-dujuan-bewegt-sich-auf-japan-zu-275-fluege-gestrichen-100.html",
+    "source": "Deutschlandfunk",
+    "scope": "national",
+    "lang": "de",
+    "published": "2026-09-21T08:45:11+00:00",
+    "summary": "Der Taifun „Dujuan“ bewegt sich auf die Region Tokio zu und hat bereits zur Streichung von mindestens 275 Flügen geführt. Reisende in Japan müssen in den kommenden Tagen mit weiteren Einschränkungen rechnen.",
+    "also": []
+   },
+   {
+    "title": "Three South Korean military officers wounded in explosion near border",
+    "teaser": "South Korean officers injured in DMZ explosion, possibly caused by a landmine, according to local media reports.",
+    "link": "https://www.aljazeera.com/news/2026/9/21/three-south-korean-officers-wounded-in-border-explosion?traffic_source=rss",
+    "source": "Al Jazeera",
+    "scope": "world",
+    "lang": "de",
+    "published": "2026-09-21T07:45:12+00:00",
+    "summary": "Nahe der innerkoreanischen Grenze sind drei südkoreanische Militärangehörige durch eine Explosion verletzt worden, möglicherweise ausgelöst durch eine Landmine. Der Vorfall unterstreicht die Gefahr, die von der noch immer verminten Grenzregion ausgeht.",
     "also": []
    }
   ],
   "note": null,
   "feed_count": 30,
-  "item_count": 302,
+  "item_count": 281,
   "ranked_by": "Claude"
  }
 }
