@@ -1,278 +1,257 @@
 {
- "built_at": "2026-09-21T10:50:09.856610+02:00",
+ "built_at": "2026-09-22T10:27:22.724389+02:00",
  "config": "813804dcdda646a5",
  "block": {
   "enabled": true,
-  "lage": "Der Tag steht im Zeichen der Wahlniederlage der CDU und des AfD-Erfolgs in Mecklenburg-Vorpommern sowie des Linke-Siegs in Berlin, mit Nachwirkungen bis in die Bundespolitik. International sorgt die Lage in der Straße von Hormus für Unsicherheit bei Öl und Sprit. Im Allgäu bleiben Trockenheit, Verkehr und Kritik an der Luftwaffe die lokalen Themen.",
-  "seen_update": {
-   "https://www.agriland.ie/farming-news/kelly-still-confident-of-cbam-safeguard-despite-parliament-rejection/": "2026-09-21",
-   "https://www.agriland.ie/farming-news/thai-poultry-audit-sparks-call-for-robust-import-controls/": "2026-09-21",
-   "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOQjRzcTJ3VGtLRUQxclNvWl9oQThZSTNyREE3MFAyTTA0Q2hPMWNsYmdKTGpIcHNoUW1jT1RfUjVzZnpZMjdJcWZNczlDRmFnYzk1MGlPQ09CWnlWRkpFY1h0dVRPOUk3WU5KZS1XX1N0M1NNQUw2Rnl3RzM3NTRiQWtDNllNUy14Wi0wd2V2cWtZNHZVZGlyMVFLVXdjMVNjM2JfVTQyakVRdkpsZXBuc2phZjNqU1NL?oc=5": "2026-09-21"
-  },
+  "lage": "Die Union ringt nach den Wahlniederlagen um Kurs und Köpfe, während in Berlin eine Koalition mit der Linken gesucht wird. Ab heute senkt der neue Tankrabatt die Spritkosten für Pendler. International bestimmen Ukraine-Krieg und Huthi-Eskalation die Lage, regional bleibt es ruhig mit Herbstwetter.",
+  "seen_update": {},
   "top": [
    {
-    "title": "Landtagswahl in Mecklenburg-Vorpommern 2026: Das vorläufige Ergebnis: AfD vor SPD - CDU verpasst Einzug",
-    "teaser": "Die AfD hat die Landtagswahl 2026 in Mecklenburg-Vorpommern vor der SPD gewonnen. Die CDU verpasst den Einzug in den Schweriner Landtag. Das vorläufige Ergebnis.",
-    "link": "https://www.sueddeutsche.de/politik/landtagswahl-mecklenburg-vorpommern-2026-ergebnis-afd-spd-cdu-li.3550920",
-    "source": "Süddeutsche Zeitung",
+    "title": "Kabinett bringt Tankrabatt auf den Weg",
+    "teaser": "Am 1. Oktober soll der neue Tankrabatt kommen - nun hat das Kabinett den Gesetzentwurf im Umlaufverfahren beschlossen. Bundestag und Bundesrat sollen ihn noch in dieser Woche billigen.",
+    "link": "https://www.tagesschau.de/wirtschaft/tankrabatt-254.html",
+    "source": "tagesschau",
     "scope": "national",
     "lang": "de",
-    "published": "2026-09-21T05:57:40+00:00",
-    "summary": "In Mecklenburg-Vorpommern verpasst die CDU erstmals den Einzug in ein Landesparlament, während die AfD stärkste Kraft vor der SPD wird; in Berlin gewinnt die Linke klar vor der CDU. Kanzler Merz kündigt trotz des historischen Rückschlags an, im Amt zu bleiben und seinen Reformkurs fortzusetzen, doch der Druck auf ihn wächst deutlich.",
+    "published": "2026-09-22T07:52:20+00:00",
+    "summary": "Das Bundeskabinett hat die Wiedereinführung des Tankrabatts beschlossen: Ab 1. Oktober bis Jahresende sinkt die Energiesteuer auf Diesel und Benzin um rund 17 Cent pro Liter, Bundestag und Bundesrat sollen noch diese Woche zustimmen. Für Pendler bedeutet das eine spürbare, aber befristete Entlastung an der Tankstelle.",
     "also": [
-     "tagesschau",
-     "n-tv",
-     "Welt",
-     "Handelsblatt",
-     "FAZ",
-     "Süddeutsche Zeitung"
-    ]
-   },
-   {
-    "title": "Iran-Krieg: Schiffsverkehr durch Straße von Hormus kommt praktisch zum Erliegen",
-    "teaser": "Am Wochenende ist der Schiffsverkehr durch die Straße von Hormus noch einmal deutlich zurückgegangen. Saudi-Arabien konnte seine Ölexporte trotzdem steigern.",
-    "link": "https://www.spiegel.de/wirtschaft/nahostkrise-schiffsverkehr-durch-strasse-von-hormus-kommt-praktisch-zum-erliegen-a-c6606b16-1a6f-4d45-bdd2-42af859203ee#ref=rss",
-    "source": "Spiegel",
-    "scope": "national",
-    "lang": "de",
-    "published": "2026-09-21T05:05:00+00:00",
-    "summary": "Der Schiffsverkehr durch die Straße von Hormus ist am Wochenende drastisch eingebrochen, nur noch rund ein Dutzend Frachter passierten die Meerenge gegenüber 35 in der Vorwoche. Saudi-Arabien konnte seine Ölexporte trotz der Spannungen und Pipeline-Schäden dennoch steigern, was vorerst für stabile Lieferketten spricht.",
-    "also": [
+     "Zeit Online",
+     "Deutschlandfunk",
      "Süddeutsche Zeitung",
-     "Handelsblatt",
-     "n-tv"
+     "Handelsblatt"
     ]
    },
    {
-    "title": "Gegen Jobabbau und Einschnitte - Autobranche: IG Metall ruft zu bundesweitem Aktionstag auf",
-    "teaser": "Die IG Metall hat für heute bundesweit zu Protesten bei Herstellern und Zulieferern der Autoindustrie aufgerufen. Geplant sind Aktionen an mehr als 200 Orten. Nach Angaben der Gewerkschaft soll es Betriebsversammlungen, Sternmärsche und Demonstrationen geben, zu denen mehr als 100.000 Teilnehmer erw",
-    "link": "https://www.deutschlandfunk.de/autobranche-ig-metall-ruft-zu-bundesweitem-aktionstag-auf-100.html",
+    "title": "CDU - Kanzler Merz berät mit Unionsfraktion über die Folgen der Wahlniederlagen",
+    "teaser": "Nach dem schlechten Abschneiden der CDU bei den jüngsten Landtagswahlen will Kanzler Merz heute mit der Bundestagsfraktion der Union über Konsequenzen beraten.",
+    "link": "https://www.deutschlandfunk.de/kanzler-merz-beraet-mit-unionsfraktion-ueber-die-folgen-der-wahlniederlagen-106.html",
     "source": "Deutschlandfunk",
     "scope": "national",
     "lang": "de",
-    "published": "2026-09-21T08:45:11+00:00",
-    "summary": "Die IG Metall ruft heute bundesweit an mehr als 200 Standorten zu Protesten gegen Stellenabbau und Sparpläne in der Autoindustrie auf. Die Gewerkschaft erhöht damit den Druck auf Hersteller und Zulieferer, die im internationalen Wettbewerb um Kosten und Standorte ringen.",
+    "published": "2026-09-22T08:15:30+00:00",
+    "summary": "Nach den schweren Wahlniederlagen in Berlin und Mecklenburg-Vorpommern berät Kanzler Merz heute mit der Unionsfraktion über Konsequenzen für Kurs und Personal. In der Fraktion wächst der Unmut, mehrere Landespolitiker fordern einen deutlichen Politikwechsel.",
     "also": [
-     "Spiegel"
+     "tagesschau",
+     "Handelsblatt",
+     "SZ Bayern",
+     "Welt"
     ]
    },
    {
-    "title": "Falschaussage zur Maut: Prozess gegen Andreas Scheuer wegen Falschaussage hat begonnen",
-    "teaser": "Der frühere Verkehrsminister Scheuer soll vor dem Maut-Untersuchungsausschuss gelogen haben. Rund sieben Jahre nach dem Scheitern der Maut hat der Prozess begonnen.",
-    "link": "https://www.zeit.de/mobilitaet/2026-09/andreas-scheuer-csu-prozess-falschaussage-pkw-maut-gerhard-schulz",
-    "source": "Zeit Online",
+    "title": "Antisemitismus und Linke in Berlin: Diese Bedingungen stellen SPD und Grüne an Elif Eralp",
+    "teaser": "Bei der Regierungsbildung in Berlin kommt es auf Grüne und SPD an. Der Judenhass in Teilen der Linken könnte die rot-grün-rote Koalition zum Scheitern bringen.",
+    "link": "https://www.spiegel.de/politik/deutschland/antisemitismus-und-linke-in-berlin-diese-bedingungen-stellen-spd-und-gruene-an-elif-eralp-a-bc6c85c2-6bee-455d-924d-afc58a8c0dec#ref=rss",
+    "source": "Spiegel",
     "scope": "national",
     "lang": "de",
-    "published": "2026-09-21T08:41:26+00:00",
-    "summary": "Vor dem Landgericht Berlin hat der Prozess gegen den früheren Verkehrsminister Scheuer wegen des Verdachts der Falschaussage im Maut-Untersuchungsausschuss begonnen. Rund sieben Jahre nach dem Scheitern der Pkw-Maut muss er sich nun strafrechtlich verantworten.",
+    "published": "2026-09-22T06:20:00+00:00",
+    "summary": "Nach dem Wahlsieg der Linken in Berlin ringen SPD und Grüne um Bedingungen für eine gemeinsame Koalition, wobei der Umgang der Partei mit Antisemitismus zum zentralen Streitpunkt wird. Ex-SPD-Chef Gabriel warnt öffentlich vor einem Bündnis mit einer aus seiner Sicht antisemitischen Partei.",
     "also": [
-     "Deutschlandfunk",
-     "taz"
+     "n-tv",
+     "Süddeutsche Zeitung",
+     "tagesschau",
+     "Welt"
     ]
    },
    {
-    "title": "Russland: Putins Partei Geeintes Russland gewinnt Parlamentswahl",
-    "teaser": "Die Kremlpartei Geeintes Russland von Präsident Wladimir Putin hat wie zu erwarten die Parlamentswahlen gewonnen. Die Wahl in Russland gilt als unfrei und undemokratisch.",
-    "link": "https://www.zeit.de/politik/ausland/2026-09/parlamentswahl-russland-geeintes-russland-jabloko-ella-pamfilowa",
-    "source": "Zeit Online",
+    "title": "Notaufnahmen: Umfrage zeigt dramatische Überlastung in deutschen Kliniken",
+    "teaser": "Zu viele Patienten, zu wenig Personal: Die Lage der Notfallambulanzen in deutschen Kliniken verschlechtert sich. Eine neue Umfrage zeigt, wie angespannt die Situation ist.",
+    "link": "https://www.spiegel.de/wirtschaft/notaufnahmen-umfrage-zeigt-dramatische-ueberlastung-in-deutschen-kliniken-a-2485aed8-dccc-4213-a216-b89e129efbbb#ref=rss",
+    "source": "Spiegel",
     "scope": "national",
     "lang": "de",
-    "published": "2026-09-21T08:43:39+00:00",
-    "summary": "Die Kremlpartei Geeintes Russland hat die Duma-Wahl mit einer Zweidrittelmehrheit gewonnen, wobei die Abstimmung international als unfrei gilt. Das Ergebnis bestätigt Putins Kriegskurs gegen die Ukraine und dürfte innenpolitisch als Rückhalt für weitere Mobilisierung dienen.",
+    "published": "2026-09-22T05:35:00+00:00",
+    "summary": "Eine neue Umfrage zeigt, dass fast jede zweite Notaufnahme in Deutschland überlastet ist, weil zu viele Patienten auf zu wenig Personal treffen. Die Lage der Notfallversorgung hat sich damit weiter verschärft.",
     "also": [
-     "NZZ",
-     "Der Standard",
-     "Handelsblatt"
+     "Deutschlandfunk"
     ]
+   },
+   {
+    "title": "Autoindustrie: „Das ist so billig, Ola Källenius“ – Mercedes erwägt Abzug von Produktion aus Deutschland",
+    "teaser": "Mercedes will eine längere Wochenarbeitszeit durchsetzen und Sonderzahlungen streichen. Eine Kundgebung am Montag gibt Einblicke in die Verhandlungen mit dem Betriebsrat.",
+    "link": "https://www.handelsblatt.com/unternehmen/industrie/autoindustrie-mercedes-erwaegt-abzug-von-produktion-aus-deutschland-01/100256260.html",
+    "source": "Handelsblatt",
+    "scope": "national",
+    "lang": "de",
+    "published": "2026-09-22T05:12:00+00:00",
+    "summary": "Bei einem bundesweiten Aktionstag der IG Metall protestieren Zehntausende Beschäftigte gegen längere Arbeitszeiten und Stellenabbau in der Autoindustrie, während Mercedes offen über eine Verlagerung von Produktion aus Deutschland nachdenkt. Die Wut richtet sich dabei auch gegen die Bundesregierung.",
+    "also": []
    }
   ],
   "region": [
    {
-    "title": "Demo gegen B12-Ausbau: Bundesstraße zwei Stunden dicht",
-    "teaser": "Demo gegen B12-Ausbau: Bundesstraße zwei Stunden dicht Allgäuer Zeitung",
-    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOSkJnU2J2cEtWRlU1bi1iYU4zcXlmSkhKQTlUc0N0bXBqa2poMFFqVXNxU2ZkaThBZ1ZOU3pmUnI1eHpyMHhOUzhTVEZBa1A5NG1ZLXFlYURHeFFBRUNoSVRuRlZuQUVsd1ltR0JGa1ZRU3U0U0NNN3RIbXZBTkJ4SHg2VEg0YTZCUkdnVFJlVVMxZGNZT1ZJaTZjM0tqNjR6eDVKWEkzZnlXWkgzWllDZEhHckk0Z3E4cWFqZlVqa3BxQ1JBQ2c?oc=5",
-    "source": "Allgäuer Zeitung",
+    "title": "22-Jähriger vom Bodensee stirbt nach Absturz in den Allgäuer Alpen",
+    "teaser": "22-Jähriger vom Bodensee stirbt nach Absturz in den Allgäuer Alpen SWR",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPTk5WQVdyWFA4clVGMFAycktsTkx5V1RaaWl6TkdKdjZtOTZKUzI5cHNiTEdqcDRjY09VYndlMVF4VlhDLThRMGQxa0VNRXZJZDJCS0YyUGpZSloybE94QU00d3RKdm9IWXJ4NVUwX1pJM2YwbHFHdUR3R1FHZUR1NWYwMUo2aC1PTjhDZjk5UGVQVl9PTkhONjJLZUQ5RzFucU9SeFpPODRBMFl4WW9QckREdXBsaVdNYk1OWkxqX094VWxN?oc=5",
+    "source": "SWR",
     "scope": "regional",
     "lang": "de",
-    "published": "2026-09-21T05:46:45+00:00",
-    "summary": "Bei einer Demonstration gegen den Ausbau der B12 im Allgäu war die Bundesstraße rund zwei Stunden gesperrt. Der Protest zeigt den anhaltenden Widerstand gegen die geplante Streckenführung in der Region.",
-    "also": []
+    "published": "2026-09-21T14:18:04+00:00",
+    "summary": "Ein 22-jähriger Mann aus der Bodensee-Region ist bei einem Klettersteig nahe Oberstdorf von einem Grat abgestürzt und noch am Berg gestorben. Der Unfall reiht sich in eine Serie schwerer Bergunfälle in den Allgäuer Alpen ein.",
+    "also": [
+     "SZ.de",
+     "Tagesspiegel",
+     "merkur.de"
+    ]
+   },
+   {
+    "title": "Zwei neue Männer im Kabinett: Söder macht JU-Chef Knoll zum neuen Jugendminister",
+    "teaser": "Nach dem überraschenden Rückzug von Justizminister Georg Eisenreich beruft Ministerpräsident Söder einen Nachfolger. Außerdem schafft er ein Amt, das es bisher noch gar nicht gibt.",
+    "link": "https://www.sueddeutsche.de/bayern/bayern-politik-csu-justizminister-neu-soeder-schmid-knoll-eisenreich-li.3551018",
+    "source": "SZ Bayern",
+    "scope": "regional",
+    "lang": "de",
+    "published": "2026-09-21T13:40:00+00:00",
+    "summary": "Bayerns Ministerpräsident Söder baut sein Kabinett um: Nach dem Rücktritt von Justizminister Eisenreich übernimmt der CSU-Abgeordnete Schmid das Ressort, zusätzlich schafft Söder ein neues Amt für einen Jugendminister, das JU-Landeschef Knoll besetzt.",
+    "also": [
+     "tagesschau Bayern"
+    ]
    },
    {
     "title": "„Die Kritik ist angekommen“ – Luftwaffe reagiert auf Sorgen wegen Arrow im Allgäu",
     "teaser": "„Die Kritik ist angekommen“ – Luftwaffe reagiert auf Sorgen wegen Arrow im Allgäu Allgäuer Zeitung",
-    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNWWVfNEplNHlDTzItWkVtNDB1LUdtMEdCd3U5a2htTFp3Q3dvM1cxRThYSUx3RXZ4RTN0THpDVVMzanF6ZWZRdWthdzNhRk5OdW1uQllBYUl0THQyZE9Wc0RYZE1PR2hyV040ZG9GeHpqRjhpZDJDQ25uTkJCZnJ0RjJtWHVvY0dIRWMtM09tUXBYckROWHlHLXFGLTd0aktQa3ZSZXJkRmhYOC1QTkczcHA2clNGQzNZaWxwSGtZX2ZzZTVzcTE1UnJCc3RtV1k?oc=5",
+    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNeXpYdUpwUW5qRy1hX0w4UzBMM2FxZzJPbHpJUGZId1JrZUR1RXFDNDIxaUIxcmlZMkFveVpoUE8xdEtTTVJEWm1UNnRiaXJWcUZvQUpORkI5ZFZhV0xJRXo1QXVrV1FHTHg0SUpVbmQ3cmlocmEybVJTQTNveDd0cmxUa1ZfbXdYbnlJdkQxbll3OHJkaXNqa3MwMDU0TzJvSDZLZVRtTWNSckMwbER6aVlIZmlsM2J6aVJMM1lxUlUyWTM3Zlo1bmJOcDNrUjdVdVE?oc=5",
     "source": "Allgäuer Zeitung",
     "scope": "regional",
     "lang": "de",
-    "published": "2026-09-21T05:25:46+00:00",
-    "summary": "Die Luftwaffe reagiert auf anhaltende Sorgen aus dem Allgäu wegen der Übungen mit dem Flugabwehrsystem Arrow und räumt ein, dass die Kritik angekommen sei. Konkrete Änderungen am Übungsbetrieb bleiben zunächst offen.",
+    "published": "2026-09-22T04:51:41+00:00",
+    "summary": "Die Luftwaffe hat auf die anhaltenden Sorgen wegen der Übung Arrow im Allgäu reagiert und signalisiert, die Kritik aus der Region ernst zu nehmen.",
     "also": []
    },
    {
-    "title": "Nie dagewesene Trockenheit im Allgäu: Bad Wörishofen verbraucht doppelt so viel Wasser wie der Schnitt",
-    "teaser": "Nie dagewesene Trockenheit im Allgäu: Bad Wörishofen verbraucht doppelt so viel Wasser wie der Schnitt Augsburger Allgemeine",
-    "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPenpVM0x1eGJWWU5QdkJySnZUdDI0cGxLSnFUajBZZm1vMnhPTDNEUlJ3QWFfQk9UZDBsXy01N0I0MXF5M25CTXlhUTBLY3FyamhOamRwalN4ZDNaWVpjMkpRVTJuNF83cHdLY0FjeXIzNjVoc0NTd09NRTdncjFzbS03OFpNQW83cUhseS0tcVVWaHlPOWMxUllja2VjQnViSUwtc0JhM3Zib1RpTThVYjdnZmVPQU1JZ09hZDdkd05Yb3FyeDFobTlrUC15dllDUlcwckRkQThPVjh2ZzV5dUFtS0puUTJNSXZn?oc=5",
-    "source": "Augsburger Allgemeine",
+    "title": "Wetter in Bayern: Scheiben kratzen und Pflanzen schützen? Wo Frost droht",
+    "teaser": "Das Wochenende war vielerorts noch spätsommerlich – doch nachts kann es in Teilen Bayerns bald empfindlich kühl werden. Welche Regionen betroffen sein könnten.",
+    "link": "https://www.sueddeutsche.de/bayern/bayern-wetter-herbst-frost-li.3551951",
+    "source": "SZ Bayern",
     "scope": "regional",
     "lang": "de",
-    "published": "2026-09-21T03:46:39+00:00",
-    "summary": "Bad Wörishofen verbraucht wegen der anhaltenden Trockenheit im Allgäu derzeit doppelt so viel Wasser wie im langjährigen Schnitt. Die Kurstadt steht damit exemplarisch für die Folgen des trockenen Sommers in der Region.",
-    "also": []
-   },
-   {
-    "title": "„Fühle mich schlecht beim Kassieren“: Was der Rekord-Spritpreis mit Tankstellen-Mitarbeitern macht",
-    "teaser": "„Fühle mich schlecht beim Kassieren“: Was der Rekord-Spritpreis mit Tankstellen-Mitarbeitern macht Augsburger Allgemeine",
-    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPUzd3U3k4ZWhqdGFfUGt3VzR0VFIzNVFnRk5SeHJ1dWljY2tlQ1otLVp0aExXM0JwOVBRYXZ3YVdTTllJdE9LU1p5YlZiMzJfSEo5NlN1ZUlhRXFvaGNqdWdwbnZUNUFkU0JVVF8tc3dOZEx3ckpMVXFtLWZPd19VSFk4dXNnUlVmMjhnaFEtRDZyVnB0ZTlQU3dNR29vMHdsd0RJ?oc=5",
-    "source": "Augsburger Allgemeine",
-    "scope": "regional",
-    "lang": "de",
-    "published": "2026-09-21T05:41:43+00:00",
-    "summary": "Der Rekord-Spritpreis belastet nicht nur Autofahrer, sondern zunehmend auch Tankstellen-Mitarbeiter in der Region Augsburg, die sich beim Kassieren unwohl fühlen. Der Bericht zeigt, wie die hohen Kosten im Alltag ankommen.",
+    "published": "2026-09-22T06:25:05+00:00",
+    "summary": "Nach einem noch spätsommerlichen Wochenende drohen in Teilen Bayerns in den kommenden Nächten wieder Temperaturen nahe dem Gefrierpunkt. Betroffene sollten empfindliche Pflanzen schützen und mit vereisten Scheiben rechnen.",
     "also": []
    }
   ],
   "agrar": [
    {
-    "title": "Grüner Bericht 2026 enthüllt: Niedriglohn für Bauern und immer höhere Importabhängigkeit",
-    "teaser": "Grüner Bericht 2026 enthüllt: Niedriglohn für Bauern und immer höhere Importabhängigkeit OTS.at",
-    "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOTndwb0NTTVpMUE5rWlc2V1JUNnZiZmxtRDUzVmJqVlVvNjdKSkIxb3o5MTN5M24yX0NJQ3E5MjJkbHBVQjFHTXprNW5xQUxyRHRvY2swSHZ2SU92YzZJUFJlSGJOTks5bVVqWlVBYU1aSFUxUDBkblBBOU5LWk9jODZYd0hUU2luQ1JxaWxHYzNGdElvUkdPZzVQZnJ4R1Z5RFNjTTNqRHI3YXQxV0M4OWYzZmMxQUVWOUt6MWRqQ0ZIOHdTQ1VESjR3dVpHdEh0NHFKQmJ3OTA3aGxBUU1zYXU1VQ?oc=5",
-    "source": "OTS.at",
+    "title": "Feuer auf Hof in Grosselfingen: hunderte Hühner und Gänse tot - Schaden in Millionenhöhe",
+    "teaser": "Feuer auf Hof in Grosselfingen: hunderte Hühner und Gänse tot - Schaden in Millionenhöhe SWR",
+    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOQnZCZFVyc1BnalVVVUtHOGtUS2tZd1libXhWNFVDQ1BNbUx4RThSSGwxcERkU1VhOHJSVGl3c3dqbnBGUGRPaXdEMmNQWXdiYWR2bkRTVTM5UER4eDVucGNhbHhKRGRrbTFNelRhYmgxMHMxck5PNEJEdUR0VU1ncklROXRCeEZCUVRMYmJybw?oc=5",
+    "source": "SWR",
     "scope": "agrar",
     "lang": "de",
-    "published": "2026-09-21T08:34:02+00:00",
-    "summary": "Der österreichische Grüne Bericht 2026 zeigt, dass viele Bauern trotz steigender Importabhängigkeit weiterhin nur Niedriglöhne erzielen. Die Zahlen verdeutlichen den wachsenden Druck auf die heimische Landwirtschaft im Vergleich zu ausländischer Konkurrenz.",
+    "published": "2026-09-22T04:00:00+00:00",
+    "summary": "Auf einem Hof im badischen Grosselfingen ist ein Feuer ausgebrochen, bei dem hunderte Hühner und Gänse getötet wurden; der Sachschaden liegt im Millionenbereich.",
     "also": []
    },
    {
-    "title": "DBV-Fachausschuss Agrarpolitik: GAP nach 2027 – klare Forderungen zur künftigen Basiszahlung",
-    "teaser": "DBV-Fachausschuss Agrarpolitik: GAP nach 2027 – klare Forderungen zur künftigen Basiszahlung Thüringer Bauernverband",
-    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQZm5fWHFOQ0ZLc3dKOUdVVHlCSmM2ZGZIak55M3hLUXNxZ3hqOGcxRExKYzkzS3dkb2FIME5ZdVR4bHctblZNS2V3a3Uza1VMRHRuYmdtdjl1bnpKZHVwZVI2NE0tMk02NlRLVW5nTWxWUC1IVXlTRlloajBhWWxVbjlUUE1fak5iMG5YbjhseDU5aDhMSXRmcy01d3BIZHJvTzNXOUhzM21uWTFHOWMtM1VYaVlzRVBDdmJBZzRTdlVOVUVoX3NrNWlxYw?oc=5",
-    "source": "Thüringer Bauernverband",
+    "title": "Landwirt wegen Anbindehaltung verurteilt: Diese Bedingungen wurden ihm zum Verhängnis",
+    "teaser": "Landwirt wegen Anbindehaltung verurteilt: Diese Bedingungen wurden ihm zum Verhängnis agrarheute.com",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQbXR5bF8xNXFhbTZVM1RMNDFsU3ExQ2ZjYzBmTWVIMEVxM1JobjJvQnFNQ2NJdHZ0MlBpVm5vMEI1NUJDNTdjRU5ncGRORUtXRGx5NFVwbmctMUxNdV94Wk0wWW5LN3dLalZXckZiZ0UzZ0JUYlFZS01rOVNXR3pRUmVKRjRRWHQ2WGU4Rk53Vl9oLTVOd0dKWTVyWmpoZkw4dm53VVVxRjdwNGpqajZaS3NyaFk1QQ?oc=5",
+    "source": "agrarheute.com",
     "scope": "agrar",
     "lang": "de",
-    "published": "2026-09-21T07:14:05+00:00",
-    "summary": "Der Fachausschuss Agrarpolitik des Bauernverbands hat klare Forderungen zur künftigen Basiszahlung nach 2027 formuliert. Damit positioniert sich der Verband frühzeitig in der Debatte über die nächste EU-Agrarförderperiode.",
+    "published": "2026-09-22T08:19:29+00:00",
+    "summary": "Ein Landwirt wurde wegen der Haltungsbedingungen in der Anbindehaltung seiner Tiere strafrechtlich verurteilt, was als Präzedenzfall für den Umgang mit dieser umstrittenen Haltungsform gilt.",
     "also": []
    },
    {
-    "title": "Landwirtschaft in Oder-Spree: Spritpreis wird existenziell gefährlich für Bauern",
-    "teaser": "Landwirtschaft in Oder-Spree: Spritpreis wird existenziell gefährlich für Bauern MOZ.de",
-    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxORHRaZWlBMDZlZ0RwOERtT0tScXJRQl9DbmZjMGZ3RGtlc3ZjM3VwbW5MUnNhQVMyQXY1QUozWHpyTHBuOC1GakpkVVp2UlFyY0lOUXVETU5uR3NRZDFYdkZLUDcyeFVEWDBTNW9sR09xamxheWE5eTlXa05NSW5CZVhZcm1vbXVTLVZJNlFVVWZ1REtnVmpMZDFqbmZxT0hhVUNsLU1EdlRqQnI2VExoR04zWXZvdkhGLTlaVG5DNktWWkk?oc=5",
-    "source": "MOZ.de",
+    "title": "Hendungen: 14.400 Hähnchen mit 5,8 Hektar Freilauf: Landwirt plant Bio-Maststall an der Autobahn bei Hendungen",
+    "teaser": "Hendungen: 14.400 Hähnchen mit 5,8 Hektar Freilauf: Landwirt plant Bio-Maststall an der Autobahn bei Hendungen Main-Post",
+    "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNRTZ6a3k1M3M5QjZ4bG5sZW1mZnNVTFpNdDZ2YVBzWU04X085TGwwaEg5aGc2bnA0U1k5WEVwYXpHQ2FGeDljeTRYQk1EVGNvX2tqSDVvcVIyZTk0LXE1REZrdjFYVWdkRGJMSkRQd2hXclJHSkx3dFBsczBBR2pDOGlSZjV4cFA1bEkwZmVlbXRHY1R2ZkY2SWdIVlZKdFB5Q283anh2QVczYVYtaFlxQzdiamN3YnFyTEtVTDVBdU5RY3c5TDVBZ0NZTWY1QmFaSTloVk9OYjVkNXhfMkkyakQxdTMyWEVQZWxzYjhxY1dHYjVLd0MwNzdqdG5LZllv?oc=5",
+    "source": "Main-Post",
     "scope": "agrar",
     "lang": "de",
-    "published": "2026-09-21T06:25:00+00:00",
-    "summary": "In der Region Oder-Spree wird der hohe Spritpreis für Landwirte zunehmend zu einem existenziellen Problem. Steigende Betriebskosten treffen die Höfe in einer ohnehin angespannten wirtschaftlichen Lage zusätzlich.",
+    "published": "2026-09-22T02:00:00+00:00",
+    "summary": "Ein Landwirt plant bei Hendungen einen Bio-Maststall für 14.400 Hähnchen mit 5,8 Hektar Freilauffläche direkt an der Autobahn.",
     "also": []
    },
    {
-    "title": "Carbery increases milk price for August",
-    "teaser": "Carbery Group has announced its milk price for August. Carbery has increased its base milk price by 1c/L for the month of August. The additional 0.5c/L support payment introduced in July in recognition of challenging weather conditions will remain in place for August. A stability fund payment of 1c/",
-    "link": "https://www.agriland.ie/farming-news/carbery-increases-milk-price-for-august/",
+    "title": "Trump-Xi Summit Carries High Stakes for Agriculture, Soybeans Aren't the Only Thing to Watch",
+    "teaser": "Trump-Xi Summit Carries High Stakes for Agriculture, Soybeans Aren't the Only Thing to Watch AgWeb",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOeEZGamZ2NlZ1T0JLOFV0aFc1elNqcU5OaVo1U2ltd2ZyWFlIT24xdm96TDc5ZW9xcFBWSXFFcTVTTW1TbHgtTk9PNjNWS25KVGFQci1zQ0l3MlUzWEcybVpQQl9xcldvSUswQWdrc1RMY3NnYm56V3lhYkVFcjZtRHR4Mlc0T1VnM0tTRjdBd1Q5UmUtanlWbWhtanIwaEc2dGFBbklUVktsZVNSSTdYcWduVHh1TXZmMEtv?oc=5",
+    "source": "AgWeb",
+    "scope": "agrar",
+    "lang": "en",
+    "published": "2026-09-21T14:28:00+00:00",
+    "summary": "Der Gipfel zwischen Trump und Xi hat nach Einschätzung von Beobachtern erhebliche Auswirkungen auf die Landwirtschaft, wobei es um mehr als nur Sojabohnen-Exporte geht. Handelsentscheidungen der beiden Großmächte könnten globale Agrarpreise und -ströme spürbar verschieben.",
+    "also": []
+   },
+   {
+    "title": "Global survey: Farmers cut costs but embrace new tech",
+    "teaser": "By Chris McCullough Even though farmers around the world are constantly battling financial uncertainty, they are still keen to invest in new technology that helps them cut costs. Those are the sentiments harvested from new research carried out by McKinsey which recognises that farmers are becoming m",
+    "link": "https://www.agriland.ie/farming-news/global-survey-farmers-cut-costs-but-embrace-new-tech/",
     "source": "Agriland",
     "scope": "agrar",
     "lang": "en",
-    "published": "2026-09-21T08:47:50+00:00",
-    "summary": "Die irische Molkerei Carbery hat ihren Basis-Milchpreis für August um 1 Cent pro Liter erhöht und den im Juli eingeführten Unterstützungszuschlag von 0,5 Cent beibehalten. Das bedeutet eine leicht verbesserte Erlössituation für die angeschlossenen Milchbauern.",
-    "also": []
-   },
-   {
-    "title": "Pneumonia detected in calves without symptoms via lung scans",
-    "teaser": "Lung scanning can detect respiratory disease in visibly healthy calves, new research from the Agri-Food and Biosciences Institute (AFBI) has shown. A study by researchers at AFBI Hillsborough, funded by Feed For Growth (Volac Milk Replacers Ltd), used thoracic ultrasound scanning to investigate if b",
-    "link": "https://www.agriland.ie/farming-news/research-lung-scanning-can-detect-pneumonia-in-visibly-healthy-calves/",
-    "source": "Agriland",
-    "scope": "agrar",
-    "lang": "en",
-    "published": "2026-09-20T16:00:00+00:00",
-    "summary": "Neue Forschung des AFBI zeigt, dass Lungenscans Atemwegserkrankungen bei Kälbern erkennen können, noch bevor äußere Symptome auftreten. Das eröffnet Landwirten die Möglichkeit, frühzeitiger einzugreifen und Tierverluste zu reduzieren.",
+    "published": "2026-09-21T14:00:00+00:00",
+    "summary": "Eine weltweite Umfrage zeigt, dass Landwirte trotz finanzieller Unsicherheit weiterhin in neue Technik investieren, um Kosten zu senken. Das unterstreicht den anhaltenden Trend zur Digitalisierung und Mechanisierung in der Landwirtschaft.",
     "also": []
    }
   ],
-  "eu": [
-   {
-    "title": "Kelly still confident of CBAM safeguard despite parliament rejection",
-    "teaser": "Irish MEP Seán Kelly has expressed confidence that a key proposed safeguard under the Carbon Border Adjustment Mechanism (CBAM) will be adopted, despite the European Parliament voting against it. In a vote this week, the full European Parliament voted against adopting this safeguard; but the margin ",
-    "link": "https://www.agriland.ie/farming-news/kelly-still-confident-of-cbam-safeguard-despite-parliament-rejection/",
-    "source": "Agriland",
-    "scope": "agrar",
-    "lang": "en",
-    "published": "2026-09-20T19:50:38+00:00",
-    "summary": "Trotz einer ablehnenden Abstimmung im EU-Parlament zeigt sich der irische Europaabgeordnete Kelly weiterhin zuversichtlich, dass eine Schutzklausel im Rahmen des CO2-Grenzausgleichsmechanismus CBAM kommen wird. Die Regelung ist relevant für Agrarimporte und -exporte innerhalb der EU.",
-    "also": []
-   },
-   {
-    "title": "Thai poultry audit sparks call for robust import controls",
-    "teaser": "The Ulster Farmers’ Union (UFU) has called for import standards to be upheld after concerns were raised about poultry controls in Thailand. The comments follow the findings of a recent European Commission audit into Thailand’s poultry export system. The audit, carried out in June, noted that an offi",
-    "link": "https://www.agriland.ie/farming-news/thai-poultry-audit-sparks-call-for-robust-import-controls/",
-    "source": "Agriland",
-    "scope": "agrar",
-    "lang": "en",
-    "published": "2026-09-21T08:04:27+00:00",
-    "summary": "Nach einem EU-Kommissionsbericht zu Kontrolllücken bei thailändischem Geflügel fordert die nordirische Bauernvereinigung strengere Importstandards. Der Fall zeigt, wie EU-Auditergebnisse Druck auf Handelsvorschriften für Agrarimporte erzeugen können.",
-    "also": []
-   },
-   {
-    "title": "Kanada-EU-Deal: Landwirtschaft wäre wohl außen vor",
-    "teaser": "Kanada-EU-Deal: Landwirtschaft wäre wohl außen vor top agrar",
-    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOQjRzcTJ3VGtLRUQxclNvWl9oQThZSTNyREE3MFAyTTA0Q2hPMWNsYmdKTGpIcHNoUW1jT1RfUjVzZnpZMjdJcWZNczlDRmFnYzk1MGlPQ09CWnlWRkpFY1h0dVRPOUk3WU5KZS1XX1N0M1NNQUw2Rnl3RzM3NTRiQWtDNllNUy14Wi0wd2V2cWtZNHZVZGlyMVFLVXdjMVNjM2JfVTQyakVRdkpsZXBuc2phZjNqU1NL?oc=5",
-    "source": "top agrar",
-    "scope": "agrar",
-    "lang": "de",
-    "published": "2026-09-19T09:30:00+00:00",
-    "summary": "Im geplanten Handelsabkommen zwischen der EU und Kanada dürfte die Landwirtschaft weitgehend ausgeklammert bleiben. Das könnte Agrarverbände enttäuschen, die auf verbesserte Marktzugänge gehofft hatten.",
-    "also": []
-   }
-  ],
+  "eu": [],
   "world": [
    {
-    "title": "US and China discuss AI safety plan ahead of Trump-Xi summit",
-    "teaser": "Top US and Chinese officials held talks in New York on Sunday ahead of a Trump-Xi summit this week.",
-    "link": "https://www.bbc.co.uk/news/articles/c8vgyzn2d31yo?at_medium=RSS&at_campaign=rss",
-    "source": "BBC News",
-    "scope": "world",
-    "lang": "de",
-    "published": "2026-09-21T05:50:56+00:00",
-    "summary": "US-amerikanische und chinesische Delegierte haben in New York vor dem geplanten Gipfel zwischen Trump und Xi über einen Meldemechanismus für KI-Sicherheitsrisiken gesprochen. Die Gespräche gelten als Annäherung, konkrete Vereinbarungen stehen aber noch aus.",
-    "also": []
-   },
-   {
-    "title": "Das geheime System hinter Trumps Drittstaaten-Abschiebungen",
-    "teaser": "Zehntausende Menschen wurden von der US-Einwanderungsbehörde ICE in Länder abgeschoben, zu denen sie keinen Bezug haben. Dahinter steckt ein weltweites System aus Millionendeals",
-    "link": "https://www.derstandard.at/story/3000000340135/das-geheime-system-hinter-trumps-drittstaaten-abschiebungen?ref=rss",
-    "source": "Der Standard",
-    "scope": "national",
-    "lang": "de",
-    "published": "2026-09-21T05:00:00+00:00",
-    "summary": "Eine internationale Recherche deckt auf, wie die US-Einwanderungsbehörde ICE Zehntausende Migranten über ein weltweites System von Millionendeals in Drittstaaten abschiebt, zu denen die Betroffenen keinen Bezug haben. Die Recherche zeigt Ausmaß und Mechanismen dieser bislang meist geheimen Praxis.",
-    "also": []
-   },
-   {
-    "title": "Asien - Taifun \"Dujuan\" bewegt sich auf Japan zu - 275 Flüge gestrichen",
-    "teaser": "Der Taifun \"Dujuan\" hat sich auf die Region Tokio zubewegt und zur Streichung von mindestens 275 Flügen in Japan geführt.",
-    "link": "https://www.deutschlandfunk.de/taifun-dujuan-bewegt-sich-auf-japan-zu-275-fluege-gestrichen-100.html",
-    "source": "Deutschlandfunk",
-    "scope": "national",
-    "lang": "de",
-    "published": "2026-09-21T08:45:11+00:00",
-    "summary": "Der Taifun „Dujuan“ bewegt sich auf die Region Tokio zu und hat bereits zur Streichung von mindestens 275 Flügen geführt. Reisende in Japan müssen in den kommenden Tagen mit weiteren Einschränkungen rechnen.",
-    "also": []
-   },
-   {
-    "title": "Three South Korean military officers wounded in explosion near border",
-    "teaser": "South Korean officers injured in DMZ explosion, possibly caused by a landmine, according to local media reports.",
-    "link": "https://www.aljazeera.com/news/2026/9/21/three-south-korean-officers-wounded-in-border-explosion?traffic_source=rss",
+    "title": "Russian strikes on Ukraine kill three as Zelenskyy in US for UN summit",
+    "teaser": "Overnight missile and drone attacks hit several Ukrainian regions as world leaders gather in New York, US.",
+    "link": "https://www.aljazeera.com/news/2026/9/22/russian-strikes-on-ukraine-kill-three-as-zelenskyy-in-us-for-un-summit?traffic_source=rss",
     "source": "Al Jazeera",
     "scope": "world",
     "lang": "de",
-    "published": "2026-09-21T07:45:12+00:00",
-    "summary": "Nahe der innerkoreanischen Grenze sind drei südkoreanische Militärangehörige durch eine Explosion verletzt worden, möglicherweise ausgelöst durch eine Landmine. Der Vorfall unterstreicht die Gefahr, die von der noch immer verminten Grenzregion ausgeht.",
-    "also": []
+    "published": "2026-09-22T08:07:13+00:00",
+    "summary": "Russische Nachtangriffe haben mehrere ukrainische Regionen getroffen und mindestens drei Menschen getötet, während Präsident Selenski zeitgleich zum UN-Gipfel in New York reist. Der Krieg bleibt damit auch während internationaler Diplomatie unvermindert intensiv.",
+    "also": [
+     "taz",
+     "NZZ",
+     "FAZ"
+    ]
+   },
+   {
+    "title": "USA: Donald Trump greift die freie Presse an – und muss nun vor Gericht",
+    "teaser": "Es ist die jüngste Eskalation in seinem Feldzug gegen die Presse: Donald Trump hat zwei Sendern und einem Portal Hausverbot erteilt. Doch die Medien wehren sich – und gehen gemeinsam gegen den Präsidenten vor.",
+    "link": "https://www.spiegel.de/ausland/usa-donald-trump-greift-die-freie-presse-an-und-muss-nun-vor-gericht-a-12a6d462-72ec-4a9e-908d-ef7e006216a5#ref=rss",
+    "source": "Spiegel",
+    "scope": "national",
+    "lang": "de",
+    "published": "2026-09-22T04:07:00+00:00",
+    "summary": "Nachdem Donald Trump mehreren US-Sendern und einem Nachrichtenportal den Zugang zum Weißen Haus verweigert hat, verweigern große Sender inklusive Fox News aus Solidarität mit CNN die gemeinsame Berichterstattung über seine Reisen. Die Medien ziehen zudem juristisch gegen die Ausgrenzung.",
+    "also": [
+     "BBC News",
+     "taz",
+     "Der Standard",
+     "n-tv",
+     "Süddeutsche Zeitung"
+    ]
+   },
+   {
+    "title": "Iran must stop arming Houthis in Yemen, G7 says ahead of UN General Assembly",
+    "teaser": "The G7 also condemns \"in the strongest terms\" Houthi attacks on Saudi Arabia, saying that the escalation in fighting in Yemen jeopardises global energy security.",
+    "link": "https://www.bbc.co.uk/news/articles/cwm2qpmepmlzo?at_medium=RSS&at_campaign=rss",
+    "source": "BBC News",
+    "scope": "world",
+    "lang": "de",
+    "published": "2026-09-22T07:14:12+00:00",
+    "summary": "Die G7-Außenminister fordern den Iran auf, die Bewaffnung der Huthi-Miliz im Jemen zu beenden, und verurteilen die Huthi-Angriffe auf Saudi-Arabien scharf. Die Eskalation im Roten Meer gilt als Gefahr für die globale Energiesicherheit.",
+    "also": [
+     "Al Jazeera"
+    ]
+   },
+   {
+    "title": "At least four people killed in Japan as typhoon Dujuan triggers heavy rain, landslides",
+    "teaser": "Rescuers search for missing in collapsed homes after storm causes landslides, travel chaos and power outages Typhoon Dujuan has killed at least four people and injured 22 in Japan, while tens of thousands of houses near Tokyo remained without power after the storm swept through the region, authoriti",
+    "link": "https://www.theguardian.com/world/2026/sep/22/typhoon-dujuan-japan-latest-weather-millions-told-to-evacuate-tokyo",
+    "source": "The Guardian",
+    "scope": "world",
+    "lang": "de",
+    "published": "2026-09-22T04:48:59+00:00",
+    "summary": "Der Taifun Dujuan hat in Japan mindestens vier Todesopfer gefordert und durch schwere Regenfälle Erdrutsche sowie Stromausfälle ausgelöst. Rettungskräfte suchen weiterhin nach Vermissten in eingestürzten Häusern.",
+    "also": [
+     "BBC News"
+    ]
    }
   ],
   "note": null,
   "feed_count": 30,
-  "item_count": 281,
+  "item_count": 290,
   "ranked_by": "Claude"
  }
 }

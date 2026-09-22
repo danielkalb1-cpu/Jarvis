@@ -426,13 +426,13 @@ body::after{
       <h1 class="brand__mark">JARVIS</h1>
       <span class="brand__sub">Morgen-Briefing</span>
     </div>
-    <div class="stamp"><span class="pulse"></span>Montag · 21.09.2026 · 22:23 Uhr</div>
+    <div class="stamp"><span class="pulse"></span>Dienstag · 22.09.2026 · 10:27 Uhr</div>
     <div class="head__rule"></div>
   </header>
 
     <section class="lage" aria-label="Lage">
     <span class="lage__k">Lage</span>
-    <p class="lage__t">Der Tag steht im Zeichen der Wahlniederlage der CDU und des AfD-Erfolgs in Mecklenburg-Vorpommern sowie des Linke-Siegs in Berlin, mit Nachwirkungen bis in die Bundespolitik. International sorgt die Lage in der Straße von Hormus für Unsicherheit bei Öl und Sprit. Im Allgäu bleiben Trockenheit, Verkehr und Kritik an der Luftwaffe die lokalen Themen.</p>
+    <p class="lage__t">Die Union ringt nach den Wahlniederlagen um Kurs und Köpfe, während in Berlin eine Koalition mit der Linken gesucht wird. Ab heute senkt der neue Tankrabatt die Spritkosten für Pendler. International bestimmen Ukraine-Krieg und Huthi-Eskalation die Lage, regional bleibt es ruhig mit Herbstwetter.</p>
   </section>
 
   
@@ -443,27 +443,32 @@ body::after{
       <h2 class="section__title">Wetter</h2>
       <span class="section__line"></span>
     </div>
-        <div class="panel">
+      <div class="alerts">
+    <div class="alert alert--frost"><span class="alert__icon"><svg class="ic " aria-hidden="true"><use href="#i-snow"></use></svg></span><span>Augsburg: Bodenfrost möglich, Tiefstwert 3 °C.</span></div>
+  </div>
+
+    <div class="panel">
       <div class="wx__top">
         <div>
           <div class="wx__place">Augsburg</div>
-          <div class="wx__temp">6,9<sup>°C</sup></div>
-          <div class="wx__feels">gefühlt 5,5 °C</div>
+          <div class="wx__temp">10,9<sup>°C</sup></div>
+          <div class="wx__feels">gefühlt 9,4 °C</div>
         </div>
         <div class="wx__cond">
-          <svg class="ic wx__glyph" aria-hidden="true"><use href="#i-cloud"></use></svg>
-          <span class="wx__label">bewölkt</span>
+          <svg class="ic wx__glyph" aria-hidden="true"><use href="#i-partly-day"></use></svg>
+          <span class="wx__label">teils bewölkt</span>
         </div>
       </div>
-      <div class="wx__grid"><div class="metric"><span class="metric__k">Regen</span><span class="metric__v">1 <small>%</small></span></div><div class="metric"><span class="metric__k">Menge</span><span class="metric__v">0,0 <small>mm</small></span></div><div class="metric"><span class="metric__k">Wind</span><span class="metric__v">2 <small>km/h</small></span></div><div class="metric"><span class="metric__k">Wolken</span><span class="metric__v">100 <small>%</small></span></div></div>
-      <div class="wx__days"><span>Heute <b>7°</b> / <b>17°</b></span><span>Morgen <b>4°</b> / <b>16°</b></span></div>
+      <div class="wx__grid"><div class="metric"><span class="metric__k">Regen</span><span class="metric__v">2 <small>%</small></span></div><div class="metric"><span class="metric__k">Menge</span><span class="metric__v">0,0 <small>mm</small></span></div><div class="metric"><span class="metric__k">Wind</span><span class="metric__v">4 <small>km/h</small></span></div><div class="metric"><span class="metric__k">Wolken</span><span class="metric__v">50 <small>%</small></span></div></div>
+      <div class="hours"><div class="hour"><div class="hour__t">12</div><svg class="ic hour__i" aria-hidden="true"><use href="#i-partly-day"></use></svg><div class="hour__d">14°</div><div class="hour__p">1%</div></div><div class="hour"><div class="hour__t">15</div><svg class="ic hour__i" aria-hidden="true"><use href="#i-partly-day"></use></svg><div class="hour__d">16°</div><div class="hour__p">1%</div></div><div class="hour"><div class="hour__t">18</div><svg class="ic hour__i" aria-hidden="true"><use href="#i-partly-day"></use></svg><div class="hour__d">14°</div><div class="hour__p">1%</div></div><div class="hour"><div class="hour__t">21</div><svg class="ic hour__i" aria-hidden="true"><use href="#i-partly-night"></use></svg><div class="hour__d">9°</div><div class="hour__p">1%</div></div></div>
+      <div class="wx__days"><span>Heute <b>3°</b> / <b>16°</b></span><span>Morgen <b>2°</b> / <b>18°</b></span></div>
     </div>
     <div class="panel wx__more">
       <div class="wxrow">
         <span class="wxrow__n">Marktoberdorf</span>
-        <svg class="ic wxrow__i" aria-hidden="true"><use href="#i-partly-night"></use></svg>
-        <span class="wxrow__t">9,1°</span>
-        <span class="wxrow__f">7° / 16° · 1 % Regen · 2 km/h</span>
+        <svg class="ic wxrow__i" aria-hidden="true"><use href="#i-sun"></use></svg>
+        <span class="wxrow__t">11,2°</span>
+        <span class="wxrow__f">6° / 16° · 6 % Regen · 4 km/h</span>
       </div>
     </div>
   </section>
@@ -485,138 +490,105 @@ body::after{
       <span class="section__line"></span>
     </div>
         <div class="panel">
-      <div class="block__title block__title--neu">Seit heute früh</div>
-      <a class="story" href="https://www.bbc.co.uk/news/articles/cqp80p78mxx5o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Airlines criticise air traffic control as second glitch causes more disruption in UK</h3>
-        <div class="story__m"><span class="chip chip--src">BBC News</span><span class="chip">22:21</span></div>
-      </a>
-      <a class="story" href="https://www.zeit.de/politik/ausland/2026-09/paramount-warner-bros-discovery-uebernahme-cnn-cbs-news" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Paramount und Warner: Paramount einigt sich mit US-Bundesstaaten über Warner-Kauf</h3>
-        <div class="story__m"><span class="chip chip--src">Zeit Online</span><span class="chip">22:18</span></div>
-      </a>
-      <a class="story" href="https://www.aljazeera.com/news/2026/9/21/pro-putin-party-wins-supermajority-amid-ramped-up-ukrainian-attacks?traffic_source=rss" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Putin’s party wins supermajority in Russia’s parliamentary vote</h3>
-        <div class="story__m"><span class="chip chip--src">Al Jazeera</span><span class="chip">22:17</span></div>
-      </a>
-      <a class="story" href="https://www.merkur.de/lokales/muenchen/oktoberfest/unfall-mit-security-mitarbeiter-an-fahrgeschaeft-auf-der-wiesn-rettungseinsatz-laeuft-94503753.html" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Unfall an Fahrgeschäft auf der Wiesn: Security-Mitarbeiter „eingequetscht“ – Rettungseinsatz läuft</h3>
-        <div class="story__m"><span class="chip chip--src">Merkur Lokales</span><span class="chip">22:17</span></div>
-      </a>
       <div class="block__title">Wichtigstes heute</div>
-      <a class="story" href="https://www.sueddeutsche.de/politik/landtagswahl-mecklenburg-vorpommern-2026-ergebnis-afd-spd-cdu-li.3550920" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Landtagswahl in Mecklenburg-Vorpommern 2026: Das vorläufige Ergebnis: AfD vor SPD - CDU verpasst Einzug</h3>
-        <p class="story__s">In Mecklenburg-Vorpommern verpasst die CDU erstmals den Einzug in ein Landesparlament, während die AfD stärkste Kraft vor der SPD wird; in Berlin gewinnt die Linke klar vor der CDU. Kanzler Merz kündigt trotz des historischen Rückschlags an, im Amt zu bleiben und seinen Reformkurs fortzusetzen, doch der Druck auf ihn wächst deutlich.</p>
-        <div class="story__m"><span class="chip chip--src">Süddeutsche Zeitung</span><span class="chip">07:57</span><span class="chip chip--also">auch: tagesschau, n-tv, Welt</span></div>
+      <a class="story" href="https://www.tagesschau.de/wirtschaft/tankrabatt-254.html" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Kabinett bringt Tankrabatt auf den Weg</h3>
+        <p class="story__s">Das Bundeskabinett hat die Wiedereinführung des Tankrabatts beschlossen: Ab 1. Oktober bis Jahresende sinkt die Energiesteuer auf Diesel und Benzin um rund 17 Cent pro Liter, Bundestag und Bundesrat sollen noch diese Woche zustimmen. Für Pendler bedeutet das eine spürbare, aber befristete Entlastung an der Tankstelle.</p>
+        <div class="story__m"><span class="chip chip--src">tagesschau</span><span class="chip">09:52</span><span class="chip chip--also">auch: Zeit Online, Deutschlandfunk, Süddeutsche Zeitung</span></div>
       </a>
-      <a class="story" href="https://www.spiegel.de/wirtschaft/nahostkrise-schiffsverkehr-durch-strasse-von-hormus-kommt-praktisch-zum-erliegen-a-c6606b16-1a6f-4d45-bdd2-42af859203ee#ref=rss" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Iran-Krieg: Schiffsverkehr durch Straße von Hormus kommt praktisch zum Erliegen</h3>
-        <p class="story__s">Der Schiffsverkehr durch die Straße von Hormus ist am Wochenende drastisch eingebrochen, nur noch rund ein Dutzend Frachter passierten die Meerenge gegenüber 35 in der Vorwoche. Saudi-Arabien konnte seine Ölexporte trotz der Spannungen und Pipeline-Schäden dennoch steigern, was vorerst für stabile Lieferketten spricht.</p>
-        <div class="story__m"><span class="chip chip--src">Spiegel</span><span class="chip">07:05</span><span class="chip chip--also">auch: Süddeutsche Zeitung, Handelsblatt, n-tv</span></div>
+      <a class="story" href="https://www.deutschlandfunk.de/kanzler-merz-beraet-mit-unionsfraktion-ueber-die-folgen-der-wahlniederlagen-106.html" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">CDU - Kanzler Merz berät mit Unionsfraktion über die Folgen der Wahlniederlagen</h3>
+        <p class="story__s">Nach den schweren Wahlniederlagen in Berlin und Mecklenburg-Vorpommern berät Kanzler Merz heute mit der Unionsfraktion über Konsequenzen für Kurs und Personal. In der Fraktion wächst der Unmut, mehrere Landespolitiker fordern einen deutlichen Politikwechsel.</p>
+        <div class="story__m"><span class="chip chip--src">Deutschlandfunk</span><span class="chip">10:15</span><span class="chip chip--also">auch: tagesschau, Handelsblatt, SZ Bayern</span></div>
       </a>
-      <a class="story" href="https://www.deutschlandfunk.de/autobranche-ig-metall-ruft-zu-bundesweitem-aktionstag-auf-100.html" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Gegen Jobabbau und Einschnitte - Autobranche: IG Metall ruft zu bundesweitem Aktionstag auf</h3>
-        <p class="story__s">Die IG Metall ruft heute bundesweit an mehr als 200 Standorten zu Protesten gegen Stellenabbau und Sparpläne in der Autoindustrie auf. Die Gewerkschaft erhöht damit den Druck auf Hersteller und Zulieferer, die im internationalen Wettbewerb um Kosten und Standorte ringen.</p>
-        <div class="story__m"><span class="chip chip--src">Deutschlandfunk</span><span class="chip">10:45</span><span class="chip chip--also">auch: Spiegel</span></div>
+      <a class="story" href="https://www.spiegel.de/politik/deutschland/antisemitismus-und-linke-in-berlin-diese-bedingungen-stellen-spd-und-gruene-an-elif-eralp-a-bc6c85c2-6bee-455d-924d-afc58a8c0dec#ref=rss" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Antisemitismus und Linke in Berlin: Diese Bedingungen stellen SPD und Grüne an Elif Eralp</h3>
+        <p class="story__s">Nach dem Wahlsieg der Linken in Berlin ringen SPD und Grüne um Bedingungen für eine gemeinsame Koalition, wobei der Umgang der Partei mit Antisemitismus zum zentralen Streitpunkt wird. Ex-SPD-Chef Gabriel warnt öffentlich vor einem Bündnis mit einer aus seiner Sicht antisemitischen Partei.</p>
+        <div class="story__m"><span class="chip chip--src">Spiegel</span><span class="chip">08:20</span><span class="chip chip--also">auch: n-tv, Süddeutsche Zeitung, tagesschau</span></div>
       </a>
-      <a class="story" href="https://www.zeit.de/mobilitaet/2026-09/andreas-scheuer-csu-prozess-falschaussage-pkw-maut-gerhard-schulz" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Falschaussage zur Maut: Prozess gegen Andreas Scheuer wegen Falschaussage hat begonnen</h3>
-        <p class="story__s">Vor dem Landgericht Berlin hat der Prozess gegen den früheren Verkehrsminister Scheuer wegen des Verdachts der Falschaussage im Maut-Untersuchungsausschuss begonnen. Rund sieben Jahre nach dem Scheitern der Pkw-Maut muss er sich nun strafrechtlich verantworten.</p>
-        <div class="story__m"><span class="chip chip--src">Zeit Online</span><span class="chip">10:41</span><span class="chip chip--also">auch: Deutschlandfunk, taz</span></div>
+      <a class="story" href="https://www.spiegel.de/wirtschaft/notaufnahmen-umfrage-zeigt-dramatische-ueberlastung-in-deutschen-kliniken-a-2485aed8-dccc-4213-a216-b89e129efbbb#ref=rss" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Notaufnahmen: Umfrage zeigt dramatische Überlastung in deutschen Kliniken</h3>
+        <p class="story__s">Eine neue Umfrage zeigt, dass fast jede zweite Notaufnahme in Deutschland überlastet ist, weil zu viele Patienten auf zu wenig Personal treffen. Die Lage der Notfallversorgung hat sich damit weiter verschärft.</p>
+        <div class="story__m"><span class="chip chip--src">Spiegel</span><span class="chip">07:35</span><span class="chip chip--also">auch: Deutschlandfunk</span></div>
       </a>
-      <a class="story" href="https://www.zeit.de/politik/ausland/2026-09/parlamentswahl-russland-geeintes-russland-jabloko-ella-pamfilowa" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Russland: Putins Partei Geeintes Russland gewinnt Parlamentswahl</h3>
-        <p class="story__s">Die Kremlpartei Geeintes Russland hat die Duma-Wahl mit einer Zweidrittelmehrheit gewonnen, wobei die Abstimmung international als unfrei gilt. Das Ergebnis bestätigt Putins Kriegskurs gegen die Ukraine und dürfte innenpolitisch als Rückhalt für weitere Mobilisierung dienen.</p>
-        <div class="story__m"><span class="chip chip--src">Zeit Online</span><span class="chip">10:43</span><span class="chip chip--also">auch: NZZ, Der Standard, Handelsblatt</span></div>
+      <a class="story" href="https://www.handelsblatt.com/unternehmen/industrie/autoindustrie-mercedes-erwaegt-abzug-von-produktion-aus-deutschland-01/100256260.html" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Autoindustrie: „Das ist so billig, Ola Källenius“ – Mercedes erwägt Abzug von Produktion aus Deutschland</h3>
+        <p class="story__s">Bei einem bundesweiten Aktionstag der IG Metall protestieren Zehntausende Beschäftigte gegen längere Arbeitszeiten und Stellenabbau in der Autoindustrie, während Mercedes offen über eine Verlagerung von Produktion aus Deutschland nachdenkt. Die Wut richtet sich dabei auch gegen die Bundesregierung.</p>
+        <div class="story__m"><span class="chip chip--src">Handelsblatt</span><span class="chip">07:12</span></div>
       </a>
       <div class="block__title">Region</div>
-      <a class="story" href="https://news.google.com/rss/articles/CBMixgFBVV95cUxOSkJnU2J2cEtWRlU1bi1iYU4zcXlmSkhKQTlUc0N0bXBqa2poMFFqVXNxU2ZkaThBZ1ZOU3pmUnI1eHpyMHhOUzhTVEZBa1A5NG1ZLXFlYURHeFFBRUNoSVRuRlZuQUVsd1ltR0JGa1ZRU3U0U0NNN3RIbXZBTkJ4SHg2VEg0YTZCUkdnVFJlVVMxZGNZT1ZJaTZjM0tqNjR6eDVKWEkzZnlXWkgzWllDZEhHckk0Z3E4cWFqZlVqa3BxQ1JBQ2c?oc=5" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Demo gegen B12-Ausbau: Bundesstraße zwei Stunden dicht</h3>
-        <p class="story__s">Bei einer Demonstration gegen den Ausbau der B12 im Allgäu war die Bundesstraße rund zwei Stunden gesperrt. Der Protest zeigt den anhaltenden Widerstand gegen die geplante Streckenführung in der Region.</p>
-        <div class="story__m"><span class="chip chip--src">Allgäuer Zeitung</span><span class="chip">07:46</span></div>
+      <a class="story" href="https://news.google.com/rss/articles/CBMixAFBVV95cUxPTk5WQVdyWFA4clVGMFAycktsTkx5V1RaaWl6TkdKdjZtOTZKUzI5cHNiTEdqcDRjY09VYndlMVF4VlhDLThRMGQxa0VNRXZJZDJCS0YyUGpZSloybE94QU00d3RKdm9IWXJ4NVUwX1pJM2YwbHFHdUR3R1FHZUR1NWYwMUo2aC1PTjhDZjk5UGVQVl9PTkhONjJLZUQ5RzFucU9SeFpPODRBMFl4WW9QckREdXBsaVdNYk1OWkxqX094VWxN?oc=5" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">22-Jähriger vom Bodensee stirbt nach Absturz in den Allgäuer Alpen</h3>
+        <p class="story__s">Ein 22-jähriger Mann aus der Bodensee-Region ist bei einem Klettersteig nahe Oberstdorf von einem Grat abgestürzt und noch am Berg gestorben. Der Unfall reiht sich in eine Serie schwerer Bergunfälle in den Allgäuer Alpen ein.</p>
+        <div class="story__m"><span class="chip chip--src">SWR</span><span class="chip">16:18</span><span class="chip chip--also">auch: SZ.de, Tagesspiegel, merkur.de</span></div>
       </a>
-      <a class="story" href="https://news.google.com/rss/articles/CBMizwFBVV95cUxNWWVfNEplNHlDTzItWkVtNDB1LUdtMEdCd3U5a2htTFp3Q3dvM1cxRThYSUx3RXZ4RTN0THpDVVMzanF6ZWZRdWthdzNhRk5OdW1uQllBYUl0THQyZE9Wc0RYZE1PR2hyV040ZG9GeHpqRjhpZDJDQ25uTkJCZnJ0RjJtWHVvY0dIRWMtM09tUXBYckROWHlHLXFGLTd0aktQa3ZSZXJkRmhYOC1QTkczcHA2clNGQzNZaWxwSGtZX2ZzZTVzcTE1UnJCc3RtV1k?oc=5" target="_blank" rel="noopener noreferrer">
+      <a class="story" href="https://www.sueddeutsche.de/bayern/bayern-politik-csu-justizminister-neu-soeder-schmid-knoll-eisenreich-li.3551018" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Zwei neue Männer im Kabinett: Söder macht JU-Chef Knoll zum neuen Jugendminister</h3>
+        <p class="story__s">Bayerns Ministerpräsident Söder baut sein Kabinett um: Nach dem Rücktritt von Justizminister Eisenreich übernimmt der CSU-Abgeordnete Schmid das Ressort, zusätzlich schafft Söder ein neues Amt für einen Jugendminister, das JU-Landeschef Knoll besetzt.</p>
+        <div class="story__m"><span class="chip chip--src">SZ Bayern</span><span class="chip">15:40</span><span class="chip chip--also">auch: tagesschau Bayern</span></div>
+      </a>
+      <a class="story" href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxNeXpYdUpwUW5qRy1hX0w4UzBMM2FxZzJPbHpJUGZId1JrZUR1RXFDNDIxaUIxcmlZMkFveVpoUE8xdEtTTVJEWm1UNnRiaXJWcUZvQUpORkI5ZFZhV0xJRXo1QXVrV1FHTHg0SUpVbmQ3cmlocmEybVJTQTNveDd0cmxUa1ZfbXdYbnlJdkQxbll3OHJkaXNqa3MwMDU0TzJvSDZLZVRtTWNSckMwbER6aVlIZmlsM2J6aVJMM1lxUlUyWTM3Zlo1bmJOcDNrUjdVdVE?oc=5" target="_blank" rel="noopener noreferrer">
         <h3 class="story__h">„Die Kritik ist angekommen“ – Luftwaffe reagiert auf Sorgen wegen Arrow im Allgäu</h3>
-        <p class="story__s">Die Luftwaffe reagiert auf anhaltende Sorgen aus dem Allgäu wegen der Übungen mit dem Flugabwehrsystem Arrow und räumt ein, dass die Kritik angekommen sei. Konkrete Änderungen am Übungsbetrieb bleiben zunächst offen.</p>
-        <div class="story__m"><span class="chip chip--src">Allgäuer Zeitung</span><span class="chip">07:25</span></div>
+        <p class="story__s">Die Luftwaffe hat auf die anhaltenden Sorgen wegen der Übung Arrow im Allgäu reagiert und signalisiert, die Kritik aus der Region ernst zu nehmen.</p>
+        <div class="story__m"><span class="chip chip--src">Allgäuer Zeitung</span><span class="chip">06:51</span></div>
       </a>
-      <a class="story" href="https://news.google.com/rss/articles/CBMi6wFBVV95cUxPenpVM0x1eGJWWU5QdkJySnZUdDI0cGxLSnFUajBZZm1vMnhPTDNEUlJ3QWFfQk9UZDBsXy01N0I0MXF5M25CTXlhUTBLY3FyamhOamRwalN4ZDNaWVpjMkpRVTJuNF83cHdLY0FjeXIzNjVoc0NTd09NRTdncjFzbS03OFpNQW83cUhseS0tcVVWaHlPOWMxUllja2VjQnViSUwtc0JhM3Zib1RpTThVYjdnZmVPQU1JZ09hZDdkd05Yb3FyeDFobTlrUC15dllDUlcwckRkQThPVjh2ZzV5dUFtS0puUTJNSXZn?oc=5" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Nie dagewesene Trockenheit im Allgäu: Bad Wörishofen verbraucht doppelt so viel Wasser wie der Schnitt</h3>
-        <p class="story__s">Bad Wörishofen verbraucht wegen der anhaltenden Trockenheit im Allgäu derzeit doppelt so viel Wasser wie im langjährigen Schnitt. Die Kurstadt steht damit exemplarisch für die Folgen des trockenen Sommers in der Region.</p>
-        <div class="story__m"><span class="chip chip--src">Augsburger Allgemeine</span><span class="chip">05:46</span></div>
-      </a>
-      <a class="story" href="https://news.google.com/rss/articles/CBMiowFBVV95cUxPUzd3U3k4ZWhqdGFfUGt3VzR0VFIzNVFnRk5SeHJ1dWljY2tlQ1otLVp0aExXM0JwOVBRYXZ3YVdTTllJdE9LU1p5YlZiMzJfSEo5NlN1ZUlhRXFvaGNqdWdwbnZUNUFkU0JVVF8tc3dOZEx3ckpMVXFtLWZPd19VSFk4dXNnUlVmMjhnaFEtRDZyVnB0ZTlQU3dNR29vMHdsd0RJ?oc=5" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">„Fühle mich schlecht beim Kassieren“: Was der Rekord-Spritpreis mit Tankstellen-Mitarbeitern macht</h3>
-        <p class="story__s">Der Rekord-Spritpreis belastet nicht nur Autofahrer, sondern zunehmend auch Tankstellen-Mitarbeiter in der Region Augsburg, die sich beim Kassieren unwohl fühlen. Der Bericht zeigt, wie die hohen Kosten im Alltag ankommen.</p>
-        <div class="story__m"><span class="chip chip--src">Augsburger Allgemeine</span><span class="chip">07:41</span></div>
+      <a class="story" href="https://www.sueddeutsche.de/bayern/bayern-wetter-herbst-frost-li.3551951" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Wetter in Bayern: Scheiben kratzen und Pflanzen schützen? Wo Frost droht</h3>
+        <p class="story__s">Nach einem noch spätsommerlichen Wochenende drohen in Teilen Bayerns in den kommenden Nächten wieder Temperaturen nahe dem Gefrierpunkt. Betroffene sollten empfindliche Pflanzen schützen und mit vereisten Scheiben rechnen.</p>
+        <div class="story__m"><span class="chip chip--src">SZ Bayern</span><span class="chip">08:25</span></div>
       </a>
       <div class="block__title">Landwirtschaft</div>
-      <a class="story" href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxOTndwb0NTTVpMUE5rWlc2V1JUNnZiZmxtRDUzVmJqVlVvNjdKSkIxb3o5MTN5M24yX0NJQ3E5MjJkbHBVQjFHTXprNW5xQUxyRHRvY2swSHZ2SU92YzZJUFJlSGJOTks5bVVqWlVBYU1aSFUxUDBkblBBOU5LWk9jODZYd0hUU2luQ1JxaWxHYzNGdElvUkdPZzVQZnJ4R1Z5RFNjTTNqRHI3YXQxV0M4OWYzZmMxQUVWOUt6MWRqQ0ZIOHdTQ1VESjR3dVpHdEh0NHFKQmJ3OTA3aGxBUU1zYXU1VQ?oc=5" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Grüner Bericht 2026 enthüllt: Niedriglohn für Bauern und immer höhere Importabhängigkeit</h3>
-        <p class="story__s">Der österreichische Grüne Bericht 2026 zeigt, dass viele Bauern trotz steigender Importabhängigkeit weiterhin nur Niedriglöhne erzielen. Die Zahlen verdeutlichen den wachsenden Druck auf die heimische Landwirtschaft im Vergleich zu ausländischer Konkurrenz.</p>
-        <div class="story__m"><span class="chip chip--src">OTS.at</span><span class="chip">10:34</span></div>
+      <a class="story" href="https://news.google.com/rss/articles/CBMijwFBVV95cUxOQnZCZFVyc1BnalVVVUtHOGtUS2tZd1libXhWNFVDQ1BNbUx4RThSSGwxcERkU1VhOHJSVGl3c3dqbnBGUGRPaXdEMmNQWXdiYWR2bkRTVTM5UER4eDVucGNhbHhKRGRrbTFNelRhYmgxMHMxck5PNEJEdUR0VU1ncklROXRCeEZCUVRMYmJybw?oc=5" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Feuer auf Hof in Grosselfingen: hunderte Hühner und Gänse tot - Schaden in Millionenhöhe</h3>
+        <p class="story__s">Auf einem Hof im badischen Grosselfingen ist ein Feuer ausgebrochen, bei dem hunderte Hühner und Gänse getötet wurden; der Sachschaden liegt im Millionenbereich.</p>
+        <div class="story__m"><span class="chip chip--src">SWR</span><span class="chip">06:00</span></div>
       </a>
-      <a class="story" href="https://news.google.com/rss/articles/CBMiywFBVV95cUxQZm5fWHFOQ0ZLc3dKOUdVVHlCSmM2ZGZIak55M3hLUXNxZ3hqOGcxRExKYzkzS3dkb2FIME5ZdVR4bHctblZNS2V3a3Uza1VMRHRuYmdtdjl1bnpKZHVwZVI2NE0tMk02NlRLVW5nTWxWUC1IVXlTRlloajBhWWxVbjlUUE1fak5iMG5YbjhseDU5aDhMSXRmcy01d3BIZHJvTzNXOUhzM21uWTFHOWMtM1VYaVlzRVBDdmJBZzRTdlVOVUVoX3NrNWlxYw?oc=5" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">DBV-Fachausschuss Agrarpolitik: GAP nach 2027 – klare Forderungen zur künftigen Basiszahlung</h3>
-        <p class="story__s">Der Fachausschuss Agrarpolitik des Bauernverbands hat klare Forderungen zur künftigen Basiszahlung nach 2027 formuliert. Damit positioniert sich der Verband frühzeitig in der Debatte über die nächste EU-Agrarförderperiode.</p>
-        <div class="story__m"><span class="chip chip--src">Thüringer Bauernverband</span><span class="chip">09:14</span></div>
+      <a class="story" href="https://news.google.com/rss/articles/CBMitgFBVV95cUxQbXR5bF8xNXFhbTZVM1RMNDFsU3ExQ2ZjYzBmTWVIMEVxM1JobjJvQnFNQ2NJdHZ0MlBpVm5vMEI1NUJDNTdjRU5ncGRORUtXRGx5NFVwbmctMUxNdV94Wk0wWW5LN3dLalZXckZiZ0UzZ0JUYlFZS01rOVNXR3pRUmVKRjRRWHQ2WGU4Rk53Vl9oLTVOd0dKWTVyWmpoZkw4dm53VVVxRjdwNGpqajZaS3NyaFk1QQ?oc=5" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Landwirt wegen Anbindehaltung verurteilt: Diese Bedingungen wurden ihm zum Verhängnis</h3>
+        <p class="story__s">Ein Landwirt wurde wegen der Haltungsbedingungen in der Anbindehaltung seiner Tiere strafrechtlich verurteilt, was als Präzedenzfall für den Umgang mit dieser umstrittenen Haltungsform gilt.</p>
+        <div class="story__m"><span class="chip chip--src">agrarheute.com</span><span class="chip">10:19</span></div>
       </a>
-      <a class="story" href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxORHRaZWlBMDZlZ0RwOERtT0tScXJRQl9DbmZjMGZ3RGtlc3ZjM3VwbW5MUnNhQVMyQXY1QUozWHpyTHBuOC1GakpkVVp2UlFyY0lOUXVETU5uR3NRZDFYdkZLUDcyeFVEWDBTNW9sR09xamxheWE5eTlXa05NSW5CZVhZcm1vbXVTLVZJNlFVVWZ1REtnVmpMZDFqbmZxT0hhVUNsLU1EdlRqQnI2VExoR04zWXZvdkhGLTlaVG5DNktWWkk?oc=5" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Landwirtschaft in Oder-Spree: Spritpreis wird existenziell gefährlich für Bauern</h3>
-        <p class="story__s">In der Region Oder-Spree wird der hohe Spritpreis für Landwirte zunehmend zu einem existenziellen Problem. Steigende Betriebskosten treffen die Höfe in einer ohnehin angespannten wirtschaftlichen Lage zusätzlich.</p>
-        <div class="story__m"><span class="chip chip--src">MOZ.de</span><span class="chip">08:25</span></div>
+      <a class="story" href="https://news.google.com/rss/articles/CBMigAJBVV95cUxNRTZ6a3k1M3M5QjZ4bG5sZW1mZnNVTFpNdDZ2YVBzWU04X085TGwwaEg5aGc2bnA0U1k5WEVwYXpHQ2FGeDljeTRYQk1EVGNvX2tqSDVvcVIyZTk0LXE1REZrdjFYVWdkRGJMSkRQd2hXclJHSkx3dFBsczBBR2pDOGlSZjV4cFA1bEkwZmVlbXRHY1R2ZkY2SWdIVlZKdFB5Q283anh2QVczYVYtaFlxQzdiamN3YnFyTEtVTDVBdU5RY3c5TDVBZ0NZTWY1QmFaSTloVk9OYjVkNXhfMkkyakQxdTMyWEVQZWxzYjhxY1dHYjVLd0MwNzdqdG5LZllv?oc=5" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Hendungen: 14.400 Hähnchen mit 5,8 Hektar Freilauf: Landwirt plant Bio-Maststall an der Autobahn bei Hendungen</h3>
+        <p class="story__s">Ein Landwirt plant bei Hendungen einen Bio-Maststall für 14.400 Hähnchen mit 5,8 Hektar Freilauffläche direkt an der Autobahn.</p>
+        <div class="story__m"><span class="chip chip--src">Main-Post</span><span class="chip">04:00</span></div>
       </a>
-      <a class="story" href="https://www.agriland.ie/farming-news/carbery-increases-milk-price-for-august/" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Carbery increases milk price for August</h3>
-        <p class="story__s">Die irische Molkerei Carbery hat ihren Basis-Milchpreis für August um 1 Cent pro Liter erhöht und den im Juli eingeführten Unterstützungszuschlag von 0,5 Cent beibehalten. Das bedeutet eine leicht verbesserte Erlössituation für die angeschlossenen Milchbauern.</p>
-        <div class="story__m"><span class="chip chip--src">Agriland</span><span class="chip">10:47</span></div>
+      <a class="story" href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxOeEZGamZ2NlZ1T0JLOFV0aFc1elNqcU5OaVo1U2ltd2ZyWFlIT24xdm96TDc5ZW9xcFBWSXFFcTVTTW1TbHgtTk9PNjNWS25KVGFQci1zQ0l3MlUzWEcybVpQQl9xcldvSUswQWdrc1RMY3NnYm56V3lhYkVFcjZtRHR4Mlc0T1VnM0tTRjdBd1Q5UmUtanlWbWhtanIwaEc2dGFBbklUVktsZVNSSTdYcWduVHh1TXZmMEtv?oc=5" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Trump-Xi Summit Carries High Stakes for Agriculture, Soybeans Aren&#x27;t the Only Thing to Watch</h3>
+        <p class="story__s">Der Gipfel zwischen Trump und Xi hat nach Einschätzung von Beobachtern erhebliche Auswirkungen auf die Landwirtschaft, wobei es um mehr als nur Sojabohnen-Exporte geht. Handelsentscheidungen der beiden Großmächte könnten globale Agrarpreise und -ströme spürbar verschieben.</p>
+        <div class="story__m"><span class="chip chip--src">AgWeb</span><span class="chip">16:28</span></div>
       </a>
-      <a class="story" href="https://www.agriland.ie/farming-news/research-lung-scanning-can-detect-pneumonia-in-visibly-healthy-calves/" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Pneumonia detected in calves without symptoms via lung scans</h3>
-        <p class="story__s">Neue Forschung des AFBI zeigt, dass Lungenscans Atemwegserkrankungen bei Kälbern erkennen können, noch bevor äußere Symptome auftreten. Das eröffnet Landwirten die Möglichkeit, frühzeitiger einzugreifen und Tierverluste zu reduzieren.</p>
-        <div class="story__m"><span class="chip chip--src">Agriland</span><span class="chip">18:00</span></div>
-      </a>
-      <div class="block__title">Neues Regelwerk</div>
-      <a class="story" href="https://www.agriland.ie/farming-news/kelly-still-confident-of-cbam-safeguard-despite-parliament-rejection/" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Kelly still confident of CBAM safeguard despite parliament rejection</h3>
-        <p class="story__s">Trotz einer ablehnenden Abstimmung im EU-Parlament zeigt sich der irische Europaabgeordnete Kelly weiterhin zuversichtlich, dass eine Schutzklausel im Rahmen des CO2-Grenzausgleichsmechanismus CBAM kommen wird. Die Regelung ist relevant für Agrarimporte und -exporte innerhalb der EU.</p>
-        <div class="story__m"><span class="chip chip--src">Agriland</span><span class="chip">21:50</span></div>
-      </a>
-      <a class="story" href="https://www.agriland.ie/farming-news/thai-poultry-audit-sparks-call-for-robust-import-controls/" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Thai poultry audit sparks call for robust import controls</h3>
-        <p class="story__s">Nach einem EU-Kommissionsbericht zu Kontrolllücken bei thailändischem Geflügel fordert die nordirische Bauernvereinigung strengere Importstandards. Der Fall zeigt, wie EU-Auditergebnisse Druck auf Handelsvorschriften für Agrarimporte erzeugen können.</p>
-        <div class="story__m"><span class="chip chip--src">Agriland</span><span class="chip">10:04</span></div>
-      </a>
-      <a class="story" href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxOQjRzcTJ3VGtLRUQxclNvWl9oQThZSTNyREE3MFAyTTA0Q2hPMWNsYmdKTGpIcHNoUW1jT1RfUjVzZnpZMjdJcWZNczlDRmFnYzk1MGlPQ09CWnlWRkpFY1h0dVRPOUk3WU5KZS1XX1N0M1NNQUw2Rnl3RzM3NTRiQWtDNllNUy14Wi0wd2V2cWtZNHZVZGlyMVFLVXdjMVNjM2JfVTQyakVRdkpsZXBuc2phZjNqU1NL?oc=5" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Kanada-EU-Deal: Landwirtschaft wäre wohl außen vor</h3>
-        <p class="story__s">Im geplanten Handelsabkommen zwischen der EU und Kanada dürfte die Landwirtschaft weitgehend ausgeklammert bleiben. Das könnte Agrarverbände enttäuschen, die auf verbesserte Marktzugänge gehofft hatten.</p>
-        <div class="story__m"><span class="chip chip--src">top agrar</span><span class="chip">11:30</span></div>
+      <a class="story" href="https://www.agriland.ie/farming-news/global-survey-farmers-cut-costs-but-embrace-new-tech/" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Global survey: Farmers cut costs but embrace new tech</h3>
+        <p class="story__s">Eine weltweite Umfrage zeigt, dass Landwirte trotz finanzieller Unsicherheit weiterhin in neue Technik investieren, um Kosten zu senken. Das unterstreicht den anhaltenden Trend zur Digitalisierung und Mechanisierung in der Landwirtschaft.</p>
+        <div class="story__m"><span class="chip chip--src">Agriland</span><span class="chip">16:00</span></div>
       </a>
       <div class="block__title">Weltweit</div>
-      <a class="story" href="https://www.bbc.co.uk/news/articles/c8vgyzn2d31yo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">US and China discuss AI safety plan ahead of Trump-Xi summit</h3>
-        <p class="story__s">US-amerikanische und chinesische Delegierte haben in New York vor dem geplanten Gipfel zwischen Trump und Xi über einen Meldemechanismus für KI-Sicherheitsrisiken gesprochen. Die Gespräche gelten als Annäherung, konkrete Vereinbarungen stehen aber noch aus.</p>
-        <div class="story__m"><span class="chip chip--src">BBC News</span><span class="chip">07:50</span></div>
+      <a class="story" href="https://www.aljazeera.com/news/2026/9/22/russian-strikes-on-ukraine-kill-three-as-zelenskyy-in-us-for-un-summit?traffic_source=rss" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Russian strikes on Ukraine kill three as Zelenskyy in US for UN summit</h3>
+        <p class="story__s">Russische Nachtangriffe haben mehrere ukrainische Regionen getroffen und mindestens drei Menschen getötet, während Präsident Selenski zeitgleich zum UN-Gipfel in New York reist. Der Krieg bleibt damit auch während internationaler Diplomatie unvermindert intensiv.</p>
+        <div class="story__m"><span class="chip chip--src">Al Jazeera</span><span class="chip">10:07</span><span class="chip chip--also">auch: taz, NZZ, FAZ</span></div>
       </a>
-      <a class="story" href="https://www.derstandard.at/story/3000000340135/das-geheime-system-hinter-trumps-drittstaaten-abschiebungen?ref=rss" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Das geheime System hinter Trumps Drittstaaten-Abschiebungen</h3>
-        <p class="story__s">Eine internationale Recherche deckt auf, wie die US-Einwanderungsbehörde ICE Zehntausende Migranten über ein weltweites System von Millionendeals in Drittstaaten abschiebt, zu denen die Betroffenen keinen Bezug haben. Die Recherche zeigt Ausmaß und Mechanismen dieser bislang meist geheimen Praxis.</p>
-        <div class="story__m"><span class="chip chip--src">Der Standard</span><span class="chip">07:00</span></div>
+      <a class="story" href="https://www.spiegel.de/ausland/usa-donald-trump-greift-die-freie-presse-an-und-muss-nun-vor-gericht-a-12a6d462-72ec-4a9e-908d-ef7e006216a5#ref=rss" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">USA: Donald Trump greift die freie Presse an – und muss nun vor Gericht</h3>
+        <p class="story__s">Nachdem Donald Trump mehreren US-Sendern und einem Nachrichtenportal den Zugang zum Weißen Haus verweigert hat, verweigern große Sender inklusive Fox News aus Solidarität mit CNN die gemeinsame Berichterstattung über seine Reisen. Die Medien ziehen zudem juristisch gegen die Ausgrenzung.</p>
+        <div class="story__m"><span class="chip chip--src">Spiegel</span><span class="chip">06:07</span><span class="chip chip--also">auch: BBC News, taz, Der Standard</span></div>
       </a>
-      <a class="story" href="https://www.deutschlandfunk.de/taifun-dujuan-bewegt-sich-auf-japan-zu-275-fluege-gestrichen-100.html" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Asien - Taifun &quot;Dujuan&quot; bewegt sich auf Japan zu - 275 Flüge gestrichen</h3>
-        <p class="story__s">Der Taifun „Dujuan“ bewegt sich auf die Region Tokio zu und hat bereits zur Streichung von mindestens 275 Flügen geführt. Reisende in Japan müssen in den kommenden Tagen mit weiteren Einschränkungen rechnen.</p>
-        <div class="story__m"><span class="chip chip--src">Deutschlandfunk</span><span class="chip">10:45</span></div>
+      <a class="story" href="https://www.bbc.co.uk/news/articles/cwm2qpmepmlzo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Iran must stop arming Houthis in Yemen, G7 says ahead of UN General Assembly</h3>
+        <p class="story__s">Die G7-Außenminister fordern den Iran auf, die Bewaffnung der Huthi-Miliz im Jemen zu beenden, und verurteilen die Huthi-Angriffe auf Saudi-Arabien scharf. Die Eskalation im Roten Meer gilt als Gefahr für die globale Energiesicherheit.</p>
+        <div class="story__m"><span class="chip chip--src">BBC News</span><span class="chip">09:14</span><span class="chip chip--also">auch: Al Jazeera</span></div>
       </a>
-      <a class="story" href="https://www.aljazeera.com/news/2026/9/21/three-south-korean-officers-wounded-in-border-explosion?traffic_source=rss" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Three South Korean military officers wounded in explosion near border</h3>
-        <p class="story__s">Nahe der innerkoreanischen Grenze sind drei südkoreanische Militärangehörige durch eine Explosion verletzt worden, möglicherweise ausgelöst durch eine Landmine. Der Vorfall unterstreicht die Gefahr, die von der noch immer verminten Grenzregion ausgeht.</p>
-        <div class="story__m"><span class="chip chip--src">Al Jazeera</span><span class="chip">09:45</span></div>
+      <a class="story" href="https://www.theguardian.com/world/2026/sep/22/typhoon-dujuan-japan-latest-weather-millions-told-to-evacuate-tokyo" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">At least four people killed in Japan as typhoon Dujuan triggers heavy rain, landslides</h3>
+        <p class="story__s">Der Taifun Dujuan hat in Japan mindestens vier Todesopfer gefordert und durch schwere Regenfälle Erdrutsche sowie Stromausfälle ausgelöst. Rettungskräfte suchen weiterhin nach Vermissten in eingestürzten Häusern.</p>
+        <div class="story__m"><span class="chip chip--src">The Guardian</span><span class="chip">06:48</span><span class="chip chip--also">auch: BBC News</span></div>
       </a>
     </div>
   </section>
 
-  <footer class="foot">Stand <b>Montag, 21. September 2026 · 22:23 Uhr</b> (CEST, Europe/Berlin)<br>
-    294 Meldungen aus 30 Feeds · Gewichtung: Claude · Nachrichten von 10:50 Uhr<br>
+  <footer class="foot">Stand <b>Dienstag, 22. September 2026 · 10:27 Uhr</b> (CEST, Europe/Berlin)<br>
+    290 Meldungen aus 30 Feeds · Gewichtung: Claude<br>
     Alle Quellen erreichbar.<br>
     Gebaut aus statischem HTML · keine Skripte, keine Tracker</footer>
 
