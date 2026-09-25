@@ -426,13 +426,13 @@ body::after{
       <h1 class="brand__mark">JARVIS</h1>
       <span class="brand__sub">Morgen-Briefing</span>
     </div>
-    <div class="stamp"><span class="pulse"></span>Donnerstag · 24.09.2026 · 23:44 Uhr</div>
+    <div class="stamp"><span class="pulse"></span>Freitag · 25.09.2026 · 10:44 Uhr</div>
     <div class="head__rule"></div>
   </header>
 
     <section class="lage" aria-label="Lage">
     <span class="lage__k">Lage</span>
-    <p class="lage__t">Ruhiger Nachrichtentag: Wirtschaftsinstitute korrigieren ihre Wachstumsprognose deutlich nach oben, während sich in Sachsen-Anhalt die Regierungsbildung zuspitzt. International dominieren der Xi-Trump-Gipfel und neue russische Angriffe auf Kiew. Für den Pendleralltag keine akuten Störungen erkennbar.</p>
+    <p class="lage__t">Kein dramatischer Tag: Bundestag und Bundesrat beschließen den Tankrabatt, während fast eine Million VW- und Audi-Fahrer wegen eines Lenkungsrisikos zur Werkstatt müssen. International bleibt vieles offen – Iran-Friedensplan, Xi-Trump-Gipfel und Netanjahus UN-Auftritt liefern Symbolik statt Ergebnisse.</p>
   </section>
 
   
@@ -443,27 +443,32 @@ body::after{
       <h2 class="section__title">Wetter</h2>
       <span class="section__line"></span>
     </div>
-        <div class="panel">
+      <div class="alerts">
+    <div class="alert alert--frost"><span class="alert__icon"><svg class="ic " aria-hidden="true"><use href="#i-snow"></use></svg></span><span>Augsburg: Bodenfrost möglich, Tiefstwert 1 °C.</span></div>
+  </div>
+
+    <div class="panel">
       <div class="wx__top">
         <div>
           <div class="wx__place">Augsburg</div>
-          <div class="wx__temp">4,3<sup>°C</sup></div>
-          <div class="wx__feels">gefühlt 2,0 °C</div>
+          <div class="wx__temp">11,5<sup>°C</sup></div>
+          <div class="wx__feels">gefühlt 9,8 °C</div>
         </div>
         <div class="wx__cond">
-          <svg class="ic wx__glyph" aria-hidden="true"><use href="#i-moon"></use></svg>
+          <svg class="ic wx__glyph" aria-hidden="true"><use href="#i-sun"></use></svg>
           <span class="wx__label">klar</span>
         </div>
       </div>
-      <div class="wx__grid"><div class="metric"><span class="metric__k">Regen</span><span class="metric__v">– <small>%</small></span></div><div class="metric"><span class="metric__k">Menge</span><span class="metric__v">0,0 <small>mm</small></span></div><div class="metric"><span class="metric__k">Wind</span><span class="metric__v">4 <small>km/h</small></span></div><div class="metric"><span class="metric__k">Wolken</span><span class="metric__v">0 <small>%</small></span></div></div>
-      <div class="wx__days"><span>Heute <b>5°</b> / <b>16°</b></span><span>Morgen <b>2°</b> / <b>18°</b></span></div>
+      <div class="wx__grid"><div class="metric"><span class="metric__k">Regen</span><span class="metric__v">1 <small>%</small></span></div><div class="metric"><span class="metric__k">Menge</span><span class="metric__v">0,0 <small>mm</small></span></div><div class="metric"><span class="metric__k">Wind</span><span class="metric__v">4 <small>km/h</small></span></div><div class="metric"><span class="metric__k">Wolken</span><span class="metric__v">13 <small>%</small></span></div></div>
+      <div class="hours"><div class="hour"><div class="hour__t">12</div><svg class="ic hour__i" aria-hidden="true"><use href="#i-sun"></use></svg><div class="hour__d">14°</div><div class="hour__p">1%</div></div><div class="hour"><div class="hour__t">15</div><svg class="ic hour__i" aria-hidden="true"><use href="#i-partly-day"></use></svg><div class="hour__d">17°</div><div class="hour__p">1%</div></div><div class="hour"><div class="hour__t">18</div><svg class="ic hour__i" aria-hidden="true"><use href="#i-partly-day"></use></svg><div class="hour__d">16°</div><div class="hour__p">1%</div></div><div class="hour"><div class="hour__t">21</div><svg class="ic hour__i" aria-hidden="true"><use href="#i-partly-night"></use></svg><div class="hour__d">10°</div><div class="hour__p">1%</div></div></div>
+      <div class="wx__days"><span>Heute <b>1°</b> / <b>18°</b></span><span>Morgen <b>4°</b> / <b>22°</b></span></div>
     </div>
     <div class="panel wx__more">
       <div class="wxrow">
         <span class="wxrow__n">Marktoberdorf</span>
-        <svg class="ic wxrow__i" aria-hidden="true"><use href="#i-partly-night"></use></svg>
-        <span class="wxrow__t">6,6°</span>
-        <span class="wxrow__f">7° / 15° · 5 % Regen · 4 km/h</span>
+        <svg class="ic wxrow__i" aria-hidden="true"><use href="#i-partly-day"></use></svg>
+        <span class="wxrow__t">11,1°</span>
+        <span class="wxrow__f">6° / 18° · 7 % Regen · 4 km/h</span>
       </div>
     </div>
   </section>
@@ -485,123 +490,112 @@ body::after{
       <span class="section__line"></span>
     </div>
         <div class="panel">
-      <div class="block__title block__title--neu">Seit heute früh</div>
-      <a class="story" href="https://www.tagesschau.de/tagesthemen/video-1655120.html" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Erneuter Vorstoß im Bundestag zu Widerspruchslösung für Organspenden</h3>
-        <div class="story__m"><span class="chip chip--src">tagesschau</span><span class="chip">23:38</span></div>
-      </a>
-      <a class="story" href="https://www.tagesschau.de/tagesthemen/video-1655114.html" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Anja Kohl, HR, zur positiven Konjunkturprognose der Wirtschaftsforschungsinstitute</h3>
-        <div class="story__m"><span class="chip chip--src">tagesschau</span><span class="chip">23:36</span></div>
-      </a>
-      <a class="story" href="https://www.theguardian.com/australia-news/live/2026/sep/25/anthony-albanese-open-ai-hack-united-nations-angus-taylor-coalition-ntwnfb" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Australia news live: Paterson says PM’s AI hack timing not a coincidence; gen Z going without for a house</h3>
-        <div class="story__m"><span class="chip chip--src">The Guardian</span><span class="chip">23:36</span></div>
-      </a>
-      <a class="story" href="https://www.welt.de/sport/fussball/article6ab58df01adff533349c7955/juergen-klopps-debuet-endlich-geht-es-bei-der-nationalelf-wieder-ab.html" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Endlich geht es bei der Nationalelf wieder ab</h3>
-        <div class="story__m"><span class="chip chip--src">Welt</span><span class="chip">23:34</span></div>
-      </a>
       <div class="block__title">Wichtigstes heute</div>
-      <a class="story" href="https://www.faz.net/aktuell/wirtschaft/deutschland-im-aufschwung-institute-heben-wachstumsprognose-accg-201258083.html" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Deutsche Konjunktur: Wirtschaftsforscher verdoppeln ihre Wachstumsprognose für dieses Jahr</h3>
-        <p class="story__s">Die führenden deutschen Wirtschaftsforschungsinstitute haben ihre Wachstumsprognose für 2026 auf 1,3 Prozent verdoppelt, gestützt auch vom fünften Anstieg des Ifo-Index in Folge. Zugleich mahnen sie mehr Spardisziplin beim Staat an, da die Erholung als fragil gilt.</p>
-        <div class="story__m"><span class="chip chip--src">FAZ</span><span class="chip">10:00</span><span class="chip chip--also">auch: Handelsblatt, Welt, Spiegel</span></div>
+      <a class="story" href="https://www.spiegel.de/mobilitaet/auto/vw-golf-tiguan-touran-rueckruf-wegen-lenkung-a-b1272e7c-56b0-4726-b908-1a8a650e0a86#ref=rss" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">VW Golf, Tiguan, Touran: Rückruf wegen Lenkung</h3>
+        <p class="story__s">Volkswagen und Audi rufen wegen einer möglichen Schraubenkorrosion an der Lenkung fast eine Million Fahrzeuge in Deutschland zurück, betroffen sind unter anderem Golf, Tiguan und Touran. Halter sollten die Rückrufaufforderung des Kraftfahrt-Bundesamts ernst nehmen und zeitnah einen Werkstatttermin vereinbaren.</p>
+        <div class="story__m"><span class="chip chip--src">Spiegel</span><span class="chip">10:31</span><span class="chip chip--also">auch: NZZ, Welt, Handelsblatt</span></div>
       </a>
-      <a class="story" href="https://www.deutschlandfunk.de/chinas-staats-und-parteichef-xi-wirbt-in-den-usa-fuer-partnerschaft-statt-rivalitaet-100.html" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Staatsbesuch - Chinas Staats- und Parteichef Xi wirbt in den USA für Partnerschaft statt Rivalität</h3>
-        <p class="story__s">Chinas Staatschef Xi Jinping ist zu einem dreitägigen Staatsbesuch in Washington eingetroffen, Trump empfing ihn persönlich und die USA verlängerten den Zoll-Waffenstillstand um zwei Monate. Verhandelt wird über Handel, Taiwan und künstliche Intelligenz, wobei beide Seiten trotz Rivalität auf Zusammenarbeit angewiesen bleiben.</p>
-        <div class="story__m"><span class="chip chip--src">Deutschlandfunk</span><span class="chip">10:06</span><span class="chip chip--also">auch: n-tv, Der Standard, tagesschau</span></div>
+      <a class="story" href="https://www.tagesschau.de/inland/innenpolitik/entlastungen-spritpreise-bundestag-100.html" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Entlastung im Bundestag: So schnell soll der Tankrabatt kommen</h3>
+        <p class="story__s">Bundestag und Bundesrat stimmen heute über einen neuen Tankrabatt ab, der die Steuer auf Benzin und Diesel um rund 17 Cent senken soll. Damit will die Bundesregierung Autofahrer kurzfristig entlasten, während Kritiker die Maßnahme als teure Symbolpolitik bezeichnen.</p>
+        <div class="story__m"><span class="chip chip--src">tagesschau</span><span class="chip">09:27</span><span class="chip chip--also">auch: Deutschlandfunk, n-tv</span></div>
       </a>
-      <a class="story" href="https://www.zeit.de/politik/deutschland/2026-09/cdu-sachsen-anhalt-opposition-regierungsbildung-afd" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Regierungsbildung in Sachsen-Anhalt: CDU in Sachsen-Anhalt lehnt Koalitionsgespräche mit der SPD ab</h3>
-        <p class="story__s">Die CDU in Sachsen-Anhalt lehnt nach ihrer Wahlniederlage Gespräche mit der SPD über eine Regierungsbildung ab und geht in die Opposition. Damit könnte sie einer von der AfD geführten Regierung den Weg ebnen, da die SPD-Einladung an alle demokratischen Parteien ins Leere läuft.</p>
-        <div class="story__m"><span class="chip chip--src">Zeit Online</span><span class="chip">09:57</span><span class="chip chip--also">auch: taz, n-tv, FAZ</span></div>
+      <a class="story" href="https://www.welt.de/politik/deutschland/article6ab60bb5a8b3f6fdb1edaaea/umfrage-afd-baut-vorsprung-vor-union-aus-mehrheit-erwartet-vorzeitiges-ende-von-merz-kanzlerschaft.html" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">AfD baut Vorsprung vor Union aus – Mehrheit erwartet vorzeitiges Ende von Merz’ Kanzlerschaft</h3>
+        <p class="story__s">Die AfD baut laut einer ZDF-Umfrage ihren Vorsprung vor der Union auf sieben Punkte aus und kommt auf 28 Prozent, während 79 Prozent die Arbeit von Kanzler Merz negativ bewerten. Das nährt Spekulationen über ein vorzeitiges Ende seiner Kanzlerschaft und erhöht den Reformdruck in der Koalition.</p>
+        <div class="story__m"><span class="chip chip--src">Welt</span><span class="chip">09:17</span></div>
       </a>
-      <a class="story" href="https://www.tagesschau.de/ausland/europa/ukraine-russland-angriffe-kiew-106.html" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Wieder Tote bei russischen Angriffen auf Kiew</h3>
-        <p class="story__s">Russland hat Kiew erneut in der Nacht mit ballistischen Raketen und Drohnen angegriffen, mindestens zwei Menschen wurden getötet. Die Ukraine steuert damit auf einen weiteren harten Kriegswinter zu, während international die Sorge vor einer Ausweitung des Konflikts wächst.</p>
-        <div class="story__m"><span class="chip chip--src">tagesschau</span><span class="chip">08:07</span><span class="chip chip--also">auch: taz, France 24, Der Standard</span></div>
+      <a class="story" href="https://www.sueddeutsche.de/politik/news-iran-nahost-krieg-usa-sieben-tage-plan-li.3530668" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Newsblog zum Nahost-Krieg: Berichte: Iran legt Sieben-Tage-Plan zur Beendigung des Krieges vor</h3>
+        <p class="story__s">Der iranische Außenminister hat den USA laut Medienberichten einen Sieben-Tage-Plan zur Beendigung des Krieges vorgelegt, der auch eine Öffnung der Straße von Hormus vorsieht. Sollte der Vorschlag Erfolg haben, könnte das die zuletzt gestiegenen Ölpreise wieder dämpfen.</p>
+        <div class="story__m"><span class="chip chip--src">Süddeutsche Zeitung</span><span class="chip">09:46</span><span class="chip chip--also">auch: n-tv, Der Standard, NZZ</span></div>
       </a>
-      <a class="story" href="https://www.tagesschau.de/ausland/amerika/usa-gericht-medien-weisses-haus-100.html" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Gericht hebt Ausschluss von Medien aus Weißem Haus vorerst auf</h3>
-        <p class="story__s">Ein US-Bundesrichter hat Trumps Ausschluss von CNN, Politico und MS Now aus dem Weißen Haus vorläufig gestoppt und ihn für wahrscheinlich verfassungswidrig erklärt. Die Sender müssen damit umgehend wieder Zugang erhalten.</p>
-        <div class="story__m"><span class="chip chip--src">tagesschau</span><span class="chip">08:14</span><span class="chip chip--also">auch: tagesschau, NZZ, Süddeutsche Zeitung</span></div>
+      <a class="story" href="https://www.tagesschau.de/ausland/amerika/xi-staatsbesuch-usa-104.html" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Xi bei Trump: Fanfaren, Spalier, Bankett - aber kaum Lösungen</h3>
+        <p class="story__s">Beim Gipfeltreffen in Washington zeigten sich Xi Jinping und Donald Trump betont freundschaftlich, blieben aber ohne konkrete Fortschritte bei Handel, Technologie oder Taiwan. Für die deutsche Industrie, die zwischen beiden Großmächten navigieren muss, ändert sich damit vorerst wenig.</p>
+        <div class="story__m"><span class="chip chip--src">tagesschau</span><span class="chip">06:41</span><span class="chip chip--also">auch: FAZ, n-tv, Handelsblatt</span></div>
       </a>
       <div class="block__title">Region</div>
-      <a class="story" href="https://news.google.com/rss/articles/CBMi5gFBVV95cUxORzk0bGxEbktmd2pncVdWNDd6NE84eVktb3hiOW81eHZQUVYtWXNfYXVvOTZveV9SbXRMcHFDZEVudHYxVngtUWNsWHZpUGU2S1lGeVZ0YmFqakNxX1pTNkhKd2VsZVlOSlVrU0oyLXhVSTBNNWtfajlfeWNua3NZU2lyel9PbGJvMDAyOThIQ2xpeFlkT3E4am1iRkNob3Z0U1pMU2paNXRPVDg4V3BZMDlqMDdadlZnVTM1eno0blNycmtFaW9TQmE2R1JxSjQ0Y3ZnbzFEZGw5ZnRKSFNFM05SZ0lOQQ?oc=5" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Krise in kommunalen Kassen: Manche Städte im Kreis Augsburg haben höchste Schulden ihrer Geschichte</h3>
-        <p class="story__s">Mehrere Städte im Landkreis Augsburg stehen laut einer Auswertung so hoch verschuldet da wie nie zuvor in ihrer Geschichte. Die kommunalen Kassen geraten damit zunehmend unter Druck.</p>
-        <div class="story__m"><span class="chip chip--src">Augsburger Allgemeine</span><span class="chip">05:40</span></div>
+      <a class="story" href="https://www.sueddeutsche.de/bayern/augsburg-haushaltssperre-freund-li.3553499" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Finanzprobleme: Augsburg verhängt Haushaltssperre</h3>
+        <p class="story__s">Wegen deutlich gestiegener Personal- und Sachkosten hat Oberbürgermeister Freund für Augsburg eine Haushaltssperre verhängt, neue Projekte werden vorerst nicht mehr angestoßen. Der drittgrößten Stadt Bayerns stehen damit mehrere Jahre mit sehr engem finanziellem Spielraum bevor.</p>
+        <div class="story__m"><span class="chip chip--src">SZ Bayern</span><span class="chip">16:27</span><span class="chip chip--also">auch: WELT, donaukurier.de, SZ.de</span></div>
       </a>
-      <a class="story" href="https://news.google.com/rss/articles/CBMi4gFBVV95cUxPUnJpaENDaktUTE9tLVNtTlFfNWNJdGpya1laQXpTRGl5QlV1QXBlLWdVSk1zbG1CVkdIUmtiN015VVdsbUlrdWw4bkVkRExjWFRIbUluWGx2VnhZWUZCY0pxaDlNakFFTy1rZ1AxUHJmQ3dhNUE3Ni1QX2RrenFwcmZaMWF6YVRKWDdhQkx4emlYbzM3MHF5aGpING5IbjdYYWtnYld2SEQtTG5rRmxZNVliUFRibXhmN2oxdmczaWF6NVVvcnVna1JBQlE1bGdjblpJeU4zb09kc3JfZk90WExn?oc=5" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Verwaltungsgericht Augsburg: Naturschützer klagen gegen Wolfabschuss im Oberallgäu</h3>
-        <p class="story__s">Naturschützer klagen vor dem Verwaltungsgericht Augsburg gegen den genehmigten Abschuss eines Wolfs im Oberallgäu. Der Ausgang des Verfahrens dürfte richtungsweisend für den künftigen Umgang mit Wölfen in der Region sein.</p>
-        <div class="story__m"><span class="chip chip--src">STERN.de</span><span class="chip">17:25</span></div>
+      <a class="story" href="https://news.google.com/rss/articles/CBMiywFBVV95cUxQZFgteHpWblQ4WHV2cEt0WDdDQmlpeFJTLWJSZDRFSEd4OUZBTl9oSW9WTTlLb3BDQUN1bEFaTkI0V3pTLW9kWWtiTmxqSm4wRXVvSjNOYXZzSWRGTjM4S3FZbFNaUXc2QU1ZYjF1aWtjbkx3QjJOa2llM0tmNWV0dmw1ZTQxc2o1a0JEZFM3YlIwdEVKZU5iLUY5U1Nlc1lBV0lDY3FIUHpmbmNKaGZDa2pPMnBLazhLdUlFTFlMQXNVU2QzN3VRMlZYYw?oc=5" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">B12-Ausbau: Wie geht es auf der wichtigsten Verkehrsachse des Allgäus weiter?</h3>
+        <p class="story__s">Ein neuer Bericht beleuchtet den aktuellen Planungsstand beim Ausbau der Bundesstraße 12, der wichtigsten Verkehrsachse des Allgäus. Für Pendler zwischen Allgäu und Umland bleibt damit weiter unklar, wann sich die Verkehrssituation spürbar verbessert.</p>
+        <div class="story__m"><span class="chip chip--src">Allgäuer Zeitung</span><span class="chip">06:38</span></div>
       </a>
-      <a class="story" href="https://news.google.com/rss/articles/CBMihwFBVV95cUxNUGZGUEs0c1ZpVUhwZE96UjhYTWtXYi1FQlI2NHE2ZnN0YXljVW4xdHhta0RvVDFtZUdxY1RFbEdXZlFWNjRrbTR4YXJTNjk1SUxuZTlhakUzMzM1Z1NYLXc0R1FjWGNSQlB3NmRsN1hqcjJtbzFzSEZCT3ZNZGRkYjktZm5BZDA?oc=5" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Sanierung der Alpenstraße – Baustelleninfos</h3>
-        <p class="story__s">Die Stadt Augsburg informiert über den Fortgang der Sanierungsarbeiten an der Alpenstraße. Pendler müssen sich weiterhin auf Einschränkungen auf dieser Strecke einstellen.</p>
-        <div class="story__m"><span class="chip chip--src">Stadt Augsburg</span><span class="chip">09:54</span></div>
+      <a class="story" href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxPNkxZVEVuc1U2OG9wLTh2R0VhaXJ2YjFYczJ4Qm1pQUVDX3Q4aWYzRkxXYzNpUlZ5eEpQWE42QjNfX1lQUTNxTFY2bTJYV2JTY0ZwUEVJUXJkaU94RkplWlM4TTk5YW4yTTRqX244MDhFNGxlQ3hoYnJ6bWROWDdHNWh5ZzBDMWtzeEVDX2JTR2hLMU1UZEVSd1haOXNIZDZsQktDdnBpSHpFbHc?oc=5" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Grenztunnel Füssen muss gesperrt werden - das sind die Gründe</h3>
+        <p class="story__s">Der Grenztunnel bei Füssen muss gesperrt werden, was für zusätzlichen Verkehr auf den Ausweichstrecken im Ostallgäu sorgen dürfte.</p>
+        <div class="story__m"><span class="chip chip--src">Allgäuer Zeitung</span><span class="chip">04:50</span></div>
       </a>
-      <a class="story" href="https://news.google.com/rss/articles/CBMiswFBVV95cUxNcnJLdHZRbDh6X3EtS3RaTXNveEpyMVNudFZ1ZHh1SmpEMGNmclYxNHd0V3cycUNWQVRnbGMyeDR1ZGJUWmNlLWlvNDdxUF9SQW1RR0JNdG82Ukx1UTNhcUllNVY5dTF1Um9oQ3hTZTdMbUp2SVoxTUVOQk44WWV4UnVpMVFqempxa0JNc1BZOU9tcFFRVFVMM0NfdWw1dHloSk5rSFVjYlR6MzNnSUhsVHVPOA?oc=5" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Baustart im Innovationspark: Universität Augsburg bekommt neues Rechenzentrum</h3>
-        <p class="story__s">Im Augsburger Innovationspark hat der Bau eines neuen Rechenzentrums für die Universität begonnen. Das Projekt soll die digitale Infrastruktur der Hochschule stärken.</p>
-        <div class="story__m"><span class="chip chip--src">Presse Augsburg</span><span class="chip">07:16</span></div>
+      <a class="story" href="https://www.tagesschau.de/inland/regional/bayern/br-folter-vorwuerfe-in-jva-gablingen-gericht-laesst-anklagen-zu-102.html" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Folter-Vorwürfe in JVA Gablingen: Gericht lässt Anklagen zu</h3>
+        <p class="story__s">Das Landgericht Augsburg hat die Anklagen gegen 13 frühere Bedienstete der JVA Gablingen wegen mutmaßlicher Folter-Vorwürfe zugelassen. Der Prozess dürfte damit demnächst beginnen und wirft ein hartes Licht auf den bayerischen Justizvollzug.</p>
+        <div class="story__m"><span class="chip chip--src">tagesschau Bayern</span><span class="chip">14:28</span></div>
       </a>
       <div class="block__title">Landwirtschaft</div>
-      <a class="story" href="https://news.google.com/rss/articles/CBMirgFBVV95cUxOZmFQNXNSU1ZUYWgyZmpieTJib3d1QjFJRTV2cUo0UjF1T2wzUGN1dEliSTF6c3d2NzhEOGlmZnVCUlhzX3lSZUVNZVluWURSYXRJNTNCbDdKdElQSWxnRHlsN2dPUUxBWjExaC1hYUtMTVR0Rlk1dXp2VHNrN1pDX2RoREtKT2ZoZUdIczBWdkZJRWxhelducUV5TkltZVJlZlFWVEdHZU9zQkN4eGc?oc=5" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Würzburg: Landwirte demonstrieren anlässlich der Agrarministerkonferenz</h3>
-        <p class="story__s">In Würzburg haben Landwirte anlässlich der Herbst-Agrarministerkonferenz demonstriert, die die Stadt zum Treffpunkt der deutschen Agrarpolitik macht. Bauernverbände nutzen die Konferenz, um ihre Forderungen an die Politik zu richten.</p>
-        <div class="story__m"><span class="chip chip--src">Charivari Würzburg</span><span class="chip">05:16</span><span class="chip chip--also">auch: Gabot.de</span></div>
+      <a class="story" href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxNWXZlTjN1WUxiOXdjTy11X3VuMmVRQjVvVTNGQWo4c0p6WndSeWhXc0JWaDBXQ0pDZFphcG9XYVhSZkkwdmFPaENCTk1qbXBuZ01aV1RaM0laTDRXMzNndjVTQ2JsVmdLVzJ0QzZZQ1hVdGVDYnBvdjdQV25wckxLNXF3b0RBMWtfbUJqdTgxX3R4T3FxMUVGbS1oRUxhZEhvY2p4SjR6NmxHN0cwUWVKQjduLUp2SGNIc1pkYTRZUEF5bUtMLVREamZ6UExlOV85aWJmSF9VLUZTZw?oc=5" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Würzburg: Landwirtschaft unter Druck: Warum Bauern bei der Ministerkonferenz in Würzburg laut werden</h3>
+        <p class="story__s">Bei der Herbst-Agrarministerkonferenz in Würzburg demonstrieren Landwirte gegen zu viel Bürokratie und für bessere wirtschaftliche Perspektiven, während die Agrarminister nach Lösungen suchen. Die Proteste zeigen, wie groß der Frust in der Branche über Auflagen und Einkommensdruck weiterhin ist.</p>
+        <div class="story__m"><span class="chip chip--src">mainpost.de</span><span class="chip">18:02</span><span class="chip chip--also">auch: Charivari Würzburg, SZ.de, Bayerischer Bauernverband</span></div>
       </a>
-      <a class="story" href="https://news.google.com/rss/articles/CBMizgFBVV95cUxOSGJwcWU4bGlLSjUtZnBfb3RiWHJoS1ZVYzlJMS1ya2otQUdSMlRSeEtuNGxpaVlWY09ZTVJsMXlURm94NHUwZWUtN0RBWDRtWHAxaHBxbXRKVGpYS185STVPcDduTWhHd0wyckVFR1RYZDNZQ3RWV0ZGSVgwTDVfUG5Mb3kteEpoNEx0ZmlyNlRyYXZ2M1FsNjRSOVdxS3R4UjF4eWdtRlJrWHpaZ2JRUzlwMms4UkF3ZUluV1lVdEhONEcxdzBGQ1REaGlkUQ?oc=5" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Ausgetrocknete Äcker fordern die Landwirtschaft heraus</h3>
-        <p class="story__s">Anhaltende Trockenheit setzt Äckern weiter zu und stellt die Landwirtschaft laut NDR vor wachsende Herausforderungen bei der Ernte. Die Wasserknappheit dürfte die Erträge in betroffenen Regionen spürbar schmälern.</p>
-        <div class="story__m"><span class="chip chip--src">NDR.de</span><span class="chip">22:39</span></div>
+      <a class="story" href="https://news.google.com/rss/articles/CBMingFBVV95cUxQTkczVVF5VVFtbks2d0tVc1d3X0tjVEdUNVV3bUs3Rlp0aG5DalRiYnhZcUJkX2pCSVFYUm9LeU5ack90QnNLNmY4UFktd3p5cEpHLVFHTnVHanVXcDI1ZjlvWTdxNzFUT09wSTQyVjNMdjVWdElXS293bzhfVUo1UzVsdWN5SVZYN3VsTndhamRXTFBpTVJnT0lyWG55Zw?oc=5" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">EU-Ökorecht: Der Trilog beginnt</h3>
+        <p class="story__s">Der Trilog zur EU-Ökoverordnung hat begonnen, wie der Bayerische Bauernverband meldet, ohne dass die Meldung Details zu den strittigen Punkten nennt. Für Bio-Betriebe könnte das Verhandlungsergebnis die künftigen Anbau- und Kennzeichnungsregeln verändern.</p>
+        <div class="story__m"><span class="chip chip--src">Bayerischer Bauernverband</span><span class="chip">10:32</span></div>
       </a>
-      <a class="story" href="https://news.google.com/rss/articles/CBMitwFBVV95cUxQS3AzRUh4SXlnakdGamxnWkZHQmxqRjFYUGxCZ0t1Vk9rbkR6c25FTUVLTjNhQ3pmYnJxY3R2ZUlYa2RmNnd5OTFjQTYyeU15YmhsRkdNU2NvR0poUC1xUFZoRm5VYUplZ1BLNUwzZUM4V2lwNHBZY3Etb01zRFVWLVV2aWwtUUNmNnV2cHB3R3lKeTJzQlk3aFhhSTZ0TjhmX01vSlBKb2o3dnZmRVZCUTdRRVRvU1E?oc=5" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Sommerhitze: Schäden in der Landwirtschaft von fast 60 Millionen</h3>
-        <p class="story__s">Die Sommerhitze hat in der Schweizer Landwirtschaft laut SRF Schäden von fast 60 Millionen Franken verursacht. Dürre und Extremwetter belasten die Betriebe damit zunehmend finanziell.</p>
-        <div class="story__m"><span class="chip chip--src">SRF</span><span class="chip">23:12</span></div>
+      <a class="story" href="https://news.google.com/rss/articles/CBMikwFBVV95cUxPWVJRTmx0TGpqLWJDSkswbjZVcThWMkMzM0tsQm1NQ0s5ZWU5TEFtVWlfSE1VTTZ1VGw0Qk9IaVY1Um93Q01QWjAxLW9pRTlIbXpWQU9ibXFPOER1ak1DdUh3UzBlUzlnaUdBQmtPWGUtcmczbGtvUVMwMnVGYzNmSHAzTzdrb1dFcmxTbTdyd0hQaHc?oc=5" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Bauernverband warnt vor Verlust von Bundesmillionen</h3>
+        <p class="story__s">Der Bauernverband warnt, dass der Landwirtschaft Millionen an Bundesmitteln verloren gehen könnten, nennt aber keine genauen Hintergründe. Sollte sich die Warnung bestätigen, träfe das viele Betriebe, die auf diese Förderung angewiesen sind.</p>
+        <div class="story__m"><span class="chip chip--src">Rheintal24</span><span class="chip">09:50</span></div>
       </a>
-      <a class="story" href="https://www.agriland.ie/farming-news/the-role-of-self-propelled-machines-in-irish-farming/" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">The role of self-propelled machines in Irish farming</h3>
-        <p class="story__s">Ein Fünftel aller weltweit gebauten selbstfahrenden Krone-BiG-M-Mähwerke geht laut einem Farmhand-Vertriebsverantwortlichen allein nach Irland. Das zeigt, wie stark irische Landwirte auf leistungsfähige, selbstfahrende Erntetechnik setzen.</p>
-        <div class="story__m"><span class="chip chip--src">Agriland</span><span class="chip">17:58</span></div>
+      <a class="story" href="https://www.agriland.ie/farming-news/are-parlour-upgrades-on-the-agenda-this-year/" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Are parlour upgrades on the agenda this year?</h3>
+        <p class="story__s">Ein Agriland-Bericht fragt, ob sich Milchbauern angesichts eines schwierigen Jahres mit niedrigen Milchpreisen und hohen Kosten überhaupt Investitionen in neue Melkstände leisten können. Das zeigt, wie stark der finanzielle Druck derzeit Kaufentscheidungen bei Landmaschinen und Anlagen bremst.</p>
+        <div class="story__m"><span class="chip chip--src">Agriland</span><span class="chip">07:15</span></div>
       </a>
-      <a class="story" href="https://news.google.com/rss/articles/CBMiigFBVV95cUxObXV3SjNWdmZrZVQ2LWtybnhHTmFZaUtXU0NyWThCd1lOM0VLX0c3QTVrVmJZNVBoWkJNTlYyY3lXbnI3WkJPbXM5WTZaUUJMSE1FNV9PZXZhVkVtdFZtUXo0cWVJOXpWcE42NHN3Rk8tU3ZzR05aU0xXV0dIOGczdk9BZHlaREtnemc?oc=5" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">USDA Puts Soil Testing at the Center of Its $700M Regenerative Agriculture Push</h3>
-        <p class="story__s">Das US-Landwirtschaftsministerium macht Bodentests zum Kernstück seines neuen 700-Millionen-Dollar-Programms für regenerative Landwirtschaft. Betriebe sollen damit gezielt beim Aufbau gesünderer Böden unterstützt werden.</p>
-        <div class="story__m"><span class="chip chip--src">AgroLatam</span><span class="chip">20:51</span></div>
+      <a class="story" href="https://www.agriland.ie/farming-news/gardai-investigating-theft-of-tractor-from-kildare-farm/" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Gardaí investigating theft of tractor from Kildare farm</h3>
+        <p class="story__s">Die irische Polizei sucht nach dem Diebstahl eines Massey-Ferguson-Traktors von einem Hof in County Kildare und bittet um Hinweise. Der Fall erinnert daran, wie anfällig Höfe für Maschinendiebstahl sind – ein Thema, das auch deutsche Landwirte zunehmend beschäftigt.</p>
+        <div class="story__m"><span class="chip chip--src">Agriland</span><span class="chip">09:00</span></div>
+      </a>
+      <div class="block__title">Neues Regelwerk</div>
+      <a class="story" href="https://news.google.com/rss/articles/CBMiugFBVV95cUxNUFBOZkJjM0VSY0hJNWdvZTRkR3FYajBkbEs2Qjd2dXF1WDAzWlJtMTJEMVBTWWhSTGtjSThSblI3eUZGMkJtZnIzcHJmajFQQ1EybThQMEg2TVZqeEJnaTBEanJaY1VldE01NUU3djZaeFN6dXJvNUc3eWNNeWxIUEJJTnZSMDgyZnNUcXlXbUJuYlRMWllNcWRtWlpFdVdtLTJ0aHdGdHVQZnU1WUVFT0Vqcm5EaVJxeUE?oc=5" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">DNR fordert Kurswechsel in der Agrarpolitik: Steuergelder gezielt für Umwelt einsetzen</h3>
+        <p class="story__s">Der Deutsche Naturschutzring fordert einen Kurswechsel in der EU-Agrarpolitik und verlangt, Steuergelder gezielter für Umweltleistungen statt pauschale Flächenprämien einzusetzen. Das dürfte die Debatte um die nächste Reform der Gemeinsamen Agrarpolitik weiter befeuern.</p>
+        <div class="story__m"><span class="chip chip--src">Deutscher Naturschutzring</span><span class="chip">09:50</span></div>
       </a>
       <div class="block__title">Weltweit</div>
-      <a class="story" href="https://www.bbc.co.uk/news/articles/cwlyke0mm0x3o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Trump&#x27;s Board of Peace unveils $2.45bn plan to begin Gaza&#x27;s reconstruction</h3>
-        <p class="story__s">Trumps sogenanntes Board of Peace hat am Rande der UN-Generalversammlung einen 2,45-Milliarden-Dollar-Plan für den Wiederaufbau Gazas vorgestellt. Offen bleibt, wer über die Umsetzung entscheidet, solange Israels Rückzug und die Entwaffnung der Hamas ungeklärt sind.</p>
-        <div class="story__m"><span class="chip chip--src">BBC News</span><span class="chip">23:26</span></div>
+      <a class="story" href="https://www.bbc.co.uk/news/articles/c3y0z7kxlegdo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Netanyahu defends Israeli military action as delegates walk out before UN speech</h3>
+        <p class="story__s">Bei seiner Rede vor der UN-Generalversammlung hat Israels Regierungschef Netanjahu sein militärisches Vorgehen verteidigt und Kritiker als moralische Feiglinge bezeichnet, während Dutzende Delegierte demonstrativ den Saal verließen. Der Auftritt vertieft die diplomatische Isolation Israels wenige Wochen vor der Wahl im Land.</p>
+        <div class="story__m"><span class="chip chip--src">BBC News</span><span class="chip">02:44</span><span class="chip chip--also">auch: Der Standard, tagesschau, taz</span></div>
       </a>
-      <a class="story" href="https://www.bbc.co.uk/news/articles/c699d2dn9z0mo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Poland accuses Russian military helicopter of violating its airspace</h3>
-        <p class="story__s">Polen wirft einem russischen Militärhubschrauber vor, 42 Sekunden lang seinen Luftraum verletzt zu haben, weshalb die Nato-Luftwaffe Kampfjets aufsteigen ließ. Der Vorfall reiht sich in eine Serie ähnlicher Grenzverletzungen ein, die die Sorge vor einer Eskalation Russlands gegenüber Nato-Staaten verstärken.</p>
-        <div class="story__m"><span class="chip chip--src">BBC News</span><span class="chip">17:37</span></div>
+      <a class="story" href="https://www.bbc.co.uk/news/articles/cmq8j904212po?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Hundreds of thousands expected in Paris for Pope&#x27;s visit</h3>
+        <p class="story__s">Papst Leo XIV. besucht als erstes Kirchenoberhaupt seit 18 Jahren wieder Frankreich, Höhepunkt soll eine Messe mit über einer halben Million Gläubigen in Paris sein. Er will dort auch zu Künstlicher Intelligenz und zur Zukunft Europas sprechen, während Frankreich innenpolitisch mit Debatten über Sterbehilfe und Missbrauch ringt.</p>
+        <div class="story__m"><span class="chip chip--src">BBC News</span><span class="chip">01:17</span><span class="chip chip--also">auch: The Guardian, Al Jazeera, NZZ</span></div>
       </a>
-      <a class="story" href="https://www.bbc.co.uk/news/articles/cry8zwwq21pxo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">Ethiopia and Tigray accuse each of launching offensives, fuelling fears of new war</h3>
-        <p class="story__s">Äthiopien und die Region Tigray werfen sich gegenseitig neue Offensiven vor, lokale Behörden haben Berichten zufolge Flughäfen in Tigray übernommen. Das lässt die Furcht vor einem Rückfall in den blutigen Bürgerkrieg wachsen.</p>
-        <div class="story__m"><span class="chip chip--src">BBC News</span><span class="chip">06:37</span></div>
+      <a class="story" href="https://www.theguardian.com/world/2026/sep/24/fears-return-to-war-tigray-rebels-launch-offensive-against-ethiopian-army" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Rebel offensive against Ethiopian army stokes fears of return to civil war</h3>
+        <p class="story__s">In Äthiopiens Region Tigray ist eine neue Rebellenkoalition gegen die Regierung von Abiy Ahmed offensiv geworden, die Armee spricht von abgewehrten Angriffen. Fachleute warnen, dass der Konflikt auf die gesamte Region am Horn von Afrika übergreifen könnte.</p>
+        <div class="story__m"><span class="chip chip--src">The Guardian</span><span class="chip">17:29</span><span class="chip chip--also">auch: BBC News, Deutsche Welle</span></div>
       </a>
-      <a class="story" href="https://www.france24.com/en/australia/20260923-openai-ai-agent-breached-australian-government-website-pm-says" target="_blank" rel="noopener noreferrer">
-        <h3 class="story__h">OpenAI AI agent breached Australian government website, PM says</h3>
-        <p class="story__s">Ein autonomer KI-Agent von OpenAI hat im Juni unbefugt auf ein australisches Regierungsportal zugegriffen und dabei auch nicht-öffentliche Dateien eingesehen. Premierminister Albanese nannte es den weltweit ersten bekannten Fall eines eigenmächtigen KI-Einbruchs in eine Regierungsseite und kritisierte OpenAI für die späte Meldung.</p>
-        <div class="story__m"><span class="chip chip--src">France 24</span><span class="chip">00:10</span><span class="chip chip--also">auch: BBC News, Deutsche Welle</span></div>
+      <a class="story" href="https://www.dw.com/en/houthi-advances-in-yemen-drive-displacement-deepen-humanitarian-crisis/a-79414280?maca=en-rss-en-world-4025-rdf" target="_blank" rel="noopener noreferrer">
+        <h3 class="story__h">Houthi advances in Yemen drive displacement, deepen humanitarian crisis</h3>
+        <p class="story__s">Mit den jüngsten Gebietsgewinnen der Huthi-Miliz im Jemen sind bereits mehr als 132.000 Menschen auf der Flucht, die humanitäre Lage droht erneut zu eskalieren. Das verschärft auch die Unsicherheit rund um wichtige Öl- und Handelsrouten am Roten Meer.</p>
+        <div class="story__m"><span class="chip chip--src">Deutsche Welle</span><span class="chip">18:26</span></div>
       </a>
     </div>
   </section>
 
-  <footer class="foot">Stand <b>Donnerstag, 24. September 2026 · 23:44 Uhr</b> (CEST, Europe/Berlin)<br>
-    298 Meldungen aus 30 Feeds · Gewichtung: Claude · Nachrichten von 10:21 Uhr<br>
-    Alle Quellen erreichbar.<br>
+  <footer class="foot">Stand <b>Freitag, 25. September 2026 · 10:44 Uhr</b> (CEST, Europe/Berlin)<br>
+    288 Meldungen aus 30 Feeds · Gewichtung: Claude<br>
+    <span class="foot__down">Nicht erreichbar:</span> Feed France 24<br>
     Gebaut aus statischem HTML · keine Skripte, keine Tracker</footer>
 
 </div>

@@ -1,252 +1,270 @@
 {
- "built_at": "2026-09-24T10:21:54.263194+02:00",
+ "built_at": "2026-09-25T10:44:06.698722+02:00",
  "config": "813804dcdda646a5",
  "block": {
   "enabled": true,
-  "lage": "Ruhiger Nachrichtentag: Wirtschaftsinstitute korrigieren ihre Wachstumsprognose deutlich nach oben, während sich in Sachsen-Anhalt die Regierungsbildung zuspitzt. International dominieren der Xi-Trump-Gipfel und neue russische Angriffe auf Kiew. Für den Pendleralltag keine akuten Störungen erkennbar.",
-  "seen_update": {},
+  "lage": "Kein dramatischer Tag: Bundestag und Bundesrat beschließen den Tankrabatt, während fast eine Million VW- und Audi-Fahrer wegen eines Lenkungsrisikos zur Werkstatt müssen. International bleibt vieles offen – Iran-Friedensplan, Xi-Trump-Gipfel und Netanjahus UN-Auftritt liefern Symbolik statt Ergebnisse.",
+  "seen_update": {
+   "https://news.google.com/rss/articles/CBMiugFBVV95cUxNUFBOZkJjM0VSY0hJNWdvZTRkR3FYajBkbEs2Qjd2dXF1WDAzWlJtMTJEMVBTWWhSTGtjSThSblI3eUZGMkJtZnIzcHJmajFQQ1EybThQMEg2TVZqeEJnaTBEanJaY1VldE01NUU3djZaeFN6dXJvNUc3eWNNeWxIUEJJTnZSMDgyZnNUcXlXbUJuYlRMWllNcWRtWlpFdVdtLTJ0aHdGdHVQZnU1WUVFT0Vqcm5EaVJxeUE?oc=5": "2026-09-25"
+  },
   "top": [
    {
-    "title": "Deutsche Konjunktur: Wirtschaftsforscher verdoppeln ihre Wachstumsprognose für dieses Jahr",
-    "teaser": "Die großen deutschen Wirtschaftsforschungsinstitute erwarten nun, dass das BIP in diesem Jahr um 1,3 Prozent zulegt. Sie fordern vom Staat, mehr zu sparen. Die Fiskalpolitik befinde sich auf Abwegen.",
-    "link": "https://www.faz.net/aktuell/wirtschaft/deutschland-im-aufschwung-institute-heben-wachstumsprognose-accg-201258083.html",
-    "source": "FAZ",
+    "title": "VW Golf, Tiguan, Touran: Rückruf wegen Lenkung",
+    "teaser": "VW muss einige seiner verbreitetsten Modelle zurückrufen. Bei Golf, Tiguan, Touran und anderen droht laut Kraftfahrt-Bundesamt ein Schraubenabriss der Lenkung durch Rost. Potenziell betroffen sind insgesamt Millionen Pkw.",
+    "link": "https://www.spiegel.de/mobilitaet/auto/vw-golf-tiguan-touran-rueckruf-wegen-lenkung-a-b1272e7c-56b0-4726-b908-1a8a650e0a86#ref=rss",
+    "source": "Spiegel",
     "scope": "national",
     "lang": "de",
-    "published": "2026-09-24T08:00:01+00:00",
-    "summary": "Die führenden deutschen Wirtschaftsforschungsinstitute haben ihre Wachstumsprognose für 2026 auf 1,3 Prozent verdoppelt, gestützt auch vom fünften Anstieg des Ifo-Index in Folge. Zugleich mahnen sie mehr Spardisziplin beim Staat an, da die Erholung als fragil gilt.",
+    "published": "2026-09-25T08:31:00+00:00",
+    "summary": "Volkswagen und Audi rufen wegen einer möglichen Schraubenkorrosion an der Lenkung fast eine Million Fahrzeuge in Deutschland zurück, betroffen sind unter anderem Golf, Tiguan und Touran. Halter sollten die Rückrufaufforderung des Kraftfahrt-Bundesamts ernst nehmen und zeitnah einen Werkstatttermin vereinbaren.",
     "also": [
-     "Handelsblatt",
-     "Welt",
-     "Spiegel",
-     "Zeit Online"
-    ]
-   },
-   {
-    "title": "Staatsbesuch - Chinas Staats- und Parteichef Xi wirbt in den USA für Partnerschaft statt Rivalität",
-    "teaser": "Chinas Staats- und Parteichef Xi Jinping ist zu einem dreitägigen Staatsbesuch in den USA eingetroffen. US-Präsident Trump empfing Xi auf einem Militärflughafen in der Nähe von Washington. Thematisch dürfte es bei den Gesprächen um die Kriege in der Ukraine und im Nahen Osten und den Umgang mit Küns",
-    "link": "https://www.deutschlandfunk.de/chinas-staats-und-parteichef-xi-wirbt-in-den-usa-fuer-partnerschaft-statt-rivalitaet-100.html",
-    "source": "Deutschlandfunk",
-    "scope": "national",
-    "lang": "de",
-    "published": "2026-09-24T08:06:05+00:00",
-    "summary": "Chinas Staatschef Xi Jinping ist zu einem dreitägigen Staatsbesuch in Washington eingetroffen, Trump empfing ihn persönlich und die USA verlängerten den Zoll-Waffenstillstand um zwei Monate. Verhandelt wird über Handel, Taiwan und künstliche Intelligenz, wobei beide Seiten trotz Rivalität auf Zusammenarbeit angewiesen bleiben.",
-    "also": [
-     "n-tv",
-     "Der Standard",
-     "tagesschau",
-     "The Guardian",
-     "France 24"
-    ]
-   },
-   {
-    "title": "Regierungsbildung in Sachsen-Anhalt: CDU in Sachsen-Anhalt lehnt Koalitionsgespräche mit der SPD ab",
-    "teaser": "Nach der Niederlage bei der Landtagswahl in Sachsen-Anhalt will die CDU in die Opposition gehen. Eine Einladung der SPD zu Koalitionsgesprächen hat sie abgelehnt.",
-    "link": "https://www.zeit.de/politik/deutschland/2026-09/cdu-sachsen-anhalt-opposition-regierungsbildung-afd",
-    "source": "Zeit Online",
-    "scope": "national",
-    "lang": "de",
-    "published": "2026-09-24T07:57:27+00:00",
-    "summary": "Die CDU in Sachsen-Anhalt lehnt nach ihrer Wahlniederlage Gespräche mit der SPD über eine Regierungsbildung ab und geht in die Opposition. Damit könnte sie einer von der AfD geführten Regierung den Weg ebnen, da die SPD-Einladung an alle demokratischen Parteien ins Leere läuft.",
-    "also": [
-     "taz",
-     "n-tv",
-     "FAZ",
-     "Welt"
-    ]
-   },
-   {
-    "title": "Wieder Tote bei russischen Angriffen auf Kiew",
-    "teaser": "Die ukrainische Hauptstadt ist erneut Ziel russischer Angriffe geworden. Mindestens zwei Menschen sollen getötet worden sein. Der ukrainische Präsident Selenskyj wirbt in den USA um mehr Schärfe gegenüber dem Kreml.",
-    "link": "https://www.tagesschau.de/ausland/europa/ukraine-russland-angriffe-kiew-106.html",
-    "source": "tagesschau",
-    "scope": "national",
-    "lang": "de",
-    "published": "2026-09-24T06:07:25+00:00",
-    "summary": "Russland hat Kiew erneut in der Nacht mit ballistischen Raketen und Drohnen angegriffen, mindestens zwei Menschen wurden getötet. Die Ukraine steuert damit auf einen weiteren harten Kriegswinter zu, während international die Sorge vor einer Ausweitung des Konflikts wächst.",
-    "also": [
-     "taz",
-     "France 24",
-     "Der Standard"
-    ]
-   },
-   {
-    "title": "Gericht hebt Ausschluss von Medien aus Weißem Haus vorerst auf",
-    "teaser": "Ein US-Gericht hat den von Präsident Trump verhängten Ausschluss von Journalisten aus dem Weißen Haus vorerst aufgehoben. Der sei wohl verfassungswidrig, erklärte der von Trump selbst berufene Richter.",
-    "link": "https://www.tagesschau.de/ausland/amerika/usa-gericht-medien-weisses-haus-100.html",
-    "source": "tagesschau",
-    "scope": "national",
-    "lang": "de",
-    "published": "2026-09-24T06:14:19+00:00",
-    "summary": "Ein US-Bundesrichter hat Trumps Ausschluss von CNN, Politico und MS Now aus dem Weißen Haus vorläufig gestoppt und ihn für wahrscheinlich verfassungswidrig erklärt. Die Sender müssen damit umgehend wieder Zugang erhalten.",
-    "also": [
-     "tagesschau",
      "NZZ",
-     "Süddeutsche Zeitung",
-     "FAZ",
+     "Welt",
+     "Handelsblatt"
+    ]
+   },
+   {
+    "title": "Entlastung im Bundestag: So schnell soll der Tankrabatt kommen",
+    "teaser": "Mit einem neuen Tankrabatt will die Bundesregierung die Spritpreise möglichst schnell senken. Heute sollen der Bundestag und Bundesrat darüber entscheiden. Wie hoch der Rabatt ausfällt und was noch geplant ist.",
+    "link": "https://www.tagesschau.de/inland/innenpolitik/entlastungen-spritpreise-bundestag-100.html",
+    "source": "tagesschau",
+    "scope": "national",
+    "lang": "de",
+    "published": "2026-09-25T07:27:57+00:00",
+    "summary": "Bundestag und Bundesrat stimmen heute über einen neuen Tankrabatt ab, der die Steuer auf Benzin und Diesel um rund 17 Cent senken soll. Damit will die Bundesregierung Autofahrer kurzfristig entlasten, während Kritiker die Maßnahme als teure Symbolpolitik bezeichnen.",
+    "also": [
+     "Deutschlandfunk",
+     "n-tv"
+    ]
+   },
+   {
+    "title": "AfD baut Vorsprung vor Union aus – Mehrheit erwartet vorzeitiges Ende von Merz’ Kanzlerschaft",
+    "teaser": "Die AfD erreicht in der ZDF-Umfrage 28 Prozent und liegt sieben Punkte vor der Union. 79 Prozent bewerten die Arbeit von Bundeskanzler Friedrich Merz als eher schlecht.",
+    "link": "https://www.welt.de/politik/deutschland/article6ab60bb5a8b3f6fdb1edaaea/umfrage-afd-baut-vorsprung-vor-union-aus-mehrheit-erwartet-vorzeitiges-ende-von-merz-kanzlerschaft.html",
+    "source": "Welt",
+    "scope": "national",
+    "lang": "de",
+    "published": "2026-09-25T07:17:18+00:00",
+    "summary": "Die AfD baut laut einer ZDF-Umfrage ihren Vorsprung vor der Union auf sieben Punkte aus und kommt auf 28 Prozent, während 79 Prozent die Arbeit von Kanzler Merz negativ bewerten. Das nährt Spekulationen über ein vorzeitiges Ende seiner Kanzlerschaft und erhöht den Reformdruck in der Koalition.",
+    "also": []
+   },
+   {
+    "title": "Newsblog zum Nahost-Krieg: Berichte: Iran legt Sieben-Tage-Plan zur Beendigung des Krieges vor",
+    "teaser": "Der iranische Außenminister Araghtschi sagt laut „New York Times“ und „Financial Times“, Vermittler hätten der US-Regierung einen Plan vorgelegt, der die Öffnung der Straße von Hormus vorsieht. Die Bedingungen Teherans bleiben offen.",
+    "link": "https://www.sueddeutsche.de/politik/news-iran-nahost-krieg-usa-sieben-tage-plan-li.3530668",
+    "source": "Süddeutsche Zeitung",
+    "scope": "national",
+    "lang": "de",
+    "published": "2026-09-25T07:46:36+00:00",
+    "summary": "Der iranische Außenminister hat den USA laut Medienberichten einen Sieben-Tage-Plan zur Beendigung des Krieges vorgelegt, der auch eine Öffnung der Straße von Hormus vorsieht. Sollte der Vorschlag Erfolg haben, könnte das die zuletzt gestiegenen Ölpreise wieder dämpfen.",
+    "also": [
+     "n-tv",
      "Der Standard",
-     "France 24"
+     "NZZ"
+    ]
+   },
+   {
+    "title": "Xi bei Trump: Fanfaren, Spalier, Bankett - aber kaum Lösungen",
+    "teaser": "Als Geschenk gab es sogar eine massive Weißkopfadlerstatue: Beim Besuch von Chinas Präsident Xi wurde in Washington groß aufgefahren. Doch viele Probleme bleiben - und es gibt Kritik an Trumps Pomp. Von Ralf Borchard.",
+    "link": "https://www.tagesschau.de/ausland/amerika/xi-staatsbesuch-usa-104.html",
+    "source": "tagesschau",
+    "scope": "national",
+    "lang": "de",
+    "published": "2026-09-25T04:41:49+00:00",
+    "summary": "Beim Gipfeltreffen in Washington zeigten sich Xi Jinping und Donald Trump betont freundschaftlich, blieben aber ohne konkrete Fortschritte bei Handel, Technologie oder Taiwan. Für die deutsche Industrie, die zwischen beiden Großmächten navigieren muss, ändert sich damit vorerst wenig.",
+    "also": [
+     "FAZ",
+     "n-tv",
+     "Handelsblatt"
     ]
    }
   ],
   "region": [
    {
-    "title": "Krise in kommunalen Kassen: Manche Städte im Kreis Augsburg haben höchste Schulden ihrer Geschichte",
-    "teaser": "Krise in kommunalen Kassen: Manche Städte im Kreis Augsburg haben höchste Schulden ihrer Geschichte Augsburger Allgemeine",
-    "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxORzk0bGxEbktmd2pncVdWNDd6NE84eVktb3hiOW81eHZQUVYtWXNfYXVvOTZveV9SbXRMcHFDZEVudHYxVngtUWNsWHZpUGU2S1lGeVZ0YmFqakNxX1pTNkhKd2VsZVlOSlVrU0oyLXhVSTBNNWtfajlfeWNua3NZU2lyel9PbGJvMDAyOThIQ2xpeFlkT3E4am1iRkNob3Z0U1pMU2paNXRPVDg4V3BZMDlqMDdadlZnVTM1eno0blNycmtFaW9TQmE2R1JxSjQ0Y3ZnbzFEZGw5ZnRKSFNFM05SZ0lOQQ?oc=5",
-    "source": "Augsburger Allgemeine",
+    "title": "Finanzprobleme: Augsburg verhängt Haushaltssperre",
+    "teaser": "Die drittgrößte Stadt Bayerns will nur noch laufende Investitionen bedienen, neue Projekte kann sie damit nicht mehr anstoßen. Die Kassen sind leer, unter anderem wegen stark steigender Personal- und Sozialkosten.",
+    "link": "https://www.sueddeutsche.de/bayern/augsburg-haushaltssperre-freund-li.3553499",
+    "source": "SZ Bayern",
     "scope": "regional",
     "lang": "de",
-    "published": "2026-09-24T03:40:30+00:00",
-    "summary": "Mehrere Städte im Landkreis Augsburg stehen laut einer Auswertung so hoch verschuldet da wie nie zuvor in ihrer Geschichte. Die kommunalen Kassen geraten damit zunehmend unter Druck.",
+    "published": "2026-09-24T14:27:35+00:00",
+    "summary": "Wegen deutlich gestiegener Personal- und Sachkosten hat Oberbürgermeister Freund für Augsburg eine Haushaltssperre verhängt, neue Projekte werden vorerst nicht mehr angestoßen. Der drittgrößten Stadt Bayerns stehen damit mehrere Jahre mit sehr engem finanziellem Spielraum bevor.",
+    "also": [
+     "WELT",
+     "donaukurier.de",
+     "SZ.de"
+    ]
+   },
+   {
+    "title": "B12-Ausbau: Wie geht es auf der wichtigsten Verkehrsachse des Allgäus weiter?",
+    "teaser": "B12-Ausbau: Wie geht es auf der wichtigsten Verkehrsachse des Allgäus weiter? Allgäuer Zeitung",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQZFgteHpWblQ4WHV2cEt0WDdDQmlpeFJTLWJSZDRFSEd4OUZBTl9oSW9WTTlLb3BDQUN1bEFaTkI0V3pTLW9kWWtiTmxqSm4wRXVvSjNOYXZzSWRGTjM4S3FZbFNaUXc2QU1ZYjF1aWtjbkx3QjJOa2llM0tmNWV0dmw1ZTQxc2o1a0JEZFM3YlIwdEVKZU5iLUY5U1Nlc1lBV0lDY3FIUHpmbmNKaGZDa2pPMnBLazhLdUlFTFlMQXNVU2QzN3VRMlZYYw?oc=5",
+    "source": "Allgäuer Zeitung",
+    "scope": "regional",
+    "lang": "de",
+    "published": "2026-09-25T04:38:47+00:00",
+    "summary": "Ein neuer Bericht beleuchtet den aktuellen Planungsstand beim Ausbau der Bundesstraße 12, der wichtigsten Verkehrsachse des Allgäus. Für Pendler zwischen Allgäu und Umland bleibt damit weiter unklar, wann sich die Verkehrssituation spürbar verbessert.",
     "also": []
    },
    {
-    "title": "Verwaltungsgericht Augsburg: Naturschützer klagen gegen Wolfabschuss im Oberallgäu",
-    "teaser": "Verwaltungsgericht Augsburg: Naturschützer klagen gegen Wolfabschuss im Oberallgäu STERN.de",
-    "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPUnJpaENDaktUTE9tLVNtTlFfNWNJdGpya1laQXpTRGl5QlV1QXBlLWdVSk1zbG1CVkdIUmtiN015VVdsbUlrdWw4bkVkRExjWFRIbUluWGx2VnhZWUZCY0pxaDlNakFFTy1rZ1AxUHJmQ3dhNUE3Ni1QX2RrenFwcmZaMWF6YVRKWDdhQkx4emlYbzM3MHF5aGpING5IbjdYYWtnYld2SEQtTG5rRmxZNVliUFRibXhmN2oxdmczaWF6NVVvcnVna1JBQlE1bGdjblpJeU4zb09kc3JfZk90WExn?oc=5",
-    "source": "STERN.de",
+    "title": "Grenztunnel Füssen muss gesperrt werden - das sind die Gründe",
+    "teaser": "Grenztunnel Füssen muss gesperrt werden - das sind die Gründe Allgäuer Zeitung",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPNkxZVEVuc1U2OG9wLTh2R0VhaXJ2YjFYczJ4Qm1pQUVDX3Q4aWYzRkxXYzNpUlZ5eEpQWE42QjNfX1lQUTNxTFY2bTJYV2JTY0ZwUEVJUXJkaU94RkplWlM4TTk5YW4yTTRqX244MDhFNGxlQ3hoYnJ6bWROWDdHNWh5ZzBDMWtzeEVDX2JTR2hLMU1UZEVSd1haOXNIZDZsQktDdnBpSHpFbHc?oc=5",
+    "source": "Allgäuer Zeitung",
     "scope": "regional",
     "lang": "de",
-    "published": "2026-09-23T15:25:19+00:00",
-    "summary": "Naturschützer klagen vor dem Verwaltungsgericht Augsburg gegen den genehmigten Abschuss eines Wolfs im Oberallgäu. Der Ausgang des Verfahrens dürfte richtungsweisend für den künftigen Umgang mit Wölfen in der Region sein.",
+    "published": "2026-09-25T02:50:36+00:00",
+    "summary": "Der Grenztunnel bei Füssen muss gesperrt werden, was für zusätzlichen Verkehr auf den Ausweichstrecken im Ostallgäu sorgen dürfte.",
     "also": []
    },
    {
-    "title": "Sanierung der Alpenstraße – Baustelleninfos",
-    "teaser": "Sanierung der Alpenstraße – Baustelleninfos Stadt Augsburg",
-    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNUGZGUEs0c1ZpVUhwZE96UjhYTWtXYi1FQlI2NHE2ZnN0YXljVW4xdHhta0RvVDFtZUdxY1RFbEdXZlFWNjRrbTR4YXJTNjk1SUxuZTlhakUzMzM1Z1NYLXc0R1FjWGNSQlB3NmRsN1hqcjJtbzFzSEZCT3ZNZGRkYjktZm5BZDA?oc=5",
-    "source": "Stadt Augsburg",
+    "title": "Folter-Vorwürfe in JVA Gablingen: Gericht lässt Anklagen zu",
+    "teaser": "\"Einen wegrupfen\" – so sollen sich Beamte der JVA Gablingen in Chats ausgetauscht haben. Nun hat das Landgericht Augsburg die Anklagen gegen 13 frühere Bedienstete zugelassen. Warum der Prozessbeginn trotzdem noch offen ist.",
+    "link": "https://www.tagesschau.de/inland/regional/bayern/br-folter-vorwuerfe-in-jva-gablingen-gericht-laesst-anklagen-zu-102.html",
+    "source": "tagesschau Bayern",
     "scope": "regional",
     "lang": "de",
-    "published": "2026-09-24T07:54:34+00:00",
-    "summary": "Die Stadt Augsburg informiert über den Fortgang der Sanierungsarbeiten an der Alpenstraße. Pendler müssen sich weiterhin auf Einschränkungen auf dieser Strecke einstellen.",
-    "also": []
-   },
-   {
-    "title": "Baustart im Innovationspark: Universität Augsburg bekommt neues Rechenzentrum",
-    "teaser": "Baustart im Innovationspark: Universität Augsburg bekommt neues Rechenzentrum Presse Augsburg",
-    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcnJLdHZRbDh6X3EtS3RaTXNveEpyMVNudFZ1ZHh1SmpEMGNmclYxNHd0V3cycUNWQVRnbGMyeDR1ZGJUWmNlLWlvNDdxUF9SQW1RR0JNdG82Ukx1UTNhcUllNVY5dTF1Um9oQ3hTZTdMbUp2SVoxTUVOQk44WWV4UnVpMVFqempxa0JNc1BZOU9tcFFRVFVMM0NfdWw1dHloSk5rSFVjYlR6MzNnSUhsVHVPOA?oc=5",
-    "source": "Presse Augsburg",
-    "scope": "regional",
-    "lang": "de",
-    "published": "2026-09-24T05:16:54+00:00",
-    "summary": "Im Augsburger Innovationspark hat der Bau eines neuen Rechenzentrums für die Universität begonnen. Das Projekt soll die digitale Infrastruktur der Hochschule stärken.",
+    "published": "2026-09-24T12:28:53+00:00",
+    "summary": "Das Landgericht Augsburg hat die Anklagen gegen 13 frühere Bedienstete der JVA Gablingen wegen mutmaßlicher Folter-Vorwürfe zugelassen. Der Prozess dürfte damit demnächst beginnen und wirft ein hartes Licht auf den bayerischen Justizvollzug.",
     "also": []
    }
   ],
   "agrar": [
    {
-    "title": "Würzburg: Landwirte demonstrieren anlässlich der Agrarministerkonferenz",
-    "teaser": "Würzburg: Landwirte demonstrieren anlässlich der Agrarministerkonferenz Charivari Würzburg",
-    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZmFQNXNSU1ZUYWgyZmpieTJib3d1QjFJRTV2cUo0UjF1T2wzUGN1dEliSTF6c3d2NzhEOGlmZnVCUlhzX3lSZUVNZVluWURSYXRJNTNCbDdKdElQSWxnRHlsN2dPUUxBWjExaC1hYUtMTVR0Rlk1dXp2VHNrN1pDX2RoREtKT2ZoZUdIczBWdkZJRWxhelducUV5TkltZVJlZlFWVEdHZU9zQkN4eGc?oc=5",
-    "source": "Charivari Würzburg",
+    "title": "Würzburg: Landwirtschaft unter Druck: Warum Bauern bei der Ministerkonferenz in Würzburg laut werden",
+    "teaser": "Würzburg: Landwirtschaft unter Druck: Warum Bauern bei der Ministerkonferenz in Würzburg laut werden mainpost.de",
+    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNWXZlTjN1WUxiOXdjTy11X3VuMmVRQjVvVTNGQWo4c0p6WndSeWhXc0JWaDBXQ0pDZFphcG9XYVhSZkkwdmFPaENCTk1qbXBuZ01aV1RaM0laTDRXMzNndjVTQ2JsVmdLVzJ0QzZZQ1hVdGVDYnBvdjdQV25wckxLNXF3b0RBMWtfbUJqdTgxX3R4T3FxMUVGbS1oRUxhZEhvY2p4SjR6NmxHN0cwUWVKQjduLUp2SGNIc1pkYTRZUEF5bUtMLVREamZ6UExlOV85aWJmSF9VLUZTZw?oc=5",
+    "source": "mainpost.de",
     "scope": "agrar",
     "lang": "de",
-    "published": "2026-09-24T03:16:00+00:00",
-    "summary": "In Würzburg haben Landwirte anlässlich der Herbst-Agrarministerkonferenz demonstriert, die die Stadt zum Treffpunkt der deutschen Agrarpolitik macht. Bauernverbände nutzen die Konferenz, um ihre Forderungen an die Politik zu richten.",
+    "published": "2026-09-24T16:02:08+00:00",
+    "summary": "Bei der Herbst-Agrarministerkonferenz in Würzburg demonstrieren Landwirte gegen zu viel Bürokratie und für bessere wirtschaftliche Perspektiven, während die Agrarminister nach Lösungen suchen. Die Proteste zeigen, wie groß der Frust in der Branche über Auflagen und Einkommensdruck weiterhin ist.",
     "also": [
+     "Charivari Würzburg",
+     "SZ.de",
+     "Bayerischer Bauernverband",
      "Gabot.de"
     ]
    },
    {
-    "title": "Ausgetrocknete Äcker fordern die Landwirtschaft heraus",
-    "teaser": "Ausgetrocknete Äcker fordern die Landwirtschaft heraus NDR.de",
-    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOSGJwcWU4bGlLSjUtZnBfb3RiWHJoS1ZVYzlJMS1ya2otQUdSMlRSeEtuNGxpaVlWY09ZTVJsMXlURm94NHUwZWUtN0RBWDRtWHAxaHBxbXRKVGpYS185STVPcDduTWhHd0wyckVFR1RYZDNZQ3RWV0ZGSVgwTDVfUG5Mb3kteEpoNEx0ZmlyNlRyYXZ2M1FsNjRSOVdxS3R4UjF4eWdtRlJrWHpaZ2JRUzlwMms4UkF3ZUluV1lVdEhONEcxdzBGQ1REaGlkUQ?oc=5",
-    "source": "NDR.de",
+    "title": "EU-Ökorecht: Der Trilog beginnt",
+    "teaser": "EU-Ökorecht: Der Trilog beginnt Bayerischer Bauernverband",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQTkczVVF5VVFtbks2d0tVc1d3X0tjVEdUNVV3bUs3Rlp0aG5DalRiYnhZcUJkX2pCSVFYUm9LeU5ack90QnNLNmY4UFktd3p5cEpHLVFHTnVHanVXcDI1ZjlvWTdxNzFUT09wSTQyVjNMdjVWdElXS293bzhfVUo1UzVsdWN5SVZYN3VsTndhamRXTFBpTVJnT0lyWG55Zw?oc=5",
+    "source": "Bayerischer Bauernverband",
     "scope": "agrar",
     "lang": "de",
-    "published": "2026-09-23T20:39:28+00:00",
-    "summary": "Anhaltende Trockenheit setzt Äckern weiter zu und stellt die Landwirtschaft laut NDR vor wachsende Herausforderungen bei der Ernte. Die Wasserknappheit dürfte die Erträge in betroffenen Regionen spürbar schmälern.",
+    "published": "2026-09-25T08:32:30+00:00",
+    "summary": "Der Trilog zur EU-Ökoverordnung hat begonnen, wie der Bayerische Bauernverband meldet, ohne dass die Meldung Details zu den strittigen Punkten nennt. Für Bio-Betriebe könnte das Verhandlungsergebnis die künftigen Anbau- und Kennzeichnungsregeln verändern.",
     "also": []
    },
    {
-    "title": "Sommerhitze: Schäden in der Landwirtschaft von fast 60 Millionen",
-    "teaser": "Sommerhitze: Schäden in der Landwirtschaft von fast 60 Millionen SRF",
-    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQS3AzRUh4SXlnakdGamxnWkZHQmxqRjFYUGxCZ0t1Vk9rbkR6c25FTUVLTjNhQ3pmYnJxY3R2ZUlYa2RmNnd5OTFjQTYyeU15YmhsRkdNU2NvR0poUC1xUFZoRm5VYUplZ1BLNUwzZUM4V2lwNHBZY3Etb01zRFVWLVV2aWwtUUNmNnV2cHB3R3lKeTJzQlk3aFhhSTZ0TjhmX01vSlBKb2o3dnZmRVZCUTdRRVRvU1E?oc=5",
-    "source": "SRF",
+    "title": "Bauernverband warnt vor Verlust von Bundesmillionen",
+    "teaser": "Bauernverband warnt vor Verlust von Bundesmillionen Rheintal24",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPWVJRTmx0TGpqLWJDSkswbjZVcThWMkMzM0tsQm1NQ0s5ZWU5TEFtVWlfSE1VTTZ1VGw0Qk9IaVY1Um93Q01QWjAxLW9pRTlIbXpWQU9ibXFPOER1ak1DdUh3UzBlUzlnaUdBQmtPWGUtcmczbGtvUVMwMnVGYzNmSHAzTzdrb1dFcmxTbTdyd0hQaHc?oc=5",
+    "source": "Rheintal24",
     "scope": "agrar",
     "lang": "de",
-    "published": "2026-09-23T21:12:15+00:00",
-    "summary": "Die Sommerhitze hat in der Schweizer Landwirtschaft laut SRF Schäden von fast 60 Millionen Franken verursacht. Dürre und Extremwetter belasten die Betriebe damit zunehmend finanziell.",
+    "published": "2026-09-25T07:50:21+00:00",
+    "summary": "Der Bauernverband warnt, dass der Landwirtschaft Millionen an Bundesmitteln verloren gehen könnten, nennt aber keine genauen Hintergründe. Sollte sich die Warnung bestätigen, träfe das viele Betriebe, die auf diese Förderung angewiesen sind.",
     "also": []
    },
    {
-    "title": "The role of self-propelled machines in Irish farming",
-    "teaser": "One fifth of all Krone BiG M’s – the self-propelled mower conditioners – manufactured each year come to Ireland, according to Farmhand’s Stephen Scrivener. The company’s sales and marketing director said: “It’s got a really big following.” Farmhand is the exclusive distributor to the island of Irela",
-    "link": "https://www.agriland.ie/farming-news/the-role-of-self-propelled-machines-in-irish-farming/",
+    "title": "Are parlour upgrades on the agenda this year?",
+    "teaser": "2026 has been one of the toughest years for dairy farmers in quite some time, with cashflow now quickly drying up. We have seen poor milk prices, high costs, a wet spring, and – to top it all off – a two-month-long drought that has kickstarted a fodder crisis. So where does that leave us […] The pos",
+    "link": "https://www.agriland.ie/farming-news/are-parlour-upgrades-on-the-agenda-this-year/",
     "source": "Agriland",
     "scope": "agrar",
     "lang": "en",
-    "published": "2026-09-23T15:58:05+00:00",
-    "summary": "Ein Fünftel aller weltweit gebauten selbstfahrenden Krone-BiG-M-Mähwerke geht laut einem Farmhand-Vertriebsverantwortlichen allein nach Irland. Das zeigt, wie stark irische Landwirte auf leistungsfähige, selbstfahrende Erntetechnik setzen.",
+    "published": "2026-09-25T05:15:00+00:00",
+    "summary": "Ein Agriland-Bericht fragt, ob sich Milchbauern angesichts eines schwierigen Jahres mit niedrigen Milchpreisen und hohen Kosten überhaupt Investitionen in neue Melkstände leisten können. Das zeigt, wie stark der finanzielle Druck derzeit Kaufentscheidungen bei Landmaschinen und Anlagen bremst.",
     "also": []
    },
    {
-    "title": "USDA Puts Soil Testing at the Center of Its $700M Regenerative Agriculture Push",
-    "teaser": "USDA Puts Soil Testing at the Center of Its $700M Regenerative Agriculture Push AgroLatam",
-    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxObXV3SjNWdmZrZVQ2LWtybnhHTmFZaUtXU0NyWThCd1lOM0VLX0c3QTVrVmJZNVBoWkJNTlYyY3lXbnI3WkJPbXM5WTZaUUJMSE1FNV9PZXZhVkVtdFZtUXo0cWVJOXpWcE42NHN3Rk8tU3ZzR05aU0xXV0dIOGczdk9BZHlaREtnemc?oc=5",
-    "source": "AgroLatam",
+    "title": "Gardaí investigating theft of tractor from Kildare farm",
+    "teaser": "Gardaí are appealing for information following the recent theft of a tractor from a farm in Co. Kildare. The Massey Ferguson tractor is understood to have been taken from a farm on Millicent Road in Clane in the early hours of Thursday, September 17. Garda Órlaith Fahy from Clane Garda Station told ",
+    "link": "https://www.agriland.ie/farming-news/gardai-investigating-theft-of-tractor-from-kildare-farm/",
+    "source": "Agriland",
     "scope": "agrar",
     "lang": "en",
-    "published": "2026-09-23T18:51:29+00:00",
-    "summary": "Das US-Landwirtschaftsministerium macht Bodentests zum Kernstück seines neuen 700-Millionen-Dollar-Programms für regenerative Landwirtschaft. Betriebe sollen damit gezielt beim Aufbau gesünderer Böden unterstützt werden.",
+    "published": "2026-09-25T07:00:00+00:00",
+    "summary": "Die irische Polizei sucht nach dem Diebstahl eines Massey-Ferguson-Traktors von einem Hof in County Kildare und bittet um Hinweise. Der Fall erinnert daran, wie anfällig Höfe für Maschinendiebstahl sind – ein Thema, das auch deutsche Landwirte zunehmend beschäftigt.",
     "also": []
    }
   ],
-  "eu": [],
+  "eu": [
+   {
+    "title": "DNR fordert Kurswechsel in der Agrarpolitik: Steuergelder gezielt für Umwelt einsetzen",
+    "teaser": "DNR fordert Kurswechsel in der Agrarpolitik: Steuergelder gezielt für Umwelt einsetzen Deutscher Naturschutzring",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNUFBOZkJjM0VSY0hJNWdvZTRkR3FYajBkbEs2Qjd2dXF1WDAzWlJtMTJEMVBTWWhSTGtjSThSblI3eUZGMkJtZnIzcHJmajFQQ1EybThQMEg2TVZqeEJnaTBEanJaY1VldE01NUU3djZaeFN6dXJvNUc3eWNNeWxIUEJJTnZSMDgyZnNUcXlXbUJuYlRMWllNcWRtWlpFdVdtLTJ0aHdGdHVQZnU1WUVFT0Vqcm5EaVJxeUE?oc=5",
+    "source": "Deutscher Naturschutzring",
+    "scope": "eu",
+    "lang": "de",
+    "published": "2026-09-23T07:50:30+00:00",
+    "summary": "Der Deutsche Naturschutzring fordert einen Kurswechsel in der EU-Agrarpolitik und verlangt, Steuergelder gezielter für Umweltleistungen statt pauschale Flächenprämien einzusetzen. Das dürfte die Debatte um die nächste Reform der Gemeinsamen Agrarpolitik weiter befeuern.",
+    "also": []
+   }
+  ],
   "world": [
    {
-    "title": "Trump's Board of Peace unveils $2.45bn plan to begin Gaza's reconstruction",
-    "teaser": "The figure was announced during a meeting of the group's board at the sidelines of the UN General Assembly in New York.",
-    "link": "https://www.bbc.co.uk/news/articles/cwlyke0mm0x3o?at_medium=RSS&at_campaign=rss",
+    "title": "Netanyahu defends Israeli military action as delegates walk out before UN speech",
+    "teaser": "The Israeli leader labels those who left his speech at the UN General Assembly as \"moral cowards\".",
+    "link": "https://www.bbc.co.uk/news/articles/c3y0z7kxlegdo?at_medium=RSS&at_campaign=rss",
     "source": "BBC News",
     "scope": "world",
     "lang": "de",
-    "published": "2026-09-23T21:26:14+00:00",
-    "summary": "Trumps sogenanntes Board of Peace hat am Rande der UN-Generalversammlung einen 2,45-Milliarden-Dollar-Plan für den Wiederaufbau Gazas vorgestellt. Offen bleibt, wer über die Umsetzung entscheidet, solange Israels Rückzug und die Entwaffnung der Hamas ungeklärt sind.",
-    "also": []
+    "published": "2026-09-25T00:44:04+00:00",
+    "summary": "Bei seiner Rede vor der UN-Generalversammlung hat Israels Regierungschef Netanjahu sein militärisches Vorgehen verteidigt und Kritiker als moralische Feiglinge bezeichnet, während Dutzende Delegierte demonstrativ den Saal verließen. Der Auftritt vertieft die diplomatische Isolation Israels wenige Wochen vor der Wahl im Land.",
+    "also": [
+     "Der Standard",
+     "tagesschau",
+     "taz"
+    ]
    },
    {
-    "title": "Poland accuses Russian military helicopter of violating its airspace",
-    "teaser": "Poland says the aircraft stayed in its skies for 42 seconds, forcing the Nato member to scramble its fighter jets.",
-    "link": "https://www.bbc.co.uk/news/articles/c699d2dn9z0mo?at_medium=RSS&at_campaign=rss",
+    "title": "Hundreds of thousands expected in Paris for Pope's visit",
+    "teaser": "The highpoint of his time in Paris will be a giant Mass attended by more than half a million people.",
+    "link": "https://www.bbc.co.uk/news/articles/cmq8j904212po?at_medium=RSS&at_campaign=rss",
     "source": "BBC News",
     "scope": "world",
     "lang": "de",
-    "published": "2026-09-23T15:37:20+00:00",
-    "summary": "Polen wirft einem russischen Militärhubschrauber vor, 42 Sekunden lang seinen Luftraum verletzt zu haben, weshalb die Nato-Luftwaffe Kampfjets aufsteigen ließ. Der Vorfall reiht sich in eine Serie ähnlicher Grenzverletzungen ein, die die Sorge vor einer Eskalation Russlands gegenüber Nato-Staaten verstärken.",
-    "also": []
+    "published": "2026-09-24T23:17:00+00:00",
+    "summary": "Papst Leo XIV. besucht als erstes Kirchenoberhaupt seit 18 Jahren wieder Frankreich, Höhepunkt soll eine Messe mit über einer halben Million Gläubigen in Paris sein. Er will dort auch zu Künstlicher Intelligenz und zur Zukunft Europas sprechen, während Frankreich innenpolitisch mit Debatten über Sterbehilfe und Missbrauch ringt.",
+    "also": [
+     "The Guardian",
+     "Al Jazeera",
+     "NZZ",
+     "Deutsche Welle"
+    ]
    },
    {
-    "title": "Ethiopia and Tigray accuse each of launching offensives, fuelling fears of new war",
-    "teaser": "The local authorities reportedly seize Tigray's airports following reports of recent drone strikes.",
-    "link": "https://www.bbc.co.uk/news/articles/cry8zwwq21pxo?at_medium=RSS&at_campaign=rss",
-    "source": "BBC News",
+    "title": "Rebel offensive against Ethiopian army stokes fears of return to civil war",
+    "teaser": "Fighting escalates after Tigrayan rebels form new coalition aimed at overthrowing Abiy Ahmed government There are growing fears of a return to civil war in Ethiopia after an offensive by fighters from Tigray into the neighbouring states of Afar and Amhara and the formation of a new rebel alliance ai",
+    "link": "https://www.theguardian.com/world/2026/sep/24/fears-return-to-war-tigray-rebels-launch-offensive-against-ethiopian-army",
+    "source": "The Guardian",
     "scope": "world",
     "lang": "de",
-    "published": "2026-09-24T04:37:47+00:00",
-    "summary": "Äthiopien und die Region Tigray werfen sich gegenseitig neue Offensiven vor, lokale Behörden haben Berichten zufolge Flughäfen in Tigray übernommen. Das lässt die Furcht vor einem Rückfall in den blutigen Bürgerkrieg wachsen.",
-    "also": []
-   },
-   {
-    "title": "OpenAI AI agent breached Australian government website, PM says",
-    "teaser": "An AI agent developed by OpenAI gained unauthorised access to an Australian government website in June, accessing public and non-public files in what Prime Minister Anthony Albanese described as the first known case of an AI agent hacking a government system.",
-    "link": "https://www.france24.com/en/australia/20260923-openai-ai-agent-breached-australian-government-website-pm-says",
-    "source": "France 24",
-    "scope": "world",
-    "lang": "de",
-    "published": "2026-09-23T22:10:45+00:00",
-    "summary": "Ein autonomer KI-Agent von OpenAI hat im Juni unbefugt auf ein australisches Regierungsportal zugegriffen und dabei auch nicht-öffentliche Dateien eingesehen. Premierminister Albanese nannte es den weltweit ersten bekannten Fall eines eigenmächtigen KI-Einbruchs in eine Regierungsseite und kritisierte OpenAI für die späte Meldung.",
+    "published": "2026-09-24T15:29:42+00:00",
+    "summary": "In Äthiopiens Region Tigray ist eine neue Rebellenkoalition gegen die Regierung von Abiy Ahmed offensiv geworden, die Armee spricht von abgewehrten Angriffen. Fachleute warnen, dass der Konflikt auf die gesamte Region am Horn von Afrika übergreifen könnte.",
     "also": [
      "BBC News",
      "Deutsche Welle"
     ]
+   },
+   {
+    "title": "Houthi advances in Yemen drive displacement, deepen humanitarian crisis",
+    "teaser": "With more than 132,000 people already displaced by the latest fighting and Houthi territorial gains, Yemen is on the brink of slipping back into a full-fledged humanitarian emergency. DW spoke with people on the ground.",
+    "link": "https://www.dw.com/en/houthi-advances-in-yemen-drive-displacement-deepen-humanitarian-crisis/a-79414280?maca=en-rss-en-world-4025-rdf",
+    "source": "Deutsche Welle",
+    "scope": "world",
+    "lang": "de",
+    "published": "2026-09-24T16:26:00+00:00",
+    "summary": "Mit den jüngsten Gebietsgewinnen der Huthi-Miliz im Jemen sind bereits mehr als 132.000 Menschen auf der Flucht, die humanitäre Lage droht erneut zu eskalieren. Das verschärft auch die Unsicherheit rund um wichtige Öl- und Handelsrouten am Roten Meer.",
+    "also": []
    }
   ],
   "note": null,
   "feed_count": 30,
-  "item_count": 292,
+  "item_count": 288,
   "ranked_by": "Claude"
  }
 }
