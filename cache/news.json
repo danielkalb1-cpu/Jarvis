@@ -1,270 +1,278 @@
 {
- "built_at": "2026-09-25T10:44:06.698722+02:00",
+ "built_at": "2026-09-28T11:38:53.460316+02:00",
  "config": "813804dcdda646a5",
  "block": {
   "enabled": true,
-  "lage": "Kein dramatischer Tag: Bundestag und Bundesrat beschließen den Tankrabatt, während fast eine Million VW- und Audi-Fahrer wegen eines Lenkungsrisikos zur Werkstatt müssen. International bleibt vieles offen – Iran-Friedensplan, Xi-Trump-Gipfel und Netanjahus UN-Auftritt liefern Symbolik statt Ergebnisse.",
+  "lage": "Der Ölpreis zieht nach Trumps Absage an den Iran-Vorschlag an, das dürfte Sprit- und Dieselkosten in den nächsten Tagen weiter treiben. National dominieren Personalfragen: Pflegereform-Streit in der Koalition und Sondierungen in Mecklenburg-Vorpommern. Sonst ein vergleichsweise ruhiger Tag ohne große Überraschungen aus der Region.",
   "seen_update": {
-   "https://news.google.com/rss/articles/CBMiugFBVV95cUxNUFBOZkJjM0VSY0hJNWdvZTRkR3FYajBkbEs2Qjd2dXF1WDAzWlJtMTJEMVBTWWhSTGtjSThSblI3eUZGMkJtZnIzcHJmajFQQ1EybThQMEg2TVZqeEJnaTBEanJaY1VldE01NUU3djZaeFN6dXJvNUc3eWNNeWxIUEJJTnZSMDgyZnNUcXlXbUJuYlRMWllNcWRtWlpFdVdtLTJ0aHdGdHVQZnU1WUVFT0Vqcm5EaVJxeUE?oc=5": "2026-09-25"
+   "https://news.google.com/rss/articles/CBMivgFBVV95cUxOc1FiZzBpeFllczR0ckpMLS1MT0ZxbWRBMEVJN3E0VnJRQlZiMnpma3h6WExySjk5MWZucXNGODZxTEJXVGhuMlRfUjR5M000c2Q5ZVB1bnU5VnNyN3A1NGdmdGFHbXFMM1FBVG44ZW9MYWJyLWNWVkhIUXpsdTRfNVdka3JwVlFUQi1NdXZQUTlTNW5DeUEzSmpYMEhZaGRLSFhfSkg1TE0tYU5EanEwM005LUpKS05ndmtvX3FR?oc=5": "2026-09-28",
+   "https://news.google.com/rss/articles/CBMipwFBVV95cUxOcEZLek1vUzJiNVp3S3F5TklkbE5FcnE2eHNrTWEtbC1kcURyYThzV3NEaXA1VXNvYzI3VUdhN0xuT0FlN0JVdDFicHFNeXJmTmxpeUFNc3JDbW52QUE4S2RBT1NzUjRoRkNWQUNiOTRfcmtfblNteUFMYU9qSUNKUV94OVltVXFselMxa0VOSHEyaTJINjRDQXl5MEZyc3QySnV1NEtYaw?oc=5": "2026-09-28"
   },
   "top": [
    {
-    "title": "VW Golf, Tiguan, Touran: Rückruf wegen Lenkung",
-    "teaser": "VW muss einige seiner verbreitetsten Modelle zurückrufen. Bei Golf, Tiguan, Touran und anderen droht laut Kraftfahrt-Bundesamt ein Schraubenabriss der Lenkung durch Rost. Potenziell betroffen sind insgesamt Millionen Pkw.",
-    "link": "https://www.spiegel.de/mobilitaet/auto/vw-golf-tiguan-touran-rueckruf-wegen-lenkung-a-b1272e7c-56b0-4726-b908-1a8a650e0a86#ref=rss",
-    "source": "Spiegel",
-    "scope": "national",
+    "title": "Oil prices surge after Trump rejects Iran’s plan to reopen Strait of Hormuz",
+    "teaser": "Brent crude rises more than 3 percent to top $107 a barrel as Washington dismisses Tehran's proposal to end war.",
+    "link": "https://www.aljazeera.com/economy/2026/9/28/oil-prices-surge-after-trump-rejects-irans-plan-to-reopen-strait-of-hormuz?traffic_source=rss",
+    "source": "Al Jazeera",
+    "scope": "world",
     "lang": "de",
-    "published": "2026-09-25T08:31:00+00:00",
-    "summary": "Volkswagen und Audi rufen wegen einer möglichen Schraubenkorrosion an der Lenkung fast eine Million Fahrzeuge in Deutschland zurück, betroffen sind unter anderem Golf, Tiguan und Touran. Halter sollten die Rückrufaufforderung des Kraftfahrt-Bundesamts ernst nehmen und zeitnah einen Werkstatttermin vereinbaren.",
+    "published": "2026-09-28T09:17:29+00:00",
+    "summary": "Nachdem US-Präsident Trump einen iranischen Vorschlag zur Wiedereröffnung der Straße von Hormus abgelehnt hat, ist der Ölpreis um mehr als drei Prozent auf über 107 Dollar je Barrel gestiegen. Das dürfte sich zeitnah auch an den heimischen Tankstellen bemerkbar machen.",
     "also": [
-     "NZZ",
-     "Welt",
      "Handelsblatt"
     ]
    },
    {
-    "title": "Entlastung im Bundestag: So schnell soll der Tankrabatt kommen",
-    "teaser": "Mit einem neuen Tankrabatt will die Bundesregierung die Spritpreise möglichst schnell senken. Heute sollen der Bundestag und Bundesrat darüber entscheiden. Wie hoch der Rabatt ausfällt und was noch geplant ist.",
-    "link": "https://www.tagesschau.de/inland/innenpolitik/entlastungen-spritpreise-bundestag-100.html",
-    "source": "tagesschau",
+    "title": "Embattled Serbian president resigns, paving way for early elections",
+    "teaser": "Aleksandar Vučić's administration has been dogged by prolonged protests over allegations of corruption.",
+    "link": "https://www.bbc.co.uk/news/articles/ckpq0g7z5pjjo?at_medium=RSS&at_campaign=rss",
+    "source": "BBC News",
+    "scope": "world",
+    "lang": "de",
+    "published": "2026-09-27T20:04:21+00:00",
+    "summary": "Serbiens Präsident Aleksandar Vučić ist nach monatelangen Protesten gegen mutmaßliche Korruption zurückgetreten und macht damit den Weg für vorzeitige Neuwahlen frei. Der Rücktritt markiert einen vorläufigen Höhepunkt der seit Monaten schwelenden politischen Krise im Land.",
+    "also": [
+     "tagesschau",
+     "Al Jazeera"
+    ]
+   },
+   {
+    "title": "Kommunalwahl: AfD verliert Stichwahlen in Niedersachsen – Hannover bleibt grün",
+    "teaser": "In drei Stichwahlen hat die AfD Chancen auf ein erstes kommunales Spitzenamt in Niedersachsen. Alle drei gehen klar verloren. In Hannover setzt sich der Amtsinhaber durch.",
+    "link": "https://www.handelsblatt.com/politik/international/kommunalwahl-afd-verliert-stichwahlen-in-niedersachsen-hannover-bleibt-gruen/100257769.html",
+    "source": "Handelsblatt",
     "scope": "national",
     "lang": "de",
-    "published": "2026-09-25T07:27:57+00:00",
-    "summary": "Bundestag und Bundesrat stimmen heute über einen neuen Tankrabatt ab, der die Steuer auf Benzin und Diesel um rund 17 Cent senken soll. Damit will die Bundesregierung Autofahrer kurzfristig entlasten, während Kritiker die Maßnahme als teure Symbolpolitik bezeichnen.",
+    "published": "2026-09-28T05:59:29+00:00",
+    "summary": "Bei den Stichwahlen in Niedersachsen hat die AfD alle drei Anläufe auf ein erstes kommunales Spitzenamt verloren, in Hannover bleibt der Grüne Belit Onay Oberbürgermeister. Das dämpft vorerst die Hoffnungen der Partei auf einen kommunalen Durchbruch im Nordwesten.",
     "also": [
      "Deutschlandfunk",
      "n-tv"
     ]
    },
    {
-    "title": "AfD baut Vorsprung vor Union aus – Mehrheit erwartet vorzeitiges Ende von Merz’ Kanzlerschaft",
-    "teaser": "Die AfD erreicht in der ZDF-Umfrage 28 Prozent und liegt sieben Punkte vor der Union. 79 Prozent bewerten die Arbeit von Bundeskanzler Friedrich Merz als eher schlecht.",
-    "link": "https://www.welt.de/politik/deutschland/article6ab60bb5a8b3f6fdb1edaaea/umfrage-afd-baut-vorsprung-vor-union-aus-mehrheit-erwartet-vorzeitiges-ende-von-merz-kanzlerschaft.html",
-    "source": "Welt",
+    "title": "Berlin - Diskussion um Pflegereform: Koalition sucht Kompromiss",
+    "teaser": "Vertreter der schwarz-roten Koalition beraten heute über Streitpunkte der geplanten Pflegereform. Die SPD lehnt Leistungskürzungen ab und schlägt eine Obergrenze für einen bestimmten Eigenanteil bei den Heimkosten vor. Zur Finanzierung sollen die Privatkassen stärker hinzugezogen werden.",
+    "link": "https://www.deutschlandfunk.de/diskussion-um-pflegereform-koalition-sucht-kompromiss-104.html",
+    "source": "Deutschlandfunk",
     "scope": "national",
     "lang": "de",
-    "published": "2026-09-25T07:17:18+00:00",
-    "summary": "Die AfD baut laut einer ZDF-Umfrage ihren Vorsprung vor der Union auf sieben Punkte aus und kommt auf 28 Prozent, während 79 Prozent die Arbeit von Kanzler Merz negativ bewerten. Das nährt Spekulationen über ein vorzeitiges Ende seiner Kanzlerschaft und erhöht den Reformdruck in der Koalition.",
-    "also": []
-   },
-   {
-    "title": "Newsblog zum Nahost-Krieg: Berichte: Iran legt Sieben-Tage-Plan zur Beendigung des Krieges vor",
-    "teaser": "Der iranische Außenminister Araghtschi sagt laut „New York Times“ und „Financial Times“, Vermittler hätten der US-Regierung einen Plan vorgelegt, der die Öffnung der Straße von Hormus vorsieht. Die Bedingungen Teherans bleiben offen.",
-    "link": "https://www.sueddeutsche.de/politik/news-iran-nahost-krieg-usa-sieben-tage-plan-li.3530668",
-    "source": "Süddeutsche Zeitung",
-    "scope": "national",
-    "lang": "de",
-    "published": "2026-09-25T07:46:36+00:00",
-    "summary": "Der iranische Außenminister hat den USA laut Medienberichten einen Sieben-Tage-Plan zur Beendigung des Krieges vorgelegt, der auch eine Öffnung der Straße von Hormus vorsieht. Sollte der Vorschlag Erfolg haben, könnte das die zuletzt gestiegenen Ölpreise wieder dämpfen.",
+    "published": "2026-09-28T09:32:14+00:00",
+    "summary": "Union und SPD ringen heute um einen Kompromiss zur Pflegereform, strittig ist vor allem eine von der SPD geforderte Obergrenze für den Eigenanteil an den Pflegekosten. Gesundheitsminister Linnemann hält eine solche Deckelung für keine echte Entlastung.",
     "also": [
-     "n-tv",
-     "Der Standard",
-     "NZZ"
+     "tagesschau",
+     "Süddeutsche Zeitung"
     ]
    },
    {
-    "title": "Xi bei Trump: Fanfaren, Spalier, Bankett - aber kaum Lösungen",
-    "teaser": "Als Geschenk gab es sogar eine massive Weißkopfadlerstatue: Beim Besuch von Chinas Präsident Xi wurde in Washington groß aufgefahren. Doch viele Probleme bleiben - und es gibt Kritik an Trumps Pomp. Von Ralf Borchard.",
-    "link": "https://www.tagesschau.de/ausland/amerika/xi-staatsbesuch-usa-104.html",
-    "source": "tagesschau",
-    "scope": "national",
+    "title": "'The last thing you expect': Locals near UK airbase react to 'terrorist act' arrests",
+    "teaser": "British police were questioning five men on Monday on suspicion of explosives and terrorism offences after they were detained near an air base that has been used by the US to strike Iran. Residents of a village that's situated under a mile away from the base were ordered to evacuate on Sunday as the",
+    "link": "https://www.france24.com/en/video/20260928-the-last-thing-you-expect-locals-near-uk-airbase-react-to-terrorist-act-arrests",
+    "source": "France 24",
+    "scope": "world",
     "lang": "de",
-    "published": "2026-09-25T04:41:49+00:00",
-    "summary": "Beim Gipfeltreffen in Washington zeigten sich Xi Jinping und Donald Trump betont freundschaftlich, blieben aber ohne konkrete Fortschritte bei Handel, Technologie oder Taiwan. Für die deutsche Industrie, die zwischen beiden Großmächten navigieren muss, ändert sich damit vorerst wenig.",
+    "published": "2026-09-28T08:55:19+00:00",
+    "summary": "Britische Ermittler haben fünf Männer festgenommen, die im Verdacht stehen, nahe dem Luftwaffenstützpunkt Fairford einen Terroranschlag vorbereitet zu haben. Die Basis wird auch von US-Bombern für Einsätze gegen Iran genutzt, was den Fall zusätzlich brisant macht.",
     "also": [
-     "FAZ",
-     "n-tv",
-     "Handelsblatt"
+     "NZZ",
+     "taz",
+     "Al Jazeera"
     ]
    }
   ],
   "region": [
    {
-    "title": "Finanzprobleme: Augsburg verhängt Haushaltssperre",
-    "teaser": "Die drittgrößte Stadt Bayerns will nur noch laufende Investitionen bedienen, neue Projekte kann sie damit nicht mehr anstoßen. Die Kassen sind leer, unter anderem wegen stark steigender Personal- und Sozialkosten.",
-    "link": "https://www.sueddeutsche.de/bayern/augsburg-haushaltssperre-freund-li.3553499",
-    "source": "SZ Bayern",
-    "scope": "regional",
-    "lang": "de",
-    "published": "2026-09-24T14:27:35+00:00",
-    "summary": "Wegen deutlich gestiegener Personal- und Sachkosten hat Oberbürgermeister Freund für Augsburg eine Haushaltssperre verhängt, neue Projekte werden vorerst nicht mehr angestoßen. Der drittgrößten Stadt Bayerns stehen damit mehrere Jahre mit sehr engem finanziellem Spielraum bevor.",
-    "also": [
-     "WELT",
-     "donaukurier.de",
-     "SZ.de"
-    ]
-   },
-   {
-    "title": "B12-Ausbau: Wie geht es auf der wichtigsten Verkehrsachse des Allgäus weiter?",
-    "teaser": "B12-Ausbau: Wie geht es auf der wichtigsten Verkehrsachse des Allgäus weiter? Allgäuer Zeitung",
-    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQZFgteHpWblQ4WHV2cEt0WDdDQmlpeFJTLWJSZDRFSEd4OUZBTl9oSW9WTTlLb3BDQUN1bEFaTkI0V3pTLW9kWWtiTmxqSm4wRXVvSjNOYXZzSWRGTjM4S3FZbFNaUXc2QU1ZYjF1aWtjbkx3QjJOa2llM0tmNWV0dmw1ZTQxc2o1a0JEZFM3YlIwdEVKZU5iLUY5U1Nlc1lBV0lDY3FIUHpmbmNKaGZDa2pPMnBLazhLdUlFTFlMQXNVU2QzN3VRMlZYYw?oc=5",
-    "source": "Allgäuer Zeitung",
-    "scope": "regional",
-    "lang": "de",
-    "published": "2026-09-25T04:38:47+00:00",
-    "summary": "Ein neuer Bericht beleuchtet den aktuellen Planungsstand beim Ausbau der Bundesstraße 12, der wichtigsten Verkehrsachse des Allgäus. Für Pendler zwischen Allgäu und Umland bleibt damit weiter unklar, wann sich die Verkehrssituation spürbar verbessert.",
-    "also": []
-   },
-   {
-    "title": "Grenztunnel Füssen muss gesperrt werden - das sind die Gründe",
-    "teaser": "Grenztunnel Füssen muss gesperrt werden - das sind die Gründe Allgäuer Zeitung",
-    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPNkxZVEVuc1U2OG9wLTh2R0VhaXJ2YjFYczJ4Qm1pQUVDX3Q4aWYzRkxXYzNpUlZ5eEpQWE42QjNfX1lQUTNxTFY2bTJYV2JTY0ZwUEVJUXJkaU94RkplWlM4TTk5YW4yTTRqX244MDhFNGxlQ3hoYnJ6bWROWDdHNWh5ZzBDMWtzeEVDX2JTR2hLMU1UZEVSd1haOXNIZDZsQktDdnBpSHpFbHc?oc=5",
-    "source": "Allgäuer Zeitung",
-    "scope": "regional",
-    "lang": "de",
-    "published": "2026-09-25T02:50:36+00:00",
-    "summary": "Der Grenztunnel bei Füssen muss gesperrt werden, was für zusätzlichen Verkehr auf den Ausweichstrecken im Ostallgäu sorgen dürfte.",
-    "also": []
-   },
-   {
-    "title": "Folter-Vorwürfe in JVA Gablingen: Gericht lässt Anklagen zu",
-    "teaser": "\"Einen wegrupfen\" – so sollen sich Beamte der JVA Gablingen in Chats ausgetauscht haben. Nun hat das Landgericht Augsburg die Anklagen gegen 13 frühere Bedienstete zugelassen. Warum der Prozessbeginn trotzdem noch offen ist.",
-    "link": "https://www.tagesschau.de/inland/regional/bayern/br-folter-vorwuerfe-in-jva-gablingen-gericht-laesst-anklagen-zu-102.html",
+    "title": "Zwei Tote bei Unfall von Reisebus auf A96",
+    "teaser": "Auf der A96 bei Buchloe im Ostallgäu ist ein Reisebus umgekippt. Nach Polizeiangaben kamen zwei Menschen ums Leben, mehrere wurden verletzt. Im Bus befand sich eine philippinische Reisegruppe.",
+    "link": "https://www.tagesschau.de/inland/regional/bayern/reisebus-auf-a96-umgekippt-100.html",
     "source": "tagesschau Bayern",
     "scope": "regional",
     "lang": "de",
-    "published": "2026-09-24T12:28:53+00:00",
-    "summary": "Das Landgericht Augsburg hat die Anklagen gegen 13 frühere Bedienstete der JVA Gablingen wegen mutmaßlicher Folter-Vorwürfe zugelassen. Der Prozess dürfte damit demnächst beginnen und wirft ein hartes Licht auf den bayerischen Justizvollzug.",
+    "published": "2026-09-28T07:13:09+00:00",
+    "summary": "Auf der A96 bei Buchloe im Ostallgäu ist ein Reisebus mit einer philippinischen Reisegruppe auf dem Weg zum Oktoberfest umgekippt, zwei Menschen kamen dabei ums Leben, mehr als 25 wurden verletzt. Die genaue Unfallursache ist noch offen.",
+    "also": [
+     "RTL.de",
+     "SZ Bayern"
+    ]
+   },
+   {
+    "title": "GAUKEL vermittelt Standort für neues Musterungszentrum der Bundeswehr in Kempten, Allgäu",
+    "teaser": "GAUKEL vermittelt Standort für neues Musterungszentrum der Bundeswehr in Kempten, Allgäu Konii",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOaGdVcC1OcnJLa3JlWWtkOEc2c0RGaHFVWVFDbnJiOWhDS3h6NE8wMGt6bjIwdzV1azNIMVpkX3EtOXdfb2hvVGtIb0Q2NzZIUzhZd2ZXTklFMUlEVUszRHVRdkRTd01RbHVsVkRtZW9HLVdlUkR3eVJBQWpsR0luNGpPWWtreC1ueUNVZTFDZHc0MndiZW9YTGdnZGVQdF9HMk44YVlRMGtWeU1CZXk0MEk2T3dNSUk?oc=5",
+    "source": "Konii",
+    "scope": "regional",
+    "lang": "de",
+    "published": "2026-09-28T09:21:25+00:00",
+    "summary": "Der Immobilienvermittler GAUKEL hat für die Bundeswehr einen Standort für ein neues Musterungszentrum in Kempten vermittelt. Damit bekommt das Allgäu im Zuge der wiederbelebten Wehrerfassung eine zusätzliche Einrichtung.",
     "also": []
+   },
+   {
+    "title": "Großrazzia auch im Unterallgäu: Polizei hebt Drogenring aus und beschlagnahmt kiloweise Rauschgift",
+    "teaser": "Großrazzia auch im Unterallgäu: Polizei hebt Drogenring aus und beschlagnahmt kiloweise Rauschgift Augsburger Allgemeine",
+    "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOUEVaVDFJOUZLcnlFTjBZSWs0XzNvSkpuV2RvNllhVS1UUTFpOXJCS3NubU1aajlOU2hBYnRYcEwteVEyY0NDWjZJWTZGM2tGaDZ6T1ZGMnVsMV8xNmVqUWlVTFdELXhqN3ljYTgySU9WR2Q2SWdJa2RCWW1YalhEeWYtaUZiMURSR1NITmxUSXdDQlQ5SHZLWkxsVUIyWUFJMFFMWFE3OU5nUkJiT09jQU1jUldzZVVtQVYxTXJfQlJpc0g2dDkzcEZkS1N1MWhVb3ROZ21VNEdNa1hYa2lYS3lGSm00NG9lb0s2Wg?oc=5",
+    "source": "Augsburger Allgemeine",
+    "scope": "regional",
+    "lang": "de",
+    "published": "2026-09-28T02:23:11+00:00",
+    "summary": "Bei einer überregionalen Großrazzia hat die Polizei auch im Unterallgäu einen Drogenring ausgehoben und kiloweise Rauschgift beschlagnahmt. Die Ermittlungen erstreckten sich offenbar über mehrere Landkreise.",
+    "also": []
+   },
+   {
+    "title": "Augsburg könnte wieder Austragungsort olympischer Wettkämpfe werden",
+    "teaser": "Augsburg könnte wieder Austragungsort olympischer Wettkämpfe werden Donaukurier",
+    "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPaFc2dUg1S3dEMkpJWmlIU08zNlRMTFlFREI3QnRPcVNzR3FpcWRtWkRBR2xPcTJiNEV6dkowM3VpeTB6SmxTV0VSY1RkVHE4YURyRXlDRTVDXzAxMk9NOWJhb0w4UjBLX0V0bGRiYUJlUGZfVlc1WkRMX3lnUFNaRnd2Szd3MERrWHJrbVFZc1J6THdkWE5mZ2xnenUxXzFRNTdxNjRRNXIyTUZzczdLMmtwUGNKSXU0TjFyeWQ1SVlNQ1d2QlV3RU9iLTAxc1B1TDNUMXFGZDNYTENWR3UxQ0F1OVJTcGZtQWVBLXVXbHlsV0xZeTNZ?oc=5",
+    "source": "Donaukurier",
+    "scope": "regional",
+    "lang": "de",
+    "published": "2026-09-27T15:21:32+00:00",
+    "summary": "Nach der Entscheidung für München als deutschen Olympia-Kandidaten wird auch Augsburg als möglicher Austragungsort für olympische Wettkämpfe gehandelt. Für die Stadt wäre das eine Chance, an frühere Olympia-Erfahrungen anzuknüpfen.",
+    "also": [
+     "Augsburger Allgemeine"
+    ]
    }
   ],
   "agrar": [
    {
-    "title": "Würzburg: Landwirtschaft unter Druck: Warum Bauern bei der Ministerkonferenz in Würzburg laut werden",
-    "teaser": "Würzburg: Landwirtschaft unter Druck: Warum Bauern bei der Ministerkonferenz in Würzburg laut werden mainpost.de",
-    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNWXZlTjN1WUxiOXdjTy11X3VuMmVRQjVvVTNGQWo4c0p6WndSeWhXc0JWaDBXQ0pDZFphcG9XYVhSZkkwdmFPaENCTk1qbXBuZ01aV1RaM0laTDRXMzNndjVTQ2JsVmdLVzJ0QzZZQ1hVdGVDYnBvdjdQV25wckxLNXF3b0RBMWtfbUJqdTgxX3R4T3FxMUVGbS1oRUxhZEhvY2p4SjR6NmxHN0cwUWVKQjduLUp2SGNIc1pkYTRZUEF5bUtMLVREamZ6UExlOV85aWJmSF9VLUZTZw?oc=5",
-    "source": "mainpost.de",
+    "title": "Offener Brief: Verbände fordern Maßnahmenpaket für Landwirtschaft",
+    "teaser": "Offener Brief: Verbände fordern Maßnahmenpaket für Landwirtschaft fleischwirtschaft.de",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOcTBzbmVCemdKN2lTb3hiX0hSc0wxUVRzU0ZMUl9oZE5HMzlmZGQzb0ZuMlVEYmJCQTdmcndfSVlLWUR6eDB2RTlUMzZqRWNlNU1jY05Hd3VUTHB0czd3MFlNNWNmTFliX21jbzdRSVlIM21BUFp2ZW9WaEdvc2R5bUI4RlUyYS0yVUpESEpjZ1N4a0xjZU5rS053d28yTUJmLWhDc1Y4RDJTeGdlNDJPcGxqaWI3RXlFVkdV?oc=5",
+    "source": "fleischwirtschaft.de",
     "scope": "agrar",
     "lang": "de",
-    "published": "2026-09-24T16:02:08+00:00",
-    "summary": "Bei der Herbst-Agrarministerkonferenz in Würzburg demonstrieren Landwirte gegen zu viel Bürokratie und für bessere wirtschaftliche Perspektiven, während die Agrarminister nach Lösungen suchen. Die Proteste zeigen, wie groß der Frust in der Branche über Auflagen und Einkommensdruck weiterhin ist.",
+    "published": "2026-09-28T05:40:00+00:00",
+    "summary": "Mehrere Branchenverbände fordern in einem offenen Brief ein umfassendes Maßnahmenpaket für die Landwirtschaft, um sinkenden Einkommen und wachsenden Belastungen entgegenzuwirken.",
+    "also": []
+   },
+   {
+    "title": "Fast 30.000 Anträge weniger – lohnt sich der Agrardiesel-Antrag für Landwirte noch?",
+    "teaser": "Fast 30.000 Anträge weniger – lohnt sich der Agrardiesel-Antrag für Landwirte noch? agrarheute.com",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPOVhaS015Q0haUzlJamlqTXRFbnhCNFpYUllPcWZWd0M2eWlPZUpDVmhMLW5MSHdGX1FEZ3pXcXZiNUgtbGsyRVVhNWw0YW1vY1FnV1I3eVlFbmlYdE1kTWpCN09uM09Ja3plMmxVcjJwZXlDMDBtekNOcEk0Qi1memlyalNUYkYxd21OZklCZ2ZmVFBpSHFNQThPN2pNQVEyeV9teEFiWWdRTXF3SVNJUlNUR1ZuZk9aX1NLYUtDNA?oc=5",
+    "source": "agrarheute.com",
+    "scope": "agrar",
+    "lang": "de",
+    "published": "2026-09-27T03:00:00+00:00",
+    "summary": "Die Zahl der Agrardieselanträge ist um fast 30.000 zurückgegangen. Das wirft die Frage auf, ob sich der bürokratische Aufwand für Landwirte angesichts der Rückvergütung noch lohnt.",
+    "also": []
+   },
+   {
+    "title": "„Da hört der Spaß auf“: Landwirt ärgert sich über vermeintliche Wanderer-Streiche",
+    "teaser": "„Da hört der Spaß auf“: Landwirt ärgert sich über vermeintliche Wanderer-Streiche Allgäuer Zeitung",
+    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOUGFoNjBNLTVxMklIdnE3QjFDQnFrb1BBOURocmFxVmdkV09jX3hXc3ZhYm95OVVRZk9kLU4zak1lcnZKa21UWHBvSXh5MlhSMC10SFRtSDdMYUNwYTRLSDlyd29lTDNnc0FNNEJBc2RURGpoak44Qk1ubzV2VVBaWUhOVXlwcEdKWUtVX3hJaTdMdGlMcFMwX2lEMnI1YmtuX25FelhQV0NsczFTUTZnSnMyNTdtV2VUMVlFZTQwUzAyUlRBQ0liQ2p2Ul9SQmhkNnVtNA?oc=5",
+    "source": "Allgäuer Zeitung",
+    "scope": "agrar",
+    "lang": "de",
+    "published": "2026-09-28T05:47:00+00:00",
+    "summary": "Ein Landwirt im Allgäu beklagt, dass mutmaßliche Wanderer wiederholt Zäune und Weideeinrichtungen beschädigt haben. Er sieht dadurch die Sicherheit seiner Tiere gefährdet.",
+    "also": []
+   },
+   {
+    "title": "China, US agree tariff cuts on $60 billion of goods including agriculture, household items",
+    "teaser": "China, US agree tariff cuts on $60 billion of goods including agriculture, household items Reuters",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPaTBqVzRGcGNNZ2M5YWVLbUQxanlOVWhxYU5lWjNuYzJSWmtHV2lQTWdSUXlpTGM3M1UzU2JUckNLUGxIc3dFVWx5WlExNnotSmtQblE4UnM0Sk1OVnQycjVkR0ozUlpzMW5MMExHNll4NDR2dXpfWTNCMVpQT0docjI1SHFDeFdwYnZGVlVocXhzTy10WWViRk54VklyNzNiRFczXy04aURCdVdmSEdNbjNrRHpXNXM5LWRCZzJQajZVMVBx?oc=5",
+    "source": "Reuters",
+    "scope": "agrar",
+    "lang": "en",
+    "published": "2026-09-28T03:07:00+00:00",
+    "summary": "Die USA und China haben nach ihrem Gipfeltreffen Zollsenkungen für Waren im Wert von 60 Milliarden Dollar vereinbart, darunter zahlreiche Agrarprodukte. Das könnte den Handel mit landwirtschaftlichen Erzeugnissen zwischen beiden Ländern kurzfristig entspannen.",
     "also": [
-     "Charivari Würzburg",
-     "SZ.de",
-     "Bayerischer Bauernverband",
-     "Gabot.de"
+     "Handelsblatt",
+     "Al Jazeera"
     ]
    },
    {
-    "title": "EU-Ökorecht: Der Trilog beginnt",
-    "teaser": "EU-Ökorecht: Der Trilog beginnt Bayerischer Bauernverband",
-    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQTkczVVF5VVFtbks2d0tVc1d3X0tjVEdUNVV3bUs3Rlp0aG5DalRiYnhZcUJkX2pCSVFYUm9LeU5ack90QnNLNmY4UFktd3p5cEpHLVFHTnVHanVXcDI1ZjlvWTdxNzFUT09wSTQyVjNMdjVWdElXS293bzhfVUo1UzVsdWN5SVZYN3VsTndhamRXTFBpTVJnT0lyWG55Zw?oc=5",
-    "source": "Bayerischer Bauernverband",
-    "scope": "agrar",
-    "lang": "de",
-    "published": "2026-09-25T08:32:30+00:00",
-    "summary": "Der Trilog zur EU-Ökoverordnung hat begonnen, wie der Bayerische Bauernverband meldet, ohne dass die Meldung Details zu den strittigen Punkten nennt. Für Bio-Betriebe könnte das Verhandlungsergebnis die künftigen Anbau- und Kennzeichnungsregeln verändern.",
-    "also": []
-   },
-   {
-    "title": "Bauernverband warnt vor Verlust von Bundesmillionen",
-    "teaser": "Bauernverband warnt vor Verlust von Bundesmillionen Rheintal24",
-    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPWVJRTmx0TGpqLWJDSkswbjZVcThWMkMzM0tsQm1NQ0s5ZWU5TEFtVWlfSE1VTTZ1VGw0Qk9IaVY1Um93Q01QWjAxLW9pRTlIbXpWQU9ibXFPOER1ak1DdUh3UzBlUzlnaUdBQmtPWGUtcmczbGtvUVMwMnVGYzNmSHAzTzdrb1dFcmxTbTdyd0hQaHc?oc=5",
-    "source": "Rheintal24",
-    "scope": "agrar",
-    "lang": "de",
-    "published": "2026-09-25T07:50:21+00:00",
-    "summary": "Der Bauernverband warnt, dass der Landwirtschaft Millionen an Bundesmitteln verloren gehen könnten, nennt aber keine genauen Hintergründe. Sollte sich die Warnung bestätigen, träfe das viele Betriebe, die auf diese Förderung angewiesen sind.",
-    "also": []
-   },
-   {
-    "title": "Are parlour upgrades on the agenda this year?",
-    "teaser": "2026 has been one of the toughest years for dairy farmers in quite some time, with cashflow now quickly drying up. We have seen poor milk prices, high costs, a wet spring, and – to top it all off – a two-month-long drought that has kickstarted a fodder crisis. So where does that leave us […] The pos",
-    "link": "https://www.agriland.ie/farming-news/are-parlour-upgrades-on-the-agenda-this-year/",
+    "title": "EU pork price recovery slows amid disease risks",
+    "teaser": "The recovery of finished pig prices in the EU has lost momentum as lingering disease risks and rising production weigh on the pork market. This was according to an update by the Agriculture and Horticulture Development Board (AHDB) this week, which said that despite European finished pig prices gene",
+    "link": "https://www.agriland.ie/farming-news/eu-pork-price-recovery-slows-amid-disease-risks/",
     "source": "Agriland",
     "scope": "agrar",
     "lang": "en",
-    "published": "2026-09-25T05:15:00+00:00",
-    "summary": "Ein Agriland-Bericht fragt, ob sich Milchbauern angesichts eines schwierigen Jahres mit niedrigen Milchpreisen und hohen Kosten überhaupt Investitionen in neue Melkstände leisten können. Das zeigt, wie stark der finanzielle Druck derzeit Kaufentscheidungen bei Landmaschinen und Anlagen bremst.",
-    "also": []
-   },
-   {
-    "title": "Gardaí investigating theft of tractor from Kildare farm",
-    "teaser": "Gardaí are appealing for information following the recent theft of a tractor from a farm in Co. Kildare. The Massey Ferguson tractor is understood to have been taken from a farm on Millicent Road in Clane in the early hours of Thursday, September 17. Garda Órlaith Fahy from Clane Garda Station told ",
-    "link": "https://www.agriland.ie/farming-news/gardai-investigating-theft-of-tractor-from-kildare-farm/",
-    "source": "Agriland",
-    "scope": "agrar",
-    "lang": "en",
-    "published": "2026-09-25T07:00:00+00:00",
-    "summary": "Die irische Polizei sucht nach dem Diebstahl eines Massey-Ferguson-Traktors von einem Hof in County Kildare und bittet um Hinweise. Der Fall erinnert daran, wie anfällig Höfe für Maschinendiebstahl sind – ein Thema, das auch deutsche Landwirte zunehmend beschäftigt.",
+    "published": "2026-09-27T14:00:00+00:00",
+    "summary": "Die Erholung der Schweinepreise in der EU verliert an Schwung, weil anhaltende Tierseuchenrisiken und steigende Produktion den Markt belasten. Für Schweinehalter bedeutet das, dass sich die zuletzt leicht verbesserte Ertragslage vorerst nicht fortsetzt.",
     "also": []
    }
   ],
   "eu": [
    {
-    "title": "DNR fordert Kurswechsel in der Agrarpolitik: Steuergelder gezielt für Umwelt einsetzen",
-    "teaser": "DNR fordert Kurswechsel in der Agrarpolitik: Steuergelder gezielt für Umwelt einsetzen Deutscher Naturschutzring",
-    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNUFBOZkJjM0VSY0hJNWdvZTRkR3FYajBkbEs2Qjd2dXF1WDAzWlJtMTJEMVBTWWhSTGtjSThSblI3eUZGMkJtZnIzcHJmajFQQ1EybThQMEg2TVZqeEJnaTBEanJaY1VldE01NUU3djZaeFN6dXJvNUc3eWNNeWxIUEJJTnZSMDgyZnNUcXlXbUJuYlRMWllNcWRtWlpFdVdtLTJ0aHdGdHVQZnU1WUVFT0Vqcm5EaVJxeUE?oc=5",
-    "source": "Deutscher Naturschutzring",
+    "title": "Neue EU-Regeln ab September: Was Direktvermarkter jetzt beachten müssen",
+    "teaser": "Neue EU-Regeln ab September: Was Direktvermarkter jetzt beachten müssen land & forst",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOc1FiZzBpeFllczR0ckpMLS1MT0ZxbWRBMEVJN3E0VnJRQlZiMnpma3h6WExySjk5MWZucXNGODZxTEJXVGhuMlRfUjR5M000c2Q5ZVB1bnU5VnNyN3A1NGdmdGFHbXFMM1FBVG44ZW9MYWJyLWNWVkhIUXpsdTRfNVdka3JwVlFUQi1NdXZQUTlTNW5DeUEzSmpYMEhZaGRLSFhfSkg1TE0tYU5EanEwM005LUpKS05ndmtvX3FR?oc=5",
+    "source": "land & forst",
     "scope": "eu",
     "lang": "de",
-    "published": "2026-09-23T07:50:30+00:00",
-    "summary": "Der Deutsche Naturschutzring fordert einen Kurswechsel in der EU-Agrarpolitik und verlangt, Steuergelder gezielter für Umweltleistungen statt pauschale Flächenprämien einzusetzen. Das dürfte die Debatte um die nächste Reform der Gemeinsamen Agrarpolitik weiter befeuern.",
+    "published": "2026-08-30T07:00:00+00:00",
+    "summary": "Seit September gelten neue EU-Vorgaben, die Direktvermarkter ab Hof beachten müssen. Landwirte, die ihre Produkte selbst verkaufen, sollten sich zeitnah über die geänderten Anforderungen informieren.",
+    "also": []
+   },
+   {
+    "title": "EU carbon rules set to reach further into industrial cargo - Heavy Lift & Project Forwarding International",
+    "teaser": "EU carbon rules set to reach further into industrial cargo Heavy Lift & Project Forwarding International",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOcEZLek1vUzJiNVp3S3F5TklkbE5FcnE2eHNrTWEtbC1kcURyYThzV3NEaXA1VXNvYzI3VUdhN0xuT0FlN0JVdDFicHFNeXJmTmxpeUFNc3JDbW52QUE4S2RBT1NzUjRoRkNWQUNiOTRfcmtfblNteUFMYU9qSUNKUV94OVltVXFselMxa0VOSHEyaTJINjRDQXl5MEZyc3QySnV1NEtYaw?oc=5",
+    "source": "Heavy Lift & Project Forwarding Internat",
+    "scope": "eu",
+    "lang": "en",
+    "published": "2026-09-23T08:49:35+00:00",
+    "summary": "Die EU weitet ihre CO2-Regeln zunehmend auch auf den industriellen Schwergut- und Projekttransport aus. Das dürfte künftig auch Hersteller und Transporteure von Landmaschinen und Anlagenteilen stärker betreffen.",
     "also": []
    }
   ],
   "world": [
    {
-    "title": "Netanyahu defends Israeli military action as delegates walk out before UN speech",
-    "teaser": "The Israeli leader labels those who left his speech at the UN General Assembly as \"moral cowards\".",
-    "link": "https://www.bbc.co.uk/news/articles/c3y0z7kxlegdo?at_medium=RSS&at_campaign=rss",
-    "source": "BBC News",
-    "scope": "world",
-    "lang": "de",
-    "published": "2026-09-25T00:44:04+00:00",
-    "summary": "Bei seiner Rede vor der UN-Generalversammlung hat Israels Regierungschef Netanjahu sein militärisches Vorgehen verteidigt und Kritiker als moralische Feiglinge bezeichnet, während Dutzende Delegierte demonstrativ den Saal verließen. Der Auftritt vertieft die diplomatische Isolation Israels wenige Wochen vor der Wahl im Land.",
-    "also": [
-     "Der Standard",
-     "tagesschau",
-     "taz"
-    ]
-   },
-   {
-    "title": "Hundreds of thousands expected in Paris for Pope's visit",
-    "teaser": "The highpoint of his time in Paris will be a giant Mass attended by more than half a million people.",
-    "link": "https://www.bbc.co.uk/news/articles/cmq8j904212po?at_medium=RSS&at_campaign=rss",
-    "source": "BBC News",
-    "scope": "world",
-    "lang": "de",
-    "published": "2026-09-24T23:17:00+00:00",
-    "summary": "Papst Leo XIV. besucht als erstes Kirchenoberhaupt seit 18 Jahren wieder Frankreich, Höhepunkt soll eine Messe mit über einer halben Million Gläubigen in Paris sein. Er will dort auch zu Künstlicher Intelligenz und zur Zukunft Europas sprechen, während Frankreich innenpolitisch mit Debatten über Sterbehilfe und Missbrauch ringt.",
-    "also": [
-     "The Guardian",
-     "Al Jazeera",
-     "NZZ",
-     "Deutsche Welle"
-    ]
-   },
-   {
-    "title": "Rebel offensive against Ethiopian army stokes fears of return to civil war",
-    "teaser": "Fighting escalates after Tigrayan rebels form new coalition aimed at overthrowing Abiy Ahmed government There are growing fears of a return to civil war in Ethiopia after an offensive by fighters from Tigray into the neighbouring states of Afar and Amhara and the formation of a new rebel alliance ai",
-    "link": "https://www.theguardian.com/world/2026/sep/24/fears-return-to-war-tigray-rebels-launch-offensive-against-ethiopian-army",
+    "title": "At least 27 dead after two mass shootings in South Africa, police say",
+    "teaser": "Seventeen people killed near Johannesburg in suspected ‘illegal goldmining turf war’, as 10 killed in separate incident at barbecue venue near Cape Town Two separate mass shootings near South Africa’s two biggest cities killed at least 27 people, as the country grapples with one of the world’s highe",
+    "link": "https://www.theguardian.com/world/2026/sep/27/mass-shootings-south-africa-johannesburg-cape-town",
     "source": "The Guardian",
     "scope": "world",
     "lang": "de",
-    "published": "2026-09-24T15:29:42+00:00",
-    "summary": "In Äthiopiens Region Tigray ist eine neue Rebellenkoalition gegen die Regierung von Abiy Ahmed offensiv geworden, die Armee spricht von abgewehrten Angriffen. Fachleute warnen, dass der Konflikt auf die gesamte Region am Horn von Afrika übergreifen könnte.",
+    "published": "2026-09-27T13:46:49+00:00",
+    "summary": "Bei zwei Massenschießereien in Südafrika sind mindestens 27 Menschen getötet worden. Ein Vorfall wird mit einem Bandenkrieg um illegalen Goldabbau nahe Johannesburg in Verbindung gebracht, der andere ereignete sich bei einer Grillfeier nahe Kapstadt.",
     "also": [
-     "BBC News",
-     "Deutsche Welle"
+     "BBC News"
     ]
    },
    {
-    "title": "Houthi advances in Yemen drive displacement, deepen humanitarian crisis",
-    "teaser": "With more than 132,000 people already displaced by the latest fighting and Houthi territorial gains, Yemen is on the brink of slipping back into a full-fledged humanitarian emergency. DW spoke with people on the ground.",
-    "link": "https://www.dw.com/en/houthi-advances-in-yemen-drive-displacement-deepen-humanitarian-crisis/a-79414280?maca=en-rss-en-world-4025-rdf",
-    "source": "Deutsche Welle",
+    "title": "Monsun: Mehr als 100 Tote durch Überschwemmungen in Nordindien und Nepal",
+    "teaser": "Zum Ende der Monsunzeit sorgen schwere Regenfälle in Indien und Nepal für Erdrutsche und Überschwemmungen. Ganze Dörfer wurden von der Außenwelt abgeschnitten.",
+    "link": "https://www.zeit.de/gesellschaft/zeitgeschehen/2026-09/monsun-indien-nepal-ueberschwemmungen-erdrutsche",
+    "source": "Zeit Online",
+    "scope": "national",
+    "lang": "de",
+    "published": "2026-09-28T09:14:12+00:00",
+    "summary": "Zum Ende der Monsunzeit haben schwere Regenfälle in Nordindien und Nepal Erdrutsche und Überschwemmungen ausgelöst, mehr als 100 Menschen kamen ums Leben und ganze Dörfer sind von der Außenwelt abgeschnitten.",
+    "also": [
+     "tagesschau",
+     "Al Jazeera"
+    ]
+   },
+   {
+    "title": "US, China list goods recommended for tariff cuts following Trump-Xi summit",
+    "teaser": "Washington and Beijing announce details of agreement to reduce tariffs on $60bn of trade.",
+    "link": "https://www.aljazeera.com/economy/2026/9/28/us-china-list-goods-recommended-for-tariff-cuts-following-trump-xi-summit?traffic_source=rss",
+    "source": "Al Jazeera",
     "scope": "world",
     "lang": "de",
-    "published": "2026-09-24T16:26:00+00:00",
-    "summary": "Mit den jüngsten Gebietsgewinnen der Huthi-Miliz im Jemen sind bereits mehr als 132.000 Menschen auf der Flucht, die humanitäre Lage droht erneut zu eskalieren. Das verschärft auch die Unsicherheit rund um wichtige Öl- und Handelsrouten am Roten Meer.",
+    "published": "2026-09-28T06:24:33+00:00",
+    "summary": "Die USA und China haben nach ihrem Gipfeltreffen eine Liste von Waren im Wert von 60 Milliarden Dollar veröffentlicht, für die Zollsenkungen vorgesehen sind. Der Schritt gilt als vorsichtige Entspannung im Handelskonflikt, die großen Streitpunkte bleiben aber ungelöst.",
+    "also": [
+     "Handelsblatt",
+     "Reuters",
+     "NZZ"
+    ]
+   },
+   {
+    "title": "SpaceX to attempt putting Starship rocket into Earth orbit for first time",
+    "teaser": "Space X on Monday will attempt to launch its Starship rocket from Texas into Earth's orbit in a 10-hour flight which would deploy 26 Starlink satellites and would represent a milestone in the development of the massive launch vehicle. But the success of the launch is uncertain, as many previous test",
+    "link": "https://www.france24.com/en/science/20260928-spacex-aims-put-starship-rocket-into-earth-orbit-first-time",
+    "source": "France 24",
+    "scope": "world",
+    "lang": "de",
+    "published": "2026-09-28T06:50:31+00:00",
+    "summary": "SpaceX will am Montag erstmals versuchen, eine Starship-Rakete in eine Erdumlaufbahn zu bringen und dabei 26 Starlink-Satelliten auszusetzen. Der geplante zehnstündige Flug wäre ein wichtiger Meilenstein für das Raumfahrtprogramm.",
     "also": []
    }
   ],
   "note": null,
   "feed_count": 30,
-  "item_count": 288,
+  "item_count": 284,
   "ranked_by": "Claude"
  }
 }
