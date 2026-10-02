@@ -1,256 +1,265 @@
 {
- "built_at": "2026-10-01T12:01:17.691196+02:00",
+ "built_at": "2026-10-02T11:38:33.048983+02:00",
  "config": "813804dcdda646a5",
  "block": {
   "enabled": true,
-  "lage": "International dominieren der knapp verhinderte Flugzeug-Zwischenfall bei FlyDubai und eine gescheiterte US-Hinrichtung. In Deutschland bestimmen Tankrabatt, Pflegereform und die AfD-Verbotsdebatte den Tag, regional spüren Pendler zwischen Augsburg und Allgäu Baustellen und Zugausfälle.",
-  "seen_update": {},
+  "lage": "Wirtschaftlich ein schwerer Tag: Galeria rutscht erneut in die Insolvenz, die Inflation in der Eurozone zieht spürbar an, und der Dieselstreit zwischen USA und EU trifft auch Landwirtschaft und Pendler direkt an der Zapfsäule. In Frankreich eskalieren die Schülerproteste weiter, innenpolitisch dominieren Pflegebeiträge – sonst eher ruhig.",
+  "seen_update": {
+   "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRmd0Q2dFWldxVUxqeEYzM3dlSUk4U0hEeERvNW5YTFRheUxCdk92bDg0VnZPQW1LbG1OTVFxcDVhMS05UE00WXJ5cDlQTWNIZWxVZEFHMWtQaE1EYWdCc1hkMTczeVZ4bmZOYmxmelJocVRGT0RfdjhFRmd4QkRRWksxZ2Y3TVBNRU9oZlZ4NU5VaHVSaWpES2pVUUVSb2VfYnc?oc=5": "2026-10-02"
+  },
   "top": [
    {
-    "title": "Flydubai-Maschine: Netanjahu nennt den angegriffenen Piloten einen „wahren Helden“",
-    "teaser": "Der Flug von Dubai nach Tel Aviv ist offenbar nur knapp einer Katastrophe entronnen, Israel spricht von einem Terroranschlag. Nun werden immer mehr Details dazu bekannt, was sich im Cockpit abspielte.",
-    "link": "https://www.faz.net/aktuell/politik/ausland/nach-notlandung-von-flydubai-maschine-netanjahu-nennt-angegriffenen-piloten-einen-wahren-helden-accg-201278451.html",
-    "source": "FAZ",
+    "title": "Warenhäuser: Galeria beantragt zum vierten Mal Insolvenz – das endgültige Aus droht",
+    "teaser": "Bei dem Händler sind nach Handelsblatt-Informationen die Umsätze zuletzt massiv eingebrochen. Dass die rund 12.000 Beschäftigten Insolvenzgeld erhalten, ist wenig wahrscheinlich.",
+    "link": "https://www.handelsblatt.com/unternehmen/handel-konsumgueter/galeria-warenhauskette-beantragt-zum-vierten-mal-insolvenz/100259202.html",
+    "source": "Handelsblatt",
     "scope": "national",
     "lang": "de",
-    "published": "2026-10-01T08:00:00+00:00",
-    "summary": "Auf einem FlyDubai-Flug von Dubai nach Tel Aviv soll der Co-Pilot den Kapitän attackiert haben, die Maschine musste in Saudi-Arabien notlanden; Israel spricht von einem versuchten Terroranschlag und würdigt den angegriffenen Piloten als Helden.",
+    "published": "2026-10-02T09:36:54+00:00",
+    "summary": "Die Warenhauskette Galeria hat zum vierten Mal innerhalb weniger Jahre Insolvenz angemeldet, nachdem die Umsätze zuletzt stark eingebrochen sind. Für die rund 12.000 Beschäftigten ist unklar, ob sie Insolvenzgeld erhalten, der Betrieb in den Filialen soll aber vorerst weiterlaufen.",
     "also": [
-     "BBC News",
-     "taz",
-     "Der Standard",
-     "n-tv",
-     "Spiegel"
-    ]
-   },
-   {
-    "title": "Hohe Kraftstoffpreise - Erneuter Tankrabatt um Mitternacht gestartet - Preise bereits gesunken",
-    "teaser": "Um Mitternacht ist der zweite staatliche Tankrabatt in diesem Jahr in Kraft getreten. Bis Ende Dezember sinkt damit die Steuerbelastung auf Benzin und Diesel um jeweils rund 17 Cent pro Liter.",
-    "link": "https://www.deutschlandfunk.de/erneuter-tankrabatt-um-mitternacht-gestartet-preise-bereits-gesunken-100.html",
-    "source": "Deutschlandfunk",
-    "scope": "national",
-    "lang": "de",
-    "published": "2026-10-01T09:52:26+00:00",
-    "summary": "Seit Mitternacht gilt erneut ein staatlicher Tankrabatt, der die Steuerlast auf Benzin und Diesel bis Jahresende um rund 17 Cent pro Liter senkt; die Preise sind bereits spürbar gefallen, was vor allem Pendler entlasten dürfte.",
-    "also": [
-     "Süddeutsche Zeitung",
-     "Handelsblatt",
-     "tagesschau",
-     "SR"
-    ]
-   },
-   {
-    "title": "Erste Reformschritte beschlossen: Was sich bei der Pflege ändern soll",
-    "teaser": "Nach langem Ringen hat sich sie Bundesregierung auf ein \"Pflegeneuordnungsgesetz\" geeinigt. Das setzt zunächst darauf, das System am Laufen zu halten. Für Kinderlose wird es teurer. Was sich sonst noch ändern soll - ein Überblick.",
-    "link": "https://www.tagesschau.de/inland/innenpolitik/faq-pflegereform-100.html",
-    "source": "tagesschau",
-    "scope": "national",
-    "lang": "de",
-    "published": "2026-09-30T15:24:32+00:00",
-    "summary": "Die Koalition hat sich auf ein Pflegeneuordnungsgesetz geeinigt, das die Pflegeversicherung zunächst stabilisieren soll; vor allem Kinderlose und Besserverdienende müssen künftig mehr zahlen, während Leistungen gekürzt werden.",
-    "also": [
-     "taz",
+     "Deutschlandfunk",
+     "Welt",
      "FAZ",
-     "Spiegel",
-     "Handelsblatt"
-    ]
-   },
-   {
-    "title": "Verträge gekündigt: Was der Tarif-Hammer bei VW für die Beschäftigten bedeutet",
-    "teaser": "Der VW-Konzern kündigt im Zuge seiner Sparmaßnahmen zehn Tarifverträge. Für die Beschäftigten ist das ein schwerer Schlag. Es bedeutet aber immerhin nicht, dass darin enthaltene Regelungen sofort wegfallen.",
-    "link": "https://www.n-tv.de/wirtschaft/Was-der-Tarif-Hammer-bei-VW-fuer-die-Beschaeftigten-bedeutet-id31367888.html",
-    "source": "n-tv",
-    "scope": "national",
-    "lang": "de",
-    "published": "2026-10-01T06:43:44+00:00",
-    "summary": "Volkswagen kündigt im Zuge seines Sparprogramms zehn Tarifverträge und setzt auf längere Arbeitszeiten statt Entlassungen; für die Beschäftigten bedeutet das spürbare Einschnitte, auch wenn bestehende Regelungen nicht sofort wegfallen.",
-    "also": [
-     "Handelsblatt",
+     "n-tv",
      "NZZ"
     ]
    },
    {
-    "title": "Rechtsextremismus - Hamburgische Bürgerschaft für umgehende Prüfung eines AfD-Verbots",
-    "teaser": "Die Hamburgische Bürgerschaft hat sich für die umgehende Prüfung eines AfD-Verbotsverfahrens ausgesprochen.",
-    "link": "https://www.deutschlandfunk.de/hamburgische-buergerschaft-fuer-umgehende-pruefung-eines-afd-verbots-100.html",
+    "title": "Frankreich - Gewaltsame Schulproteste: Regierung lädt zu Gesprächen ein",
+    "teaser": "Die französische Regierung hat wegen der gewaltsamen Schülerproteste die Akteure im Bildungswesen zu Gesprächen eingeladen. An dem Treffen sollen nach den Worten von Bildungsminister Geffray Schülervertreter, Elternverbände und Gewerkschafter teilnehmen.",
+    "link": "https://www.deutschlandfunk.de/gewaltsame-schulproteste-regierung-laedt-zu-gespraechen-ein-100.html",
     "source": "Deutschlandfunk",
     "scope": "national",
     "lang": "de",
-    "published": "2026-10-01T09:52:26+00:00",
-    "summary": "Die Debatte um ein Verbotsverfahren gegen die AfD nimmt an Fahrt auf: Die Hamburgische Bürgerschaft fordert eine umgehende Prüfung, Entertainer Hape Kerkeling plädierte im Thüringer Landtag dafür, und Staatsrechtler halten sogar eine Anfechtung der Wahl in Sachsen-Anhalt für möglich.",
+    "published": "2026-10-02T09:28:03+00:00",
+    "summary": "In Frankreich haben sich Schülerproteste gegen marode Schulbedingungen zu gewaltsamen Ausschreitungen ausgeweitet, rund 400 Schulen bleiben geschlossen und es kam zu Angriffen auf Polizei und Lehrkräfte. Die Regierung hat Bildungsakteure zu Gesprächen eingeladen, um die Lage zu beruhigen.",
     "also": [
+     "France 24",
+     "The Guardian",
+     "BBC News",
      "Welt",
-     "Zeit Online",
-     "taz"
+     "Der Standard"
     ]
+   },
+   {
+    "title": "Euro-Zone: Inflation auf Drei-Jahres-Hoch, Frankreich unter großem Druck: Für die EZB wird es brenzlig",
+    "teaser": "Unerwartet schnell steigende Verbraucherpreise und eine Zuspitzung der Lage in Frankreich: Die EZB ist zwischen Problemen bei der Inflation und an den Anleihemärkten eingekeilt.",
+    "link": "https://www.handelsblatt.com/finanzen/geldpolitik/inflation-teuerung-im-euroraum-springt-auf-drei-jahres-hoch/100254617.html",
+    "source": "Handelsblatt",
+    "scope": "national",
+    "lang": "de",
+    "published": "2026-10-02T09:37:57+00:00",
+    "summary": "Die Inflation in der Eurozone ist unerwartet auf 3,8 Prozent gestiegen, auch getrieben von höheren Energiepreisen. Das erhöht den Druck auf die EZB, trotz wirtschaftlicher Spannungen etwa in Frankreich möglicherweise früher an der Zinsschraube zu drehen.",
+    "also": [
+     "Zeit Online",
+     "FAZ"
+    ]
+   },
+   {
+    "title": "Energie: EU reagiert auf Trumps Druck und könnte Dieselreserven freigeben",
+    "teaser": "Diesel wird international knapper und damit teurer. Die EU hofft darum auf ein gemeinsames Vorgehen mit den USA. So will sie ein Exportverbot für amerikanischen Diesel verhindern.",
+    "link": "https://www.handelsblatt.com/politik/international/diesel-eu-reagiert-auf-trumps-druck-und-koennte-dieselreserven-freigeben/100259188.html",
+    "source": "Handelsblatt",
+    "scope": "national",
+    "lang": "de",
+    "published": "2026-10-02T09:23:15+00:00",
+    "summary": "Weil Diesel international knapper und teurer wird, drängen die USA unter Präsident Trump auch Deutschland und die EU zur Freigabe strategischer Dieselreserven. Die EU-Kommission berät über ein gemeinsames Vorgehen, um ein drohendes US-Exportverbot abzuwenden – mit direkter Wirkung auf Kraftstoffpreise für Landwirtschaft und Pendler.",
+    "also": [
+     "The Guardian",
+     "BBC News",
+     "FAZ"
+    ]
+   },
+   {
+    "title": "Kabinett ist sich einig : Steigende Pflegebeiträge für viele: Wie viel macht das aus?",
+    "teaser": "Kinderlose und Gutverdiener zahlen ab 2027 mehr für die Pflegeversicherung. Ab 2028 soll ein weiterer Zuschlag dazukommen. Was bedeutet das konkret für den eigenen Geldbeutel?",
+    "link": "https://www.n-tv.de/ratgeber/Steigende-Pflegebeitraege-fuer-viele-Wie-viel-macht-das-aus-id31370407.html",
+    "source": "n-tv",
+    "scope": "national",
+    "lang": "de",
+    "published": "2026-10-02T07:35:32+00:00",
+    "summary": "Das Bundeskabinett hat steigende Pflegebeiträge für Kinderlose und Gutverdiener ab 2027 beschlossen, 2028 soll ein weiterer Zuschlag folgen. Für viele Beitragszahler bedeutet das spürbar höhere Abzüge vom Gehalt.",
+    "also": []
    }
   ],
   "region": [
    {
-    "title": "B17 in Augsburg wird wegen Bauarbeiten gesperrt: Wie heftig wird das für Autofahrer?",
-    "teaser": "B17 in Augsburg wird wegen Bauarbeiten gesperrt: Wie heftig wird das für Autofahrer? augsburger-allgemeine.de",
-    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQNU5BRkExbnlBa2lmenVxOVhBXzdpUU8zM3hmWk96S2JtQzF0akRUbTRYNzZZOWg5R25ub24zTFhuaEhLUVM0RFc3ajIzR2Q4VlNKaXZWNzU5bDdETWlZOTl0a3ZjN016VFZNeU9KcENUNkREMHRfV2VDZnBfTmZ6LXhMVDVxRUgzN09mXzdUUHFkTVRCeUxuZzlZcWRzXzRhbVduQkpNTTJPWC16dlJMLQ?oc=5",
-    "source": "augsburger-allgemeine.de",
+    "title": "„Das bewirkt nicht viel“: Neuer Tankrabatt führt zu Frust an Augsburgs Zapfsäulen",
+    "teaser": "„Das bewirkt nicht viel“: Neuer Tankrabatt führt zu Frust an Augsburgs Zapfsäulen Augsburger Allgemeine",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNdnZZeV9OaEFKS01MZGFlaG9XMWRyaTdTaHA3Q0VLQjVHYjgwcUZVUkVrMktwWXplZ3RYMWcya1YydE5rTFUxcktOcjZac0dQQ3BDeWtNeGJLeFRiWGZmU2stN09GaTFMeGpyN3dNczAtdm1BVUNfbUd5UnRNTm5XT190dDBFYXlyZm4wRG8yYmk5a0d1VjdqTTdyQ1ZWdFgySWg4LXBOYTBuSVJpMWpPR0dRTm84TEdETGhoSnV0OUI2RzIyNmdZ?oc=5",
+    "source": "Augsburger Allgemeine",
     "scope": "regional",
     "lang": "de",
-    "published": "2026-10-01T03:56:00+00:00",
-    "summary": "Die B17 in Augsburg wird wegen Bauarbeiten gesperrt, was den Verkehr in der Region zeitweise deutlich erschweren dürfte – Pendler sollten sich auf Umwege einstellen.",
+    "published": "2026-10-02T07:43:15+00:00",
+    "summary": "Der neue Tankrabatt sorgt an Augsburgs Tankstellen für Enttäuschung, weil die Preissenkung aus Sicht vieler Autofahrer kaum spürbar ist. Das deckt sich mit bundesweiten Berichten über ein gemischtes Stimmungsbild zur Maßnahme.",
     "also": []
    },
    {
-    "title": "München: Widerstand gegen Streichungen bei Regionalzügen zwischen München und Augsburg wächst",
-    "teaser": "München: Widerstand gegen Streichungen bei Regionalzügen zwischen München und Augsburg wächst SZ.de",
-    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPSnYycmlKS3huVjhRWTVUNHVuZllxbmcxa2tSR2ZQMHRpVklUSTd0WVVvMUFsNDRXdmxMcVhENnpybjBsZXJrczl6MTcwTjFJM2UtcWdYU3NfZk5MTmw0UnlLX1BXVVRXU045UjBUU2tPbkFuNmZVMFJqYzV4dGlKZ1A5ZU5yRTQzV2Uwa2FJSlRqMjZGaHYyUklTRW8tWU5aU3pN?oc=5",
-    "source": "SZ.de",
+    "title": "Jetzt dreimal umsteigen auf Bahnstrecke Augsburg-Ingolstadt",
+    "teaser": "Jetzt dreimal umsteigen auf Bahnstrecke Augsburg-Ingolstadt welt.de",
+    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPSmRwbWtlamUyQnJIRUE4WjVZWS13VXVmaWdoNjlQOHl5N2FMaDR4Q2hMSVd2Nl9Dc2phOUh6dlphYkxZanFwTUZXd3Q4SEI0VlM2RW9iYlZFNlQ4anNrbVRKdC1WT1Y4cXRoWDUxZ2YxV0E3cmo3OUJLRmdWSnRZMkd6WkI5THpBVjRhOVJZb01vMG5wc2lxMUNRMXd6X2MtcG9tTGdHdHg3NWxLT0R1ZkZxb2hzbkdiOE9nbHN4TDRDVXNHX0hpaUFMNzh4Y00?oc=5",
+    "source": "welt.de",
     "scope": "regional",
     "lang": "de",
-    "published": "2026-09-30T11:59:38+00:00",
-    "summary": "Gegen geplante Streichungen bei Regionalzügen zwischen München und Augsburg formiert sich zunehmend Widerstand, da viele Pendler auf die Verbindung angewiesen sind.",
+    "published": "2026-10-01T15:09:40+00:00",
+    "summary": "Auf der Bahnstrecke zwischen Augsburg und Ingolstadt müssen Reisende wegen Bauarbeiten künftig dreimal umsteigen. Das dürfte den Pendelverkehr in der Region spürbar erschweren.",
     "also": []
    },
    {
-    "title": "Nie dagewesene Trockenheit im Allgäu: Bad Wörishofen verbraucht doppelt so viel Wasser wie der Schnitt",
-    "teaser": "Nie dagewesene Trockenheit im Allgäu: Bad Wörishofen verbraucht doppelt so viel Wasser wie der Schnitt augsburger-allgemeine.de",
-    "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQdU5DTU5SdnRVUWhHRFFGczdXMFpkUC1Ma0RHYXhfRVBaSFhfWk16Wnk3Y1BJYXRQSHl4RG0xeDd3VTM0UHdYTkRlQWg3Q3NaS2lzM0V4eTIzbHJZWFhfSUhMcVZZNGRtaXRHT2Y0ZFpRM3pKSV9FeWIxN0xRMXpmMlhfNmEwUTZENVNNRmtrWHVwaEVVdUhsU3FMU1NMZTl6RGIyYUdhcVJETlBWYkc0c2Y3QkZpOTlhMXZtRFlOdlZRYV9PX2RkMERMbVpZekNMeDlnaEZJYl9Vc2k5U2xPSkpJWENmcWFaWkxj?oc=5",
-    "source": "augsburger-allgemeine.de",
+    "title": "Ausgleichszahlungen für Eingriff ins Landschaftsbild: Warum zehn Windräder „günstiger“ sind als vier",
+    "teaser": "Ausgleichszahlungen für Eingriff ins Landschaftsbild: Warum zehn Windräder „günstiger“ sind als vier Augsburger Allgemeine",
+    "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQWEVBR2N1VGJMaENBRXFIcnNJVEZINk5mbGRBWmFUQWhjYTd1V3oxNlVHR0hQR1lkYlg4TE55dE5yVlRkOVZiRTZVNGhFd1hYOWhqelJNaE9yU3FCYnFaYVRtRHI0OWxxemM2NTh2RWJWNDVBZ2Y4WkM1Rm9rOTVuMTBXaGtZWVBNbGI0Vm1JZElTbG9nbU9MbTVBWXo4YjRWOEp5SzJXZ2NvbVNKR2VWclRkNTJLVDhvOVJUVFRhdEJ4ek5TTDIxWkV3Q3pFSjlJazB1MG12OGNrOW1vN1gyWWtvNndmQjZXaGc?oc=5",
+    "source": "Augsburger Allgemeine",
     "scope": "regional",
     "lang": "de",
-    "published": "2026-10-01T03:46:38+00:00",
-    "summary": "Die anhaltende Trockenheit im Allgäu zeigt deutliche Folgen: Bad Wörishofen verbraucht derzeit doppelt so viel Wasser wie im langjährigen Durchschnitt üblich.",
+    "published": "2026-10-02T07:23:45+00:00",
+    "summary": "In der Region zeigt sich, dass Ausgleichszahlungen für den Eingriff ins Landschaftsbild bei zehn Windrädern günstiger ausfallen als bei vier Anlagen. Das könnte Kommunen bei künftigen Planungen zu größeren Windparks auf landwirtschaftlichen Flächen bewegen.",
     "also": []
    },
    {
-    "title": "Immer mehr Kuhattacken auf den Almen? „Die Kuh ist ja kein Werwolf“",
-    "teaser": "Immer mehr Kuhattacken auf den Almen? „Die Kuh ist ja kein Werwolf“ augsburger-allgemeine.de",
-    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNbUQ3VWNMc0NEY1p4RkhHeUtqc1pDSjU5MTFnOEZCd0s1Zm5TQm40YW1KX2lmTHZpd1NpNDJmcktHblV5NERhTFRYSTV2dE5GNXM2N0tzX2QxbW43S1M3MV9lUklsQlZRMEpfblVpUDdCM1pQQ002emtLaGdRN0ZkNTVwRUVoLWdrSGZHQ0JpSlQ4M05hNVhobG5qSXQwUjg2YWo0d291YnlXZDlDRmtBRXJ1a0htYWxDamZLd1JfQnN1LV9YcTBCNWNHb2U?oc=5",
-    "source": "augsburger-allgemeine.de",
+    "title": "Tradition im Allgäu: So läuft der Viehscheid in Oberschönegg ab",
+    "teaser": "Tradition im Allgäu: So läuft der Viehscheid in Oberschönegg ab Augsburger Allgemeine",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPZ211Ri12LU40NkRmbWRvbmpWM0FVTkVzQ1hfVE9KSnAyQTdUVUtsMm5rV0ctNEZvSFZjdlFMdnFUN2JLZDVsZWRmVGZkU1pPa3cwWlpWRHRMby1iVnN6bVdDeGRUQzJhM090OVRldTBCUW1oNTB5c0kzdVh6NTRaU2ZuSmpzN0VwZWoxYVVBSU5Tek9uSkFWam1LeGVHVkRVcGZEZ0JqY1BWcjk3ZkYwWkc2VkNJeGlPTVlGLVFSaEstdXM?oc=5",
+    "source": "Augsburger Allgemeine",
     "scope": "regional",
     "lang": "de",
-    "published": "2026-10-01T03:58:39+00:00",
-    "summary": "Auf Allgäuer Almen häufen sich Berichte über aggressive Kühe gegenüber Wanderern, Experten mahnen jedoch zu Besonnenheit und richtigem Verhalten im Umgang mit den Tieren.",
+    "published": "2026-10-02T03:43:36+00:00",
+    "summary": "In Oberschönegg im Allgäu findet der traditionelle Viehscheid statt, bei dem das Vieh von den Alpweiden zurück ins Tal getrieben wird. Die Veranstaltung ist fester Bestandteil des bäuerlichen Jahreskreises in der Region.",
     "also": []
    }
   ],
   "agrar": [
    {
-    "title": "Landwirt verkauft Kartoffeln und Gemüse – Finanzamt will 85.000 Euro Gewerbesteuer",
-    "teaser": "Landwirt verkauft Kartoffeln und Gemüse – Finanzamt will 85.000 Euro Gewerbesteuer agrarheute.com",
-    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNM2RRcENUSVZqQWlBZHFDUnBJMzY2OUJnNDQtWFk5QlkzdkZSMmJHT1ZVMm1nM1lJOHJOcVZLQ0ItQk5lbWpPSHVVUWx6VmpIaTIyajNiRm9iTm9qZ1dpaVdreDRaaENrdTM3Y09KTTd2bXZ0ZnMxWFhRQUdHRTNCVHVEZkJpc2kzTU9WeTc5UkhVb1NHUE9lVjFUZGVqLWtyc3JLLVRJWm52eWVqdDB6WUo3OU1WYkxDNlpDeUdDbExGWm1EaXc?oc=5",
-    "source": "agrarheute.com",
+    "title": "Landwirtschaft - Kartoffelernte in Bayern fällt schlecht aus - Bayern - SZ.de",
+    "teaser": "Landwirtschaft - Kartoffelernte in Bayern fällt schlecht aus - Bayern - SZ.de SZ.de",
+    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNcGY4b2xUaFZBMjlUbl9XNEVrTVJzUDlrY1cxRFlMYW00cTVSREtFZHBMV3J4SmM0YW1QVHdrTVdzMzFyc2JNUzR0Y0k4VFFQRm5TTDctNzllM3BoYVpTay13UnlQZWNBV2p2NDI4eTdaTzU3Ylh4d3BQNXlZQ2ZUYkZpdXVVTDh0WURFUy03dlBIVGI5T0w3VEdPa0R0M1RGbHQwTV9GXzhRVmhjT0dlY1pNazJjRVJkVmE2cDVzaFFNeTBFUU9tYTdxYmloVmxVemlqa0tJMS1VZm0z?oc=5",
+    "source": "SZ.de",
     "scope": "agrar",
     "lang": "de",
-    "published": "2026-10-01T09:37:27+00:00",
-    "summary": "Ein Landwirt, der Kartoffeln und Gemüse direkt vermarktet, soll nach Ansicht des Finanzamts 85.000 Euro Gewerbesteuer nachzahlen – ein Fall, der zeigt, wie schnell Direktvermarktung steuerlich zum Risiko werden kann.",
+    "published": "2026-10-02T09:24:20+00:00",
+    "summary": "Die Kartoffelernte in Bayern ist in diesem Jahr schlechter ausgefallen als in den Vorjahren. Details zu Ursachen und Mengen bleiben in der Meldung offen.",
     "also": []
    },
    {
-    "title": "Landwirtschaft: EU-Staaten gegen unbefristete Zulassung von Pestiziden",
-    "teaser": "Landwirtschaft: EU-Staaten gegen unbefristete Zulassung von Pestiziden Tagesspiegel",
-    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNbi1OR1ZnWjBMVkI0bDBWSUl2bG5uSmVpV2pXNmM0LUlaUldzU1pxMXJtWTVPcERVZy02Wm42dWRwZWJSVUNNN1B0d1NlNnFZSTR4WllhWGRoTThoODZVNHdaamFTU1VvRk96YUtCN3I3WTVxYkNKV1J4aFVoeHZuRGVWNmRJYmZBZmVkSDhTeHdoYzJMbTk3SUU4N0d4WVRfbTNOSURvdWFNUUxtYVFRTUxLaWRDSWFoa0pMZGRsZDRpb1NX?oc=5",
-    "source": "Tagesspiegel",
+    "title": "Schweinehalter warten weiterhin auf Unterstützungssignale aus Berlin",
+    "teaser": "Schweinehalter warten weiterhin auf Unterstützungssignale aus Berlin Bayerischer Bauernverband",
+    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB6YUxYbVE1SDNSUDNOd0hTNFM1czJ0QXN3V3NqOUdVQVM5NHU4Y3kxMG1vWHd4aTNnTHdaSF9GTEkxX2xKWXhQRksyM0paRVVMQ2lSNW8zZ3hFT2xjNWpjeFBmdU85LTNkbXczSkNzMA?oc=5",
+    "source": "Bayerischer Bauernverband",
     "scope": "agrar",
     "lang": "de",
-    "published": "2026-09-30T13:52:13+00:00",
-    "summary": "Die EU-Mitgliedstaaten sprechen sich gegen eine unbefristete Zulassung von Pestiziden aus, was künftige Genehmigungsverfahren für Pflanzenschutzmittel deutlich verändern dürfte.",
+    "published": "2026-10-02T03:43:38+00:00",
+    "summary": "Bayerische Schweinehalter warten weiterhin auf konkrete Unterstützungssignale aus Berlin. Eine Entspannung der wirtschaftlich angespannten Lage in der Schweinehaltung ist bislang nicht in Sicht.",
     "also": []
    },
    {
-    "title": "\"Mir rollen sich die Fußnägel\": Warum ostdeutsche Großbetriebe die EU-Förderpläne fürchten",
-    "teaser": "\"Mir rollen sich die Fußnägel\": Warum ostdeutsche Großbetriebe die EU-Förderpläne fürchten MDR.de",
-    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQRG5QTmFMdWxFLUFiVjFkVUo4X0FLY2ZwT0ZJdm1La2ROUlVhcG9XaGozWnEyV2wxcGNzRUJXeFhXY201OHVwTl90dXZscDFQOElEbGVFcExjb2x0Z1BsZldvX3hzQk9ZbjZ2VkVDNjNOZ3hwNlVvNjNCb2NrOXdSWVBjS2ZKcHVJdU9Dd2hqb3pvQzFjTnln?oc=5",
-    "source": "MDR.de",
+    "title": "Baden-Württemberg: Landwirtschaft und teurer Diesel: Start-Up entwickelt E-Unterstützung für Traktoren",
+    "teaser": "Baden-Württemberg: Landwirtschaft und teurer Diesel: Start-Up entwickelt E-Unterstützung für Traktoren tagesschau.de",
+    "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPSkZ3dmxIU1EtaDczZFdmQkozSmNrUi1vd2NjbEFiczFZSXlMU2xyMjQtWjZDMS1oLWVrWXUza01mZVFkVG43enBiZzNsZERIUWZveUhybU5GTXp6ZU56OVRjRDZ4RDFwNy1Ic2JWejVmdUpmQ056QzkwUlBoVklmSGxSY2tOTDF6NlNvSTBUck5senFtZC1Pemp0dE5DTXRwUTlMRGprd3JuUzlPZnl1eFprUGdKN1NFTGpiVWxyaHI1SzRaUGlxUnBUbkhCRHBDb29EQ0FRek5PN1duNXJyN0RvallBaUlmR01CUnlB?oc=5",
+    "source": "tagesschau.de",
     "scope": "agrar",
     "lang": "de",
-    "published": "2026-09-30T03:00:00+00:00",
-    "summary": "Ostdeutsche Agrar-Großbetriebe fürchten die geplanten EU-Förderpläne, da diese ihre Direktzahlungen künftig deutlich schmälern könnten.",
+    "published": "2026-10-01T12:56:00+00:00",
+    "summary": "Ein Start-up aus Baden-Württemberg entwickelt eine elektrische Unterstützung für Traktoren als Reaktion auf die gestiegenen Dieselkosten in der Landwirtschaft. Das zeigt, wie der teure Diesel inzwischen auch technische Innovationen bei Landmaschinen antreibt.",
     "also": []
    },
    {
-    "title": "Take a sneak peek at Massey Ferguson’s newest tractor",
-    "teaser": "Massey Ferguson’s newest tractor, the 7S Mark 2 series, will not hit the production line until early 2027 – but Agriland has already had a first look. Massey Ferguson has expanded its tractor line-up with the new 7S Mark 2 series, comprising six models ranging from 170 to 245hp. The new range does n",
-    "link": "https://www.agriland.ie/farming-news/take-a-sneak-peek-at-massey-fergusons-newest-tractor/",
+    "title": "How has the 2026 drought impacted Europe’s potato sectors?",
+    "teaser": "A new report has quantified the impact of the 2026 drought on Europe’s potato sectors, from both a production and economic perspective. The work was carried out by staff in the UK-based think tank: the Energy and Climate Intelligence Unit. This analysis looks specifically at the potential impact on ",
+    "link": "https://www.agriland.ie/farming-news/how-has-the-2026-drought-impacted-europes-potato-sectors/",
     "source": "Agriland",
     "scope": "agrar",
     "lang": "en",
-    "published": "2026-09-30T17:15:00+00:00",
-    "summary": "Massey Ferguson hat seine neue 7S-Mark-2-Traktorenserie vorgestellt, die ab Anfang 2027 vom Band laufen soll und das bestehende Modellprogramm nach oben erweitert.",
+    "published": "2026-10-01T13:30:00+00:00",
+    "summary": "A new report quantifies how the 2026 drought has hit Europe's potato sector in both yield and economic terms. It adds to a string of findings this summer showing record-low river levels and heat stress across the continent.",
     "also": []
    },
    {
-    "title": "Arla to commit €63 million to meet protein-rich food demand",
-    "teaser": "Danish-Swedish dairy co-op Arla has said it will invest €63 million to grow its offering of skyr and cottage cheese, amid a demand for protein-rich food. The investment, at sites in Germany and Sweden, is aimed at allowing Arla to meet growing demand across markets while creating greater value from ",
-    "link": "https://www.agriland.ie/farming-news/arla-to-commit-e63-million-to-meet-protein-rich-food-demand/",
+    "title": "IFA requests meeting with Boortmalt on malting barley prices",
+    "teaser": "The Irish Farmers’ Association (IFA) has requested a meeting with Boortmalt to discuss harvest 2026 malting barley prices. This is in response to the mounting grower anger on the matter. IFA’s national grain committee chair, John Murphy, commented: “We do not want to fundamentally change the agreeme",
+    "link": "https://www.agriland.ie/farming-news/ifa-requests-meeting-with-boortmalt-on-malting-barley-prices/",
     "source": "Agriland",
     "scope": "agrar",
     "lang": "en",
-    "published": "2026-10-01T07:34:45+00:00",
-    "summary": "Die dänisch-schwedische Molkereigenossenschaft Arla investiert 63 Millionen Euro in den Ausbau ihrer Skyr- und Hüttenkäse-Produktion in Deutschland und Schweden, um die steigende Nachfrage nach proteinreichen Lebensmitteln zu bedienen.",
+    "published": "2026-10-02T07:45:00+00:00",
+    "summary": "Ireland's farmers association has requested talks with maltster Boortmalt over this year's malting barley prices amid mounting grower anger. It reflects wider tension in European grain markets over producer returns.",
     "also": []
    }
   ],
-  "eu": [],
+  "eu": [
+   {
+    "title": "Bauernverband: Fordert klare Signale von EU-Agrarministerrat",
+    "teaser": "Bauernverband: Fordert klare Signale von EU-Agrarministerrat Gabot.de",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRmd0Q2dFWldxVUxqeEYzM3dlSUk4U0hEeERvNW5YTFRheUxCdk92bDg0VnZPQW1LbG1OTVFxcDVhMS05UE00WXJ5cDlQTWNIZWxVZEFHMWtQaE1EYWdCc1hkMTczeVZ4bmZOYmxmelJocVRGT0RfdjhFRmd4QkRRWksxZ2Y3TVBNRU9oZlZ4NU5VaHVSaWpES2pVUUVSb2VfYnc?oc=5",
+    "source": "Gabot.de",
+    "scope": "eu",
+    "lang": "de",
+    "published": "2026-09-29T15:04:20+00:00",
+    "summary": "Der Bauernverband fordert vom bevorstehenden EU-Agrarministerrat klare politische Signale für die Landwirtschaft. Konkrete Forderungen bleiben in der Meldung offen.",
+    "also": []
+   }
+  ],
   "world": [
    {
-    "title": "Tennessee death row inmate Christa Pike survives execution attempt",
-    "teaser": "Christa Pike, convicted of murdering a schoolmate three decades ago, survived Tennessee's effort to execute her by means of lethal injection late on Wednesday, prison officials said, foiling the state's first attempt to put a woman to death in two centuries. Pike's condition following the ordeal was",
-    "link": "https://www.france24.com/en/video/20261001-tennessee-death-row-inmate-christa-pike-survives-execution-attempt",
-    "source": "France 24",
+    "title": "Election debate cancelled in Brazil, bomb scare outside Supreme Court",
+    "teaser": "Brazilian president and opposition candidate snub the final debate ahead of the presidential election.",
+    "link": "https://www.aljazeera.com/news/2026/10/2/election-debate-cancelled-in-brazil-bomb-scare-outside-supreme-court?traffic_source=rss",
+    "source": "Al Jazeera",
     "scope": "world",
     "lang": "de",
-    "published": "2026-10-01T09:44:03+00:00",
-    "summary": "Die zum Tode verurteilte Christa Pike hat in Tennessee einen Hinrichtungsversuch mittels zweier Giftspritzen überlebt, nachdem ein Gericht die Vollstreckung zuvor kurzzeitig gestoppt hatte; der Fall dürfte die Debatte über die Rechtmäßigkeit der Exekution neu befeuern.",
+    "published": "2026-10-02T06:09:57+00:00",
+    "summary": "Vor der brasilianischen Präsidentschaftswahl am Sonntag ist die traditionelle TV-Debatte ausgefallen, weil sowohl Amtsinhaber Lula als auch Herausforderer Flávio Bolsonaro absagten. Der Wahlkampf wird zunehmend über gegenseitige Anschuldigungen geführt.",
     "also": [
-     "BBC News",
-     "FAZ",
-     "taz",
-     "Der Standard",
-     "n-tv"
-    ]
-   },
-   {
-    "title": "Hegseth 'state of the force' speech: US to cut number of generals, admirals by 20%",
-    "teaser": "Defense Secretary Pete Hegseth announced Wednesday that the United States has slashed the number of its generals and admirals by 20 percent, in a move he said is aimed at \"accountability.\" Hegseth suggested the cuts targeted officers who failed to get on board with his efforts to ensure the military",
-    "link": "https://www.france24.com/en/video/20261001-hegseth-state-of-the-force-speech-us-to-cut-number-of-generals-admirals-by-20",
-    "source": "France 24",
-    "scope": "world",
-    "lang": "de",
-    "published": "2026-10-01T09:42:10+00:00",
-    "summary": "US-Verteidigungsminister Hegseth kündigt einen Umbau der Streitkräfte an, reduziert die Zahl der Generäle und Admiräle um ein Fünftel und will Elon Musk in die Erforschung künftiger, KI-gestützter Kriegsführung einbinden.",
-    "also": [
-     "taz",
-     "Süddeutsche Zeitung",
-     "tagesschau",
-     "Handelsblatt"
-    ]
-   },
-   {
-    "title": "Russland greift erneut Kyjiw und Odessa an",
-    "teaser": "Zwei polnische Flughäfen wurden wegen russischer Angriffe auf die Ukraine vorübergehend geschlossen. Rund 155 Milliarden Dollar betragen die Kriegskosten der Ukraine in diesem Jahr",
-    "link": "https://www.derstandard.at/jetzt/livebericht/3000000342139/russland-greift-erneut-kyjiw-und-odessa-an?ref=rss",
-    "source": "Der Standard",
-    "scope": "national",
-    "lang": "de",
-    "published": "2026-10-01T06:17:51+00:00",
-    "summary": "Russland griff erneut Kyjiw und Odessa an, weshalb zwei polnische Flughäfen vorübergehend schließen mussten; die Kriegskosten der Ukraine belaufen sich laut einem Bericht in diesem Jahr auf rund 155 Milliarden Dollar.",
-    "also": [
+     "The Guardian",
+     "France 24",
      "NZZ"
     ]
    },
    {
-    "title": "French PM to present belt-tightening 2027 budget, including frozen wages and new taxes",
-    "teaser": "French Prime ​Minister ‌Sébastien Lecornu ⁠is due on Thursday to present a belt-tightening government budget for 2027, with savings predicted to come from freezing wages in the public sector and all but the lowest ‌pensions. A series of targeted tax measures, including on income revenues and VAT, ar",
-    "link": "https://www.france24.com/en/france/20261001-french-pm-to-present-belt-tightening-2027-budget-including-frozen-wages-and-new-taxes",
-    "source": "France 24",
+    "title": "Ethiopia and Eritrea cut diplomatic ties as northern conflict escalates",
+    "teaser": "The diplomatic fallout comes as Ethiopian forces battle rebel fighters across its northern region.",
+    "link": "https://www.bbc.co.uk/news/articles/crpd0d0jl0y0o?at_medium=RSS&at_campaign=rss",
+    "source": "BBC News",
     "scope": "world",
     "lang": "de",
-    "published": "2026-10-01T09:20:27+00:00",
-    "summary": "Frankreichs Premierminister Lecornu stellt einen strikten Sparhaushalt für 2027 vor, der eingefrorene Löhne im öffentlichen Dienst und neue Steuern vorsieht, um die Staatsfinanzen zu stabilisieren.",
+    "published": "2026-10-02T08:01:10+00:00",
+    "summary": "Äthiopien und Eritrea haben die diplomatischen Beziehungen abgebrochen, während die Kämpfe im Norden Äthiopiens weiter eskalieren und der brüchige Friedensvertrag von 2022 praktisch kollabiert ist. Internationale Vermittlungsversuche sind bislang gescheitert.",
+    "also": [
+     "Deutsche Welle",
+     "Al Jazeera"
+    ]
+   },
+   {
+    "title": "Russia tries to freeze Ukraine as it suffers record casualties and retreats",
+    "teaser": "Moscow has suffered further losses of occupied territory, but is using new drones to beat Ukraine's defences.",
+    "link": "https://www.aljazeera.com/news/2026/10/2/russia-tries-to-freeze-ukraine-as-it-suffers-record-casualties-and-retreats?traffic_source=rss",
+    "source": "Al Jazeera",
+    "scope": "world",
+    "lang": "de",
+    "published": "2026-10-02T08:03:02+00:00",
+    "summary": "Die ukrainischen Streitkräfte haben im Raum Lyman weitere Gebiete von russischen Truppen zurückerobert, während Moskau laut Berichten hohe Verluste hinnehmen muss. Gleichzeitig griff Russland erneut Brücken und Infrastruktur in Kiew mit Drohnen an.",
+    "also": [
+     "n-tv",
+     "France 24",
+     "NZZ",
+     "tagesschau"
+    ]
+   },
+   {
+    "title": "US delivers F-16V fighter jets to Taiwan as island eyes threat from China",
+    "teaser": "Amid threats from China, Taipai is growing concerned about the Trump administration's commitment to arming the island.",
+    "link": "https://www.aljazeera.com/news/2026/10/2/us-delivers-f-16v-fighter-jets-to-taiwan-as-island-eyes-threat-from-china?traffic_source=rss",
+    "source": "Al Jazeera",
+    "scope": "world",
+    "lang": "de",
+    "published": "2026-10-02T08:26:22+00:00",
+    "summary": "Die USA haben mit der Auslieferung neuer F-16V-Kampfjets an Taiwan begonnen, während sich die Spannungen mit China weiter zuspitzen. Taiwan sorgt sich zugleich, ob die Trump-Regierung ihre Sicherheitszusagen langfristig einhält.",
     "also": []
    }
   ],
   "note": null,
   "feed_count": 30,
-  "item_count": 298,
+  "item_count": 302,
   "ranked_by": "Claude"
  }
 }
