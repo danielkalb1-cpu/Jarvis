@@ -1,265 +1,266 @@
 {
- "built_at": "2026-10-02T11:38:33.048983+02:00",
+ "built_at": "2026-10-05T12:18:06.110590+02:00",
  "config": "813804dcdda646a5",
  "block": {
   "enabled": true,
-  "lage": "Wirtschaftlich ein schwerer Tag: Galeria rutscht erneut in die Insolvenz, die Inflation in der Eurozone zieht spürbar an, und der Dieselstreit zwischen USA und EU trifft auch Landwirtschaft und Pendler direkt an der Zapfsäule. In Frankreich eskalieren die Schülerproteste weiter, innenpolitisch dominieren Pflegebeiträge – sonst eher ruhig.",
-  "seen_update": {
-   "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRmd0Q2dFWldxVUxqeEYzM3dlSUk4U0hEeERvNW5YTFRheUxCdk92bDg0VnZPQW1LbG1OTVFxcDVhMS05UE00WXJ5cDlQTWNIZWxVZEFHMWtQaE1EYWdCc1hkMTczeVZ4bmZOYmxmelJocVRGT0RfdjhFRmd4QkRRWksxZ2Y3TVBNRU9oZlZ4NU5VaHVSaWpES2pVUUVSb2VfYnc?oc=5": "2026-10-02"
-  },
+  "lage": "BND warnt vor wachsender Kriegsgefahr mit Russland, Spanien und Brasilien stehen vor Richtungswahlen – außenpolitisch ein schwerer Tag. Regional bleibt es ruhig, einzig die B17-Sperrung in Augsburg betrifft den Pendleralltag direkt.",
+  "seen_update": {},
   "top": [
    {
-    "title": "Warenhäuser: Galeria beantragt zum vierten Mal Insolvenz – das endgültige Aus droht",
-    "teaser": "Bei dem Händler sind nach Handelsblatt-Informationen die Umsätze zuletzt massiv eingebrochen. Dass die rund 12.000 Beschäftigten Insolvenzgeld erhalten, ist wenig wahrscheinlich.",
-    "link": "https://www.handelsblatt.com/unternehmen/handel-konsumgueter/galeria-warenhauskette-beantragt-zum-vierten-mal-insolvenz/100259202.html",
-    "source": "Handelsblatt",
+    "title": "BND-Chef warnt vor \"gewaltsamem Konflikt mit Russland\"",
+    "teaser": "Nach Einschätzung von BND-Chef Jäger befindet sich Deutschland in einem \"Schattenkrieg\" mit Russland. Bei ihrer jährlichen Anhörung warnten die Nachrichtendienste erneut vor einem Anschlagsrisiko - und drängten auf mehr Befugnisse.",
+    "link": "https://www.tagesschau.de/inland/innenpolitik/nachrichtendienste-chefs-anhoerung-100.html",
+    "source": "tagesschau",
     "scope": "national",
     "lang": "de",
-    "published": "2026-10-02T09:36:54+00:00",
-    "summary": "Die Warenhauskette Galeria hat zum vierten Mal innerhalb weniger Jahre Insolvenz angemeldet, nachdem die Umsätze zuletzt stark eingebrochen sind. Für die rund 12.000 Beschäftigten ist unklar, ob sie Insolvenzgeld erhalten, der Betrieb in den Filialen soll aber vorerst weiterlaufen.",
-    "also": [
-     "Deutschlandfunk",
-     "Welt",
-     "FAZ",
-     "n-tv",
-     "NZZ"
-    ]
-   },
-   {
-    "title": "Frankreich - Gewaltsame Schulproteste: Regierung lädt zu Gesprächen ein",
-    "teaser": "Die französische Regierung hat wegen der gewaltsamen Schülerproteste die Akteure im Bildungswesen zu Gesprächen eingeladen. An dem Treffen sollen nach den Worten von Bildungsminister Geffray Schülervertreter, Elternverbände und Gewerkschafter teilnehmen.",
-    "link": "https://www.deutschlandfunk.de/gewaltsame-schulproteste-regierung-laedt-zu-gespraechen-ein-100.html",
-    "source": "Deutschlandfunk",
-    "scope": "national",
-    "lang": "de",
-    "published": "2026-10-02T09:28:03+00:00",
-    "summary": "In Frankreich haben sich Schülerproteste gegen marode Schulbedingungen zu gewaltsamen Ausschreitungen ausgeweitet, rund 400 Schulen bleiben geschlossen und es kam zu Angriffen auf Polizei und Lehrkräfte. Die Regierung hat Bildungsakteure zu Gesprächen eingeladen, um die Lage zu beruhigen.",
-    "also": [
-     "France 24",
-     "The Guardian",
-     "BBC News",
-     "Welt",
-     "Der Standard"
-    ]
-   },
-   {
-    "title": "Euro-Zone: Inflation auf Drei-Jahres-Hoch, Frankreich unter großem Druck: Für die EZB wird es brenzlig",
-    "teaser": "Unerwartet schnell steigende Verbraucherpreise und eine Zuspitzung der Lage in Frankreich: Die EZB ist zwischen Problemen bei der Inflation und an den Anleihemärkten eingekeilt.",
-    "link": "https://www.handelsblatt.com/finanzen/geldpolitik/inflation-teuerung-im-euroraum-springt-auf-drei-jahres-hoch/100254617.html",
-    "source": "Handelsblatt",
-    "scope": "national",
-    "lang": "de",
-    "published": "2026-10-02T09:37:57+00:00",
-    "summary": "Die Inflation in der Eurozone ist unerwartet auf 3,8 Prozent gestiegen, auch getrieben von höheren Energiepreisen. Das erhöht den Druck auf die EZB, trotz wirtschaftlicher Spannungen etwa in Frankreich möglicherweise früher an der Zinsschraube zu drehen.",
+    "published": "2026-10-05T10:04:35+00:00",
+    "summary": "Der Präsident des Bundesnachrichtendienstes, Martin Jäger, hat bei einer Bundestagsanhörung vor einer neuen, gefährlicheren Stufe der Konfrontation mit Russland gewarnt und von einem andauernden Schattenkrieg gegen Deutschland gesprochen. Die Dienste halten einen gewaltsamen Konflikt für real möglich und rechnen mit weiteren Anschlagsversuchen im Land.",
     "also": [
      "Zeit Online",
+     "Spiegel",
+     "Handelsblatt",
+     "n-tv",
+     "Welt",
      "FAZ"
     ]
    },
    {
-    "title": "Energie: EU reagiert auf Trumps Druck und könnte Dieselreserven freigeben",
-    "teaser": "Diesel wird international knapper und damit teurer. Die EU hofft darum auf ein gemeinsames Vorgehen mit den USA. So will sie ein Exportverbot für amerikanischen Diesel verhindern.",
-    "link": "https://www.handelsblatt.com/politik/international/diesel-eu-reagiert-auf-trumps-druck-und-koennte-dieselreserven-freigeben/100259188.html",
-    "source": "Handelsblatt",
+    "title": "Medizin-Nobelpreis für Optogenetik-Forscher aus Deutschland und USA",
+    "teaser": "Für ihre Optogenetik-Forschung erhalten ein Berliner, ein Würzburger und ein US-Amerikaner den Medizin-Nobelpreis. Peter Hegemann, Georg Nagel und Karl Deisseroth bekommen jeweils ein Drittel des Preisgeldes von rund einer Million Euro.",
+    "link": "https://www.tagesschau.de/wissen/forschung/medizin-nobelpreis-optogenetik-100.html",
+    "source": "tagesschau",
     "scope": "national",
     "lang": "de",
-    "published": "2026-10-02T09:23:15+00:00",
-    "summary": "Weil Diesel international knapper und teurer wird, drängen die USA unter Präsident Trump auch Deutschland und die EU zur Freigabe strategischer Dieselreserven. Die EU-Kommission berät über ein gemeinsames Vorgehen, um ein drohendes US-Exportverbot abzuwenden – mit direkter Wirkung auf Kraftstoffpreise für Landwirtschaft und Pendler.",
+    "published": "2026-10-05T10:01:47+00:00",
+    "summary": "Der Medizin-Nobelpreis geht an die deutschen Forscher Peter Hegemann und Georg Nagel sowie den US-Amerikaner Karl Deisseroth für die Entwicklung der Optogenetik, mit der sich Nervenzellen gezielt per Licht steuern lassen. Die Methode hat die Hirnforschung revolutioniert und liefert heute wichtige Werkzeuge für die Erforschung neurologischer Erkrankungen.",
     "also": [
-     "The Guardian",
      "BBC News",
-     "FAZ"
+     "Deutschlandfunk",
+     "Handelsblatt",
+     "Zeit Online",
+     "FAZ",
+     "n-tv"
     ]
    },
    {
-    "title": "Kabinett ist sich einig : Steigende Pflegebeiträge für viele: Wie viel macht das aus?",
-    "teaser": "Kinderlose und Gutverdiener zahlen ab 2027 mehr für die Pflegeversicherung. Ab 2028 soll ein weiterer Zuschlag dazukommen. Was bedeutet das konkret für den eigenen Geldbeutel?",
-    "link": "https://www.n-tv.de/ratgeber/Steigende-Pflegebeitraege-fuer-viele-Wie-viel-macht-das-aus-id31370407.html",
-    "source": "n-tv",
+    "title": "Spanien: Regierungschef Sánchez kündigt Neuwahlen an",
+    "teaser": "Der Streit über die Wohnungsmarktpolitik führt zu Neuwahlen in Spanien. Regierungschef Sánchez kündigte eine vorgezogene Parlamentswahl im November an. Seine Sozialisten liegen in Umfragen hinter den Konservativen.",
+    "link": "https://www.tagesschau.de/ausland/europa/spanien-neuwahlen-104.html",
+    "source": "tagesschau",
     "scope": "national",
     "lang": "de",
-    "published": "2026-10-02T07:35:32+00:00",
-    "summary": "Das Bundeskabinett hat steigende Pflegebeiträge für Kinderlose und Gutverdiener ab 2027 beschlossen, 2028 soll ein weiterer Zuschlag folgen. Für viele Beitragszahler bedeutet das spürbar höhere Abzüge vom Gehalt.",
-    "also": []
+    "published": "2026-10-05T08:11:20+00:00",
+    "summary": "Spaniens Ministerpräsident Pedro Sánchez hat nach einer Niederlage bei Abstimmungen zur Wohnungspolitik vorgezogene Neuwahlen für den 29. November angekündigt. Umfragen sehen sein sozialistisches Lager derzeit hinter der Opposition, die Wahl dürfte zum Plebiszit über seine Regierungsjahre werden.",
+    "also": [
+     "Zeit Online",
+     "NZZ",
+     "Süddeutsche Zeitung",
+     "Handelsblatt",
+     "taz",
+     "n-tv"
+    ]
+   },
+   {
+    "title": "Flavio Bolsonaro gewinnt erste Runde der Präsidentschaftswahl in Brasilien",
+    "teaser": "Flavio Bolsonaro gewinnt erste Runde der Präsidentschaftswahl in Brasilien",
+    "link": "https://www.tagesschau.de/video/video-1660452.html",
+    "source": "tagesschau",
+    "scope": "national",
+    "lang": "de",
+    "published": "2026-10-05T05:47:58+00:00",
+    "summary": "Flávio Bolsonaro, Sohn des inhaftierten Ex-Präsidenten Jair Bolsonaro, hat überraschend die erste Runde der brasilianischen Präsidentschaftswahl vor Amtsinhaber Lula gewonnen. Da keiner der Kandidaten die absolute Mehrheit erreichte, entscheidet eine Stichwahl Ende Oktober über das Amt.",
+    "also": [
+     "Handelsblatt",
+     "Spiegel",
+     "BBC News",
+     "Deutsche Welle",
+     "The Guardian",
+     "France 24"
+    ]
+   },
+   {
+    "title": "Jemen: Regierung meldet Erfolge gegen Huthis",
+    "teaser": "An der Meerenge Bab al-Mandab: Die Streitkräfte der jemenitischen Regierung haben im Kampf gegen die Huthis nach eigenen Angaben wichtige Ziele eingenommen. Die Miliz dementiert.",
+    "link": "https://www.spiegel.de/ausland/jemen-regierung-meldet-erfolge-gegen-huthis-a-bf16a034-00a5-4544-90c2-3fd889c08635#ref=rss",
+    "source": "Spiegel",
+    "scope": "national",
+    "lang": "de",
+    "published": "2026-10-05T09:53:00+00:00",
+    "summary": "Die international anerkannte jemenitische Regierung meldet in einer Großoffensive gegen die Huthi-Miliz wichtige Geländegewinne nahe der strategisch bedeutenden Meerenge Bab al-Mandab. Die Miliz bestreitet die Verluste, während zugleich ein Tanker in der Region angegriffen wurde, was die Lage an der wichtigen Schifffahrtsroute weiter verschärft.",
+    "also": [
+     "Deutschlandfunk",
+     "Al Jazeera",
+     "France 24",
+     "Süddeutsche Zeitung"
+    ]
    }
   ],
   "region": [
    {
-    "title": "„Das bewirkt nicht viel“: Neuer Tankrabatt führt zu Frust an Augsburgs Zapfsäulen",
-    "teaser": "„Das bewirkt nicht viel“: Neuer Tankrabatt führt zu Frust an Augsburgs Zapfsäulen Augsburger Allgemeine",
-    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNdnZZeV9OaEFKS01MZGFlaG9XMWRyaTdTaHA3Q0VLQjVHYjgwcUZVUkVrMktwWXplZ3RYMWcya1YydE5rTFUxcktOcjZac0dQQ3BDeWtNeGJLeFRiWGZmU2stN09GaTFMeGpyN3dNczAtdm1BVUNfbUd5UnRNTm5XT190dDBFYXlyZm4wRG8yYmk5a0d1VjdqTTdyQ1ZWdFgySWg4LXBOYTBuSVJpMWpPR0dRTm84TEdETGhoSnV0OUI2RzIyNmdZ?oc=5",
+    "title": "B17-Sperrung in Augsburg: Dauerstau im Stadtgebiet am Montag",
+    "teaser": "B17-Sperrung in Augsburg: Dauerstau im Stadtgebiet am Montag Augsburger Allgemeine",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOeDV2eEQ0YUdSY1RlVHdxSkE5eEFJSTZKeVJNbmtQdWJ1cENRc0dIMWNRZEVyNDdDX1dIMEU2SkJIa0RWX2dXY3ZVRjFJQ2VWSVFBNnk2OUVXSW1iUWZvUHV6amhYZUxlYy1qVDg2dTJ0Y3NncXRnbFNjcXhpbUxyWDZIWE50aUNyQzYyTmdpR1plMzhpLUxXTmhXaFJRdk5Mc2h2ZnJTZDB3YmdGSHJjWGhGbw?oc=5",
     "source": "Augsburger Allgemeine",
     "scope": "regional",
     "lang": "de",
-    "published": "2026-10-02T07:43:15+00:00",
-    "summary": "Der neue Tankrabatt sorgt an Augsburgs Tankstellen für Enttäuschung, weil die Preissenkung aus Sicht vieler Autofahrer kaum spürbar ist. Das deckt sich mit bundesweiten Berichten über ein gemischtes Stimmungsbild zur Maßnahme.",
+    "published": "2026-10-05T07:51:44+00:00",
+    "summary": "Eine Sperrung der B17 sorgt am Montag für erheblichen Dauerstau im Augsburger Stadtgebiet und dürfte den Berufsverkehr spürbar ausbremsen.",
     "also": []
    },
    {
-    "title": "Jetzt dreimal umsteigen auf Bahnstrecke Augsburg-Ingolstadt",
-    "teaser": "Jetzt dreimal umsteigen auf Bahnstrecke Augsburg-Ingolstadt welt.de",
-    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPSmRwbWtlamUyQnJIRUE4WjVZWS13VXVmaWdoNjlQOHl5N2FMaDR4Q2hMSVd2Nl9Dc2phOUh6dlphYkxZanFwTUZXd3Q4SEI0VlM2RW9iYlZFNlQ4anNrbVRKdC1WT1Y4cXRoWDUxZ2YxV0E3cmo3OUJLRmdWSnRZMkd6WkI5THpBVjRhOVJZb01vMG5wc2lxMUNRMXd6X2MtcG9tTGdHdHg3NWxLT0R1ZkZxb2hzbkdiOE9nbHN4TDRDVXNHX0hpaUFMNzh4Y00?oc=5",
-    "source": "welt.de",
-    "scope": "regional",
-    "lang": "de",
-    "published": "2026-10-01T15:09:40+00:00",
-    "summary": "Auf der Bahnstrecke zwischen Augsburg und Ingolstadt müssen Reisende wegen Bauarbeiten künftig dreimal umsteigen. Das dürfte den Pendelverkehr in der Region spürbar erschweren.",
-    "also": []
-   },
-   {
-    "title": "Ausgleichszahlungen für Eingriff ins Landschaftsbild: Warum zehn Windräder „günstiger“ sind als vier",
-    "teaser": "Ausgleichszahlungen für Eingriff ins Landschaftsbild: Warum zehn Windräder „günstiger“ sind als vier Augsburger Allgemeine",
-    "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQWEVBR2N1VGJMaENBRXFIcnNJVEZINk5mbGRBWmFUQWhjYTd1V3oxNlVHR0hQR1lkYlg4TE55dE5yVlRkOVZiRTZVNGhFd1hYOWhqelJNaE9yU3FCYnFaYVRtRHI0OWxxemM2NTh2RWJWNDVBZ2Y4WkM1Rm9rOTVuMTBXaGtZWVBNbGI0Vm1JZElTbG9nbU9MbTVBWXo4YjRWOEp5SzJXZ2NvbVNKR2VWclRkNTJLVDhvOVJUVFRhdEJ4ek5TTDIxWkV3Q3pFSjlJazB1MG12OGNrOW1vN1gyWWtvNndmQjZXaGc?oc=5",
+    "title": "Jugendlicher soll islamistischen Terror-Anschlag geplant haben – wie gefährlich war er wirklich?",
+    "teaser": "Jugendlicher soll islamistischen Terror-Anschlag geplant haben – wie gefährlich war er wirklich? Augsburger Allgemeine",
+    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQMWhibkwxZTJrMGhwWml2Y2VLNVJSSWM4dzlWWEZOU3dEYzJXMTRMMlRTWFVWUnRXb2MwOHBwMHlieExQaDJ0ZmswTmVJRkpDenQ5NGFvdW9lWHVfYUwxdTdGOEF1WXc1YnRocmxuczFia01tUUpEODJsbXpJM2NjUWtwajlYYVlYRWVRYTJpZk5yYnlOVFN3TnZnYnJFOEZBbHdvdUFXRHFEOGxEaGZhLXVwRjRzckdacF9RNzRsTjNWYnFxN0RRRkN5UVpVd1ZlRVVLZzBR?oc=5",
     "source": "Augsburger Allgemeine",
     "scope": "regional",
     "lang": "de",
-    "published": "2026-10-02T07:23:45+00:00",
-    "summary": "In der Region zeigt sich, dass Ausgleichszahlungen für den Eingriff ins Landschaftsbild bei zehn Windrädern günstiger ausfallen als bei vier Anlagen. Das könnte Kommunen bei künftigen Planungen zu größeren Windparks auf landwirtschaftlichen Flächen bewegen.",
+    "published": "2026-10-05T06:47:35+00:00",
+    "summary": "In Augsburg soll ein Jugendlicher einen islamistisch motivierten Terroranschlag geplant haben; ein Bericht geht nun der Frage nach, wie konkret die Gefahr tatsächlich war.",
     "also": []
    },
    {
-    "title": "Tradition im Allgäu: So läuft der Viehscheid in Oberschönegg ab",
-    "teaser": "Tradition im Allgäu: So läuft der Viehscheid in Oberschönegg ab Augsburger Allgemeine",
-    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPZ211Ri12LU40NkRmbWRvbmpWM0FVTkVzQ1hfVE9KSnAyQTdUVUtsMm5rV0ctNEZvSFZjdlFMdnFUN2JLZDVsZWRmVGZkU1pPa3cwWlpWRHRMby1iVnN6bVdDeGRUQzJhM090OVRldTBCUW1oNTB5c0kzdVh6NTRaU2ZuSmpzN0VwZWoxYVVBSU5Tek9uSkFWam1LeGVHVkRVcGZEZ0JqY1BWcjk3ZkYwWkc2VkNJeGlPTVlGLVFSaEstdXM?oc=5",
+    "title": "Bekiffter Radfahrer verursacht Tod einer Seniorin in Augsburg – die Strafe fällt deutlich aus",
+    "teaser": "Bekiffter Radfahrer verursacht Tod einer Seniorin in Augsburg – die Strafe fällt deutlich aus Augsburger Allgemeine",
+    "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOQjkxa3lFRHd5WlUwaXg5Q1RhcjlPbFcyRW1aOVJZV1V2eW9kMlFYWm5RUkJ1MnZGWWdmYXNLZFc5U2VodHpwYVN5UE9fZkJfOUIyS2t0UmV1MWttb2Z3VmZUbE44QUZrRVZoY2tQbThWdnA5QTNpRllPdjJjQVBCWFhMMkFIcWJSYmt0MWVHVW1odWRkTlE3U3Z2ZVZrODFHc3FEdEs3RDg5NU9ZclNCY1lROGxiTWFVd2RGX2ppckE1aGwxNzBlYmdOY3FnLUxRQTZuUXp6SXNINW80NGgya1FQU0c?oc=5",
     "source": "Augsburger Allgemeine",
     "scope": "regional",
     "lang": "de",
-    "published": "2026-10-02T03:43:36+00:00",
-    "summary": "In Oberschönegg im Allgäu findet der traditionelle Viehscheid statt, bei dem das Vieh von den Alpweiden zurück ins Tal getrieben wird. Die Veranstaltung ist fester Bestandteil des bäuerlichen Jahreskreises in der Region.",
+    "published": "2026-10-05T06:36:35+00:00",
+    "summary": "Ein Radfahrer, der unter Drogeneinfluss stand, hat in Augsburg den Tod einer Seniorin verursacht und wurde dafür nun deutlich verurteilt.",
+    "also": []
+   },
+   {
+    "title": "Reisemobil-Hersteller mit Sitz im Allgäu feiert Meilenstein",
+    "teaser": "Reisemobil-Hersteller mit Sitz im Allgäu feiert Meilenstein Schwäbische.de",
+    "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOMTQ4YzNFWVNVOEpPWGpaUkpWMHJXSHNhcjNWLWxlejRac0xhUWJGY1RkSjBYZk1wVVVwUTNFVlhRdTN5cGI5WFl0dk42SGxDY1VjN19UckM5T013bEstaVZxM1dtZURaWjZzRGc0NUFHZERWWTJYUU9Ua29nbjVYMTVhX2ljYXAtMTU5QThkbWFpRkJ6a2FnWF9YcTBib0kwaDJKWHhNX1hfVkh4MXZhMGxTcVQtTE1pQTFIOVFDaWtqR25xdDFKYjI4SVZxYjlVNmVXWXl6M3E4aGotdG01b04zMG5nUlk?oc=5",
+    "source": "Schwäbische.de",
+    "scope": "regional",
+    "lang": "de",
+    "published": "2026-10-05T09:43:34+00:00",
+    "summary": "Ein Reisemobil-Hersteller mit Sitz im Allgäu feiert einen bedeutenden Firmenmeilenstein.",
     "also": []
    }
   ],
   "agrar": [
    {
-    "title": "Landwirtschaft - Kartoffelernte in Bayern fällt schlecht aus - Bayern - SZ.de",
-    "teaser": "Landwirtschaft - Kartoffelernte in Bayern fällt schlecht aus - Bayern - SZ.de SZ.de",
-    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNcGY4b2xUaFZBMjlUbl9XNEVrTVJzUDlrY1cxRFlMYW00cTVSREtFZHBMV3J4SmM0YW1QVHdrTVdzMzFyc2JNUzR0Y0k4VFFQRm5TTDctNzllM3BoYVpTay13UnlQZWNBV2p2NDI4eTdaTzU3Ylh4d3BQNXlZQ2ZUYkZpdXVVTDh0WURFUy03dlBIVGI5T0w3VEdPa0R0M1RGbHQwTV9GXzhRVmhjT0dlY1pNazJjRVJkVmE2cDVzaFFNeTBFUU9tYTdxYmloVmxVemlqa0tJMS1VZm0z?oc=5",
-    "source": "SZ.de",
+    "title": "Landwirtschaft: Warum es in Deutschland immer weniger Schweinebauern gibt",
+    "teaser": "Landwirtschaft: Warum es in Deutschland immer weniger Schweinebauern gibt Handelsblatt",
+    "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNMmxrT00ta1l2WFlFSnBYUlZIV2tRbjQyRmJ4TWRJV1VOeHYyMzg3WjBWaElOczFORE91bzNoSG1KNG8zZ2dDMlkyVTZENnR3Vi1vUU1mNnlmX3FjX2YtZ1J3ampGNHJzRzBrUlZsbFNTU1VKTlQxS0JvUkVrT2ttZEFLdFRtdExydEt0d2lLLTBfSmtnNVRBckRsZ3FNOW56bmtieUNkdF9ockF2bUlSVzVWS0dld25rd2pTaGk5ZTJVTVhJbGw0ai1WcmkzRno4MWkzdkttR2hDLVlxWU1JSmR3?oc=5",
+    "source": "Handelsblatt",
     "scope": "agrar",
     "lang": "de",
-    "published": "2026-10-02T09:24:20+00:00",
-    "summary": "Die Kartoffelernte in Bayern ist in diesem Jahr schlechter ausgefallen als in den Vorjahren. Details zu Ursachen und Mengen bleiben in der Meldung offen.",
+    "published": "2026-10-05T09:11:00+00:00",
+    "summary": "In Deutschland geben immer mehr Schweinehalter ihre Betriebe auf, weil hohe Kosten, strengere Auflagen und schwache Erzeugerpreise die Wirtschaftlichkeit zunehmend erschweren.",
     "also": []
    },
    {
-    "title": "Schweinehalter warten weiterhin auf Unterstützungssignale aus Berlin",
-    "teaser": "Schweinehalter warten weiterhin auf Unterstützungssignale aus Berlin Bayerischer Bauernverband",
-    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB6YUxYbVE1SDNSUDNOd0hTNFM1czJ0QXN3V3NqOUdVQVM5NHU4Y3kxMG1vWHd4aTNnTHdaSF9GTEkxX2xKWXhQRksyM0paRVVMQ2lSNW8zZ3hFT2xjNWpjeFBmdU85LTNkbXczSkNzMA?oc=5",
-    "source": "Bayerischer Bauernverband",
+    "title": "Mecklenburg-Vorpommern: Bauern beklagen Kostensprünge und fordern Planungssicherheit",
+    "teaser": "Mecklenburg-Vorpommern: Bauern beklagen Kostensprünge und fordern Planungssicherheit n-tv.de",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOV3ZHbkczSWVJV2Nzc2I1S2lmalc2WHROaHVhQnh4NGJ0cVlNVWZPZldWNWZkS1J5MTdQd1hkUFRXcm8zOVByWDZKZy1LVFBsV0tWbDZMY1lhTG0wLVdraURDblAxR29xbDAwck04WG9QR2ZDdDhjblF1d0FEQXpIZEE3SU1PMEk3emdkT0ViSk1BYU9pWnFFZExQaThoRzBKUnF6SUNpV0VmSnlha3Z1STByZkc1RkJudGlud0pxVFFQLVBnYThZYXF1bw?oc=5",
+    "source": "n-tv.de",
     "scope": "agrar",
     "lang": "de",
-    "published": "2026-10-02T03:43:38+00:00",
-    "summary": "Bayerische Schweinehalter warten weiterhin auf konkrete Unterstützungssignale aus Berlin. Eine Entspannung der wirtschaftlich angespannten Lage in der Schweinehaltung ist bislang nicht in Sicht.",
-    "also": []
-   },
-   {
-    "title": "Baden-Württemberg: Landwirtschaft und teurer Diesel: Start-Up entwickelt E-Unterstützung für Traktoren",
-    "teaser": "Baden-Württemberg: Landwirtschaft und teurer Diesel: Start-Up entwickelt E-Unterstützung für Traktoren tagesschau.de",
-    "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPSkZ3dmxIU1EtaDczZFdmQkozSmNrUi1vd2NjbEFiczFZSXlMU2xyMjQtWjZDMS1oLWVrWXUza01mZVFkVG43enBiZzNsZERIUWZveUhybU5GTXp6ZU56OVRjRDZ4RDFwNy1Ic2JWejVmdUpmQ056QzkwUlBoVklmSGxSY2tOTDF6NlNvSTBUck5senFtZC1Pemp0dE5DTXRwUTlMRGprd3JuUzlPZnl1eFprUGdKN1NFTGpiVWxyaHI1SzRaUGlxUnBUbkhCRHBDb29EQ0FRek5PN1duNXJyN0RvallBaUlmR01CUnlB?oc=5",
-    "source": "tagesschau.de",
-    "scope": "agrar",
-    "lang": "de",
-    "published": "2026-10-01T12:56:00+00:00",
-    "summary": "Ein Start-up aus Baden-Württemberg entwickelt eine elektrische Unterstützung für Traktoren als Reaktion auf die gestiegenen Dieselkosten in der Landwirtschaft. Das zeigt, wie der teure Diesel inzwischen auch technische Innovationen bei Landmaschinen antreibt.",
-    "also": []
-   },
-   {
-    "title": "How has the 2026 drought impacted Europe’s potato sectors?",
-    "teaser": "A new report has quantified the impact of the 2026 drought on Europe’s potato sectors, from both a production and economic perspective. The work was carried out by staff in the UK-based think tank: the Energy and Climate Intelligence Unit. This analysis looks specifically at the potential impact on ",
-    "link": "https://www.agriland.ie/farming-news/how-has-the-2026-drought-impacted-europes-potato-sectors/",
-    "source": "Agriland",
-    "scope": "agrar",
-    "lang": "en",
-    "published": "2026-10-01T13:30:00+00:00",
-    "summary": "A new report quantifies how the 2026 drought has hit Europe's potato sector in both yield and economic terms. It adds to a string of findings this summer showing record-low river levels and heat stress across the continent.",
-    "also": []
-   },
-   {
-    "title": "IFA requests meeting with Boortmalt on malting barley prices",
-    "teaser": "The Irish Farmers’ Association (IFA) has requested a meeting with Boortmalt to discuss harvest 2026 malting barley prices. This is in response to the mounting grower anger on the matter. IFA’s national grain committee chair, John Murphy, commented: “We do not want to fundamentally change the agreeme",
-    "link": "https://www.agriland.ie/farming-news/ifa-requests-meeting-with-boortmalt-on-malting-barley-prices/",
-    "source": "Agriland",
-    "scope": "agrar",
-    "lang": "en",
-    "published": "2026-10-02T07:45:00+00:00",
-    "summary": "Ireland's farmers association has requested talks with maltster Boortmalt over this year's malting barley prices amid mounting grower anger. It reflects wider tension in European grain markets over producer returns.",
-    "also": []
-   }
-  ],
-  "eu": [
-   {
-    "title": "Bauernverband: Fordert klare Signale von EU-Agrarministerrat",
-    "teaser": "Bauernverband: Fordert klare Signale von EU-Agrarministerrat Gabot.de",
-    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRmd0Q2dFWldxVUxqeEYzM3dlSUk4U0hEeERvNW5YTFRheUxCdk92bDg0VnZPQW1LbG1OTVFxcDVhMS05UE00WXJ5cDlQTWNIZWxVZEFHMWtQaE1EYWdCc1hkMTczeVZ4bmZOYmxmelJocVRGT0RfdjhFRmd4QkRRWksxZ2Y3TVBNRU9oZlZ4NU5VaHVSaWpES2pVUUVSb2VfYnc?oc=5",
-    "source": "Gabot.de",
-    "scope": "eu",
-    "lang": "de",
-    "published": "2026-09-29T15:04:20+00:00",
-    "summary": "Der Bauernverband fordert vom bevorstehenden EU-Agrarministerrat klare politische Signale für die Landwirtschaft. Konkrete Forderungen bleiben in der Meldung offen.",
-    "also": []
-   }
-  ],
-  "world": [
-   {
-    "title": "Election debate cancelled in Brazil, bomb scare outside Supreme Court",
-    "teaser": "Brazilian president and opposition candidate snub the final debate ahead of the presidential election.",
-    "link": "https://www.aljazeera.com/news/2026/10/2/election-debate-cancelled-in-brazil-bomb-scare-outside-supreme-court?traffic_source=rss",
-    "source": "Al Jazeera",
-    "scope": "world",
-    "lang": "de",
-    "published": "2026-10-02T06:09:57+00:00",
-    "summary": "Vor der brasilianischen Präsidentschaftswahl am Sonntag ist die traditionelle TV-Debatte ausgefallen, weil sowohl Amtsinhaber Lula als auch Herausforderer Flávio Bolsonaro absagten. Der Wahlkampf wird zunehmend über gegenseitige Anschuldigungen geführt.",
+    "published": "2026-10-04T13:37:00+00:00",
+    "summary": "Landwirte in Mecklenburg-Vorpommern beklagen massive Kostensprünge und bezeichnen die wirtschaftliche Lage vieler Höfe als existenzbedrohend. Der Bauernverband fordert von der Politik mehr Planungssicherheit, um Betriebe langfristig abzusichern.",
     "also": [
-     "The Guardian",
-     "France 24",
-     "NZZ"
+     "SZ.de"
     ]
    },
    {
-    "title": "Ethiopia and Eritrea cut diplomatic ties as northern conflict escalates",
-    "teaser": "The diplomatic fallout comes as Ethiopian forces battle rebel fighters across its northern region.",
-    "link": "https://www.bbc.co.uk/news/articles/crpd0d0jl0y0o?at_medium=RSS&at_campaign=rss",
+    "title": "Zukunft der Landwirtschaft in Gefahr? So steht es um den Bauern-Nachwuchs im Wittelsbacher Land",
+    "teaser": "Zukunft der Landwirtschaft in Gefahr? So steht es um den Bauern-Nachwuchs im Wittelsbacher Land Augsburger Allgemeine",
+    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQV2pqN3oxbDVjc3huYVVLeWpKWHotY1JHLU90VlRGZEdkQlNBN1FQOHhNMmJvakNFSWFFNl9OdnZpM2E2bjJVcG1KNFM3NkppekJpdWZLSjZpbERIMjhtWE1HVEczWG91TFAtTTB4d0pMZHRWNVVOZHgyRVljWW00MVhzTFNhMWhCSXVDMUpTam43RTBIS2JkNzhLTnBnSTVrZVk4dnNlU2VId3R3SHhjek9vcHZXNmVRR091V1hiNGxTWW1ueEl4Rm9nS0VZbXc3?oc=5",
+    "source": "Augsburger Allgemeine",
+    "scope": "agrar",
+    "lang": "de",
+    "published": "2026-10-03T16:05:00+00:00",
+    "summary": "Im Wittelsbacher Land wächst die Sorge um den landwirtschaftlichen Nachwuchs, da immer weniger junge Menschen bereit sind, einen Hof zu übernehmen.",
+    "also": []
+   },
+   {
+    "title": "US Farm Bill Lapses Again, Pausing Conservation Program Enrollment",
+    "teaser": "US Farm Bill Lapses Again, Pausing Conservation Program Enrollment Global Agriculture",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQdWk2OHFLdlRaRlBuQjNvRVlBYkRLRnVUeTlnVFVBc093d2ZkUDNsc1JqUUNwd0pta21mVzdzcERwWTQ1d3hva2xOVm83YUVWU0Y4SXMyQlZvNndLUE1XWVJpTHlSMndKYl9jVzRXLS14YUpJSHNFZkMwdUZDbUREdzBoVFE0aXYwMlVldzhJUHVaaGJJMHlFRE9kYnNuWmJtQ2lmX2VMSVZhQ1ljWkxMb1R4V0JRdjZZdy0wNG5n?oc=5",
+    "source": "Global Agriculture",
+    "scope": "agrar",
+    "lang": "en",
+    "published": "2026-10-05T07:34:07+00:00",
+    "summary": "Der US-Kongress hat den Farm Bill erneut auslaufen lassen, wodurch die Anmeldung zu wichtigen Naturschutzprogrammen für Landwirte vorerst pausiert. Das erschwert vielen US-Betrieben die langfristige Planung ihrer Flächenbewirtschaftung.",
+    "also": []
+   },
+   {
+    "title": "NI farmers urged to stay alert for Shamonda virus",
+    "teaser": "Farmers in Northern Ireland are advised to be alert following the detection of Shamonda virus in the Republic of Ireland. Bovine samples from two farms in Co. Cork yielded positive results for Shamonda virus during testing at Animal Health Laboratories in Bandon, Co. Cork. Department of Agriculture,",
+    "link": "https://www.agriland.ie/farming-news/ni-farmers-urged-to-stay-alert-for-shamonda-virus/",
+    "source": "Agriland",
+    "scope": "agrar",
+    "lang": "en",
+    "published": "2026-10-05T09:50:05+00:00",
+    "summary": "In Nordirland werden Landwirte nach dem Nachweis des Shamonda-Virus bei Rindern in der Republik Irland zu erhöhter Wachsamkeit aufgerufen. Die Tierseuche könnte sich über die Grenze ausbreiten und Bestände auch in Nordirland gefährden.",
+    "also": []
+   }
+  ],
+  "eu": [],
+  "world": [
+   {
+    "title": "Nach Festnahmen: USA ziehen B-1-Bomber von britischem Stützpunkt ab",
+    "teaser": "Mehrere Verdächtige sollen einen Anschlag auf eine amerikanische Militärbasis in Großbritannien geplant haben. London verdächtigt den Iran, die USA holen mehrere Bomber zurück.",
+    "link": "https://www.handelsblatt.com/politik/international/grossbritannien-usa-ziehen-b-1-bomber-von-britischem-stuetzpunkt-ab/100259659.html",
+    "source": "Handelsblatt",
+    "scope": "national",
+    "lang": "de",
+    "published": "2026-10-05T04:28:09+00:00",
+    "summary": "Die USA haben nach mutmaßlichen Anschlagsplänen gegen ihre britische Basis offenbar überstürzt sämtliche Langstreckenbomber vom Stützpunkt RAF Fairford abgezogen. Ein offizieller Grund für die Eile wurde bislang nicht genannt.",
+    "also": [
+     "BBC News",
+     "Spiegel",
+     "France 24"
+    ]
+   },
+   {
+    "title": "France closes up to 500 schools Monday over student protests",
+    "teaser": "Lessons will be \"totally or partly suspended\" in some high schools after clashes between riot police and student protesters, France's education minister says.",
+    "link": "https://www.bbc.co.uk/news/articles/cwkg5n7lm3y5o?at_medium=RSS&at_campaign=rss",
     "source": "BBC News",
     "scope": "world",
     "lang": "de",
-    "published": "2026-10-02T08:01:10+00:00",
-    "summary": "Äthiopien und Eritrea haben die diplomatischen Beziehungen abgebrochen, während die Kämpfe im Norden Äthiopiens weiter eskalieren und der brüchige Friedensvertrag von 2022 praktisch kollabiert ist. Internationale Vermittlungsversuche sind bislang gescheitert.",
+    "published": "2026-10-05T04:49:14+00:00",
+    "summary": "In Frankreich bleiben zum Wochenstart erneut bis zu 500 Schulen wegen anhaltender Schülerproteste gegen marode Gebäude, Überfüllung und Lehrermangel geschlossen. Die Protestbewegung geht damit bereits in ihre zweite Woche.",
     "also": [
-     "Deutsche Welle",
-     "Al Jazeera"
-    ]
-   },
-   {
-    "title": "Russia tries to freeze Ukraine as it suffers record casualties and retreats",
-    "teaser": "Moscow has suffered further losses of occupied territory, but is using new drones to beat Ukraine's defences.",
-    "link": "https://www.aljazeera.com/news/2026/10/2/russia-tries-to-freeze-ukraine-as-it-suffers-record-casualties-and-retreats?traffic_source=rss",
-    "source": "Al Jazeera",
-    "scope": "world",
-    "lang": "de",
-    "published": "2026-10-02T08:03:02+00:00",
-    "summary": "Die ukrainischen Streitkräfte haben im Raum Lyman weitere Gebiete von russischen Truppen zurückerobert, während Moskau laut Berichten hohe Verluste hinnehmen muss. Gleichzeitig griff Russland erneut Brücken und Infrastruktur in Kiew mit Drohnen an.",
-    "also": [
-     "n-tv",
+     "FAZ",
      "France 24",
-     "NZZ",
-     "tagesschau"
+     "Deutsche Welle",
+     "Zeit Online"
     ]
    },
    {
-    "title": "US delivers F-16V fighter jets to Taiwan as island eyes threat from China",
-    "teaser": "Amid threats from China, Taipai is growing concerned about the Trump administration's commitment to arming the island.",
-    "link": "https://www.aljazeera.com/news/2026/10/2/us-delivers-f-16v-fighter-jets-to-taiwan-as-island-eyes-threat-from-china?traffic_source=rss",
-    "source": "Al Jazeera",
+    "title": "Ethiopian rebel forces withdraw from Tigray regional capital",
+    "teaser": "Two residents in Mekelle tell the BBC pro-government forces have taken control of the city.",
+    "link": "https://www.bbc.co.uk/news/articles/cqm249v07j4xo?at_medium=RSS&at_campaign=rss",
+    "source": "BBC News",
     "scope": "world",
     "lang": "de",
-    "published": "2026-10-02T08:26:22+00:00",
-    "summary": "Die USA haben mit der Auslieferung neuer F-16V-Kampfjets an Taiwan begonnen, während sich die Spannungen mit China weiter zuspitzen. Taiwan sorgt sich zugleich, ob die Trump-Regierung ihre Sicherheitszusagen langfristig einhält.",
+    "published": "2026-10-05T08:29:12+00:00",
+    "summary": "Äthiopische Rebellentruppen haben sich aus der Regionalhauptstadt Mekelle in Tigray zurückgezogen, Regierungstruppen haben nun die Kontrolle über die Stadt übernommen.",
     "also": []
+   },
+   {
+    "title": "US marine arrested in Japan on suspicion of killing woman, police say",
+    "teaser": "Suspect allegedly killed woman at hotel in Okinawa as prime minister calls crime ‘exceptionally brutal and vicious’ A US marine stationed on Japan ’s southern island of Okinawa is accused of murdering a Japanese woman and has been arrested on suspicion of murder, police said on Sunday. The suspect a",
+    "link": "https://www.theguardian.com/us-news/2026/oct/04/marine-arrested-japan-suspicion-murder",
+    "source": "The Guardian",
+    "scope": "world",
+    "lang": "de",
+    "published": "2026-10-04T13:46:19+00:00",
+    "summary": "Die Festnahme eines US-Marineangehörigen wegen Mordverdachts an einer Frau auf Okinawa hat in Japan erneut Proteste gegen die dortige amerikanische Militärpräsenz ausgelöst.",
+    "also": [
+     "BBC News"
+    ]
    }
   ],
   "note": null,
   "feed_count": 30,
-  "item_count": 302,
+  "item_count": 285,
   "ranked_by": "Claude"
  }
 }
