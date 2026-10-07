@@ -1,256 +1,220 @@
 {
- "built_at": "2026-10-06T12:06:20.318154+02:00",
+ "built_at": "2026-10-07T12:08:35.426572+02:00",
  "config": "813804dcdda646a5",
  "block": {
   "enabled": true,
-  "lage": "Der Tag wird von der Festnahme eines Ex-BND-Chefs wegen Spionageverdachts und der ersten AfD-Mehrheit im Sachsen-Anhalt-Landtag geprägt. Dazu kommen schwache Industriezahlen und anhaltende Kriegsmeldungen aus der Ukraine. Für Augsburg und das Allgäu bleibt es ein ruhiger Pendeltag ohne akute Störungen.",
+  "lage": "",
   "seen_update": {},
   "top": [
    {
-    "title": "August Hanning: Ex-BND-Chef verhaftet – Verdacht auf Landesverräterische Ausspähung",
-    "teaser": "Nach Informationen von SPIEGEL und SPIEGEL TV haben Fahnder den ehemaligen BND-Präsidenten August Hanning festgenommen. Der frühere Spitzenbeamte soll jahrelang privat Geheiminformationen von seinem alten Büroleiter erhalten haben.",
-    "link": "https://www.spiegel.de/panorama/justiz/august-hanning-ex-bnd-chef-verhaftet-a-a0314149-2e9c-44e4-9338-1cc5ce61da07#ref=rss",
-    "source": "Spiegel",
+    "title": "Deutschland-Gipfel: Deutsche-Bank-Chef: Linken-Regierung in Berlin „kann problematisch werden“",
+    "teaser": "Ökonomin Weber: AfD und Linke nicht gleichsetzen +++ Bayer-Chef: Deutsche haben „Konsumenten-Mentalität“ entwickelt +++ Verfolgen Sie die wichtigsten Ereignisse hier live.",
+    "link": "https://www.handelsblatt.com/politik/deutschland/deutschland-gipfel-deutsche-bank-chef-linken-regierung-in-berlin-kann-problematisch-werden/100260317.html",
+    "source": "Handelsblatt",
     "scope": "national",
     "lang": "de",
-    "published": "2026-10-06T08:11:00+00:00",
-    "summary": "Der frühere BND-Präsident August Hanning ist unter dem Verdacht des versuchten Landesverrats festgenommen worden, weil er über Jahre vertrauliche Unterlagen von einem ehemaligen Mitarbeiter bezogen und möglicherweise weitergegeben haben soll. Der Fall wirft ein ungewöhnlich großes Schlaglicht auf mögliche Sicherheitslücken im deutschen Auslandsgeheimdienst.",
-    "also": [
-     "Handelsblatt",
-     "n-tv",
-     "Welt",
-     "FAZ",
-     "NZZ",
-     "Süddeutsche Zeitung"
-    ]
+    "published": "2026-10-07T10:07:00+00:00",
+    "summary": "",
+    "also": []
    },
    {
-    "title": "Sachsen-Anhalt: Neue Sitzordnung im Parlament und erster Chefsessel für die AfD",
-    "teaser": "In Magdeburg konstituiert sich der neue Landtag. Für den Wahlsieger AfD ist es der erste Schritt zur Macht. Antworten auf die wichtigsten Fragen.",
-    "link": "https://www.sueddeutsche.de/politik/sachsen-anhalt-landtag-afd-wahlsieg-konstituierende-sitzung-folgen-li.3557695",
+    "title": "Umgang mit AfD: Günther kritisiert Wahl von AfD-Landtagspräsident",
+    "teaser": "",
+    "link": "https://www.zeit.de/news/2026-10/07/guenther-kritisiert-wahl-von-afd-landtagspraesident",
+    "source": "Zeit Online",
+    "scope": "national",
+    "lang": "de",
+    "published": "2026-10-07T10:04:09+00:00",
+    "summary": "",
+    "also": []
+   },
+   {
+    "title": "Pflege: Tagespflege könnte teurer werden",
+    "teaser": "",
+    "link": "https://www.zeit.de/news/2026-10/07/ministerin-tagespflege-koennte-teurer-werden",
+    "source": "Zeit Online",
+    "scope": "national",
+    "lang": "de",
+    "published": "2026-10-07T10:02:46+00:00",
+    "summary": "",
+    "also": []
+   },
+   {
+    "title": "AfD-Landtagspräsident: Und dann singt Pistorius die Nationalhymne",
+    "teaser": "Ein Landtagspräsident von der AfD – gewählt mit Stimmen aus der CDU? Auf Initiative des Verteidigungsministers protestiert die SPD-Fraktion auf dem Bebelplatz. Koalition und Kanzler haben ein neues Krisenthema.",
+    "link": "https://www.sueddeutsche.de/politik/pistorius-spd-afd-landtagspraesident-sachsen-anhalt-protest-nationalhymne-li.3559715",
     "source": "Süddeutsche Zeitung",
     "scope": "national",
     "lang": "de",
-    "published": "2026-10-06T08:55:00+00:00",
-    "summary": "Im neu gewählten Landtag von Sachsen-Anhalt hat sich die AfD erstmals die Mehrheit für den Posten des Landtagspräsidenten gesichert, was als wichtiger symbolischer Schritt auf dem Weg zu mehr politischer Macht in einem Bundesland gilt. Die konstituierende Sitzung gilt als Testfall dafür, wie andere Parteien künftig mit der AfD im Parlamentsbetrieb umgehen.",
-    "also": [
-     "taz",
-     "Spiegel",
-     "FAZ",
-     "tagesschau",
-     "n-tv",
-     "Deutschlandfunk"
-    ]
+    "published": "2026-10-07T10:02:15+00:00",
+    "summary": "",
+    "also": []
    },
    {
-    "title": "Physik-Nobelpreis geht an Francis Halzen für Entdeckung von hochenergetischer Neutrinos aus dem All",
-    "teaser": "Der Nobelpreis für Physik geht in diesem Jahr an den belgisch-amerikanischen Neutrinoforscher Francis Halzen.",
-    "link": "https://www.spiegel.de/wissenschaft/physik-nobelpreis-geht-an-entdecker-hochenergetischer-neutrinos-aus-dem-all-a-ff9a9674-115f-4625-9aec-19b9ccff90f6#ref=rss",
-    "source": "Spiegel",
+    "title": "Ein Stück Holocaust für alle",
+    "teaser": "Seit dem Hamas-Massaker vom 7. Oktober 2023 zeigt sich ein beängstigender Hunger danach, die Juden eines Massenmords zu bezichtigen. Daran tragen die Medien eine Mitschuld.",
+    "link": "https://www.welt.de/debatte/plus6ac4b1c7321809b09dd07840/7-oktober-2023-ein-stueck-holocaust-fuer-alle.html",
+    "source": "Welt",
     "scope": "national",
     "lang": "de",
-    "published": "2026-10-06T09:55:00+00:00",
-    "summary": "Der Physik-Nobelpreis 2026 geht an den belgisch-amerikanischen Astrophysiker Francis Halzen für seine Arbeit am Neutrino-Observatorium IceCube und den Nachweis hochenergetischer Neutrinos aus dem All. Die Auszeichnung würdigt jahrzehntelange Grundlagenforschung zu den sogenannten Geisterteilchen.",
-    "also": [
-     "Zeit Online",
-     "Handelsblatt",
-     "NZZ",
-     "Süddeutsche Zeitung",
-     "n-tv",
-     "taz"
-    ]
-   },
-   {
-    "title": "Krieg - Ukraine greift Moskau mit 650 Drohnen an - mindestens zwei Tote",
-    "teaser": "Die ukrainische Armee hat die russische Hauptstadt Moskau mit hunderten Drohnen angegriffen.",
-    "link": "https://www.deutschlandfunk.de/ukraine-greift-moskau-mit-650-drohnen-an-mindestens-zwei-tote-100.html",
-    "source": "Deutschlandfunk",
-    "scope": "national",
-    "lang": "de",
-    "published": "2026-10-06T09:55:01+00:00",
-    "summary": "Die Ukraine hat Moskau in der Nacht mit mehreren hundert Drohnen angegriffen, während im Schwarzen Meer vor Bulgarien zwei Frachtschiffe durch Drohnen getroffen wurden – eines sank, die Besatzung gilt als vermisst. Der Krieg weitet sich damit erneut auf zivile Schifffahrt und die russische Hauptstadt aus.",
-    "also": [
-     "Welt",
-     "Der Standard",
-     "Handelsblatt",
-     "n-tv"
-    ]
-   },
-   {
-    "title": "Statistisches Bundesamt - Aufträge bei der Industrie gehen im August unerwartet stark zurück",
-    "teaser": "Die deutsche Industrie hat im August einen unerwartet starken Rückgang der Aufträge verzeichnet.",
-    "link": "https://www.deutschlandfunk.de/auftraege-bei-der-industrie-gehen-im-august-unerwartet-stark-zurueck-100.html",
-    "source": "Deutschlandfunk",
-    "scope": "national",
-    "lang": "de",
-    "published": "2026-10-06T09:55:01+00:00",
-    "summary": "Die deutsche Industrie hat im August überraschend deutlich weniger Aufträge erhalten als erwartet, was die Sorgen um die konjunkturelle Schwäche verschärft. Für Zulieferer und Maschinenbauer in Bayern ist das ein weiteres Signal gedämpfter Nachfrage.",
+    "published": "2026-10-07T10:01:04+00:00",
+    "summary": "",
     "also": []
    }
   ],
   "region": [
    {
-    "title": "Augsburg: Weitere Anklage nach Mord an dreifacher Mutter",
-    "teaser": "Der 43-jährige frühere Lebensgefährte der erschossenen Frau muss sich wegen Anstiftung zum Mord sowie eines Waffendelikts vor Gericht verantworten.",
-    "link": "https://www.sueddeutsche.de/bayern/augsburg-mord-anklage-dreifache-mutter-auftragsmord-li.3559299",
-    "source": "SZ Bayern",
+    "title": "Stressindex: In Augsburg kann gechillt werden, Dresden schmiert ab! Stuttgart, FFM und der Pott sind am stressigsten",
+    "teaser": "Stressindex: In Augsburg kann gechillt werden, Dresden schmiert ab! Stuttgart, FFM und der Pott sind am stressigsten TAG24",
+    "link": "https://news.google.com/rss/articles/CBMilAJBVV95cUxNR0E1YU9ESGdHaThuM0c4VnlGc3p3MEZJLVN4NkQ1d09mZTZBSC1nMVR5b2hvQ3Q4QmljT0p2cXl4M09XVFFlRUVpN3FHMmwydWRlbEFDeFpRNkJFSktMX3FudHYzRmdRaE5UUFUwZ3BIYVVyU1ljR1BVOEptd2RJeXpuLWxVdW5kdWdabVNjMEdQaTY0QUl0ZDB2eU1LZjZFamtFWGlpZ0E1MkI3YVpmTm5aRGVZeDBmcU10bVlTdDlqLWxBVndKa3U4OEltODBJSktfbDFwZUIzZGluaVV3UzNsYnNrS3pHdGVQS1g0bFZGZWI4MGRTTzdzMFBzY2tWaXhZMmZZNFRycl81TG9CdTM5SXI?oc=5",
+    "source": "TAG24",
     "scope": "regional",
     "lang": "de",
-    "published": "2026-10-06T10:00:40+00:00",
-    "summary": "Gegen den früheren Lebensgefährten einer in Augsburg erschossenen dreifachen Mutter wurde eine weitere Anklage wegen Anstiftung zum Mord sowie eines Waffendelikts erhoben. Der Fall kommt damit nach dem ersten Prozess um die Tat erneut vor Gericht.",
-    "also": [
-     "SZ.de"
-    ]
+    "published": "2026-10-07T10:04:48+00:00",
+    "summary": "",
+    "also": []
    },
    {
-    "title": "Toter 14-Jähriger in Memmingen, Getötete im Ostallgäu: So ist der Stand der Ermittlungen",
-    "teaser": "Toter 14-Jähriger in Memmingen, Getötete im Ostallgäu: So ist der Stand der Ermittlungen Allgäuer Zeitung",
-    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPX2JmOHdTdUY3WGNjeXBjZzFyT3A4bEN4bXRJbWRpRy1qTHhNTlgxSHItN0J1X0dJeE1GNDlfQVBWV1FvMzl4SlIwQk1STDlMS0F2LXlMSkF1dHRydm9iT0VVODdmVVNWc0Y4WENwcXZvYWRsd0VXUnYzTXc2c1FpaU9QcV9hc0J3WnE2VExRQnkwWXNIQnY3cDV1dWh4TUZ6LVljQlo1Rms5Vkxacnc0RjlidDRqakxSS1FUOW9aMjB4NE96ellUY2YwX2JyYkFISGIwUEJ5WFA5WHBoSWc?oc=5",
+    "title": "Drei Bäckereien, zwei Metzgereien, ein Modegeschäft und mehr: Dieses Dorf in Bayern war einst ein Einkaufsparadies",
+    "teaser": "Im Auerbergmuseum ist aktuell die Ausstellung „100 Jahre Ladengeschichte in Bernbeuren“ zu sehen. Unter anderem wird dabei das Modehaus Deinbeck thematisiert, das einst eine Instanz in der Region war.",
+    "link": "https://www.merkur.de/lokales/schongau/bernbeuren-ort121388/drei-baeckereien-zwei-metzgereien-ein-modegeschaeft-und-mehr-dieses-dorf-in-bayern-war-einst-ein-einkaufsparadies-94527711.html",
+    "source": "Merkur Lokales",
+    "scope": "regional",
+    "lang": "de",
+    "published": "2026-10-07T10:00:00+00:00",
+    "summary": "",
+    "also": []
+   },
+   {
+    "title": "Memminger Jahrmarkt: Das ist beim größten Rummel im Allgäu jetzt neu",
+    "teaser": "Memminger Jahrmarkt: Das ist beim größten Rummel im Allgäu jetzt neu Allgäuer Zeitung",
+    "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOVy1rdG9xbjl0M1BPSkg5YkxvbzJZVEk3U3VCNjhUMWQtTVh0SUNrMkc4Sm1ZMzhuYTg4MUltSVN1MF9mbzVINkVUN1lEQ1VqZE5IVlNHZkkxLXpRdjlFekIzNTM3cTd6bXpmZ25FUHd3eVd2Z3dFVnRVaEFvdTZzQU9QUWc0WndKQXFuUGpUTmZTR0l3aWdyMXFDMDNEUXNJejRpVWIxcjNJMmRrVjVCbW8tbVBGNktaZjFMVXZQbWpNWDBvY3UxQklrejJIYjAxWmp6UjM3S1dOUFY0dUkzcWo1SWhDcXp6Ync?oc=5",
     "source": "Allgäuer Zeitung",
     "scope": "regional",
     "lang": "de",
-    "published": "2026-10-06T06:23:15+00:00",
-    "summary": "Nach dem Tod eines 14-Jährigen in Memmingen und einer Getöteten im Ostallgäu geben die Ermittlungsbehörden neue Einzelheiten zum Stand der Untersuchungen bekannt. Beide Fälle beschäftigen weiterhin die Region zwischen Allgäu und Unterallgäu.",
+    "published": "2026-10-07T09:45:34+00:00",
+    "summary": "",
     "also": []
    },
    {
-    "title": "„Keiner kennt mehr Wadenwickel“: Die Notaufnahme der Augsburger Uniklinik ist am Limit",
-    "teaser": "„Keiner kennt mehr Wadenwickel“: Die Notaufnahme der Augsburger Uniklinik ist am Limit Augsburger Allgemeine",
-    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQLTVGdU15ZjZmTG4wUk9RYVB0dVJRMlBSd2I1TDNoTTJXaGFIcW1DS21rVXlRbVhURUlvbEdGeWFsYW11TV9IZ210UGRnUkVNSFZySnRVQS1kbTVvR3JyNXRDcUd5em5kSl9zRDRiUEdqZ0kyZDhpTl9Ya2FYblBwc1hRSWZjVmlCMlBiNnBzQ3BFaTg2Yjl1RDl5R1FfaU5WVE4yVEJHRkM1WXJfUlhnRlMxY3R2SGFMY193OC1YUkFNdU1tQnVDeXNNOWQ0RnNab2VrN1ZR?oc=5",
-    "source": "Augsburger Allgemeine",
+    "title": "„Wir brauchen mehr Kontrollen“: Moosburg lässt parkende Autos künftig verstärkt überwachen",
+    "teaser": "Parkende Autos sollen in Moosburg künftig verstärkt kontrolliert werden. Diese Aufgabe hat die Stadt ausgelagert – der Zweckverband kommunale Verkehrsüberwachung Südostbayern übernimmt.",
+    "link": "https://www.merkur.de/lokales/freising/moosburg-ort29088/stadt-moosburg-lagert-kontrolle-der-parkenden-autos-aus-94528114.html",
+    "source": "Merkur Lokales",
     "scope": "regional",
     "lang": "de",
-    "published": "2026-10-06T03:57:00+00:00",
-    "summary": "Die Notaufnahme der Augsburger Uniklinik beschreibt ihre Lage als angespannt, weil zunehmend Patienten mit eigentlich leichten Beschwerden kommen, die früher zu Hause behandelt wurden. Das Personal sieht darin ein strukturelles Problem der Versorgung, nicht nur eine vorübergehende Spitze.",
-    "also": []
-   },
-   {
-    "title": "Erntebilanz in Bayern: Quinoa und Kichererbsen statt Raps und Weizen? Auf den Feldern muss sich was tun",
-    "teaser": "Die Ernte in Bayern ist dieses Jahr so schlecht ausgefallen wie selten – und die Landwirtschaft muss sich dem neuen Klima anpassen. Das bedeutet auch: experimentieren mit neuen Sorten.",
-    "link": "https://www.sueddeutsche.de/bayern/ernte-bayern-2026-bilanz-hitze-trockenheit-li.3556273",
-    "source": "SZ Bayern",
-    "scope": "regional",
-    "lang": "de",
-    "published": "2026-10-05T13:08:00+00:00",
-    "summary": "Die bayerische Ernte ist in diesem Jahr so schwach ausgefallen wie selten, weshalb Landwirte zunehmend mit alternativen Kulturen wie Quinoa und Kichererbsen statt Raps und Weizen experimentieren. Der Umbau der Anbauplanung gilt als Reaktion auf die veränderten klimatischen Bedingungen.",
+    "published": "2026-10-07T09:00:00+00:00",
+    "summary": "",
     "also": []
    }
   ],
   "agrar": [
    {
-    "title": "Ernteausfälle und enorme Spritpreise: Landwirte berichten von dramatischer Situation",
-    "teaser": "Ernteausfälle und enorme Spritpreise: Landwirte berichten von dramatischer Situation Augsburger Allgemeine",
-    "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNUjFfdi1NcE1DOFlBNHhuMzdhdXBVMUlhTGZ3emJFMThRQVowa1hkT0ZzdmI3VkNwcWpQRGhfdkh6ODgwdy1mb05GMjZ5a1JtTFRiWmNOdFZHeW5MQVNUc3d5ZTAwRTBocEVhWkJlY2ZSX2xUYmQ2ZzRLeDc1M1o2cDFOU1U3bU0yYm8yY0RzQ2h0V2hqNU01aG1femtuOTd6eERmc3RORThST1dQdUxKeXlzUzZhUWs1SnJPWkstSGJSbnJJLUVHZVpkcm9MN2llMWJjT09VVU1CUTktYkdTRzdR?oc=5",
-    "source": "Augsburger Allgemeine",
+    "title": "Kreis Gütersloh verweigert Genehmigung für Hähnchenmaststall – Landwirt zieht vor Gericht",
+    "teaser": "Kreis Gütersloh verweigert Genehmigung für Hähnchenmaststall – Landwirt zieht vor Gericht Neue Westfälische",
+    "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPdUpIZmtTWGI3b3hKcnhGUXBLOEllNzd2R1pjUjZCemdLTVBycExmVWVZRVRTUWdCUFJQR3ZJUF9zOXZWXzJPUE55U0ZRNmhVUWRoRl9pX2l3b2ZRd1JaNXdWeG9nbDdJX0g2MFNUQXVyRUxoczF1d1EtSENRQm1yMC03SUczcmJfa0JBZ09DNW5pYWpUMlZhUVZrNWFqVE5JdlZmYjhFOHJ0eFk5RnBHT0ZLZjY0MUdNSllael9iUU1ZQTJWMF9IWTFEVFNLOFdKalFyOWFvZ2tJb3RKTGs0YzRqUEN3ZFJzT3BSQg?oc=5",
+    "source": "Neue Westfälische",
     "scope": "agrar",
     "lang": "de",
-    "published": "2026-10-05T15:00:00+00:00",
-    "summary": "Landwirte in der Region Augsburg berichten von einer dramatischen Lage durch Ernteausfälle und gleichzeitig hohe Spritpreise, die die Kosten zusätzlich in die Höhe treiben. Viele Betriebe sehen ihre wirtschaftliche Grundlage dadurch akut gefährdet.",
+    "published": "2026-10-07T10:00:00+00:00",
+    "summary": "",
     "also": []
    },
    {
-    "title": "Bauernverband: Explodierende Kosten sind existenzbedrohend",
-    "teaser": "Bauernverband: Explodierende Kosten sind existenzbedrohend WELT",
-    "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQMTZmSVZPMUJ4Rm5RTVB4eENOdTJnZ1JkLUVYZldMMkY0X1hjWVZnaDBRQ19JRkc2a2JqR1YxbFNNWnZzVEwtNlIyeHpkc1VTeXdROC1nU1lQQWJubDhJUXBibWhtX2g1TFIwaXdYbXo4ZUZjU3NDZzljb1BWZkNrUWRrWHNKeFpBcXBBdG1pVV83R2IxYlItanh1ZktjUGlxZDQwRlNKY3o0RERTN3lPenNFVHE5VzEwSDQ3S1JaZ2pjSkRPSnpvMTBPWjlNejJEN0R5SGJmYXl6clMzQ1NqeFlR?oc=5",
-    "source": "WELT",
+    "title": "Landwirtschaft hautnah erleben: Kartoffelernte mit Kindern auf dem Feld bei Willersdorf",
+    "teaser": "Landwirtschaft hautnah erleben: Kartoffelernte mit Kindern auf dem Feld bei Willersdorf NN.de",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPbkZkUk9iUy1sMTdrVzI1Q0dXcTRCdzczWDhmRWZwNG51djg0NzB1SlJxS1NKdDdacDF1VGU2NUNldnZHd1Y4NGtwUENVcDBla0h4OW5rNkhZbmlMNnowYWhUVmMyRnoyME1VbUlLSm45RzZOS3pnQzk2ZVNWd2Z5cVRrdnhGeURIejlwSmdSVl9fUmFITHJ5ODlRSXZiLTJXbERoSnNydTIxQVp3MnRhVWR6Zk0yRm9BODR3QmkzUExqb3hRTDBfcGVmaks?oc=5",
+    "source": "NN.de",
     "scope": "agrar",
     "lang": "de",
-    "published": "2026-10-04T16:05:48+00:00",
-    "summary": "Der Bauernverband warnt vor existenzbedrohenden Kostensteigerungen in der Landwirtschaft und fordert politische Entlastung. Die Verbandsspitze sieht viele Betriebe an der Grenze ihrer wirtschaftlichen Belastbarkeit.",
+    "published": "2026-10-07T08:18:54+00:00",
+    "summary": "",
     "also": []
    },
    {
-    "title": "Landwirt macht Steuerschulden von 249.000 Euro – Urteil könnte Bauernhof vernichten",
-    "teaser": "Landwirt macht Steuerschulden von 249.000 Euro – Urteil könnte Bauernhof vernichten agrarheute.com",
-    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPbUVqQWFTdFkzek5zTGo4ay1PcXgxWFo0S2hCbk5Eb3IxM0ZneTk1Y3VMUlI4ZzVrWUdCQkU0X2RDM01CVGkxbm5EZUVsVzdON09VRnFRSVpEWHB1SWVHazgycjRBV1pnckxCazl5Zm9DZW9IVlZzZXRwNjhoRTBxOWxIWUZFOE1sUXNNd2I3REhrNUVnWC05bzN3cXA0X2tZdGlHWGRDeHhIVTlpVmJ2VEUtWlFZQjFGTWVRb2xUYXJBZ3VfYmxv?oc=5",
-    "source": "agrarheute.com",
+    "title": "Landtags-Grüne alarmiert: „Viele Todesfälle bei Kälbern und Ferkeln“",
+    "teaser": "Landtags-Grüne alarmiert: „Viele Todesfälle bei Kälbern und Ferkeln“ Merkur",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNNnI4UFl0UUp0OGxPWEZUdnllVUN6eUhMM2c5SzNINEdUV29IN2VnZEw4Y0NaOTRxSEJGOW1UZ2JtWndwT2pwQVlmTm1FVy1MVzMwTDRvNGEyWEEwOFBuMXFWaHhzbHNxYzNlYWUxUDRGclpERVVReVNNSkg4V0pUb1VTODVXMG0zMm03TG5Nazh5bnkzRzNSODV4QzZ6SGc5RzJaUnhqQW9KOC12ajJwZA?oc=5",
+    "source": "Merkur",
     "scope": "agrar",
     "lang": "de",
-    "published": "2026-10-06T03:15:00+00:00",
-    "summary": "Ein Landwirt mit Steuerschulden von 249.000 Euro steht vor einem Gerichtsurteil, das nach Einschätzung von Beobachtern seinen gesamten Hof gefährden könnte. Der Fall zeigt, wie schnell finanzielle Rückstände zur existenziellen Bedrohung für landwirtschaftliche Betriebe werden können.",
+    "published": "2026-10-07T07:15:00+00:00",
+    "summary": "",
     "also": []
    },
    {
-    "title": "Average cattle rearing farm incomes up 68% in 2025 amid higher prices",
-    "teaser": "Income on cattle farms increased substantially in 2025. Teagasc has published the final confirmed results of the National Farm Survey for last year, along with factsheets on a number of sectors. The figures confirm considerable increases in farm incomes for 2025 versus 2024, although the disparity i",
-    "link": "https://www.agriland.ie/farming-news/average-cattle-rearing-farm-incomes-up-68-in-2025-amid-higher-prices/",
+    "title": "Budget 2027 ‘does not address core issue’ for tillage farmers",
+    "teaser": "The 2027 budget “does not address the core issue facing Irish tillage farmers – the continued importation of feedstuffs”, according to the Irish Grain Growers Group (IGGG). The tillage group welcomed elements of Budget 2027, stating it demonstrates that Minister for Agriculture, Food and the Marine ",
+    "link": "https://www.agriland.ie/farming-news/budget-2027-does-not-address-core-issue-for-tillage-farmers/",
     "source": "Agriland",
     "scope": "agrar",
     "lang": "en",
-    "published": "2026-10-05T16:30:00+00:00",
-    "summary": "Laut dem irischen Agrarbericht National Farm Survey sind die Einkommen auf Rinderbetrieben 2025 im Schnitt um 68 Prozent gestiegen, getrieben von höheren Preisen. Das zeigt, wie stark die Erträge in der Rinderhaltung von Jahr zu Jahr schwanken können.",
+    "published": "2026-10-07T09:45:00+00:00",
+    "summary": "",
     "also": []
    },
    {
-    "title": "US Farm Bill Lapses Again, Pausing Conservation Program Enrollment",
-    "teaser": "US Farm Bill Lapses Again, Pausing Conservation Program Enrollment Global Agriculture",
-    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQdWk2OHFLdlRaRlBuQjNvRVlBYkRLRnVUeTlnVFVBc093d2ZkUDNsc1JqUUNwd0pta21mVzdzcERwWTQ1d3hva2xOVm83YUVWU0Y4SXMyQlZvNndLUE1XWVJpTHlSMndKYl9jVzRXLS14YUpJSHNFZkMwdUZDbUREdzBoVFE0aXYwMlVldzhJUHVaaGJJMHlFRE9kYnNuWmJtQ2lmX2VMSVZhQ1ljWkxMb1R4V0JRdjZZdy0wNG5n?oc=5",
-    "source": "Global Agriculture",
+    "title": "Budget 2027 ‘does not go far enough to tackle rising fuel costs’",
+    "teaser": "Budget 2027 provides “some relief” for farmers, but more is needed to improve farm viability, according to the Irish Cattle and Sheep Farmers’ Association (ICSA). Edmond Phelan, ICSA rural development chair, said Budget 2027 contains “some welcome measures for farmers”. However, he claimed the lack ",
+    "link": "https://www.agriland.ie/farming-news/budget-2027-does-not-go-far-enough-to-tackle-rising-fuel-costs/",
+    "source": "Agriland",
     "scope": "agrar",
     "lang": "en",
-    "published": "2026-10-05T13:34:49+00:00",
-    "summary": "Das US-Agrargesetz ist erneut ausgelaufen, wodurch die Aufnahme neuer Betriebe in staatliche Naturschutzprogramme vorerst pausiert. Für Landwirte in den USA bedeutet das wiederholte Verzögerungen bei wichtigen Förderprogrammen.",
+    "published": "2026-10-07T09:11:41+00:00",
+    "summary": "",
     "also": []
    }
   ],
   "eu": [],
   "world": [
    {
-    "title": "Kenya confirms first Ebola case and says patient has died",
-    "teaser": "Health minister says 28 contacts identified after death of citizen who arrived from DRC on Saturday Kenya ⁠has recorded its ⁠first confirmed ​Ebola case, a Kenyan citizen who had been living in the Democratic ⁠Republic of the Congo and arrived in Nairobi on Saturday, the health minister, Aden ⁠Duale",
-    "link": "https://www.theguardian.com/world/2026/oct/06/kenya-first-ebola-case-death-drc",
-    "source": "The Guardian",
-    "scope": "world",
-    "lang": "de",
-    "published": "2026-10-06T09:35:12+00:00",
-    "summary": "Kenia hat seinen ersten offiziell bestätigten Ebola-Fall gemeldet, der betroffene Patient ist bereits gestorben und 28 Kontaktpersonen wurden identifiziert. Die Behörden beobachten die Lage genau, da der Ausbruch im Nachbarland DR Kongo bereits Tausende Todesopfer gefordert hat.",
-    "also": [
-     "BBC News",
-     "Deutschlandfunk"
-    ]
-   },
-   {
-    "title": "Trump approves firing squad execution for Fort Hood attacker Nidal Hasan",
-    "teaser": "Pentagon confirms execution order for Nidal Hasan, convicted of killing 13 in Fort Hood shooting in 2009.",
-    "link": "https://www.aljazeera.com/news/2026/10/6/trump-approves-firing-squad-execution-for-fort-hood-attacker-nidal-hasan?traffic_source=rss",
+    "title": "Photos: Three years of Israel’s war on Gaza as tent cities spread amid ruin",
+    "teaser": "Tent cities in Gaza grow as families mourn the dead, care for the injured, and endure relentless displacement.",
+    "link": "https://www.aljazeera.com/gallery/2026/10/7/photos-three-years-of-israels-war-on-gaza-as-tent-cities-spread-amid-ruin?traffic_source=rss",
     "source": "Al Jazeera",
     "scope": "world",
     "lang": "de",
-    "published": "2026-10-06T07:23:00+00:00",
-    "summary": "US-Präsident Trump hat die Hinrichtung des Fort-Hood-Attentäters durch ein Erschießungskommando genehmigt, es wäre die erste Exekution dieser Art im US-Militär seit über 60 Jahren. Der Täter hatte 2009 auf einem Militärstützpunkt 13 Menschen getötet.",
-    "also": [
-     "BBC News",
-     "n-tv",
-     "taz",
-     "FAZ"
-    ]
-   },
-   {
-    "title": "Keeping up with the Bolsonaros: Flávio’s surprise first-round election win heralds rise of a political dynasty",
-    "teaser": "Four members of disgraced ex-president Jair Bolsonaro’s family have been elected to office, most notably his wife and son Flávio, who won the first round of voting to be Brazil’s new president The weekend’s elections in Brazil not only put Jair Bolsonaro’s eldest son, Flávio Bolsonaro, in the lead i",
-    "link": "https://www.theguardian.com/world/2026/oct/06/keeping-up-with-the-bolsonaros-flavios-surprise-first-round-election-win-heralds-rise-of-a-political-dynasty",
-    "source": "The Guardian",
-    "scope": "world",
-    "lang": "de",
-    "published": "2026-10-06T07:00:05+00:00",
-    "summary": "Flávio Bolsonaro hat durch einen überraschenden Erfolg im ersten Wahlgang beste Chancen auf die brasilianische Präsidentschaft, womit die politische Dynastie seines Vaters Jair Bolsonaro weiter an Einfluss gewinnt. Der Ausgang gilt als Rückschlag für das progressive Lager um Amtsinhaber Lula.",
+    "published": "2026-10-07T09:55:26+00:00",
+    "summary": "",
     "also": []
    },
    {
-    "title": "Separatist party projected to win Quebec election, adding new test to Canada's unity",
-    "teaser": "The Parti Québécois, which secured a minority, has vowed to hold an independence referendum in the years to come.",
-    "link": "https://www.bbc.co.uk/news/articles/crly09gz7ew4o?at_medium=RSS&at_campaign=rss",
-    "source": "BBC News",
+    "title": "🔴Nobel Prize in chemistry awarded to France's Henri Kagan, Japan's Kenso Soai",
+    "teaser": "",
+    "link": "https://www.france24.com/en/europe/20261007-nobel-prize-in-chemistry-jointly-awarded-to-france-s-henri-kagan-japan-s-kenso-soai",
+    "source": "France 24",
     "scope": "world",
     "lang": "de",
-    "published": "2026-10-06T09:01:51+00:00",
-    "summary": "In Québec hat die separatistische Parti Québécois die Wahl gewonnen und strebt für die kommenden Jahre ein neues Unabhängigkeitsreferendum an. Das stellt den gesamtkanadischen Zusammenhalt vor eine weitere Belastungsprobe.",
+    "published": "2026-10-07T09:54:25+00:00",
+    "summary": "",
+    "also": []
+   },
+   {
+    "title": "Suspected pneumonic plague in Siberia: What we know about the disease",
+    "teaser": "After a worker at a Russian plague research institute in Siberia died October 2, 2026, nearly 200 of her contacts were under medical observation. But authorities there denied pneumonic plague had caused the death.",
+    "link": "https://www.dw.com/en/suspected-pneumonic-plague-in-siberia-what-we-know-about-the-disease/a-79547919?maca=en-rss-en-world-4025-rdf",
+    "source": "Deutsche Welle",
+    "scope": "world",
+    "lang": "de",
+    "published": "2026-10-07T09:44:00+00:00",
+    "summary": "",
+    "also": []
+   },
+   {
+    "title": "France halts police use of stun grenades at student protests",
+    "teaser": "Prime Minister Sebastien Lecornu to make public address after thousands rally to demand more funding for education.",
+    "link": "https://www.aljazeera.com/news/2026/10/7/france-halts-police-use-of-stun-grenades-at-student-protests?traffic_source=rss",
+    "source": "Al Jazeera",
+    "scope": "world",
+    "lang": "de",
+    "published": "2026-10-07T09:41:42+00:00",
+    "summary": "",
     "also": []
    }
   ],
-  "note": null,
+  "note": "Gewichtung nicht verfügbar (Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too lo) – nach Aktualität sortiert.",
   "feed_count": 30,
-  "item_count": 295,
-  "ranked_by": "Claude"
+  "item_count": 299,
+  "ranked_by": "Aktualität"
  }
 }
